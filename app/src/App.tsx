@@ -4,8 +4,9 @@ import { DualClock } from "./components/DualClock";
 import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
+import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
-import { computeStatus, dateKey, formatShortDate, relativeDayLabel } from "./lib/dates";
+import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
 import type { DashboardEvent, EventsPayload } from "./types";
 
@@ -33,7 +34,7 @@ export function App() {
   }, []);
 
   const todayKey = dateKey(now);
-  const updatedKey = payload ? dateKey(new Date(payload.generatedAt)) : null;
+  const updatedAt = payload?.generatedAt ?? null;
 
   // Recompute status client-side against the real "today" so the v1 hardcoded
   // date can never go stale.
@@ -66,14 +67,6 @@ export function App() {
           <span className="topbar__pulse" aria-hidden="true" />
           <h1>Waldmohr Events</h1>
         </div>
-        <div className="topbar__meta">
-          <DualClock />
-          <div className="kpi">
-            <span className="kpi__label">Last Updated</span>
-            <strong className="kpi__value">{updatedKey ? formatShortDate(updatedKey) : "—"}</strong>
-            <span className="kpi__sub">{updatedKey ? relativeDayLabel(updatedKey, todayKey) : "Loading…"}</span>
-          </div>
-        </div>
       </header>
 
       <main className="layout">
@@ -88,7 +81,11 @@ export function App() {
               selectedKey={selectedKey}
               onSelectDay={setSelectedKey}
             />
-            <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
+            <aside className="side-rail">
+              <WeatherWidget />
+              <DualClock updatedAt={updatedAt} />
+              <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
+            </aside>
           </>
         )}
       </main>

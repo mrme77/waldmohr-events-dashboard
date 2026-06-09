@@ -5,7 +5,7 @@ How to verify the dashboard works.
 ## v2 Checklist
 - From `app/`, run `npm run build`.
 - From `app/`, run `npm run dev` and open the Vite URL.
-- Confirm the page shows the news-marquee slot, dual clocks, last-updated metadata, calendar, spotlight, and detail popover.
+- Confirm the page shows the news-marquee slot, calendar, right-rail weather, dual clocks with updated date, spotlight, and detail popover.
 - Confirm `app/public/events.json` is loaded via `/events.json`.
 - Confirm month cells render category-colored event markers.
 - Confirm selecting a day/event opens details with source link, original German title, post date, last checked date, and date confidence.
@@ -28,4 +28,5 @@ How to verify the dashboard works.
 - 2026-06-09: `node scripts/validate-events.mjs` passed for both payloads.
 - Result: validated 0 events from `2026-06-09T11:21:22.575Z`; stale archive posts and past events are excluded from the kiosk calendar.
 - 2026-06-09: `npm run build` passed in `app/`.
+- 2026-06-09: single Waldmohr Open-Meteo weather widget added; right rail now shows weather, dual clocks with updated date, then Next Up; `npm run build` passed in `app/`.
 - Remaining: visual browser QA/demo for the v2 app in a normal browser.

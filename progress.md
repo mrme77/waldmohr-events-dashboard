@@ -12,6 +12,10 @@
 - Phase 2: live Waldmohr refresh now writes both shared data and `app/public/events.json`;
   validation covers both payloads; event detail shows source metadata. The refresh only displays
   current/upcoming events with explicit source dates, so stale archive candidates are excluded.
+- Phase 3: added a single Waldmohr current-weather widget using Open-Meteo directly from the
+  frontend. The right rail now stacks weather, clocks, then Next Up; weather shows temperature,
+  spelled-out condition, wind, humidity, and loading/error states. The clock widget includes the
+  event-data updated date.
 
 ### In Flight
 - MVP browser QA/demo pass in a normal browser.

@@ -1,13 +1,19 @@
 import { useNow } from "../hooks/useNow";
+import { formatShortDate, relativeDayLabel } from "../lib/dates";
 
 interface ZoneClock {
   label: string;
   timeZone: string;
 }
 
+interface DualClockProps {
+  /** Last event refresh timestamp, if event data has loaded. */
+  updatedAt?: string | null;
+}
+
 const ZONES: readonly ZoneClock[] = [
-  { label: "NAP", timeZone: "Europe/Rome" },
-  { label: "STL", timeZone: "America/Chicago" }
+  { label: "Napoli", timeZone: "Europe/Rome" },
+  { label: "St. Louis", timeZone: "America/Chicago" }
 ];
 
 function formatTime(date: Date, timeZone: string): string {
@@ -19,9 +25,12 @@ function formatTime(date: Date, timeZone: string): string {
   }).format(date);
 }
 
-/** Dual time display: Waldmohr-local (Berlin) and St. Louis / Central. */
-export function DualClock() {
+/** Dual time display plus compact event refresh metadata. */
+export function DualClock({ updatedAt = null }: DualClockProps) {
   const now = useNow(1000);
+  const updatedKey = updatedAt ? updatedAt.slice(0, 10) : null;
+  const todayKey = now.toISOString().slice(0, 10);
+
   return (
     <div className="clocks">
       {ZONES.map((zone) => (
@@ -30,6 +39,12 @@ export function DualClock() {
           <span className="clock__time">{formatTime(now, zone.timeZone)}</span>
         </div>
       ))}
+      <div className="clock-refresh">
+        <span className="clock-refresh__label">Updated</span>
+        <span className="clock-refresh__value">
+          {updatedKey ? `${formatShortDate(updatedKey)} · ${relativeDayLabel(updatedKey, todayKey)}` : "Loading"}
+        </span>
+      </div>
     </div>
   );
 }
