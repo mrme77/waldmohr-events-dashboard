@@ -324,7 +324,7 @@ body::after {
 .dot.cat-trash-papier, .cat-trash-papier > .dot { background: var(--cat-trash-papier); box-shadow: 0 0 7px rgba(96, 165, 250, 0.55); }
 .dot.cat-trash-glas, .cat-trash-glas > .dot { background: var(--cat-trash-glas); box-shadow: 0 0 7px rgba(203, 213, 225, 0.45); }
 .dot.cat-trash-umweltmobil, .cat-trash-umweltmobil > .dot { background: var(--cat-trash-umweltmobil); box-shadow: 0 0 7px rgba(52, 211, 153, 0.5); }
-.dot.cat-civic, .cat-civic > .dot { background: var(--cat-civic); box-shadow: 0 0 7px rgba(62, 214, 138, 0.5); }
+.dot.cat-civic, .cat-civic > .dot { background: var(--cat-civic); box-shadow: 0 0 7px rgba(232, 121, 249, 0.55); }
 
 /* ---- Spotlight ---- */
 .spotlight {
