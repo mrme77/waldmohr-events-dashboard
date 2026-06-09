@@ -19,3 +19,73 @@ All architectural and design decisions.
 **Decision**: V1 uses curated English event records and a refresh script that preserves source German text for review.
 **Reason**: Avoids hardcoding API keys and avoids pretending machine translation quality has been verified.
 **Status**: Accepted.
+
+## [2026-06-09] Move To A Pi 5 Touch + Voice Kiosk (v2)
+**Context**: Goal shifted from a browsable web app to an always-on, wall-mounted dashboard on a
+Raspberry Pi 5 (8 GB, 1 TB NVMe) with a touchscreen, for the KMC area.
+**Decision**: Rebuild as a single-page kiosk: dual clocks, calendar, weather, news ticker, voice.
+**Reason**: A glanceable always-on display with optional touch/voice is a different product than a
+browse-and-click site.
+**Status**: Accepted.
+
+## [2026-06-09] Adopt Vite + React + TypeScript
+**Context**: v2 composes 5+ live widgets, each with its own refresh interval, plus secret handling.
+**Decision**: Migrate from static HTML/JS to Vite + React + TypeScript, served by a small local
+Node server.
+**Reason**: Multi-widget live composition and a build step (env vars, real `fetch`, HMR) justify a
+framework; the rendering alone would not. Supersedes the v1 "static local app" decision for v2.
+**Status**: Accepted.
+
+## [2026-06-09] Decouple Ingestion From Presentation
+**Context**: New sources (Kaiserslautern, Ramstein, Google Calendar, trash, news) are heterogeneous
+— HTML scrapes, headless rendering, iCal, RSS. None share the WordPress API shape.
+**Decision**: Per-source adapters in `scripts/` run as low-frequency cron jobs that normalize to a
+shared event schema and write JSON (optional SQLite for history). The frontend only reads cached
+JSON and hits fast keyless APIs (Open-Meteo).
+**Reason**: Keeps heavy/brittle scraping off the render path and isolates each source's fragility.
+The adapter pattern is the core architectural move, independent of the frontend framework.
+**Status**: Accepted.
+
+## [2026-06-09] Drop Filters; Color By Category; Tap For Detail
+**Context**: A glanceable kiosk has little use for tag-filter checkboxes and click-to-open panels.
+**Decision**: Remove tag filters and the detail panel. One calendar, color = category
+(Fun/Public · Family Sports · Leave · Trash · Civic), tap a day/dot → detail popover. City shown
+inside the popover, not as a second color dimension.
+**Reason**: Single color dimension stays readable at a glance; touch handles drill-down.
+**Status**: Accepted.
+
+## [2026-06-09] Family Layer From Owned Sources, Not Manual Entry
+**Context**: Family events (sports, leave, trash) need input, but typing on a kiosk is painful.
+**Decision**: Pull family events from a Google Calendar private iCal URL; pull trash days from the
+Landkreis Kusel waste portal's iCal export. No manual entry UI.
+**Reason**: The family already edits Google Calendar on their phones; trash has an official feed.
+Both are keyless iCal, easier than the HTML scrapers.
+**Status**: Accepted.
+
+## [2026-06-09] Keyless Sources And Local STT To Minimize Secrets
+**Context**: Each external key is a liability (storage, rotation, GDPR transfer).
+**Decision**: Weather = Open-Meteo (keyless); news = RSS (keyless); STT = local whisper.cpp on the
+Pi 5 (no cloud STT). Only OpenRouter (voice reasoning) and the Google iCal URL are secret, both held
+server-side only.
+**Reason**: The Pi 5 is fast enough for local STT; minimizing keys reduces both ops burden and data
+exposure. See `docs/compliance.md`.
+**Status**: Accepted.
+
+## [2026-06-09] GDPR Household Exemption; Keep Family Layer Local
+**Context**: User asked to respect EU data law.
+**Decision**: Rely on the GDPR Art. 2(2)(c) household exemption: the family/personal layer stays
+local-network only and is never publicly broadcast. Scrapers store minimal fields, attribute +
+link sources, honor robots.txt, and run at low frequency.
+**Reason**: The exemption holds only while personal data is not published; "leave" data is also a
+security concern. Real legal exposure is copyright / sui generis DB right, mitigated by minimal
+storage + attribution. Full posture in `docs/compliance.md`.
+**Status**: Accepted.
+
+## [2026-06-09] v2 App Lives In `app/`; "Civic Departure Board" Aesthetic
+**Context**: v2 is a Vite app; the v1 static files still work and shouldn't be disturbed mid-build.
+**Decision**: Scaffold the v2 app under `app/` (its own `package.json`). Adopt a "Civic Departure
+Board" visual direction: high-contrast dark, Fraunces serif headings × Archivo UI × JetBrains Mono
+numerals, layered glow + grain background, live pulse, staggered load reveal.
+**Reason**: Keeps v1 intact during migration; a committed, distinctive aesthetic avoids generic
+dark-mode and suits an always-on broadcast board read from across a room.
+**Status**: Accepted. v1 retired once v2 reaches parity.
