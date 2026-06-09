@@ -16,6 +16,10 @@
   frontend. The right rail now stacks weather, clocks, then Next Up; weather shows temperature,
   spelled-out condition, wind, humidity, and loading/error states. The clock widget includes the
   event-data updated date.
+- Phase 4: added keyless RSS refresh for NPR USA and KSDK St. Louis headlines. The refresh writes
+  cached news JSON to `data/news.json` and `app/public/news.json`; the top marquee now loads the
+  cached payload with a fallback error/loading state. The marquee is constrained so long RSS
+  headlines cannot stretch the app layout, and it scrolls at 80 seconds per loop.
 
 ### In Flight
 - MVP browser QA/demo pass in a normal browser.

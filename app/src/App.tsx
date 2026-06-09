@@ -6,6 +6,7 @@ import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
+import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
 import type { DashboardEvent, EventsPayload } from "./types";
@@ -24,13 +25,21 @@ function chooseAnchorKey(events: DashboardEvent[], todayKey: string): string {
 export function App() {
   const now = useNow(60_000);
   const [payload, setPayload] = useState<EventsPayload | null>(null);
+  const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [newsError, setNewsError] = useState<string | null>(null);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
   useEffect(() => {
     loadEvents()
       .then(setPayload)
       .catch((err: unknown) => setError(err instanceof Error ? err.message : String(err)));
+  }, []);
+
+  useEffect(() => {
+    loadNews()
+      .then(setNewsPayload)
+      .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
   }, []);
 
   const todayKey = dateKey(now);
@@ -60,7 +69,7 @@ export function App() {
 
   return (
     <div className="app">
-      <NewsMarquee />
+      <NewsMarquee items={newsPayload?.items} error={newsError} />
 
       <header className="topbar">
         <div className="topbar__brand">

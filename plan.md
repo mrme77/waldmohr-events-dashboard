@@ -79,7 +79,7 @@ That is the MVP. Demo it, then continue below.
 
 ### Later phases (after MVP)
 3. **Weather widget** — Open-Meteo, Waldmohr first. Keyless. Expand to the original 3-city strip later if useful.
-4. **News marquee content** — RSS adapters (US + St. Louis) feeding the top marquee.
+4. **News marquee content** — RSS adapters (NPR USA + KSDK St. Louis) feeding the top marquee.
 5. **More event sources** — Kaiserslautern scrape, then Ramstein headless.
 6. **Family layer** — Google Calendar iCal + Kusel trash iCal; category color coding.
 7. **Voice** — local Node server + OpenRouter proxy + local whisper.cpp STT (optional TTS).

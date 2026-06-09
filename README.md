@@ -12,9 +12,9 @@ glanceable, source-linked calendar.
 A single-page, high-contrast "Civic Departure Board" designed for an always-on wall display:
 
 - **Calendar** of local events, colored by category, tap a day for details + source link.
-- **News marquee** across the top (USA + St. Louis).
-- **Dual clocks** — local (NAP) and St. Louis / Central (STL).
-- **Weather** for Ramstein, Kaiserslautern, Saarbrücken.
+- **News marquee** across the top (USA + St. Louis RSS cache, 80-second scroll).
+- **Dual clocks** — Napoli and St. Louis / Central.
+- **Weather** for Waldmohr via Open-Meteo.
 - **Voice** query (tap-to-talk) over the events, later.
 
 See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) for project truth.
@@ -37,11 +37,22 @@ npm install
 npm run dev      # preview at http://localhost:5173
 ```
 
+## Refreshing data
+
+```bash
+node scripts/refresh-events.mjs
+node scripts/validate-events.mjs
+node scripts/refresh-news.mjs
+node scripts/validate-news.mjs
+```
+
 ## Data sources
 
 - Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
+- News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
+- Weather: Open-Meteo current conditions for Waldmohr.
 - Planned: Kaiserslautern + Ramstein event calendars, Google Calendar (family), Landkreis Kusel
-  trash iCal, US/St. Louis news RSS, Open-Meteo weather.
+  trash iCal.
 
 ## Privacy & legal
 
