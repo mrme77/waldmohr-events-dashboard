@@ -1,0 +1,1013 @@
+{
+  "generatedAt": "2026-06-09T12:28:32.169Z",
+  "source": "https://abfallwirtschaft.landkreis-kusel.de/",
+  "events": [
+    {
+      "id": "trash-a6cae6b8dd907695b8d9d776022e9d36",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-06-15",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-011d33ce1049d10e996cf423f41f420b",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-06-15",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-e4b05f25f3ccb4ff46deb8067358ba7a",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-06-22",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-356d059dc5b69ef6c67213311c446be0",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-06-22",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-917ba8ad6bf870a991ac29eafc44a2cb",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-06-29",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-8fa5db1a9707aa6108c490bb2cbfefec",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-07-06",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-7f4f009482175639f4d0b564094f64ef",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-07-06",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-4c48cb0f930034d778b14f03e1292eb7",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-07-13",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-d26c75f37ca67da8bbaa7bf9bd921503",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-07-13",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-d8665b350bf965ab1af1faedc1403733",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-07-20",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-b2c4c50e447020cc08dc21d575ca4282",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-07-20",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-1e44dae4305e8f3faaaed2d767c8b853",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-07-27",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-a644f443762017814c7558d4eda6eeac",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-08-03",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-dd2724652389a8b1f6287fea7ca0cab5",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-08-03",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-2d8a4c95ebe5cbbe44f3ad2ee4c13383",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-08-10",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-3bb4223e3cd6efd59993597164d1f9fc",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-08-10",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-ddfc1f4e5ffd5c7a21d2afc960c15a58",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-08-17",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-b1e969a44b625c10c287924271d0c90d",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-08-17",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-e4d4f887da9f877015733014eeb5d587",
+      "title": "Mobile Recycling (Umweltmobil)",
+      "originalTitle": "Umweltmobil ()",
+      "summary": "Mobile recycling unit (Umweltmobil) visiting Waldmohr.",
+      "date": "2026-08-22",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "umweltmobil"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-e2957548d1765c727fda3bc806907f95",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-08-24",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-c0cffa8cc068e2693b23bc55efc21339",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-08-31",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-409c88ce3da2490a092a0fc46e6dc802",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-08-31",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-aeda3a9a6a6331e62b9ef3b585dbf4a6",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-09-07",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-d12ff99c9547ab3b02dd3618eea2fd37",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-09-07",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-0694627378d936060743485b80404735",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-09-14",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-c8b3e97e223d3951feb8341c7f422823",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-09-14",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-c2ae9eacda01a4fe066c8f1f27d8e17a",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-09-21",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-e8937279569d3ea3b8439d17d2b82e3b",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-09-28",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-a38962789eb6dcac96fff5c3435b2b5b",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-09-28",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-8e4367c08a378119f2219b22b30ad7b9",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-10-05",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-a7a32410b1713e7000c9a33f00fc9160",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-10-05",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-4c011042cce47dea257e84307b7499f9",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-10-12",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-64c0e15d8c4eb570fde3ed16d9598132",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-10-12",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-e5b88318e75dfb6be452988b6b4b4bf5",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-10-19",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-15e7a6d9d449817bdf2bdb4d8e746300",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-10-26",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-efe57c80e21242097e9f2ba028e4cec7",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-10-26",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-361a3f8cfe2ad16033e966487eec3853",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-11-02",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-6a7350e7d98b89c0a70c15eb3f3e98b1",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-11-02",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-1e90877a164b4e339a082cb63f052360",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-11-09",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-d6be70b9e2e1b51fdb8e33eecb402c94",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-11-09",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-d7516154b46b8a0633f3a0b4c78e10f3",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-11-16",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-44a2b3928b979c1dcd896c00b07de39c",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-11-23",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-5750c8ab214dabe599603161f349926c",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-11-23",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-79e4c2ca2008cbc63c722a179f1534c0",
+      "title": "Mobile Recycling (Umweltmobil)",
+      "originalTitle": "Umweltmobil ()",
+      "summary": "Mobile recycling unit (Umweltmobil) visiting Waldmohr.",
+      "date": "2026-11-25",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "umweltmobil"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-92a6a58708812215605913c1196a301c",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-11-30",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-2f94b479f7910ffc820bc733538f0d01",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-11-30",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-21158863a94c22b2169ab12ad8e641ad",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-12-07",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-5ebdbad05b21a88403388bbf82b7748b",
+      "title": "Paper Collection (Blaue Tonne)",
+      "originalTitle": "Papier (Blaue Tonne) ()",
+      "summary": "Paper and cardboard collection day (Blaue Tonne).",
+      "date": "2026-12-07",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "papier"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-2678ba18f04608af5899edd65831863c",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-12-14",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-6a0312b2b73bec3559db072aa407eb39",
+      "title": "Plastic & Packaging (Gelbe Säcke)",
+      "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
+      "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
+      "date": "2026-12-21",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "lvp"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-001a7d1b90ce9a40fd850cdcac0c2023",
+      "title": "Glass Collection (Weisse Säcke)",
+      "originalTitle": "Glas (Weisse Säcke) ()",
+      "summary": "Glass collection day (Weisse Säcke).",
+      "date": "2026-12-21",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "glas"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-2873f325fb7de5d4b7d02c234ec0db8a",
+      "title": "Organic Waste (Bioabfall)",
+      "originalTitle": "Bioabfall ()",
+      "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
+      "date": "2026-12-28",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "bioabfall"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    },
+    {
+      "id": "trash-903e3109594ee590f3868cd78e0ecb9a",
+      "title": "General Waste (Restmüll)",
+      "originalTitle": "Restmüll ()",
+      "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
+      "date": "2026-12-28",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "trash",
+        "restmuell"
+      ],
+      "familyRelevance": "Put bins out the night before.",
+      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
+      "postDate": "2026-06-09",
+      "lastChecked": "2026-06-09",
+      "status": "upcoming",
+      "dateConfidence": "confirmed"
+    }
+  ]
+}
