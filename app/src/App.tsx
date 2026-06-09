@@ -6,6 +6,7 @@ import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
+import { loadTrash } from "./data/loadTrash";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -25,6 +26,7 @@ function chooseAnchorKey(events: DashboardEvent[], todayKey: string): string {
 export function App() {
   const now = useNow(60_000);
   const [payload, setPayload] = useState<EventsPayload | null>(null);
+  const [trashPayload, setTrashPayload] = useState<EventsPayload | null>(null);
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -34,6 +36,12 @@ export function App() {
     loadEvents()
       .then(setPayload)
       .catch((err: unknown) => setError(err instanceof Error ? err.message : String(err)));
+  }, []);
+
+  useEffect(() => {
+    loadTrash()
+      .then(setTrashPayload)
+      .catch(() => { /* trash is optional — silently degrade */ });
   }, []);
 
   useEffect(() => {
@@ -48,12 +56,15 @@ export function App() {
   // Recompute status client-side against the real "today" so the v1 hardcoded
   // date can never go stale.
   const events = useMemo<DashboardEvent[]>(() => {
-    if (!payload) return [];
-    return payload.events.map((event) => ({
+    const all = [
+      ...(payload?.events ?? []),
+      ...(trashPayload?.events ?? []),
+    ];
+    return all.map((event) => ({
       ...event,
-      status: computeStatus(event.date, todayKey)
+      status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, todayKey]);
+  }, [payload, trashPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
 

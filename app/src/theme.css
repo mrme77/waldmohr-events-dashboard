@@ -21,7 +21,13 @@
   --cat-fun: #58a6ff;
   --cat-family: #c89bff;
   --cat-leave: #f0883e;
-  --cat-trash: #e6c252;
+  --cat-trash: #f97316;           /* fallback / unknown trash type */
+  --cat-trash-bio: #a16207;       /* brown bin — Bioabfall */
+  --cat-trash-rest: #9ca3af;      /* grey bin  — Restmüll */
+  --cat-trash-lvp: #eab308;       /* yellow bag — Gelbe Säcke */
+  --cat-trash-papier: #60a5fa;    /* blue bin  — Blaue Tonne */
+  --cat-trash-glas: #cbd5e1;      /* white bag — Weisse Säcke */
+  --cat-trash-umweltmobil: #34d399; /* mobile recycling */
   --cat-civic: #3ed68a;
 
   --gap: clamp(0.8rem, 1.5vw, 1.6rem);
@@ -309,7 +315,13 @@ body::after {
 .dot.cat-fun, .cat-fun > .dot { background: var(--cat-fun); box-shadow: 0 0 7px rgba(88, 166, 255, 0.55); }
 .dot.cat-family, .cat-family > .dot { background: var(--cat-family); box-shadow: 0 0 7px rgba(200, 155, 255, 0.5); }
 .dot.cat-leave, .cat-leave > .dot { background: var(--cat-leave); box-shadow: 0 0 7px rgba(240, 136, 62, 0.5); }
-.dot.cat-trash, .cat-trash > .dot { background: var(--cat-trash); box-shadow: 0 0 7px rgba(230, 194, 82, 0.5); }
+.dot.cat-trash, .cat-trash > .dot { background: var(--cat-trash); box-shadow: 0 0 7px rgba(249, 115, 22, 0.5); }
+.dot.cat-trash-bio, .cat-trash-bio > .dot { background: var(--cat-trash-bio); box-shadow: 0 0 7px rgba(161, 98, 7, 0.55); }
+.dot.cat-trash-rest, .cat-trash-rest > .dot { background: var(--cat-trash-rest); box-shadow: 0 0 7px rgba(156, 163, 175, 0.45); }
+.dot.cat-trash-lvp, .cat-trash-lvp > .dot { background: var(--cat-trash-lvp); box-shadow: 0 0 7px rgba(234, 179, 8, 0.6); }
+.dot.cat-trash-papier, .cat-trash-papier > .dot { background: var(--cat-trash-papier); box-shadow: 0 0 7px rgba(96, 165, 250, 0.55); }
+.dot.cat-trash-glas, .cat-trash-glas > .dot { background: var(--cat-trash-glas); box-shadow: 0 0 7px rgba(203, 213, 225, 0.45); }
+.dot.cat-trash-umweltmobil, .cat-trash-umweltmobil > .dot { background: var(--cat-trash-umweltmobil); box-shadow: 0 0 7px rgba(52, 211, 153, 0.5); }
 .dot.cat-civic, .cat-civic > .dot { background: var(--cat-civic); box-shadow: 0 0 7px rgba(62, 214, 138, 0.5); }
 
 /* ---- Spotlight ---- */
@@ -343,6 +355,13 @@ body::after {
 }
 .spotlight__card:hover { transform: translateY(-2px); border-left-color: var(--accent); }
 .spotlight__card.cat-civic { border-left-color: var(--cat-civic); }
+.spotlight__card.cat-trash { border-left-color: var(--cat-trash); }
+.spotlight__card.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
+.spotlight__card.cat-trash-rest { border-left-color: var(--cat-trash-rest); }
+.spotlight__card.cat-trash-lvp { border-left-color: var(--cat-trash-lvp); }
+.spotlight__card.cat-trash-papier { border-left-color: var(--cat-trash-papier); }
+.spotlight__card.cat-trash-glas { border-left-color: var(--cat-trash-glas); }
+.spotlight__card.cat-trash-umweltmobil { border-left-color: var(--cat-trash-umweltmobil); }
 .spotlight__date { font-family: var(--font-mono); color: var(--accent); font-size: 0.76rem; letter-spacing: 0.04em; }
 .spotlight__title { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; line-height: 1.1; }
 .spotlight__summary { color: var(--muted); font-size: 0.92rem; line-height: 1.4; }
@@ -462,6 +481,13 @@ body::after {
 .popover__list { list-style: none; margin: var(--gap) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--gap); }
 .popover__item { border-left: 3px solid var(--cat-fun); background: var(--panel-2); border-radius: 12px; padding: var(--gap); }
 .popover__item.cat-civic { border-left-color: var(--cat-civic); }
+.popover__item.cat-trash { border-left-color: var(--cat-trash); }
+.popover__item.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
+.popover__item.cat-trash-rest { border-left-color: var(--cat-trash-rest); }
+.popover__item.cat-trash-lvp { border-left-color: var(--cat-trash-lvp); }
+.popover__item.cat-trash-papier { border-left-color: var(--cat-trash-papier); }
+.popover__item.cat-trash-glas { border-left-color: var(--cat-trash-glas); }
+.popover__item.cat-trash-umweltmobil { border-left-color: var(--cat-trash-umweltmobil); }
 .popover__item h3 { margin: 0.3rem 0; font-family: var(--font-display); font-weight: 600; }
 .popover__status { font-family: var(--font-mono); color: var(--accent); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; }
 .popover__item dl { display: flex; gap: var(--gap); margin: 0.7rem 0; }
