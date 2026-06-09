@@ -35,27 +35,42 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                 </p>
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>
-                <dl>
-                  <div>
-                    <dt>Venue</dt>
-                    <dd>{event.venue || "Not confirmed"}</dd>
-                  </div>
-                  <div>
-                    <dt>Original</dt>
-                    <dd>{event.originalTitle}</dd>
-                  </div>
-                  <div>
-                    <dt>Posted</dt>
-                    <dd>{event.postDate}</dd>
-                  </div>
-                  <div>
-                    <dt>Checked</dt>
-                    <dd>{event.lastChecked}</dd>
-                  </div>
-                </dl>
-                <a href={event.sourceUrl} target="_blank" rel="noreferrer">
-                  Open source post →
-                </a>
+                {categorize(event) === "trash" ? (
+                  <dl>
+                    <div>
+                      <dt>Reminder</dt>
+                      <dd>{event.familyRelevance}</dd>
+                    </div>
+                    <div>
+                      <dt>Area</dt>
+                      <dd>{event.venue}</dd>
+                    </div>
+                  </dl>
+                ) : (
+                  <>
+                    <dl>
+                      <div>
+                        <dt>Venue</dt>
+                        <dd>{event.venue || "Not confirmed"}</dd>
+                      </div>
+                      <div>
+                        <dt>Original</dt>
+                        <dd>{event.originalTitle}</dd>
+                      </div>
+                      <div>
+                        <dt>Posted</dt>
+                        <dd>{event.postDate}</dd>
+                      </div>
+                      <div>
+                        <dt>Checked</dt>
+                        <dd>{event.lastChecked}</dd>
+                      </div>
+                    </dl>
+                    <a href={event.sourceUrl} target="_blank" rel="noreferrer">
+                      Open source post →
+                    </a>
+                  </>
+                )}
               </li>
             ))}
           </ul>
