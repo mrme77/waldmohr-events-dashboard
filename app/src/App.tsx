@@ -4,8 +4,10 @@ import { DualClock } from "./components/DualClock";
 import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
+import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
-import { computeStatus, dateKey, formatShortDate, relativeDayLabel } from "./lib/dates";
+import { loadNews, type NewsPayload } from "./data/loadNews";
+import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
 import type { DashboardEvent, EventsPayload } from "./types";
 
@@ -23,7 +25,9 @@ function chooseAnchorKey(events: DashboardEvent[], todayKey: string): string {
 export function App() {
   const now = useNow(60_000);
   const [payload, setPayload] = useState<EventsPayload | null>(null);
+  const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [newsError, setNewsError] = useState<string | null>(null);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
   useEffect(() => {
@@ -32,8 +36,14 @@ export function App() {
       .catch((err: unknown) => setError(err instanceof Error ? err.message : String(err)));
   }, []);
 
+  useEffect(() => {
+    loadNews()
+      .then(setNewsPayload)
+      .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
+  }, []);
+
   const todayKey = dateKey(now);
-  const updatedKey = payload ? dateKey(new Date(payload.generatedAt)) : null;
+  const updatedAt = payload?.generatedAt ?? null;
 
   // Recompute status client-side against the real "today" so the v1 hardcoded
   // date can never go stale.
@@ -59,20 +69,12 @@ export function App() {
 
   return (
     <div className="app">
-      <NewsMarquee />
+      <NewsMarquee items={newsPayload?.items} error={newsError} />
 
       <header className="topbar">
         <div className="topbar__brand">
           <span className="topbar__pulse" aria-hidden="true" />
           <h1>Waldmohr Events</h1>
-        </div>
-        <div className="topbar__meta">
-          <DualClock />
-          <div className="kpi">
-            <span className="kpi__label">Last Updated</span>
-            <strong className="kpi__value">{updatedKey ? formatShortDate(updatedKey) : "—"}</strong>
-            <span className="kpi__sub">{updatedKey ? relativeDayLabel(updatedKey, todayKey) : "Loading…"}</span>
-          </div>
         </div>
       </header>
 
@@ -88,7 +90,11 @@ export function App() {
               selectedKey={selectedKey}
               onSelectDay={setSelectedKey}
             />
-            <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
+            <aside className="side-rail">
+              <WeatherWidget />
+              <DualClock updatedAt={updatedAt} />
+              <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
+            </aside>
           </>
         )}
       </main>

@@ -5,13 +5,16 @@ How to verify the dashboard works.
 ## v2 Checklist
 - From `app/`, run `npm run build`.
 - From `app/`, run `npm run dev` and open the Vite URL.
-- Confirm the page shows the news-marquee slot, dual clocks, last-updated metadata, calendar, spotlight, and detail popover.
+- Confirm the page shows the news-marquee slot, calendar, right-rail weather, dual clocks with updated date, spotlight, and detail popover.
+- Confirm the news marquee shows USA and St. Louis headlines from `app/public/news.json`, scrolls slowly, and does not stretch the page horizontally.
 - Confirm `app/public/events.json` is loaded via `/events.json`.
 - Confirm month cells render category-colored event markers.
 - Confirm selecting a day/event opens details with source link, original German title, post date, last checked date, and date confidence.
 - Confirm past events do not appear in "Next Up".
 - Run `node scripts/validate-events.mjs`.
+- Run `node scripts/validate-news.mjs`.
 - Optional: run `node scripts/refresh-events.mjs`, then validate again and confirm `app/public/events.json` changed.
+- Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
 
 ## v1 Historical Checklist
 - Open `index.html` in a browser.
@@ -28,4 +31,8 @@ How to verify the dashboard works.
 - 2026-06-09: `node scripts/validate-events.mjs` passed for both payloads.
 - Result: validated 0 events from `2026-06-09T11:21:22.575Z`; stale archive posts and past events are excluded from the kiosk calendar.
 - 2026-06-09: `npm run build` passed in `app/`.
+- 2026-06-09: single Waldmohr Open-Meteo weather widget added; right rail now shows weather, dual clocks with updated date, then Next Up; `npm run build` passed in `app/`.
+- 2026-06-09: `node scripts/refresh-news.mjs` refreshed 12 headlines from NPR USA and KSDK St. Louis to `data/news.json` and `app/public/news.json`.
+- 2026-06-09: `node scripts/validate-news.mjs` passed for both news payloads.
+- 2026-06-09: marquee containment updated for live RSS text; scroll duration set to 80 seconds; `npm run build` passed in `app/`.
 - Remaining: visual browser QA/demo for the v2 app in a normal browser.
