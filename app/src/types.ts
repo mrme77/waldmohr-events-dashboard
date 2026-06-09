@@ -6,6 +6,7 @@ export type EventCategory =
   | "fun"
   | "family"
   | "leave"
+  | "holiday"
   | "trash"
   | "trash-bio"
   | "trash-rest"
@@ -43,6 +44,7 @@ export interface EventsPayload {
 
 /** Maps an event to its display category for calendar dot color and popover styling. */
 export function categorize(event: DashboardEvent): EventCategory {
+  if (event.tags.includes("holiday"))     return "holiday";
   if (event.tags.includes("bioabfall"))   return "trash-bio";
   if (event.tags.includes("restmuell"))   return "trash-rest";
   if (event.tags.includes("lvp"))         return "trash-lvp";
