@@ -3,5 +3,5 @@ node_modules/
 dist/
 .DS_Store
 data/raw/
-cookies.txt
+cookies*.txt
 app/.vite/
