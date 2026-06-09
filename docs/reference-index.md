@@ -16,4 +16,4 @@ Links to source material and technical references.
 - News cache: `data/news.json` and `app/public/news.json`.
 
 ## Project References
-- `AGENTIC_SURFACE_TEMPLATE.md` source template: `/Users/pasqualesalomone/Desktop/template_test/AGENTIC_SURFACE_TEMPLATE.md`
+- `AGENTIC_SURFACE_TEMPLATE.md` source template: kept locally outside the repo (not version-controlled).
