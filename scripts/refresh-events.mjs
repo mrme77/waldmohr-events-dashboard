@@ -4,6 +4,13 @@ import { URL } from "node:url";
 const apiUrl = "https://www.waldmohr-aktuell.de/wp-json/wp/v2/posts?per_page=50&_embed=1";
 const eventCategoryIds = new Set([7, 111, 113, 115]);
 const today = new Date();
+const todayKey = today.toISOString().slice(0, 10);
+const maxFutureDays = 180;
+const maxPostLeadDays = 180;
+const outputTargets = [
+  new URL("../data/events.json", import.meta.url),
+  new URL("../app/public/events.json", import.meta.url)
+];
 
 /**
  * Pulls public Waldmohr Aktuell posts and writes normalized candidate event files.
@@ -17,9 +24,9 @@ async function main() {
   }
 
   const posts = await response.json();
-  const events = posts
-    .filter(isEventCandidate)
-    .map(normalizePost)
+  const candidates = posts.filter(isEventCandidate).map(normalizePost);
+  const events = candidates
+    .filter((event) => event !== null)
     .sort((left, right) => right.date.localeCompare(left.date));
 
   const payload = {
@@ -28,13 +35,14 @@ async function main() {
     events
   };
 
-  await writeFile(new URL("../data/events.json", import.meta.url), `${JSON.stringify(payload, null, 2)}\n`);
+  const json = `${JSON.stringify(payload, null, 2)}\n`;
+  await Promise.all(outputTargets.map((target) => writeFile(target, json)));
   await writeFile(
     new URL("../data/events.js", import.meta.url),
     `window.WALDMOHR_EVENTS = ${JSON.stringify(payload, null, 2)};\n`
   );
 
-  console.log(`Refreshed ${events.length} candidate events.`);
+  console.log(`Refreshed ${events.length} live events from ${candidates.length} candidates to ${outputTargets.length} JSON files.`);
 }
 
 /**
@@ -55,29 +63,35 @@ function isEventCandidate(post) {
  * Normalizes a WordPress post into the local event schema.
  *
  * @param {Record<string, unknown>} post WordPress post.
- * @returns {Record<string, unknown>} Normalized event.
+ * @returns {Record<string, unknown> | null} Normalized event, or null when not display-safe.
  */
 function normalizePost(post) {
   const title = stripHtml(post.title?.rendered ?? "Untitled event");
   const text = stripHtml(`${post.excerpt?.rendered ?? ""} ${post.content?.rendered ?? ""}`);
   const candidateDate = extractDate(`${title} ${text}`);
-  const eventDate = candidateDate ?? String(post.date ?? "").slice(0, 10);
+  const postDate = String(post.date ?? "").slice(0, 10);
+  if (candidateDate === null || !isDisplayableEventDate(candidateDate, postDate)) {
+    return null;
+  }
+
+  const tags = inferTags(`${title} ${text}`, Array.isArray(post.categories) ? post.categories : []);
+  const englishTitle = translateTitle(title);
 
   return {
     id: String(post.slug ?? `post-${post.id}`),
-    title: title,
+    title: englishTitle,
     originalTitle: title,
-    summary: text.slice(0, 240) || "Summary not available yet.",
-    date: eventDate,
+    summary: summarizeEvent(englishTitle, tags),
+    date: candidateDate,
     time: extractTime(`${title} ${text}`),
     venue: extractVenue(text),
-    tags: inferTags(`${title} ${text}`, Array.isArray(post.categories) ? post.categories : []),
-    familyRelevance: "Review this source item and decide whether it matters for a relocating American family.",
+    tags,
+    familyRelevance: summarizeFamilyRelevance(tags),
     sourceUrl: String(post.link ?? "https://www.waldmohr-aktuell.de/"),
-    postDate: String(post.date ?? "").slice(0, 10),
+    postDate,
     lastChecked: new Date().toISOString().slice(0, 10),
-    status: classifyStatus(eventDate),
-    dateConfidence: candidateDate ? "inferred" : "unknown"
+    status: classifyStatus(candidateDate),
+    dateConfidence: "inferred"
   };
 }
 
@@ -96,17 +110,37 @@ function extractDate(text) {
 }
 
 /**
+ * Returns true when the inferred event date is safe enough for the live kiosk.
+ *
+ * @param {string} eventDate Event date as YYYY-MM-DD.
+ * @param {string} postDate WordPress post date as YYYY-MM-DD.
+ * @returns {boolean} True when the event should be displayed.
+ */
+function isDisplayableEventDate(eventDate, postDate) {
+  if (eventDate < todayKey) return false;
+
+  const eventTime = Date.parse(`${eventDate}T12:00:00Z`);
+  const todayTime = Date.parse(`${todayKey}T12:00:00Z`);
+  const postTime = Date.parse(`${postDate}T12:00:00Z`);
+  if ([eventTime, todayTime, postTime].some(Number.isNaN)) return false;
+
+  const daysFromToday = Math.round((eventTime - todayTime) / 86_400_000);
+  const daysFromPost = Math.round((eventTime - postTime) / 86_400_000);
+  return daysFromToday <= maxFutureDays && daysFromPost <= maxPostLeadDays;
+}
+
+/**
  * Extracts a simple time value from text.
  *
  * @param {string} text Source text.
  * @returns {string | null} Time or null.
  */
 function extractTime(text) {
-  const match = text.match(/\b(\d{1,2})(?::|\s?Uhr\s?|\.)(\d{2})?\s*(?:Uhr)?\b/i);
+  const match = text.match(/\b(\d{1,2})(?::(\d{2})|\s*Uhr(?:\s*(\d{2}))?)\b/i);
   if (!match) return null;
 
   const hour = match[1].padStart(2, "0");
-  const minute = match[2] ? match[2].padStart(2, "0") : "00";
+  const minute = (match[2] ?? match[3] ?? "00").padStart(2, "0");
   return `${hour}:${minute}`;
 }
 
@@ -139,6 +173,65 @@ function inferTags(text, categories) {
   if (/verein|nabu|turnverein|chor/i.test(text) || categories.includes(113)) tags.add("clubs");
   if (/buecherei|bücherei|bibliothek/i.test(text) || categories.includes(115)) tags.add("library");
   return Array.from(tags);
+}
+
+/**
+ * Applies conservative, rule-based English title cleanup.
+ *
+ * @param {string} title Original German title.
+ * @returns {string} English-first display title.
+ */
+function translateTitle(title) {
+  const replacements = [
+    [/^int\.\s*museumstag$/i, "International Museum Day"],
+    [/kinder\s+und\s+familien\s+fest/i, "Children and Family Festival"],
+    [/marktplatzfest(?:es)?/i, "Marketplace Festival"],
+    [/flyer\s+und\s+programm/i, "Flyer and Program"],
+    [/sitzung\s+des\s+stadtrates/i, "Town Council Meeting"],
+    [/gef[uü]hrte\s+wanderung/i, "Guided Walk"],
+    [/historischen?\s+grubenweg/i, "Historic Mining Trail"],
+    [/pflanzenb[oö]rse/i, "Plant Exchange"],
+    [/einladung\s+zum\s+kostenlosen\s+vortrag/i, "Free Public Talk"],
+    [/museumstag/i, "Museum Day"],
+    [/krimidinner/i, "Mystery Dinner"],
+    [/\bam\b/i, "on"],
+    [/\bund\b/i, "and"],
+    [/\bdes\b/i, "of the"],
+    [/\bder\b/i, "of the"]
+  ];
+
+  return replacements.reduce((current, [pattern, replacement]) => {
+    return current.replace(pattern, replacement);
+  }, title);
+}
+
+/**
+ * Builds a short English summary without pretending to machine-translate the source.
+ *
+ * @param {string} title English display title.
+ * @param {string[]} tags Dashboard tags.
+ * @returns {string} English summary.
+ */
+function summarizeEvent(title, tags) {
+  const tagText = tags.filter((tag) => tag !== "community").join(", ");
+  const focus = tagText.length > 0 ? ` It may be relevant for ${tagText} planning.` : "";
+  return `${title} is a public Waldmohr Aktuell source item.${focus} The event date was inferred from explicit source text. Open the source link for the full German details.`;
+}
+
+/**
+ * Builds a family relevance note from event tags.
+ *
+ * @param {string[]} tags Dashboard tags.
+ * @returns {string} Family relevance note.
+ */
+function summarizeFamilyRelevance(tags) {
+  if (tags.includes("family")) return "Potential family outing or kid-relevant local event; confirm details at the source.";
+  if (tags.includes("civic")) return "Useful for understanding local decisions, services, and town priorities after moving.";
+  if (tags.includes("outdoors")) return "Potential orientation to local nature areas, walks, or outdoor clubs.";
+  if (tags.includes("culture")) return "Good candidate for learning local culture, history, or community traditions.";
+  if (tags.includes("library")) return "Potentially useful for family reading, language practice, or local library services.";
+  if (tags.includes("clubs")) return "Useful for discovering local clubs and community groups.";
+  return "Review this public source item for newcomer relevance.";
 }
 
 /**
