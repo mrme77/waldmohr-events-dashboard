@@ -4,21 +4,44 @@ import { URL } from "node:url";
 const allowedTags = new Set(["family", "community", "culture", "outdoors", "civic", "library", "clubs"]);
 const allowedStatus = new Set(["upcoming", "current", "past"]);
 const allowedConfidence = new Set(["confirmed", "inferred", "unknown"]);
+const payloadFiles = [
+  new URL("../data/events.json", import.meta.url),
+  new URL("../app/public/events.json", import.meta.url)
+];
 
 /**
- * Validates the local event data file.
+ * Validates local event data files consumed by v1 and v2.
  *
  * @returns {Promise<void>} Resolves when validation passes.
  */
 async function main() {
-  const payload = JSON.parse(await readFile(new URL("../data/events.json", import.meta.url), "utf8"));
-  const errors = validatePayload(payload);
+  const results = await Promise.all(payloadFiles.map(validateFile));
+  const errors = results.flatMap((result) => result.errors);
 
   if (errors.length > 0) {
     throw new Error(`Event validation failed:\n${errors.map((error) => `- ${error}`).join("\n")}`);
   }
 
-  console.log(`Validated ${payload.events.length} events from ${payload.generatedAt}.`);
+  results.forEach((result) => {
+    console.log(`Validated ${result.eventsCount} events from ${result.generatedAt} in ${result.path}.`);
+  });
+}
+
+/**
+ * Reads and validates one event payload file.
+ *
+ * @param {URL} fileUrl Event payload URL.
+ * @returns {Promise<{path: string, eventsCount: number, generatedAt: string, errors: string[]}>} Validation result.
+ */
+async function validateFile(fileUrl) {
+  const payload = JSON.parse(await readFile(fileUrl, "utf8"));
+  const errors = validatePayload(payload).map((error) => `${fileUrl.pathname}: ${error}`);
+  return {
+    path: fileUrl.pathname,
+    eventsCount: Array.isArray(payload?.events) ? payload.events.length : 0,
+    generatedAt: typeof payload?.generatedAt === "string" ? payload.generatedAt : "unknown",
+    errors
+  };
 }
 
 /**
@@ -70,6 +93,9 @@ function validateEvent(event, index) {
 
   if (typeof event.date === "string" && !/^\d{4}-\d{2}-\d{2}$/.test(event.date)) {
     errors.push(`${prefix}.date must use YYYY-MM-DD`);
+  }
+  if (event.time !== null && typeof event.time !== "string") {
+    errors.push(`${prefix}.time must be a string or null`);
   }
   if (!Array.isArray(event.tags) || event.tags.length === 0) {
     errors.push(`${prefix}.tags must be a non-empty array`);

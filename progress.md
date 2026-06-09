@@ -9,12 +9,15 @@
 - Phase 1: scaffolded `app/` (Vite + React + TS), "Civic Departure Board" theme, layout shell with
   top news marquee, dual clocks (NAP/STL), Last Updated KPI, calendar + rotating spotlight +
   tap-to-detail popover. Renders Waldmohr seed events. Type-checks clean; previews via `npm run dev`.
+- Phase 2: live Waldmohr refresh now writes both shared data and `app/public/events.json`;
+  validation covers both payloads; event detail shows source metadata. The refresh only displays
+  current/upcoming events with explicit source dates, so stale archive candidates are excluded.
 
 ### In Flight
-- Phase 2: make Waldmohr events live (fix refresh placeholder-overwrite bug; wire to `app/public`).
+- MVP browser QA/demo pass in a normal browser.
 
 ### Blocked
-- None.
+- In-app browser QA was unavailable in this session; command-level validation passed.
 
 ## v1 — Static Dashboard (done, retained until v2 parity)
 - Built a static local calendar dashboard with seeded English event data, refresh + validation
