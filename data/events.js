@@ -1,5 +1,0 @@
-window.WALDMOHR_EVENTS = {
-  "generatedAt": "2026-06-09T11:21:22.575Z",
-  "source": "https://www.waldmohr-aktuell.de/",
-  "events": []
-};

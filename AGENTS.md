@@ -10,8 +10,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 ## Canonical Commands
 | Goal | Command | Notes |
 |---|---|---|
-| Run | Open `index.html` in a browser | No build step for the first version. |
-| Refresh data | `node scripts/refresh-events.mjs` | Pulls public WordPress API posts and updates `data/events.json`. |
+| Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
+| Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
+| Refresh data | `node scripts/refresh-events.mjs` | Pulls public WordPress API posts and updates `data/events.json` and `app/public/events.json`. |
 | Test | `node scripts/validate-events.mjs` | Validates event data shape and date parsing. |
 
 ## Runtime Dependencies
@@ -20,10 +21,11 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Node.js 18+ for refresh and validation scripts.
 
 ## Key Paths
-- `index.html` - static app shell.
-- `src/styles.css` - all UI styling and CSS variables.
-- `src/app.js` - calendar rendering, filters, search, and event detail behavior.
-- `data/events.json` - normalized English event records used by the app.
+- `app/` - Vite + React + TypeScript application (the only UI).
+- `app/src/App.tsx` - app shell and layout.
+- `app/src/components/` - calendar, event detail, news marquee, clocks, weather.
+- `app/public/*.json` - data files served to the app.
+- `data/events.json` - normalized English event records (pipeline source of truth).
 - `scripts/refresh-events.mjs` - public-source refresh pipeline.
 - `docs/` - durable project truth.
 

@@ -4,8 +4,9 @@ A local, English-first events board for an American family living in the Kaisers
 Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German event posts into a
 glanceable, source-linked calendar.
 
-> **Status: work in progress.** v1 (static dashboard) is complete. v2 — a touch + voice kiosk for a
-> Raspberry Pi 5 — is under active development. This README is a stub and will grow.
+> **Status: work in progress.** v2 — a touch + voice kiosk for a Raspberry Pi 5 — is under active
+> development and is now the only app (the v1 static dashboard has been retired). This README is a
+> stub and will grow.
 
 ## What it does (v2 vision)
 
@@ -23,8 +24,7 @@ See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) f
 
 | Path | What |
 |---|---|
-| `app/` | v2 Vite + React + TypeScript application (current focus). |
-| `index.html`, `src/` | v1 static dashboard (retained until v2 reaches parity). |
+| `app/` | Vite + React + TypeScript application (the only UI). |
 | `scripts/` | Data ingestion + validation (Node ESM). |
 | `data/` | Normalized event JSON. |
 | `docs/` | Durable project docs — spec, decisions, compliance, validation. |

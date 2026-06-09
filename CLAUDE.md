@@ -3,7 +3,7 @@
 Project rules for Claude Code. Canonical source is [AGENTS.md](./AGENTS.md) - read it first.
 
 ## Fast Facts
-- Run: open `index.html`.
+- Run: `cd app && npm run dev`.
 - Refresh: `node scripts/refresh-events.mjs`.
 - Test: `node scripts/validate-events.mjs`.
 

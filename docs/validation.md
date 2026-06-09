@@ -16,7 +16,8 @@ How to verify the dashboard works.
 - Optional: run `node scripts/refresh-events.mjs`, then validate again and confirm `app/public/events.json` changed.
 - Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
 
-## v1 Historical Checklist
+## v1 Historical Checklist (retired 2026-06-09)
+The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for history only.
 - Open `index.html` in a browser.
 - Confirm the page shows last refreshed metadata.
 - Confirm month cells render event markers.
