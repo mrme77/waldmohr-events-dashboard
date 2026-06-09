@@ -23,8 +23,9 @@ See `plan.md` for full detail.
 - [ ] MVP browser QA/demo pass in a normal browser.
 
 ### Later (after MVP demo)
-- [ ] Phase 3: Weather strip (Open-Meteo, 3 cities, keyless).
-- [ ] Phase 4: News marquee content — RSS adapters (US + St. Louis).
+- [x] Phase 3: Weather widget (Open-Meteo, Waldmohr only, keyless).
+- [ ] Expand weather to 3-city strip if needed.
+- [x] Phase 4: News marquee content — RSS adapters (NPR USA + KSDK St. Louis).
 - [ ] Phase 5: More event sources — Kaiserslautern scrape, then Ramstein headless.
 - [ ] Phase 6: Family layer — Google Calendar iCal + Kusel trash iCal; category color coding.
 - [ ] Phase 7: Voice — local Node server + OpenRouter proxy + whisper.cpp STT.

@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-06-09T12:10:36.571Z",
+  "sources": [
+    {
+      "id": "usa",
+      "label": "USA",
+      "name": "NPR News",
+      "url": "https://feeds.npr.org/1001/rss.xml"
+    },
+    {
+      "id": "stl",
+      "label": "St. Louis",
+      "name": "KSDK Local",
+      "url": "https://www.ksdk.com/feeds/syndication/rss/news/local"
+    }
+  ],
+  "items": [
+    {
+      "id": "usa-4-states-head-to-the-polls-and-global-conflicts-are-on-the-rise--0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "4 states head to the polls. And, global conflicts are on the rise, new report says",
+      "url": "https://www.npr.org/2026/06/09/g-s1-126975/up-first-newsletter-iran-israel-lebanon-primaries-election-fraud-los-angeles-global-conflicts",
+      "publishedAt": "2026-06-09T11:19:43.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "stl-north-st-louis-shooting-leaves-2-critically-injured-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "North St. Louis shooting leaves 2 critically injured",
+      "url": "https://www.ksdk.com/article/news/crime/north-st-louis-shooting-sherry-avenue/63-1cfd99e4-494a-40a1-b88a-a1f493391551",
+      "publishedAt": "2026-06-09T09:37:30.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    },
+    {
+      "id": "stl-deadly-crash-shuts-down-westbound-i-70-in-st-louis-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Deadly crash shuts down westbound I-70 in St. Louis",
+      "url": "https://www.ksdk.com/article/traffic/st-louis-crash-interstate-70-at-branch-street/63-f8d36de0-2ce7-4eb9-8930-97d2087c01d3",
+      "publishedAt": "2026-06-09T09:36:17.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    },
+    {
+      "id": "usa-more-americans-survive-cancer-but-the-psychological-impacts-can--1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "More Americans survive cancer. But the psychological impacts can persist for years",
+      "url": "https://www.npr.org/2026/06/09/nx-s1-5780010/iowa-cancer-survivor-depression-anxiety-guilt-undiagnosed-mental",
+      "publishedAt": "2026-06-09T09:00:00.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "usa-maine-s-senate-race-and-much-more-here-are-the-primary-contests--2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Maine's Senate race and much more. Here are the primary contests to watch today",
+      "url": "https://www.npr.org/2026/06/09/nx-s1-5850231/maine-nevada-south-carolina-primary-trump",
+      "publishedAt": "2026-06-09T09:00:00.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "usa-the-supreme-court-is-in-its-final-stretch-this-term-here-are-the-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The Supreme Court is in its final stretch this term. Here are the major cases left",
+      "url": "https://www.npr.org/2026/06/09/nx-s1-5847967/supreme-court-major-cases-left-2026",
+      "publishedAt": "2026-06-09T09:00:00.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "usa-glp-1s-appear-to-protect-against-cancer-researchers-are-trying-t-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "GLP-1s appear to protect against cancer. Researchers are trying to figure out how",
+      "url": "https://www.npr.org/2026/06/09/nx-s1-5850732/glp-1-cancer-asco-semaglutide-tirezepatide",
+      "publishedAt": "2026-06-09T09:00:00.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "usa-morning-news-brief-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Morning news brief",
+      "url": "https://www.npr.org/2026/06/09/nx-s1-5846827/morning-news-brief",
+      "publishedAt": "2026-06-09T08:45:36.000Z",
+      "lastChecked": "2026-06-09T12:10:36.557Z"
+    },
+    {
+      "id": "stl-festus-city-council-blocks-recall-election-amid-data-center-disp-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Festus City Council blocks recall election amid data center dispute",
+      "url": "https://www.ksdk.com/article/news/politics/festus-city-council-blocks-recall-election-amid-data-center-dispute/63-8d389cd2-e1b1-4dcc-a6b4-45e33b7eaae3",
+      "publishedAt": "2026-06-09T05:03:38.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    },
+    {
+      "id": "stl-community-to-weigh-gun-violence-solutions-at-town-hall-following-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Community to weigh gun violence solutions at town hall following teen's death",
+      "url": "https://www.ksdk.com/article/news/crime/community-to-weigh-gun-violence-solutions-at-town-hall-following-teens-death/63-2af5dbe3-ab2e-4271-82e2-b793e9cbce02",
+      "publishedAt": "2026-06-09T02:51:22.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    },
+    {
+      "id": "stl-st-louis-first-heat-wave-arrives-tuesday-through-thursday-weathe-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "St. Louis' first heat wave arrives Tuesday through Thursday | Weather Impact Alert",
+      "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
+      "publishedAt": "2026-06-09T02:35:03.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    },
+    {
+      "id": "stl-chaos-6-7-event-near-st-louis-attracts-hundreds-of-kids-sparking-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "'Chaos': '6-7' event near St. Louis attracts hundreds of kids, sparking fights, arrests; minor caught with butcher knife",
+      "url": "https://www.ksdk.com/article/news/crime/st-louis-6-7-event-hundreds-of-kids-fights-disruptions-businesses/63-7b1275a5-bae4-4bf1-8308-727034d6fdab",
+      "publishedAt": "2026-06-08T23:43:51.000Z",
+      "lastChecked": "2026-06-09T12:10:36.562Z"
+    }
+  ]
+}
