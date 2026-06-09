@@ -7,6 +7,7 @@ import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
 import { loadTrash } from "./data/loadTrash";
+import { loadHolidays } from "./data/loadHolidays";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -27,6 +28,7 @@ export function App() {
   const now = useNow(60_000);
   const [payload, setPayload] = useState<EventsPayload | null>(null);
   const [trashPayload, setTrashPayload] = useState<EventsPayload | null>(null);
+  const [holidayPayload, setHolidayPayload] = useState<EventsPayload | null>(null);
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -45,6 +47,12 @@ export function App() {
   }, []);
 
   useEffect(() => {
+    loadHolidays()
+      .then(setHolidayPayload)
+      .catch(() => { /* holidays are optional — silently degrade */ });
+  }, []);
+
+  useEffect(() => {
     loadNews()
       .then(setNewsPayload)
       .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
@@ -59,12 +67,13 @@ export function App() {
     const all = [
       ...(payload?.events ?? []),
       ...(trashPayload?.events ?? []),
+      ...(holidayPayload?.events ?? []),
     ];
     return all.map((event) => ({
       ...event,
       status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, trashPayload, todayKey]);
+  }, [payload, trashPayload, holidayPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
 
