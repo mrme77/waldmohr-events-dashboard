@@ -35,7 +35,18 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                 </p>
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>
-                {categorize(event) === "trash" ? (
+                {categorize(event) === "holiday" ? (
+                  <dl>
+                    <div>
+                      <dt>German name</dt>
+                      <dd>{event.originalTitle}</dd>
+                    </div>
+                    <div>
+                      <dt>Note</dt>
+                      <dd>{event.familyRelevance}</dd>
+                    </div>
+                  </dl>
+                ) : categorize(event).startsWith("trash") ? (
                   <dl>
                     <div>
                       <dt>Reminder</dt>

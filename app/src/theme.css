@@ -21,6 +21,7 @@
   --cat-fun: #58a6ff;
   --cat-family: #c89bff;
   --cat-leave: #f0883e;
+  --cat-holiday: #e2b96f;         /* muted gold — public holidays */
   --cat-trash: #f97316;           /* fallback / unknown trash type */
   --cat-trash-bio: #a16207;       /* brown bin — Bioabfall */
   --cat-trash-rest: #9ca3af;      /* grey bin  — Restmüll */
@@ -315,6 +316,7 @@ body::after {
 .dot.cat-fun, .cat-fun > .dot { background: var(--cat-fun); box-shadow: 0 0 7px rgba(88, 166, 255, 0.55); }
 .dot.cat-family, .cat-family > .dot { background: var(--cat-family); box-shadow: 0 0 7px rgba(200, 155, 255, 0.5); }
 .dot.cat-leave, .cat-leave > .dot { background: var(--cat-leave); box-shadow: 0 0 7px rgba(240, 136, 62, 0.5); }
+.dot.cat-holiday, .cat-holiday > .dot { background: var(--cat-holiday); box-shadow: 0 0 7px rgba(226, 185, 111, 0.55); }
 .dot.cat-trash, .cat-trash > .dot { background: var(--cat-trash); box-shadow: 0 0 7px rgba(249, 115, 22, 0.5); }
 .dot.cat-trash-bio, .cat-trash-bio > .dot { background: var(--cat-trash-bio); box-shadow: 0 0 7px rgba(161, 98, 7, 0.55); }
 .dot.cat-trash-rest, .cat-trash-rest > .dot { background: var(--cat-trash-rest); box-shadow: 0 0 7px rgba(156, 163, 175, 0.45); }
@@ -355,6 +357,7 @@ body::after {
 }
 .spotlight__card:hover { transform: translateY(-2px); border-left-color: var(--accent); }
 .spotlight__card.cat-civic { border-left-color: var(--cat-civic); }
+.spotlight__card.cat-holiday { border-left-color: var(--cat-holiday); }
 .spotlight__card.cat-trash { border-left-color: var(--cat-trash); }
 .spotlight__card.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
 .spotlight__card.cat-trash-rest { border-left-color: var(--cat-trash-rest); }
@@ -481,6 +484,7 @@ body::after {
 .popover__list { list-style: none; margin: var(--gap) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--gap); }
 .popover__item { border-left: 3px solid var(--cat-fun); background: var(--panel-2); border-radius: 12px; padding: var(--gap); }
 .popover__item.cat-civic { border-left-color: var(--cat-civic); }
+.popover__item.cat-holiday { border-left-color: var(--cat-holiday); }
 .popover__item.cat-trash { border-left-color: var(--cat-trash); }
 .popover__item.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
 .popover__item.cat-trash-rest { border-left-color: var(--cat-trash-rest); }
