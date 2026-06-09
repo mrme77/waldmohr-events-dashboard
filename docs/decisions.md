@@ -89,3 +89,13 @@ numerals, layered glow + grain background, live pulse, staggered load reveal.
 **Reason**: Keeps v1 intact during migration; a committed, distinctive aesthetic avoids generic
 dark-mode and suits an always-on broadcast board read from across a room.
 **Status**: Accepted. v1 retired once v2 reaches parity.
+
+## [2026-06-09] Retire The v1 Static App
+**Context**: The v1 static dashboard (`index.html`, `src/`) froze "today" at a hardcoded date
+(`src/app.js`), and maintaining two UIs over one data source risked drift.
+**Decision**: Delete `index.html`, `src/`, and the `data/events.js` window-global shim; drop the
+shim write from `scripts/refresh-events.mjs`. The Vite app in `app/` is the only UI.
+**Reason**: v2 already covers v1's function with live `new Date()` handling via `useNow()`; one UI
+removes the drift risk and the stale-date bug with it. `data/events.json` remains the pipeline
+source of truth alongside `app/public/events.json`.
+**Status**: Accepted.

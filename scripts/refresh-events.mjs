@@ -37,10 +37,6 @@ async function main() {
 
   const json = `${JSON.stringify(payload, null, 2)}\n`;
   await Promise.all(outputTargets.map((target) => writeFile(target, json)));
-  await writeFile(
-    new URL("../data/events.js", import.meta.url),
-    `window.WALDMOHR_EVENTS = ${JSON.stringify(payload, null, 2)};\n`
-  );
 
   console.log(`Refreshed ${events.length} live events from ${candidates.length} candidates to ${outputTargets.length} JSON files.`);
 }
