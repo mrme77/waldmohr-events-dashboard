@@ -18,8 +18,9 @@ See `plan.md` for full detail.
 - [x] Phase 1: Vite + React + TS scaffold, "Civic Departure Board" theme, layout shell with
       news-marquee slot pinned at top (placeholder), dual clocks, Last Updated KPI, calendar +
       spotlight + tap-to-detail popover.
-- [ ] Phase 2: Waldmohr events — fix refresh placeholder-overwrite bug; wire pipeline to
-      `app/public/events.json`; live data so upcoming events populate.
+- [x] Phase 2: Waldmohr events — fix refresh placeholder-overwrite bug; wire pipeline to
+      `app/public/events.json`; update validation; live data so upcoming events populate.
+- [ ] MVP browser QA/demo pass in a normal browser.
 
 ### Later (after MVP demo)
 - [ ] Phase 3: Weather strip (Open-Meteo, 3 cities, keyless).

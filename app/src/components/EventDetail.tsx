@@ -44,6 +44,14 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                     <dt>Original</dt>
                     <dd>{event.originalTitle}</dd>
                   </div>
+                  <div>
+                    <dt>Posted</dt>
+                    <dd>{event.postDate}</dd>
+                  </div>
+                  <div>
+                    <dt>Checked</dt>
+                    <dd>{event.lastChecked}</dd>
+                  </div>
                 </dl>
                 <a href={event.sourceUrl} target="_blank" rel="noreferrer">
                   Open source post →
