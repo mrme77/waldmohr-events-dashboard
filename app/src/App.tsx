@@ -10,7 +10,7 @@ import { loadTrash } from "./data/loadTrash";
 import { loadHolidays } from "./data/loadHolidays";
 import { loadFleamarkets } from "./data/loadFleamarkets";
 import { loadNews, type NewsPayload } from "./data/loadNews";
-import { computeStatus, dateKey } from "./lib/dates";
+import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
 import type { DashboardEvent, EventsPayload } from "./types";
 
@@ -35,6 +35,8 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  // Month the user navigated to via prev/next; null means follow the auto anchor.
+  const [viewKey, setViewKey] = useState<string | null>(null);
 
   useEffect(() => {
     loadEvents()
@@ -85,6 +87,7 @@ export function App() {
   }, [payload, trashPayload, holidayPayload, fleamarketPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
+  const visibleKey = viewKey ?? anchorKey;
 
   const upcoming = useMemo(
     () => events.filter((e) => e.status !== "past").sort((a, b) => a.date.localeCompare(b.date)),
@@ -114,10 +117,12 @@ export function App() {
           <>
             <Calendar
               events={events}
-              anchorKey={anchorKey}
+              anchorKey={visibleKey}
               todayKey={todayKey}
               selectedKey={selectedKey}
               onSelectDay={setSelectedKey}
+              onPrevMonth={() => setViewKey(shiftMonthKey(visibleKey, -1))}
+              onNextMonth={() => setViewKey(shiftMonthKey(visibleKey, 1))}
             />
             <aside className="side-rail">
               <WeatherWidget />

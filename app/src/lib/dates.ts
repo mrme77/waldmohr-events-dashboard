@@ -30,6 +30,13 @@ export function splitKey(key: string): { year: number; month: number; day: numbe
   return { year, month: month - 1, day };
 }
 
+/** Shifts a YYYY-MM-DD key by whole months, returning the first of the resulting month. */
+export function shiftMonthKey(key: string, delta: number): string {
+  const { year, month } = splitKey(key);
+  const shifted = new Date(year, month + delta, 1);
+  return `${shifted.getFullYear()}-${String(shifted.getMonth() + 1).padStart(2, "0")}-01`;
+}
+
 const longDate = new Intl.DateTimeFormat("en-US", {
   weekday: "long",
   month: "long",

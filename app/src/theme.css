@@ -257,12 +257,39 @@ body::after {
   min-height: 0;
   animation: rise 0.6s 0.16s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.calendar__title {
+.calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 0 var(--gap);
+}
+.calendar__title {
+  margin: 0;
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(1.4rem, 2.8vw, 2rem);
   letter-spacing: -0.01em;
+}
+.calendar__nav {
+  display: flex;
+  gap: 8px;
+}
+.calendar__nav-btn {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1;
+  /* Touch target sized for the kiosk screen. */
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.calendar__nav-btn:hover,
+.calendar__nav-btn:focus-visible {
+  border-color: var(--ink);
 }
 .calendar__grid {
   display: grid;

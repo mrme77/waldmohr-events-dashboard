@@ -11,6 +11,8 @@ interface CalendarProps {
   /** Currently selected day key, if any. */
   selectedKey: string | null;
   onSelectDay: (key: string) => void;
+  onPrevMonth: () => void;
+  onNextMonth: () => void;
 }
 
 const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -30,7 +32,7 @@ function pad(value: number): string {
 }
 
 /** Month calendar with category-colored dots per day. Tap a day to select it. */
-export function Calendar({ events, anchorKey, todayKey, selectedKey, onSelectDay }: CalendarProps) {
+export function Calendar({ events, anchorKey, todayKey, selectedKey, onSelectDay, onPrevMonth, onNextMonth }: CalendarProps) {
   const { year, month } = splitKey(anchorKey);
   const byDay = groupByDay(events);
 
@@ -40,7 +42,17 @@ export function Calendar({ events, anchorKey, todayKey, selectedKey, onSelectDay
 
   return (
     <section className="calendar" aria-label={`Calendar for ${formatMonthTitle(year, month)}`}>
-      <h2 className="calendar__title">{formatMonthTitle(year, month)}</h2>
+      <div className="calendar__header">
+        <h2 className="calendar__title">{formatMonthTitle(year, month)}</h2>
+        <div className="calendar__nav">
+          <button type="button" className="calendar__nav-btn" aria-label="Previous month" onClick={onPrevMonth}>
+            ‹
+          </button>
+          <button type="button" className="calendar__nav-btn" aria-label="Next month" onClick={onNextMonth}>
+            ›
+          </button>
+        </div>
+      </div>
       <div className="calendar__grid">
         {WEEKDAYS.map((day) => (
           <div key={day} className="calendar__weekday">{day}</div>

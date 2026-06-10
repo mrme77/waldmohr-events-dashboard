@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "refresh": "node ../scripts/refresh-events.mjs && node ../scripts/refresh-news.mjs && node ../scripts/refresh-trash.mjs && node ../scripts/refresh-holidays.mjs && node ../scripts/refresh-fleamarkets.mjs",
+    "validate": "node ../scripts/validate-events.mjs && node ../scripts/validate-news.mjs && node ../scripts/validate-trash.mjs && node ../scripts/validate-holidays.mjs && node ../scripts/validate-fleamarkets.mjs",
+    "refresh:build": "npm run refresh && npm run validate && npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
