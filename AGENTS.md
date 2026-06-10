@@ -12,11 +12,17 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 |---|---|---|
 | Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
 | Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
-| Refresh data | `node scripts/refresh-events.mjs` | Pulls public WordPress API posts and updates `data/events.json` and `app/public/events.json`. |
-| Test | `node scripts/validate-events.mjs` | Validates event data shape and date parsing. |
+| Refresh data | `cd app && npm run refresh` | Runs all five adapters (events, news, trash, holidays, flea markets); each writes to `data/*.json` and `app/public/*.json`. |
+| Test | `cd app && npm run validate` | Validates all five cached payloads. |
+| Refresh + build | `cd app && npm run refresh:build` | Refresh, validate, then production build. |
 
 ## Runtime Dependencies
 - Waldmohr Aktuell WordPress REST API: `https://www.waldmohr-aktuell.de/wp-json/wp/v2/posts`.
+- NPR + KSDK RSS feeds (news), Open-Meteo (weather, fetched live by the app).
+- date.nager.at public holidays API (Rheinland-Pfalz).
+- Landkreis Kusel waste collection iCal (Waldmohr trash).
+- Homburg flea market dates: maintained table in `scripts/refresh-fleamarkets.mjs`, synced
+  yearly from the homburg.de announcement (the script warns when dates run low).
 - Browser with modern JavaScript support.
 - Node.js 18+ for refresh and validation scripts.
 
@@ -25,8 +31,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `app/src/App.tsx` - app shell and layout.
 - `app/src/components/` - calendar, event detail, news marquee, clocks, weather.
 - `app/public/*.json` - data files served to the app.
-- `data/events.json` - normalized English event records (pipeline source of truth).
-- `scripts/refresh-events.mjs` - public-source refresh pipeline.
+- `data/*.json` - normalized English event records (pipeline source of truth).
+- `scripts/refresh-*.mjs` - public-source refresh adapters (events, news, trash, holidays, flea markets).
+- `scripts/validate-*.mjs` - payload validators, one per adapter.
 - `docs/` - durable project truth.
 
 ## Durable Docs

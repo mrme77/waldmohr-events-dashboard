@@ -10,10 +10,18 @@ Links to source material and technical references.
 - NPR News RSS: https://feeds.npr.org/1001/rss.xml
 - KSDK St. Louis local RSS: https://www.ksdk.com/feeds/syndication/rss/news/local
 - Open-Meteo forecast API: https://api.open-meteo.com/
+- German public holidays API (Rheinland-Pfalz): https://date.nager.at/
+- Landkreis Kusel waste collection iCal (Waldmohr): https://www.landkreis-kusel.de/
+- Homburg Flohmarkt official dates (yearly announcement): https://www.homburg.de/rathaus/aktuelle-informationen/pressemitteilungen/flohmarkt-jahr-startet-am-3-januar-rund-ums-forum/
+- Flea market aggregators (deferred, listings sparse): https://www.flohmarkt.info/homburg/ and https://www.flohmarkt-termine.org/landkreis/saarpfalz-kreis/
 
 ## Generated Payloads
-- Events cache: `data/events.json` and `app/public/events.json`.
-- News cache: `data/news.json` and `app/public/news.json`.
+Each cache is written to both `data/` and `app/public/`.
+- Events cache: `events.json` (Waldmohr Aktuell).
+- News cache: `news.json` (NPR + KSDK).
+- Trash cache: `trash.json` (Kusel iCal).
+- Holidays cache: `holidays.json` (date.nager.at, RLP).
+- Flea markets cache: `fleamarkets.json` (Homburg official dates, maintained table).
 
 ## Project References
 - `AGENTIC_SURFACE_TEMPLATE.md` source template: kept locally outside the repo (not version-controlled).
