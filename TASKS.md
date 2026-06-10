@@ -39,4 +39,4 @@ See `plan.md` for full detail.
       secret URL.
 - [ ] Phase 7: Voice — local Node server + OpenRouter proxy + whisper.cpp STT.
 - [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
-- [ ] Update `docs/reference-index.md` with new sources and APIs.
+- [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).

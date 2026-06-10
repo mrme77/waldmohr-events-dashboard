@@ -40,19 +40,24 @@ npm run dev      # preview at http://localhost:5173
 ## Refreshing data
 
 ```bash
-node scripts/refresh-events.mjs
-node scripts/validate-events.mjs
-node scripts/refresh-news.mjs
-node scripts/validate-news.mjs
+cd app
+npm run refresh        # run all five adapters (events, news, trash, holidays, flea markets)
+npm run validate       # validate all five cached payloads
+npm run refresh:build  # refresh + validate + production build in one command
 ```
+
+Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
 
 ## Data sources
 
 - Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
 - News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
 - Weather: Open-Meteo current conditions for Waldmohr.
-- Planned: Kaiserslautern + Ramstein event calendars, Google Calendar (family), Landkreis Kusel
-  trash iCal.
+- Trash: Landkreis Kusel waste collection iCal for Waldmohr (live).
+- Holidays: Rheinland-Pfalz public holidays via [date.nager.at](https://date.nager.at/) (live).
+- Flea markets: Homburg Floh- und Antiquitätenmarkt, official yearly dates from
+  [homburg.de](https://www.homburg.de/) as a maintained table (live).
+- Planned: Google Calendar (family layer, private iCal — needs the local server).
 
 ## Privacy & legal
 
