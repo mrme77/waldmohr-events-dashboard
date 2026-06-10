@@ -15,6 +15,11 @@ Links to source material and technical references.
 - Homburg Flohmarkt official dates (yearly announcement): https://www.homburg.de/rathaus/aktuelle-informationen/pressemitteilungen/flohmarkt-jahr-startet-am-3-januar-rund-ums-forum/
 - Flea market aggregators (deferred, listings sparse): https://www.flohmarkt.info/homburg/ and https://www.flohmarkt-termine.org/landkreis/saarpfalz-kreis/
 
+## Private Sources
+- Google Calendar family iCal feed: secret URL kept in `.env` as `GCAL_ICS_URL` (get it from
+  Google Calendar → Settings and sharing → Integrate calendar → "Secret address in iCal
+  format"; the Reset button there revokes a leaked URL).
+
 ## Generated Payloads
 Each cache is written to both `data/` and `app/public/`.
 - Events cache: `events.json` (Waldmohr Aktuell).
@@ -22,6 +27,7 @@ Each cache is written to both `data/` and `app/public/`.
 - Trash cache: `trash.json` (Kusel iCal).
 - Holidays cache: `holidays.json` (date.nager.at, RLP).
 - Flea markets cache: `fleamarkets.json` (Homburg official dates, maintained table).
+- Family cache: `family.json` (Google Calendar iCal) — gitignored, never committed.
 
 ## Project References
 - `AGENTIC_SURFACE_TEMPLATE.md` source template: kept locally outside the repo (not version-controlled).

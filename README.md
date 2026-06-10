@@ -41,8 +41,8 @@ npm run dev      # preview at http://localhost:5173
 
 ```bash
 cd app
-npm run refresh        # run all five adapters (events, news, trash, holidays, flea markets)
-npm run validate       # validate all five cached payloads
+npm run refresh        # run all six adapters (events, news, trash, holidays, flea markets, family)
+npm run validate       # validate all six cached payloads
 npm run refresh:build  # refresh + validate + production build in one command
 ```
 
@@ -57,7 +57,9 @@ Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
 - Holidays: Rheinland-Pfalz public holidays via [date.nager.at](https://date.nager.at/) (live).
 - Flea markets: Homburg Floh- und Antiquitätenmarkt, official yearly dates from
   [homburg.de](https://www.homburg.de/) as a maintained table (live).
-- Planned: Google Calendar (family layer, private iCal — needs the local server).
+- Family: Google Calendar private iCal feed (live). Secret URL in `.env` (`GCAL_ICS_URL`);
+  the generated `family.json` caches are gitignored so the family schedule never reaches
+  this public repo. Events titled leave/vacation/Urlaub/PTO get their own calendar marker.
 
 ## Privacy & legal
 
