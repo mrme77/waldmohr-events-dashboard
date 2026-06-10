@@ -50,7 +50,10 @@ async function main() {
 function isEventCandidate(post) {
   const categoryIds = Array.isArray(post.categories) ? post.categories : [];
   const text = stripHtml(`${post.title?.rendered ?? ""} ${post.excerpt?.rendered ?? ""} ${post.content?.rendered ?? ""}`);
-  const eventWords = /\b(veranstaltung|fest|wanderung|exkursion|museumstag|sitzung|konzert|boerse|börse|programm|vortrag)\b/i;
+  // No word boundaries: German compounds (Marktplatzfest, Weihnachtsmarkt)
+  // never match \b-delimited keywords. A date is still required downstream,
+  // so the looser net stays safe.
+  const eventWords = /(veranstaltung|fest(?!leg)|markt|wanderung|exkursion|museumstag|sitzung|konzert|boerse|börse|programm|vortrag|kerb|kerwe|kirmes|dinner|theater)/i;
 
   return categoryIds.some((id) => eventCategoryIds.has(id)) || eventWords.test(text);
 }
@@ -64,8 +67,8 @@ function isEventCandidate(post) {
 function normalizePost(post) {
   const title = stripHtml(post.title?.rendered ?? "Untitled event");
   const text = stripHtml(`${post.excerpt?.rendered ?? ""} ${post.content?.rendered ?? ""}`);
-  const candidateDate = extractDate(`${title} ${text}`);
   const postDate = String(post.date ?? "").slice(0, 10);
+  const candidateDate = extractDate(`${title} ${text}`, postDate);
   if (candidateDate === null || !isDisplayableEventDate(candidateDate, postDate)) {
     return null;
   }
@@ -91,18 +94,42 @@ function normalizePost(post) {
   };
 }
 
+const GERMAN_MONTHS = {
+  januar: 1, februar: 2, "märz": 3, maerz: 3, april: 4, mai: 5, juni: 6,
+  juli: 7, august: 8, september: 9, oktober: 10, november: 11, dezember: 12,
+};
+
 /**
- * Extracts a German-style date from text.
+ * Extracts a German-style date from text. Handles numeric form (17.06.2026)
+ * and prose form (1. Mai 2026); prose without a year ("17. Mai") assumes the
+ * post's year, rolling forward when that lands well before the post date.
  *
  * @param {string} text Source text.
+ * @param {string} postDate Post date as YYYY-MM-DD, anchor for missing years.
  * @returns {string | null} ISO date or null.
  */
-function extractDate(text) {
-  const match = text.match(/\b(\d{1,2})\.(\d{1,2})\.(20\d{2})\b/);
-  if (!match) return null;
+function extractDate(text, postDate) {
+  const numeric = text.match(/\b(\d{1,2})\.(\d{1,2})\.(20\d{2})\b/);
+  if (numeric) {
+    const [, day, month, year] = numeric;
+    return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
 
-  const [, day, month, year] = match;
-  return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  const monthNames = Object.keys(GERMAN_MONTHS).join("|");
+  const prose = text.match(new RegExp(`\\b(\\d{1,2})\\.\\s*(${monthNames})\\.?(?:\\s*(20\\d{2}))?\\b`, "i"));
+  if (!prose) return null;
+
+  const [, day, monthName, explicitYear] = prose;
+  const month = GERMAN_MONTHS[monthName.toLowerCase()];
+  const postYear = Number(postDate.slice(0, 4)) || today.getFullYear();
+  let year = explicitYear ? Number(explicitYear) : postYear;
+  let key = `${year}-${String(month).padStart(2, "0")}-${day.padStart(2, "0")}`;
+  // A yearless date far behind its own post is almost certainly next year's.
+  if (!explicitYear && key < postDate) {
+    year += 1;
+    key = `${year}-${String(month).padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
+  return key;
 }
 
 /**

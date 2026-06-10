@@ -35,6 +35,12 @@ DTSTART:20260620T100000Z
 SUMMARY:Video call with St. Louis
 END:VEVENT
 BEGIN:VEVENT
+UID:leave-tagged@test
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260712
+SUMMARY:Vacation - drive to Italy
+END:VEVENT
+BEGIN:VEVENT
 UID:html-description@test
 DTSTART;TZID=Europe/Berlin:20260624T200000
 SUMMARY:Webinar with &amp; and &#8217; entities

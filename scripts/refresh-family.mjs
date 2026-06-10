@@ -257,6 +257,9 @@ function normalizeVevent(vevent, windowStart, windowEnd, overridesByUid) {
   // Meeting-link locations read badly as a venue; show "Online" and make the
   // link itself the source so the popover's source button opens it.
   const locationIsUrl = /^https?:\/\//.test(location);
+  // Leave/vacation days get their own calendar marker (square, --cat-leave).
+  const isLeave = /\b(leave|vacation|urlaub|pto)\b/i.test(summary);
+  const tags = isLeave ? ["family", "leave"] : ["family"];
   const uid = prop(vevent, "UID")?.value ?? `${summary}-${start.key}`;
   const isDetached = prop(vevent, "RECURRENCE-ID") !== null;
   const rrule = prop(vevent, "RRULE")?.value;
@@ -288,7 +291,7 @@ function normalizeVevent(vevent, windowStart, windowEnd, overridesByUid) {
       date: key,
       time: start.time,
       venue: locationIsUrl ? "Online" : location || "Family",
-      tags: ["family"],
+      tags,
       familyRelevance: "From the family Google Calendar.",
       sourceUrl: locationIsUrl ? location : PUBLIC_SOURCE_LABEL,
       postDate: todayKey,
