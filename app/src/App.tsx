@@ -9,6 +9,7 @@ import { loadEvents } from "./data/loadEvents";
 import { loadTrash } from "./data/loadTrash";
 import { loadHolidays } from "./data/loadHolidays";
 import { loadFleamarkets } from "./data/loadFleamarkets";
+import { loadFamily } from "./data/loadFamily";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -31,6 +32,7 @@ export function App() {
   const [trashPayload, setTrashPayload] = useState<EventsPayload | null>(null);
   const [holidayPayload, setHolidayPayload] = useState<EventsPayload | null>(null);
   const [fleamarketPayload, setFleamarketPayload] = useState<EventsPayload | null>(null);
+  const [familyPayload, setFamilyPayload] = useState<EventsPayload | null>(null);
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -63,6 +65,12 @@ export function App() {
   }, []);
 
   useEffect(() => {
+    loadFamily()
+      .then(setFamilyPayload)
+      .catch(() => { /* family feed is optional — only exists where GCAL_ICS_URL is set */ });
+  }, []);
+
+  useEffect(() => {
     loadNews()
       .then(setNewsPayload)
       .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
@@ -79,12 +87,13 @@ export function App() {
       ...(trashPayload?.events ?? []),
       ...(holidayPayload?.events ?? []),
       ...(fleamarketPayload?.events ?? []),
+      ...(familyPayload?.events ?? []),
     ];
     return all.map((event) => ({
       ...event,
       status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, trashPayload, holidayPayload, fleamarketPayload, todayKey]);
+  }, [payload, trashPayload, holidayPayload, fleamarketPayload, familyPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
   const visibleKey = viewKey ?? anchorKey;

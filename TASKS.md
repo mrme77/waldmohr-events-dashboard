@@ -35,8 +35,10 @@ See `plan.md` for full detail.
       empty at build time, low priority.
 - [x] Phase 6a: Kusel trash iCal — adapter (`scripts/refresh-trash.mjs`) + calendar wiring done.
       German holidays adapter (`scripts/refresh-holidays.mjs`, date.nager.at) added as bonus.
-- [ ] Phase 6b: Family layer — Google Calendar private iCal; needs local Node server for the
-      secret URL.
-- [ ] Phase 7: Voice — local Node server + OpenRouter proxy + whisper.cpp STT.
+- [ ] Phase 6b: Family layer — Google Calendar private iCal. Secret URL in `.env`
+      (`GCAL_ICS_URL`); generated `family.json` is gitignored (public repo — family
+      schedule must never be committed).
+- [x] ~~Phase 7: Voice~~ — dropped 2026-06-10. Touch dashboard is enough; no STT/LLM/server.
+      (TTS read-aloud idea also parked.)
 - [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).

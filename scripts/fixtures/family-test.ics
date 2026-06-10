@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Test//Family Fixture//EN
+BEGIN:VEVENT
+UID:single-timed@test
+DTSTART;TZID=Europe/Berlin:20260615T173000
+DTEND;TZID=Europe/Berlin:20260615T183000
+SUMMARY:Dentist appointment
+LOCATION:Homburg
+END:VEVENT
+BEGIN:VEVENT
+UID:weekly-practice@test
+DTSTART;TZID=Europe/Berlin:20260611T160000
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20260730T220000Z
+EXDATE;TZID=Europe/Berlin:20260618T160000
+SUMMARY:Soccer practice
+LOCATION:Waldmohr Sportplatz
+END:VEVENT
+BEGIN:VEVENT
+UID:weekly-practice@test
+RECURRENCE-ID;TZID=Europe/Berlin:20260625T160000
+DTSTART;TZID=Europe/Berlin:20260626T170000
+SUMMARY:Soccer practice (moved to Friday)
+LOCATION:Waldmohr Sportplatz
+END:VEVENT
+BEGIN:VEVENT
+UID:allday-multiday@test
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260704
+SUMMARY:Grandparents visiting
+END:VEVENT
+BEGIN:VEVENT
+UID:utc-timed@test
+DTSTART:20260620T100000Z
+SUMMARY:Video call with St. Louis
+END:VEVENT
+BEGIN:VEVENT
+UID:html-description@test
+DTSTART;TZID=Europe/Berlin:20260624T200000
+SUMMARY:Webinar with &amp; and &#8217; entities
+DESCRIPTION:<span>Join us for a <b>live Q&amp;A</b>.</span> </br> <p>Sign up
+  via <a href="https://example.com/signup?utm=x">this page</a>.</p>
+LOCATION:https://example.com/join/abc123
+END:VEVENT
+BEGIN:VEVENT
+UID:cancelled@test
+DTSTART;VALUE=DATE:20260622
+STATUS:CANCELLED
+SUMMARY:Cancelled thing
+END:VEVENT
+BEGIN:VEVENT
+UID:out-of-window@test
+DTSTART;VALUE=DATE:20270301
+SUMMARY:Too far in the future
+END:VEVENT
+END:VCALENDAR
