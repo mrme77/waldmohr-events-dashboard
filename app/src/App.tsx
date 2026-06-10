@@ -8,6 +8,7 @@ import { WeatherWidget } from "./components/WeatherWidget";
 import { loadEvents } from "./data/loadEvents";
 import { loadTrash } from "./data/loadTrash";
 import { loadHolidays } from "./data/loadHolidays";
+import { loadFleamarkets } from "./data/loadFleamarkets";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -29,6 +30,7 @@ export function App() {
   const [payload, setPayload] = useState<EventsPayload | null>(null);
   const [trashPayload, setTrashPayload] = useState<EventsPayload | null>(null);
   const [holidayPayload, setHolidayPayload] = useState<EventsPayload | null>(null);
+  const [fleamarketPayload, setFleamarketPayload] = useState<EventsPayload | null>(null);
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -53,6 +55,12 @@ export function App() {
   }, []);
 
   useEffect(() => {
+    loadFleamarkets()
+      .then(setFleamarketPayload)
+      .catch(() => { /* flea markets are optional — silently degrade */ });
+  }, []);
+
+  useEffect(() => {
     loadNews()
       .then(setNewsPayload)
       .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
@@ -68,12 +76,13 @@ export function App() {
       ...(payload?.events ?? []),
       ...(trashPayload?.events ?? []),
       ...(holidayPayload?.events ?? []),
+      ...(fleamarketPayload?.events ?? []),
     ];
     return all.map((event) => ({
       ...event,
       status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, trashPayload, holidayPayload, todayKey]);
+  }, [payload, trashPayload, holidayPayload, fleamarketPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
 

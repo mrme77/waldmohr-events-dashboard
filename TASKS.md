@@ -26,7 +26,13 @@ See `plan.md` for full detail.
 - [x] Phase 3: Weather widget (Open-Meteo, Waldmohr only, keyless).
 - [ ] Expand weather to 3-city strip if needed.
 - [x] Phase 4: News marquee content — RSS adapters (NPR USA + KSDK St. Louis).
-- [ ] Phase 5: More event sources — Kaiserslautern scrape, then Ramstein headless.
+- [x] Phase 5 (rescoped): Homburg Flohmarkt adapter (`scripts/refresh-fleamarkets.mjs`) —
+      official 2026 dates from homburg.de (first-Saturday rule has holiday exceptions, so
+      dates are a maintained table, not rule-generated). Kaiserslautern/Ramstein scrapes
+      dropped — not wanted.
+- [ ] Phase 5b (optional): regional flea market aggregator scrape
+      (flohmarkt.info / flohmarkt-termine.org) if more coverage wanted — listings were
+      empty at build time, low priority.
 - [x] Phase 6a: Kusel trash iCal — adapter (`scripts/refresh-trash.mjs`) + calendar wiring done.
       German holidays adapter (`scripts/refresh-holidays.mjs`, date.nager.at) added as bonus.
 - [ ] Phase 6b: Family layer — Google Calendar private iCal; needs local Node server for the
