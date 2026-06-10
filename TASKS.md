@@ -27,7 +27,10 @@ See `plan.md` for full detail.
 - [ ] Expand weather to 3-city strip if needed.
 - [x] Phase 4: News marquee content — RSS adapters (NPR USA + KSDK St. Louis).
 - [ ] Phase 5: More event sources — Kaiserslautern scrape, then Ramstein headless.
-- [ ] Phase 6: Family layer — Google Calendar iCal + Kusel trash iCal; category color coding.
+- [x] Phase 6a: Kusel trash iCal — adapter (`scripts/refresh-trash.mjs`) + calendar wiring done.
+      German holidays adapter (`scripts/refresh-holidays.mjs`, date.nager.at) added as bonus.
+- [ ] Phase 6b: Family layer — Google Calendar private iCal; needs local Node server for the
+      secret URL.
 - [ ] Phase 7: Voice — local Node server + OpenRouter proxy + whisper.cpp STT.
 - [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
 - [ ] Update `docs/reference-index.md` with new sources and APIs.
