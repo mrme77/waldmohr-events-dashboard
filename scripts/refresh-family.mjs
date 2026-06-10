@@ -70,7 +70,7 @@ async function fetchIcs(location) {
  * @returns {Array<Map<string, string[]>>}
  */
 function parseVevents(ics) {
-  const lines = ics.replace(/\r\n[ \t]/g, "").split(/\r?\n/);
+  const lines = ics.replace(/\r?\n[ \t]/g, "").split(/\r?\n/);
   const events = [];
   let current = null;
   for (const line of lines) {
@@ -202,9 +202,35 @@ function exdateKeys(event) {
   return keys;
 }
 
-/** Escapes ICS text values back to plain text. */
-function unescapeText(value) {
-  return value.replaceAll("\\n", " ").replaceAll("\\,", ",").replaceAll("\\;", ";").trim();
+const MAX_SUMMARY_LENGTH = 300;
+
+const NAMED_ENTITIES = {
+  "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"',
+  "&apos;": "'", "&nbsp;": " ",
+};
+
+/**
+ * Converts an ICS text value to clean plain text: unescapes ICS sequences,
+ * strips HTML tags (Google Calendar descriptions often carry markup from
+ * invite emails), decodes entities, and collapses whitespace.
+ */
+function cleanText(value) {
+  return value
+    .replaceAll("\\n", " ").replaceAll("\\,", ",").replaceAll("\\;", ";")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&[a-z]+;/gi, (m) => NAMED_ENTITIES[m.toLowerCase()] ?? " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([.,;:!?])/g, "$1")
+    .trim();
+}
+
+/** Truncates text at a word boundary to keep the detail popover readable. */
+function truncate(value, max) {
+  if (value.length <= max) return value;
+  const cut = value.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut}…`;
 }
 
 /**
@@ -225,9 +251,12 @@ function normalizeVevent(vevent, windowStart, windowEnd, overridesByUid) {
   const status = prop(vevent, "STATUS")?.value;
   if (status === "CANCELLED") return [];
 
-  const summary = unescapeText(prop(vevent, "SUMMARY")?.value ?? "Family event");
-  const location = unescapeText(prop(vevent, "LOCATION")?.value ?? "");
-  const description = unescapeText(prop(vevent, "DESCRIPTION")?.value ?? "");
+  const summary = cleanText(prop(vevent, "SUMMARY")?.value ?? "Family event");
+  const location = cleanText(prop(vevent, "LOCATION")?.value ?? "");
+  const description = truncate(cleanText(prop(vevent, "DESCRIPTION")?.value ?? ""), MAX_SUMMARY_LENGTH);
+  // Meeting-link locations read badly as a venue; show "Online" and make the
+  // link itself the source so the popover's source button opens it.
+  const locationIsUrl = /^https?:\/\//.test(location);
   const uid = prop(vevent, "UID")?.value ?? `${summary}-${start.key}`;
   const isDetached = prop(vevent, "RECURRENCE-ID") !== null;
   const rrule = prop(vevent, "RRULE")?.value;
@@ -258,10 +287,10 @@ function normalizeVevent(vevent, windowStart, windowEnd, overridesByUid) {
       summary: description || "Family calendar event.",
       date: key,
       time: start.time,
-      venue: location || "Family",
+      venue: locationIsUrl ? "Online" : location || "Family",
       tags: ["family"],
       familyRelevance: "From the family Google Calendar.",
-      sourceUrl: PUBLIC_SOURCE_LABEL,
+      sourceUrl: locationIsUrl ? location : PUBLIC_SOURCE_LABEL,
       postDate: todayKey,
       lastChecked: todayKey,
       status: key < todayKey ? "past" : key > todayKey ? "upcoming" : "current",

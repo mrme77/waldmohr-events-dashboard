@@ -35,6 +35,14 @@ DTSTART:20260620T100000Z
 SUMMARY:Video call with St. Louis
 END:VEVENT
 BEGIN:VEVENT
+UID:html-description@test
+DTSTART;TZID=Europe/Berlin:20260624T200000
+SUMMARY:Webinar with &amp; and &#8217; entities
+DESCRIPTION:<span>Join us for a <b>live Q&amp;A</b>.</span> </br> <p>Sign up
+  via <a href="https://example.com/signup?utm=x">this page</a>.</p>
+LOCATION:https://example.com/join/abc123
+END:VEVENT
+BEGIN:VEVENT
 UID:cancelled@test
 DTSTART;VALUE=DATE:20260622
 STATUS:CANCELLED
