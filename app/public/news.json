@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T13:15:12.482Z",
+  "generatedAt": "2026-06-10T19:44:14.741Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-inflation-tops-4-for-the-first-time-in-3-years-on-spike-in-gasol-0",
+      "id": "stl-more-thorough-francis-howell-vetting-could-have-avoided-229k-pay-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "More thorough Francis Howell vetting could have avoided $229K payout for superintendent, Missouri Auditor says",
+      "url": "https://www.ksdk.com/article/news/education/missouri-auditor-more-thorough-vetting-avoided-229k-payout-24-hour-superintendent/63-35d21193-5a66-463f-857d-5a799bf8a837",
+      "publishedAt": "2026-06-10T19:35:59.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "stl-ice-detained-3-collinsville-teens-on-tuesday-raising-serious-con-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "ICE detained 3 Collinsville teens on Tuesday, raising 'serious concerns' among family and officials",
+      "url": "https://www.ksdk.com/article/news/local/illinois-ice-detains-3-teens-collinsville-serious-concerns-family-officials/63-ee3ab676-2fca-4666-ab98-79e32f04af50",
+      "publishedAt": "2026-06-10T19:35:47.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
+      "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
+      "publishedAt": "2026-06-10T19:00:51.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "stl-river-city-casino-cleared-after-bomb-threat-forces-evacuation-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "River City Casino cleared after bomb threat forces evacuation",
+      "url": "https://www.ksdk.com/article/news/local/river-city-casino-evacuated-due-bomb-threat-police-say/63-d3a670cd-c527-4ff8-9cb5-3a37a582a37d",
+      "publishedAt": "2026-06-10T17:27:35.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "stl-st-louis-aldermanic-committee-ups-planned-rams-spending-for-wate-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "St. Louis aldermanic committee ups planned Rams spending for water projects, tornado relief",
+      "url": "https://www.ksdk.com/article/news/local/st-louis-aldermanic-committee-ups-planned-rams-spending-for-water-projects-tornado-relief/63-f60ae83b-41e6-4b51-a82f-5cb244708a4f",
+      "publishedAt": "2026-06-10T16:17:41.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "stl-teen-injured-by-gunfire-in-north-st-louis-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Teen injured by gunfire in north St. Louis",
+      "url": "https://www.ksdk.com/article/news/crime/teen-injured-by-gunfire-north-st-louis/63-0098ff96-6c98-4409-a80d-a964fb75b750",
+      "publishedAt": "2026-06-10T15:46:28.000Z",
+      "lastChecked": "2026-06-10T19:44:14.728Z"
+    },
+    {
+      "id": "usa-taiwan-drills-with-u-s-rocket-system-firing-in-china-s-direction-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Taiwan drills with U.S. rocket system, firing in China's direction",
+      "url": "https://www.npr.org/2026/06/10/g-s1-127253/taiwan-drills-with-us-rocket-system-firing-in-chinas-direction",
+      "publishedAt": "2026-06-10T15:29:24.000Z",
+      "lastChecked": "2026-06-10T19:44:14.542Z"
+    },
+    {
+      "id": "usa-inflation-tops-4-for-the-first-time-in-3-years-on-spike-in-gasol-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Inflation tops 4% for the first time in 3 years on spike in gasoline prices",
       "url": "https://www.npr.org/2026/06/10/nx-s1-5853077/inflation-over-4-cpi-gasoline-prices",
       "publishedAt": "2026-06-10T13:08:58.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
+      "lastChecked": "2026-06-10T19:44:14.542Z"
     },
     {
-      "id": "stl-emergency-crews-respond-to-chemical-gas-leak-in-maryland-heights-0",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Emergency crews respond to chemical gas leak in Maryland Heights",
-      "url": "https://www.ksdk.com/article/news/local/emergency-crews-respond-to-chemical-gas-leak-in-maryland-heights/63-f8cb286f-38d9-457d-9a4d-4dbfa02cc13e",
-      "publishedAt": "2026-06-10T12:24:33.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
-    },
-    {
-      "id": "usa-july-1-brings-big-student-loan-changes-here-s-what-you-need-to-k-1",
+      "id": "usa-july-1-brings-big-student-loan-changes-here-s-what-you-need-to-k-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "July 1 brings big student loan changes. Here's what you need to know",
       "url": "https://www.npr.org/2026/06/10/nx-s1-5835633/student-loans-guide-education-changes-repayment-plan",
       "publishedAt": "2026-06-10T11:30:00.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
+      "lastChecked": "2026-06-10T19:44:14.542Z"
     },
     {
-      "id": "usa-u-s-and-iran-exchange-strikes-and-house-passes-ice-and-border-pa-2",
+      "id": "usa-u-s-and-iran-exchange-strikes-and-house-passes-ice-and-border-pa-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "U.S. and Iran exchange strikes. And, House passes ICE and Border Patrol funding",
       "url": "https://www.npr.org/2026/06/10/g-s1-127216/up-first-newsletter-iran-us-war-primary-results-ice-funding-bill-gates",
       "publishedAt": "2026-06-10T11:26:08.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
+      "lastChecked": "2026-06-10T19:44:14.542Z"
     },
     {
-      "id": "stl-2-critically-injured-in-south-st-louis-house-fire-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "2 critically injured in south St. Louis house fire",
-      "url": "https://www.ksdk.com/article/news/local/2-critically-injured-house-fire-south-st-louis/63-edbc6e4f-ac4b-43f3-9db2-de8ee79b8d88",
-      "publishedAt": "2026-06-10T10:37:02.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
-    },
-    {
-      "id": "usa-china-re-centers-north-korea-ties-as-nuclear-silence-reshapes-ba-3",
+      "id": "usa-china-re-centers-north-korea-ties-as-nuclear-silence-reshapes-ba-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "China re‑centers North Korea ties as nuclear silence reshapes balance",
       "url": "https://www.npr.org/2026/06/10/g-s1-127013/xi-jinping-visits-pyongyang-china-north-korea-ties",
       "publishedAt": "2026-06-10T10:30:00.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
+      "lastChecked": "2026-06-10T19:44:14.542Z"
     },
     {
-      "id": "stl-woman-stabbed-to-death-at-senior-apartment-complex-in-central-we-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Woman stabbed to death at senior apartment complex in Central West End",
-      "url": "https://www.ksdk.com/article/news/crime/woman-stabbed-to-death-at-senior-apartment-complex-in-central-west-end/63-d0bc58f4-1842-47d3-93e2-020af3236984",
-      "publishedAt": "2026-06-10T10:25:51.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
-    },
-    {
-      "id": "usa-ice-denies-having-a-protester-database-but-a-letter-to-congress--4",
+      "id": "usa-ice-denies-having-a-protester-database-but-a-letter-to-congress--5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "ICE denies having a protester database. But a letter to Congress sheds more light",
       "url": "https://www.npr.org/2026/06/10/nx-s1-5843159/ice-protester-database-dhs",
       "publishedAt": "2026-06-10T10:00:00.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
-    },
-    {
-      "id": "usa-san-francisco-immigration-court-shuts-down-striking-at-heart-of--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "San Francisco immigration court shuts down, striking at heart of historic advocacy",
-      "url": "https://www.npr.org/2026/06/10/g-s1-126345/san-franciso-court-immigration-closure-asylum-layoffs",
-      "publishedAt": "2026-06-10T09:00:00.000Z",
-      "lastChecked": "2026-06-10T13:15:12.106Z"
-    },
-    {
-      "id": "stl-man-accused-of-choking-coworker-at-mcalister-s-deli-after-she-go-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Man accused of choking coworker at McAlister's Deli after she got promotion he wanted",
-      "url": "https://www.ksdk.com/article/news/crime/man-accused-choking-coworker-mccalisters-deli-after-she-got-promotion/63-b6f2ccb7-159f-4772-9bf0-ee9163c5d615",
-      "publishedAt": "2026-06-10T03:34:32.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
-    },
-    {
-      "id": "stl-st-louis-heat-wave-brings-heat-advisory-and-push-for-water-safet-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "St. Louis heat wave brings heat advisory and push for water safety",
-      "url": "https://www.ksdk.com/article/news/local/st-louis-heat-wave-brings-heat-advisory-and-push-for-water-safety/63-11b1c676-5105-4308-a261-dd02bc3e964a",
-      "publishedAt": "2026-06-10T03:33:19.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
-    },
-    {
-      "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
-      "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
-      "publishedAt": "2026-06-10T03:12:18.000Z",
-      "lastChecked": "2026-06-10T13:15:12.469Z"
+      "lastChecked": "2026-06-10T19:44:14.542Z"
     }
   ]
 }
