@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T12:10:36.571Z",
+  "generatedAt": "2026-06-10T13:15:12.482Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-4-states-head-to-the-polls-and-global-conflicts-are-on-the-rise--0",
+      "id": "usa-inflation-tops-4-for-the-first-time-in-3-years-on-spike-in-gasol-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "4 states head to the polls. And, global conflicts are on the rise, new report says",
-      "url": "https://www.npr.org/2026/06/09/g-s1-126975/up-first-newsletter-iran-israel-lebanon-primaries-election-fraud-los-angeles-global-conflicts",
-      "publishedAt": "2026-06-09T11:19:43.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
+      "title": "Inflation tops 4% for the first time in 3 years on spike in gasoline prices",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5853077/inflation-over-4-cpi-gasoline-prices",
+      "publishedAt": "2026-06-10T13:08:58.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
     },
     {
-      "id": "stl-north-st-louis-shooting-leaves-2-critically-injured-0",
+      "id": "stl-emergency-crews-respond-to-chemical-gas-leak-in-maryland-heights-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "North St. Louis shooting leaves 2 critically injured",
-      "url": "https://www.ksdk.com/article/news/crime/north-st-louis-shooting-sherry-avenue/63-1cfd99e4-494a-40a1-b88a-a1f493391551",
-      "publishedAt": "2026-06-09T09:37:30.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
+      "title": "Emergency crews respond to chemical gas leak in Maryland Heights",
+      "url": "https://www.ksdk.com/article/news/local/emergency-crews-respond-to-chemical-gas-leak-in-maryland-heights/63-f8cb286f-38d9-457d-9a4d-4dbfa02cc13e",
+      "publishedAt": "2026-06-10T12:24:33.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
     },
     {
-      "id": "stl-deadly-crash-shuts-down-westbound-i-70-in-st-louis-1",
+      "id": "usa-july-1-brings-big-student-loan-changes-here-s-what-you-need-to-k-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "July 1 brings big student loan changes. Here's what you need to know",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5835633/student-loans-guide-education-changes-repayment-plan",
+      "publishedAt": "2026-06-10T11:30:00.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
+    },
+    {
+      "id": "usa-u-s-and-iran-exchange-strikes-and-house-passes-ice-and-border-pa-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "U.S. and Iran exchange strikes. And, House passes ICE and Border Patrol funding",
+      "url": "https://www.npr.org/2026/06/10/g-s1-127216/up-first-newsletter-iran-us-war-primary-results-ice-funding-bill-gates",
+      "publishedAt": "2026-06-10T11:26:08.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
+    },
+    {
+      "id": "stl-2-critically-injured-in-south-st-louis-house-fire-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "Deadly crash shuts down westbound I-70 in St. Louis",
-      "url": "https://www.ksdk.com/article/traffic/st-louis-crash-interstate-70-at-branch-street/63-f8d36de0-2ce7-4eb9-8930-97d2087c01d3",
-      "publishedAt": "2026-06-09T09:36:17.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
+      "title": "2 critically injured in south St. Louis house fire",
+      "url": "https://www.ksdk.com/article/news/local/2-critically-injured-house-fire-south-st-louis/63-edbc6e4f-ac4b-43f3-9db2-de8ee79b8d88",
+      "publishedAt": "2026-06-10T10:37:02.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
     },
     {
-      "id": "usa-more-americans-survive-cancer-but-the-psychological-impacts-can--1",
+      "id": "usa-china-re-centers-north-korea-ties-as-nuclear-silence-reshapes-ba-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "More Americans survive cancer. But the psychological impacts can persist for years",
-      "url": "https://www.npr.org/2026/06/09/nx-s1-5780010/iowa-cancer-survivor-depression-anxiety-guilt-undiagnosed-mental",
-      "publishedAt": "2026-06-09T09:00:00.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
+      "title": "China re‑centers North Korea ties as nuclear silence reshapes balance",
+      "url": "https://www.npr.org/2026/06/10/g-s1-127013/xi-jinping-visits-pyongyang-china-north-korea-ties",
+      "publishedAt": "2026-06-10T10:30:00.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
     },
     {
-      "id": "usa-maine-s-senate-race-and-much-more-here-are-the-primary-contests--2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Maine's Senate race and much more. Here are the primary contests to watch today",
-      "url": "https://www.npr.org/2026/06/09/nx-s1-5850231/maine-nevada-south-carolina-primary-trump",
-      "publishedAt": "2026-06-09T09:00:00.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
-    },
-    {
-      "id": "usa-the-supreme-court-is-in-its-final-stretch-this-term-here-are-the-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "The Supreme Court is in its final stretch this term. Here are the major cases left",
-      "url": "https://www.npr.org/2026/06/09/nx-s1-5847967/supreme-court-major-cases-left-2026",
-      "publishedAt": "2026-06-09T09:00:00.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
-    },
-    {
-      "id": "usa-glp-1s-appear-to-protect-against-cancer-researchers-are-trying-t-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "GLP-1s appear to protect against cancer. Researchers are trying to figure out how",
-      "url": "https://www.npr.org/2026/06/09/nx-s1-5850732/glp-1-cancer-asco-semaglutide-tirezepatide",
-      "publishedAt": "2026-06-09T09:00:00.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
-    },
-    {
-      "id": "usa-morning-news-brief-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/06/09/nx-s1-5846827/morning-news-brief",
-      "publishedAt": "2026-06-09T08:45:36.000Z",
-      "lastChecked": "2026-06-09T12:10:36.557Z"
-    },
-    {
-      "id": "stl-festus-city-council-blocks-recall-election-amid-data-center-disp-2",
+      "id": "stl-woman-stabbed-to-death-at-senior-apartment-complex-in-central-we-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "Festus City Council blocks recall election amid data center dispute",
-      "url": "https://www.ksdk.com/article/news/politics/festus-city-council-blocks-recall-election-amid-data-center-dispute/63-8d389cd2-e1b1-4dcc-a6b4-45e33b7eaae3",
-      "publishedAt": "2026-06-09T05:03:38.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
+      "title": "Woman stabbed to death at senior apartment complex in Central West End",
+      "url": "https://www.ksdk.com/article/news/crime/woman-stabbed-to-death-at-senior-apartment-complex-in-central-west-end/63-d0bc58f4-1842-47d3-93e2-020af3236984",
+      "publishedAt": "2026-06-10T10:25:51.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
     },
     {
-      "id": "stl-community-to-weigh-gun-violence-solutions-at-town-hall-following-3",
+      "id": "usa-ice-denies-having-a-protester-database-but-a-letter-to-congress--4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "ICE denies having a protester database. But a letter to Congress sheds more light",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5843159/ice-protester-database-dhs",
+      "publishedAt": "2026-06-10T10:00:00.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
+    },
+    {
+      "id": "usa-san-francisco-immigration-court-shuts-down-striking-at-heart-of--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "San Francisco immigration court shuts down, striking at heart of historic advocacy",
+      "url": "https://www.npr.org/2026/06/10/g-s1-126345/san-franciso-court-immigration-closure-asylum-layoffs",
+      "publishedAt": "2026-06-10T09:00:00.000Z",
+      "lastChecked": "2026-06-10T13:15:12.106Z"
+    },
+    {
+      "id": "stl-man-accused-of-choking-coworker-at-mcalister-s-deli-after-she-go-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "Community to weigh gun violence solutions at town hall following teen's death",
-      "url": "https://www.ksdk.com/article/news/crime/community-to-weigh-gun-violence-solutions-at-town-hall-following-teens-death/63-2af5dbe3-ab2e-4271-82e2-b793e9cbce02",
-      "publishedAt": "2026-06-09T02:51:22.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
+      "title": "Man accused of choking coworker at McAlister's Deli after she got promotion he wanted",
+      "url": "https://www.ksdk.com/article/news/crime/man-accused-choking-coworker-mccalisters-deli-after-she-got-promotion/63-b6f2ccb7-159f-4772-9bf0-ee9163c5d615",
+      "publishedAt": "2026-06-10T03:34:32.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
     },
     {
-      "id": "stl-st-louis-first-heat-wave-arrives-tuesday-through-thursday-weathe-4",
+      "id": "stl-st-louis-heat-wave-brings-heat-advisory-and-push-for-water-safet-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "St. Louis' first heat wave arrives Tuesday through Thursday | Weather Impact Alert",
+      "title": "St. Louis heat wave brings heat advisory and push for water safety",
+      "url": "https://www.ksdk.com/article/news/local/st-louis-heat-wave-brings-heat-advisory-and-push-for-water-safety/63-11b1c676-5105-4308-a261-dd02bc3e964a",
+      "publishedAt": "2026-06-10T03:33:19.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
+    },
+    {
+      "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
       "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
-      "publishedAt": "2026-06-09T02:35:03.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
-    },
-    {
-      "id": "stl-chaos-6-7-event-near-st-louis-attracts-hundreds-of-kids-sparking-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "'Chaos': '6-7' event near St. Louis attracts hundreds of kids, sparking fights, arrests; minor caught with butcher knife",
-      "url": "https://www.ksdk.com/article/news/crime/st-louis-6-7-event-hundreds-of-kids-fights-disruptions-businesses/63-7b1275a5-bae4-4bf1-8308-727034d6fdab",
-      "publishedAt": "2026-06-08T23:43:51.000Z",
-      "lastChecked": "2026-06-09T12:10:36.562Z"
+      "publishedAt": "2026-06-10T03:12:18.000Z",
+      "lastChecked": "2026-06-10T13:15:12.469Z"
     }
   ]
 }

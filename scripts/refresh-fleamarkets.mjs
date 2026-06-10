@@ -54,29 +54,31 @@ function toEvent(date) {
     sourceUrl: SOURCE_URL,
     postDate: todayKey,
     lastChecked: todayKey,
-    status: "upcoming",
+    status: date < todayKey ? "past" : date > todayKey ? "upcoming" : "current",
     dateConfidence: "confirmed",
   };
 }
 
 /**
- * Writes upcoming Homburg flea market dates as normalized JSON to data/ and
- * app/public/. Warns when the hardcoded date table is nearly exhausted so the
- * next year's official announcement gets folded in before the feed runs dry.
+ * Writes all Homburg flea market dates (past ones included, so the calendar
+ * can show them grayed out) as normalized JSON to data/ and app/public/.
+ * Warns when the hardcoded date table is nearly exhausted so the next year's
+ * official announcement gets folded in before the feed runs dry.
  *
  * @returns {Promise<void>}
  */
 async function main() {
-  const events = MARKET_DATES.filter((date) => date >= todayKey).map(toEvent);
+  const events = MARKET_DATES.map(toEvent);
+  const upcomingCount = events.filter((e) => e.status !== "past").length;
 
-  if (events.length === 0) {
+  if (upcomingCount === 0) {
     throw new Error(
       `No upcoming flea market dates left in MARKET_DATES — add the new year's official dates from ${SOURCE_URL}`
     );
   }
-  if (events.length < LOW_DATE_WARNING_THRESHOLD) {
+  if (upcomingCount < LOW_DATE_WARNING_THRESHOLD) {
     console.warn(
-      `Only ${events.length} flea market date(s) remain — check homburg.de for next year's announcement.`
+      `Only ${upcomingCount} upcoming flea market date(s) remain — check homburg.de for next year's announcement.`
     );
   }
 
