@@ -99,3 +99,24 @@ shim write from `scripts/refresh-events.mjs`. The Vite app in `app/` is the only
 removes the drift risk and the stale-date bug with it. `data/events.json` remains the pipeline
 source of truth alongside `app/public/events.json`.
 **Status**: Accepted.
+
+## [2026-06-10] Drop Voice; No Local Node Server
+**Context**: Voice (local whisper.cpp STT + OpenRouter reasoning, proxied by a local Node server)
+was planned in the "Move To A Pi 5 Touch + Voice Kiosk", "Adopt Vite + React + TypeScript", and
+"Keyless Sources And Local STT" decisions above.
+**Decision**: Drop voice entirely — no STT, no OpenRouter, no Node server. The kiosk is
+touch-only and fully static (Vite build served as-is). A TTS read-aloud idea was also parked.
+**Reason**: The touch dashboard is sufficient on its own; dropping voice removes the project's
+only paid/keyed dependency and the only reason a backend server was needed.
+**Status**: Accepted. Supersedes the voice/STT/OpenRouter/Node-server parts of the three
+2026-06-09 decisions referenced above.
+
+## [2026-06-10] Drop Kaiserslautern/Ramstein Scrapes; Add Homburg Flea Markets
+**Context**: Kaiserslautern (TYPO3 HTML scrape) and Ramstein-Miesenbach (headless-Chromium scrape)
+were planned as additional event sources in "Decouple Ingestion From Presentation".
+**Decision**: Drop both. Add a Homburg Flohmarkt adapter (`scripts/refresh-fleamarkets.mjs`)
+instead, using a maintained table of official yearly dates from homburg.de.
+**Reason**: Flea markets were wanted over more municipal event scrapes, and a maintained-table
+source is far less brittle than a headless-Chromium scrape.
+**Status**: Accepted. Supersedes the Kaiserslautern/Ramstein sources named in the 2026-06-09
+"Decouple Ingestion From Presentation" decision.

@@ -4,9 +4,10 @@ A local, English-first events board for an American family living in the Kaisers
 Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German event posts into a
 glanceable, source-linked calendar.
 
-> **Status: work in progress.** v2 — a touch + voice kiosk for a Raspberry Pi 5 — is under active
-> development and is now the only app (the v1 static dashboard has been retired). This README is a
-> stub and will grow.
+> **Status: feature-complete, pre-deploy.** v2 — a touch kiosk for a Raspberry Pi 5 — has all data
+> surfaces shipped (events, news, weather, trash, holidays, flea markets, family) and is now the
+> only app (the v1 static dashboard has been retired). Remaining work: Pi 5 deployment (see
+> `plan.md` Phase 8).
 
 ## What it does (v2 vision)
 
@@ -16,7 +17,6 @@ A single-page, high-contrast "Civic Departure Board" designed for an always-on w
 - **News marquee** across the top (USA + St. Louis RSS cache, 80-second scroll).
 - **Dual clocks** — Napoli and St. Louis / Central.
 - **Weather** for Waldmohr via Open-Meteo.
-- **Voice** query (tap-to-talk) over the events, later.
 
 See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) for project truth.
 
@@ -69,5 +69,5 @@ never publicly broadcast. Scraped public data is stored minimally and always sou
 
 ## Tech
 
-v2: Vite, React, TypeScript. Fonts: Fraunces, Archivo, JetBrains Mono. No backend yet (a small
-local Node server arrives with the voice phase).
+v2: Vite, React, TypeScript. Fonts: Fraunces, Archivo, JetBrains Mono. No backend — fully static
+build served as-is; the voice/Node-server plan was dropped 2026-06-10.

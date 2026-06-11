@@ -3,19 +3,25 @@
 This file anchors the product and visual direction for the local events app.
 
 ## Audience
-An American family relocating to Waldmohr that needs fast answers: what is happening, whether it is family-friendly, where it is, and how current the information is.
+An American family relocating to the KMC area that needs fast answers: what is happening, whether it is family-friendly, where it is, and how current the information is.
 
 ## Product Shape
-Calendar-first local dashboard with a dense but calm civic feel. It should feel like a practical town desk: trustworthy, current, and easy to scan.
+A single-page, always-on kiosk dashboard for a wall-mounted Raspberry Pi 5: news marquee, dual
+clocks, calendar with rotating "Next Up" spotlight, and weather, all on one "Civic Departure
+Board" view. Calendar is the primary surface; everything else is a glanceable rail.
 
 ## Visual Direction
-- Restrained civic editorial style, not a marketing landing page.
-- Warm paper background, ink text, muted green accents, and signal colors for tags.
-- Calendar and list are the primary surfaces; no oversized hero.
-- Cards are only used for individual events and the detail panel.
+- "Civic Departure Board": high-contrast dark theme (`#0a0e12` background, `#eef3f2` ink),
+  Fraunces serif headings, Archivo UI text, JetBrains Mono numerals.
+- Civic green accent (`#3ed68a`); category colors for Fun/Public, Family Sports, Leave, Trash,
+  Civic/Holiday.
+- Layered glow + grain background, live pulse, staggered load reveal — built to be read from
+  across a room on an always-on display.
+- Calendar dots are colored by category; tap a day/dot opens a detail popover (no filter
+  checkboxes, no separate detail panel — see `docs/decisions.md`).
 
 ## UI Priorities
-- Current/upcoming events above past events.
-- Source links and freshness metadata are visible.
-- Filters use compact controls.
-- Mobile layout must work at 375px.
+- Current/upcoming events above past events; "Next Up" spotlight surfaces what's next.
+- Source links and freshness metadata ("Last Updated") always visible.
+- One color dimension (category) for glanceability; tap for detail, not filters.
+- Touchscreen-first, sized for the Pi 5 kiosk display.
