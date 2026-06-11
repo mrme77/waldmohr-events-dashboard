@@ -20,7 +20,7 @@ See `plan.md` for full detail.
       spotlight + tap-to-detail popover.
 - [x] Phase 2: Waldmohr events — fix refresh placeholder-overwrite bug; wire pipeline to
       `app/public/events.json`; update validation; live data so upcoming events populate.
-- [ ] MVP browser QA/demo pass in a normal browser.
+- [x] MVP browser QA/demo pass in a normal browser.
 
 ### Later (after MVP demo)
 - [x] Phase 3: Weather widget (Open-Meteo, Waldmohr only, keyless).
