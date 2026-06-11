@@ -11,8 +11,16 @@ How to verify the dashboard works.
 - Confirm month cells render category-colored event markers.
 - Confirm selecting a day/event opens details with source link, original German title, post date, last checked date, and date confidence.
 - Confirm past events do not appear in "Next Up".
+- Confirm trash, holiday, flea-market, and family events render on the calendar with the correct
+  category colors.
 - Run `node scripts/validate-events.mjs`.
 - Run `node scripts/validate-news.mjs`.
+- Run `node scripts/validate-trash.mjs`.
+- Run `node scripts/validate-holidays.mjs`.
+- Run `node scripts/validate-fleamarkets.mjs`.
+- Run `node scripts/validate-family.mjs` (skips cleanly if `family.json` is absent, i.e.
+  `GCAL_ICS_URL` not set).
+- Or run all of the above at once: `npm run validate` (from `app/`).
 - Optional: run `node scripts/refresh-events.mjs`, then validate again and confirm `app/public/events.json` changed.
 - Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
 
@@ -36,4 +44,9 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
 - 2026-06-09: `node scripts/refresh-news.mjs` refreshed 12 headlines from NPR USA and KSDK St. Louis to `data/news.json` and `app/public/news.json`.
 - 2026-06-09: `node scripts/validate-news.mjs` passed for both news payloads.
 - 2026-06-09: marquee containment updated for live RSS text; scroll duration set to 80 seconds; `npm run build` passed in `app/`.
-- Remaining: visual browser QA/demo for the v2 app in a normal browser.
+- MVP browser QA/demo pass completed in a normal browser: layout, theme, marquee, clocks,
+  calendar, weather, and family layer all render correctly (see `progress.md`). QA found the
+  event-date filter was incorrectly excluding upcoming events posted far in advance; fixed by
+  removing the `maxPostLeadDays` check from `isDisplayableEventDate` in
+  `scripts/refresh-events.mjs` (PR #20).
+- Remaining: none for the MVP. Next validation milestone is Pi 5 deployment (plan.md Phase 8).

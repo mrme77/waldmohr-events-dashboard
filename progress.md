@@ -25,6 +25,25 @@
   excluding upcoming events posted far in advance. Fixed by removing the `maxPostLeadDays` check
   from `isDisplayableEventDate` in `scripts/refresh-events.mjs`; now only `daysFromToday <= 180`
   is applied.
+- Phase 5 (rescoped): Kaiserslautern/Ramstein scrapes dropped (2026-06-10, see
+  `docs/decisions.md`). Added a Homburg Flohmarkt adapter (`scripts/refresh-fleamarkets.mjs`)
+  using a maintained table of official yearly dates from homburg.de, since the first-Saturday
+  rule has holiday exceptions.
+- Phase 6a: added the Kusel trash iCal adapter (`scripts/refresh-trash.mjs`) and a German public
+  holidays adapter (`scripts/refresh-holidays.mjs`, date.nager.at, RLP), both wired into the
+  calendar with their own category colors.
+- Phase 6b: added the family layer — a Google Calendar private iCal adapter
+  (`scripts/refresh-family.mjs`) with a dependency-free ICS parser supporting recurrence. The
+  secret URL lives in `.env` as `GCAL_ICS_URL`; generated `family.json` is gitignored so the
+  family schedule never reaches this public repo. Leave/vacation/Urlaub/PTO events get their own
+  calendar marker.
+- Phase 7 (Voice): dropped 2026-06-10 (see `docs/decisions.md`). The touch dashboard is enough on
+  its own — no local STT, no OpenRouter, no Node server. A TTS read-aloud idea was also parked.
+
+### Remaining
+- Phase 8: Pi 5 deployment — build/serve `app/dist`, cron-driven `npm run refresh`, add
+  `app/dist/*.json` as a third write target so cron updates reach the served build without a
+  rebuild, Chromium kiosk autostart. See `plan.md` Phase 8.
 
 ## v1 — Static Dashboard (done, retained until v2 parity)
 - Built a static local calendar dashboard with seeded English event data, refresh + validation
