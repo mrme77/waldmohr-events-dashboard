@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T04:39:58.261Z",
+  "generatedAt": "2026-06-11T11:09:16.557Z",
   "sources": [
     {
       "id": "usa",
@@ -16,6 +16,66 @@
   ],
   "items": [
     {
+      "id": "usa-along-the-7-train-in-queens-world-cup-fans-welcome-the-beautiful-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Along the 7 train in Queens, World Cup fans welcome the 'beautiful game'",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5850750/world-cup-new-york-queens-7-train",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
+      "id": "usa-world-cup-facts-and-figures-to-get-you-sounding-like-an-expert-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "World Cup facts and figures to get you sounding like an expert",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5851670/world-cup-2026-guide-players",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
+      "id": "usa-how-algorithm-got-its-name-from-a-9th-century-persian-mathematic-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How 'algorithm' got its name from a 9th-century Persian mathematician",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5848013/algorithm-word-week-etymology",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
+      "id": "usa-trump-s-pick-for-intel-chief-could-imperil-a-key-u-s-spy-tool-wh-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump's pick for intel chief could imperil a key U.S. spy tool. Who is Bill Pulte?",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5851895/bill-pulti-director-of-national-intelligence-fisa-702",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
+      "id": "usa-spacex-is-poised-for-blastoff-with-an-ipo-likely-to-break-record-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "SpaceX is poised for blastoff with an IPO likely to break records",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
+      "id": "usa-from-neon-mosquitoes-to-winged-migrations-top-images-captured-by-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "From neon mosquitoes to winged migrations, top images captured by scientists",
+      "url": "https://www.npr.org/2026/06/11/nx-s1-5853165/scientists-at-work-nature-photography",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "lastChecked": "2026-06-11T11:09:16.512Z"
+    },
+    {
       "id": "stl-modot-asking-for-feedback-on-proposed-gravois-avenue-safety-impr-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
@@ -23,7 +83,7 @@
       "title": "MoDOT asking for feedback on proposed Gravois Avenue safety improvements",
       "url": "https://www.ksdk.com/article/news/local/modot-asking-for-feedback-on-proposed-gravois-avenue-safety-improvements/63-733120ab-14bb-40c7-85de-8c09b618f740",
       "publishedAt": "2026-06-11T03:53:26.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     },
     {
       "id": "stl-concerns-grow-after-1-teen-dies-2-injured-in-separate-shootings--1",
@@ -33,7 +93,7 @@
       "title": "Concerns grow after 1 teen dies, 2 injured in separate shootings on north St. Louis street",
       "url": "https://www.ksdk.com/article/news/crime/concerns-grow-after-1-teen-dies-2-injured-in-separate-shootings-on-north-st-louis-street/63-f6c04cc6-6009-41ee-8a50-b5a00d4b61ff",
       "publishedAt": "2026-06-11T03:53:17.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     },
     {
       "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-2",
@@ -43,7 +103,7 @@
       "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
       "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
       "publishedAt": "2026-06-11T03:14:42.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     },
     {
       "id": "stl-collinsville-police-ask-for-help-identifying-infant-abandoned-at-3",
@@ -53,7 +113,7 @@
       "title": "Collinsville police ask for help identifying infant abandoned at Cahokia Mounds",
       "url": "https://www.ksdk.com/article/news/local/illinois/police-ask-for-help-identifying-infant-abandoned-at-cahokia-mounds/63-1ae4425b-a2f6-4db9-a0cc-690204818de6",
       "publishedAt": "2026-06-10T23:42:51.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     },
     {
       "id": "stl-it-gets-really-hot-in-here-finding-ways-to-beat-the-heat-with-no-4",
@@ -63,7 +123,7 @@
       "title": "'It gets really hot in here': Finding ways to beat the heat with no air conditioning",
       "url": "https://www.ksdk.com/article/weather/ways-to-beat-the-heat-with-no-air-conditioning/63-00ff1ef9-dc81-4b24-9648-4c74ff192804",
       "publishedAt": "2026-06-10T23:20:40.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     },
     {
       "id": "stl-ice-detained-3-collinsville-teens-on-tuesday-raising-serious-con-5",
@@ -73,67 +133,7 @@
       "title": "ICE detained 3 Collinsville teens on Tuesday, raising 'serious concerns' among family and officials",
       "url": "https://www.ksdk.com/article/news/local/illinois-ice-detains-3-teens-collinsville-serious-concerns-family-officials/63-ee3ab676-2fca-4666-ab98-79e32f04af50",
       "publishedAt": "2026-06-10T23:20:33.000Z",
-      "lastChecked": "2026-06-11T04:39:58.250Z"
-    },
-    {
-      "id": "usa-fbi-seizing-evidence-at-california-plant-where-chemical-tank-ove-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "FBI seizing evidence at California plant where chemical tank overheated",
-      "url": "https://www.npr.org/2026/06/10/g-s1-127381/fbi-garden-grove-chemical-tank-evacuations",
-      "publishedAt": "2026-06-10T23:05:01.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
-    },
-    {
-      "id": "usa-u-s-military-says-it-s-striking-multiple-targets-in-iran-in-2nd--1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "U.S. military says it's striking 'multiple targets' in Iran in 2nd day of renewed fire",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5853882/us-strike-iran-second-day-renewed-fire",
-      "publishedAt": "2026-06-10T22:46:56.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
-    },
-    {
-      "id": "usa-somali-world-cup-referee-denied-u-s-entry-hailed-as-hero-at-home-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Somali World Cup referee denied U.S. entry, hailed as hero at home",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5853075/somali-world-cup-referee-denied-u-s-entry-hailed-as-hero-at-home",
-      "publishedAt": "2026-06-10T20:45:58.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
-    },
-    {
-      "id": "usa-veterans-and-relatives-see-no-place-for-trump-s-arch-near-arling-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Veterans and relatives see no place for Trump's arch near Arlington National Cemetery",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5851587/trump-arch-veterans-arlington-national-cemetery",
-      "publishedAt": "2026-06-10T20:26:00.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
-    },
-    {
-      "id": "usa-report-ice-wasted-millions-endangered-detainees-in-largest-immig-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Report: ICE wasted millions, endangered detainees in largest immigration facility",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5853534/report-ice-wasted-millions-endangered-detainees-in-largest-immigration-facility",
-      "publishedAt": "2026-06-10T20:10:03.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
-    },
-    {
-      "id": "usa-the-theory-taking-the-rich-by-storm-china-funds-data-center-hate-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "The theory taking the rich by storm: China funds data center haters",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5844328/us-china-data-centers-foreign-influence",
-      "publishedAt": "2026-06-10T20:01:52.000Z",
-      "lastChecked": "2026-06-11T04:39:58.124Z"
+      "lastChecked": "2026-06-11T11:09:16.551Z"
     }
   ]
 }
