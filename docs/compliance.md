@@ -23,7 +23,6 @@ exemption.
 | Data | Handling |
 |---|---|
 | Family calendar entries | Local only. Pulled via private iCal URL, never republished. |
-| Your voice / queries | Local STT (whisper.cpp on-device). No recording persisted. Send minimal transcript to the LLM. No query logging. |
 | Event organizer names in scraped posts | Already public; store minimal fields; keep source link. |
 
 ## The real legal exposure is copyright, not GDPR
@@ -42,17 +41,11 @@ Scraping public event listings raises **copyright** and the **EU sui generis dat
 - **Descriptive User-Agent** and rate limiting.
 - Prefer official structured feeds (WordPress API, iCal) over HTML scraping where they exist.
 
-## Third-country transfer (OpenRouter, US)
-
-Voice queries go to a US LLM provider. Under the household exemption this is fine for personal
-use, but minimize anyway: local STT keeps audio on-device, send only the necessary transcript,
-do not log queries containing personal data.
-
 ## Secrets & security (GDPR Art. 32 good practice)
 
 - All keys/URLs in `.env`, gitignored. Never committed, never in the client bundle.
-- `OPENROUTER_API_KEY` held only by the local Node server, which proxies requests.
-- `GCAL_ICS_URL` is itself a secret (it grants read access to the calendar) — server-side only.
+- `GCAL_ICS_URL` is itself a secret (it grants read access to the calendar) — used only by
+  `scripts/refresh-family.mjs` at refresh time, never shipped to the client.
 
 ## Retention
 
@@ -64,5 +57,4 @@ personal calendar data.
 - [ ] Family/personal layer never leaves the local network.
 - [ ] `robots.txt` checked for each scraped source.
 - [ ] Scrapers store minimal fields + source link; run at low frequency.
-- [ ] Voice: on-device STT, no recording kept, no query logging.
-- [ ] Secrets in `.env` only, held server-side, out of the client bundle.
+- [ ] Secrets in `.env` only, never in the client bundle.
