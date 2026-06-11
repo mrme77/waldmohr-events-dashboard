@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T20:08:13.012Z",
+  "generatedAt": "2026-06-11T04:39:58.261Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-missouri-faces-emergency-budget-cuts-if-gov-kehoe-doesn-t-take-a-0",
+      "id": "stl-modot-asking-for-feedback-on-proposed-gravois-avenue-safety-impr-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "KSDK Local",
-      "title": "Missouri faces 'emergency' budget cuts if Gov. Kehoe doesn't take action, state auditor says",
-      "url": "https://www.ksdk.com/article/news/local/missouri-emergency-budget-cuts-state-auditor-report/63-4c486794-cabe-4960-9449-f9d7b1cff1d0",
-      "publishedAt": "2026-06-10T20:06:30.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
+      "title": "MoDOT asking for feedback on proposed Gravois Avenue safety improvements",
+      "url": "https://www.ksdk.com/article/news/local/modot-asking-for-feedback-on-proposed-gravois-avenue-safety-improvements/63-733120ab-14bb-40c7-85de-8c09b618f740",
+      "publishedAt": "2026-06-11T03:53:26.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
     },
     {
-      "id": "usa-the-theory-taking-the-rich-by-storm-china-funds-data-center-hate-0",
+      "id": "stl-concerns-grow-after-1-teen-dies-2-injured-in-separate-shootings--1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Concerns grow after 1 teen dies, 2 injured in separate shootings on north St. Louis street",
+      "url": "https://www.ksdk.com/article/news/crime/concerns-grow-after-1-teen-dies-2-injured-in-separate-shootings-on-north-st-louis-street/63-f6c04cc6-6009-41ee-8a50-b5a00d4b61ff",
+      "publishedAt": "2026-06-11T03:53:17.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
+    },
+    {
+      "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
+      "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
+      "publishedAt": "2026-06-11T03:14:42.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
+    },
+    {
+      "id": "stl-collinsville-police-ask-for-help-identifying-infant-abandoned-at-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "Collinsville police ask for help identifying infant abandoned at Cahokia Mounds",
+      "url": "https://www.ksdk.com/article/news/local/illinois/police-ask-for-help-identifying-infant-abandoned-at-cahokia-mounds/63-1ae4425b-a2f6-4db9-a0cc-690204818de6",
+      "publishedAt": "2026-06-10T23:42:51.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
+    },
+    {
+      "id": "stl-it-gets-really-hot-in-here-finding-ways-to-beat-the-heat-with-no-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "'It gets really hot in here': Finding ways to beat the heat with no air conditioning",
+      "url": "https://www.ksdk.com/article/weather/ways-to-beat-the-heat-with-no-air-conditioning/63-00ff1ef9-dc81-4b24-9648-4c74ff192804",
+      "publishedAt": "2026-06-10T23:20:40.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
+    },
+    {
+      "id": "stl-ice-detained-3-collinsville-teens-on-tuesday-raising-serious-con-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "KSDK Local",
+      "title": "ICE detained 3 Collinsville teens on Tuesday, raising 'serious concerns' among family and officials",
+      "url": "https://www.ksdk.com/article/news/local/illinois-ice-detains-3-teens-collinsville-serious-concerns-family-officials/63-ee3ab676-2fca-4666-ab98-79e32f04af50",
+      "publishedAt": "2026-06-10T23:20:33.000Z",
+      "lastChecked": "2026-06-11T04:39:58.250Z"
+    },
+    {
+      "id": "usa-fbi-seizing-evidence-at-california-plant-where-chemical-tank-ove-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "FBI seizing evidence at California plant where chemical tank overheated",
+      "url": "https://www.npr.org/2026/06/10/g-s1-127381/fbi-garden-grove-chemical-tank-evacuations",
+      "publishedAt": "2026-06-10T23:05:01.000Z",
+      "lastChecked": "2026-06-11T04:39:58.124Z"
+    },
+    {
+      "id": "usa-u-s-military-says-it-s-striking-multiple-targets-in-iran-in-2nd--1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "U.S. military says it's striking 'multiple targets' in Iran in 2nd day of renewed fire",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5853882/us-strike-iran-second-day-renewed-fire",
+      "publishedAt": "2026-06-10T22:46:56.000Z",
+      "lastChecked": "2026-06-11T04:39:58.124Z"
+    },
+    {
+      "id": "usa-somali-world-cup-referee-denied-u-s-entry-hailed-as-hero-at-home-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Somali World Cup referee denied U.S. entry, hailed as hero at home",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5853075/somali-world-cup-referee-denied-u-s-entry-hailed-as-hero-at-home",
+      "publishedAt": "2026-06-10T20:45:58.000Z",
+      "lastChecked": "2026-06-11T04:39:58.124Z"
+    },
+    {
+      "id": "usa-veterans-and-relatives-see-no-place-for-trump-s-arch-near-arling-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Veterans and relatives see no place for Trump's arch near Arlington National Cemetery",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5851587/trump-arch-veterans-arlington-national-cemetery",
+      "publishedAt": "2026-06-10T20:26:00.000Z",
+      "lastChecked": "2026-06-11T04:39:58.124Z"
+    },
+    {
+      "id": "usa-report-ice-wasted-millions-endangered-detainees-in-largest-immig-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Report: ICE wasted millions, endangered detainees in largest immigration facility",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5853534/report-ice-wasted-millions-endangered-detainees-in-largest-immigration-facility",
+      "publishedAt": "2026-06-10T20:10:03.000Z",
+      "lastChecked": "2026-06-11T04:39:58.124Z"
+    },
+    {
+      "id": "usa-the-theory-taking-the-rich-by-storm-china-funds-data-center-hate-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "The theory taking the rich by storm: China funds data center haters",
       "url": "https://www.npr.org/2026/06/10/nx-s1-5844328/us-china-data-centers-foreign-influence",
       "publishedAt": "2026-06-10T20:01:52.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
-    },
-    {
-      "id": "stl-more-thorough-francis-howell-vetting-could-have-avoided-229k-pay-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "More thorough Francis Howell vetting could have avoided $229K payout for superintendent, Missouri Auditor says",
-      "url": "https://www.ksdk.com/article/news/education/missouri-auditor-more-thorough-vetting-avoided-229k-payout-24-hour-superintendent/63-35d21193-5a66-463f-857d-5a799bf8a837",
-      "publishedAt": "2026-06-10T19:35:59.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
-    },
-    {
-      "id": "stl-ice-detained-3-collinsville-teens-on-tuesday-raising-serious-con-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "ICE detained 3 Collinsville teens on Tuesday, raising 'serious concerns' among family and officials",
-      "url": "https://www.ksdk.com/article/news/local/illinois-ice-detains-3-teens-collinsville-serious-concerns-family-officials/63-ee3ab676-2fca-4666-ab98-79e32f04af50",
-      "publishedAt": "2026-06-10T19:35:47.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
-    },
-    {
-      "id": "stl-st-louis-first-heat-wave-continues-through-thursday-weather-impa-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "St. Louis' first heat wave continues through Thursday | Weather Impact Alert",
-      "url": "https://www.ksdk.com/article/weather/weather-impact/st-louis-first-extreme-heat-wave-tuesday-through-friday-weather-impact-alert/63-931beec3-ef3d-42af-8f37-95dba211f860",
-      "publishedAt": "2026-06-10T19:00:51.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
-    },
-    {
-      "id": "stl-river-city-casino-cleared-after-bomb-threat-forces-evacuation-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "River City Casino cleared after bomb threat forces evacuation",
-      "url": "https://www.ksdk.com/article/news/local/river-city-casino-evacuated-due-bomb-threat-police-say/63-d3a670cd-c527-4ff8-9cb5-3a37a582a37d",
-      "publishedAt": "2026-06-10T17:27:35.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
-    },
-    {
-      "id": "stl-st-louis-aldermanic-committee-ups-planned-rams-spending-for-wate-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "St. Louis aldermanic committee ups planned Rams spending for water projects, tornado relief",
-      "url": "https://www.ksdk.com/article/news/local/st-louis-aldermanic-committee-ups-planned-rams-spending-for-water-projects-tornado-relief/63-f60ae83b-41e6-4b51-a82f-5cb244708a4f",
-      "publishedAt": "2026-06-10T16:17:41.000Z",
-      "lastChecked": "2026-06-10T20:08:13.003Z"
-    },
-    {
-      "id": "usa-taiwan-drills-with-u-s-rocket-system-firing-in-china-s-direction-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Taiwan drills with U.S. rocket system, firing in China's direction",
-      "url": "https://www.npr.org/2026/06/10/g-s1-127253/taiwan-drills-with-us-rocket-system-firing-in-chinas-direction",
-      "publishedAt": "2026-06-10T15:29:24.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
-    },
-    {
-      "id": "usa-inflation-tops-4-for-the-first-time-in-3-years-on-spike-in-gasol-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Inflation tops 4% for the first time in 3 years on spike in gasoline prices",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5853077/inflation-over-4-cpi-gasoline-prices",
-      "publishedAt": "2026-06-10T13:08:58.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
-    },
-    {
-      "id": "usa-july-1-brings-big-student-loan-changes-here-s-what-you-need-to-k-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "July 1 brings big student loan changes. Here's what you need to know",
-      "url": "https://www.npr.org/2026/06/10/nx-s1-5835633/student-loans-guide-education-changes-repayment-plan",
-      "publishedAt": "2026-06-10T11:30:00.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
-    },
-    {
-      "id": "usa-u-s-and-iran-exchange-strikes-and-house-passes-ice-and-border-pa-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "U.S. and Iran exchange strikes. And, House passes ICE and Border Patrol funding",
-      "url": "https://www.npr.org/2026/06/10/g-s1-127216/up-first-newsletter-iran-us-war-primary-results-ice-funding-bill-gates",
-      "publishedAt": "2026-06-10T11:26:08.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
-    },
-    {
-      "id": "usa-china-re-centers-north-korea-ties-as-nuclear-silence-reshapes-ba-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "China re‑centers North Korea ties as nuclear silence reshapes balance",
-      "url": "https://www.npr.org/2026/06/10/g-s1-127013/xi-jinping-visits-pyongyang-china-north-korea-ties",
-      "publishedAt": "2026-06-10T10:30:00.000Z",
-      "lastChecked": "2026-06-10T20:08:12.919Z"
+      "lastChecked": "2026-06-11T04:39:58.124Z"
     }
   ]
 }
