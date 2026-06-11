@@ -6,7 +6,6 @@ const eventCategoryIds = new Set([7, 111, 113, 115]);
 const today = new Date();
 const todayKey = today.toISOString().slice(0, 10);
 const maxFutureDays = 180;
-const maxPostLeadDays = 180;
 const outputTargets = [
   new URL("../data/events.json", import.meta.url),
   new URL("../app/public/events.json", import.meta.url)
@@ -69,7 +68,7 @@ function normalizePost(post) {
   const text = stripHtml(`${post.excerpt?.rendered ?? ""} ${post.content?.rendered ?? ""}`);
   const postDate = String(post.date ?? "").slice(0, 10);
   const candidateDate = extractDate(`${title} ${text}`, postDate);
-  if (candidateDate === null || !isDisplayableEventDate(candidateDate, postDate)) {
+  if (candidateDate === null || !isDisplayableEventDate(candidateDate)) {
     return null;
   }
 
@@ -136,20 +135,17 @@ function extractDate(text, postDate) {
  * Returns true when the inferred event date is safe enough for the live kiosk.
  *
  * @param {string} eventDate Event date as YYYY-MM-DD.
- * @param {string} postDate WordPress post date as YYYY-MM-DD.
  * @returns {boolean} True when the event should be displayed.
  */
-function isDisplayableEventDate(eventDate, postDate) {
+function isDisplayableEventDate(eventDate) {
   if (eventDate < todayKey) return false;
 
   const eventTime = Date.parse(`${eventDate}T12:00:00Z`);
   const todayTime = Date.parse(`${todayKey}T12:00:00Z`);
-  const postTime = Date.parse(`${postDate}T12:00:00Z`);
-  if ([eventTime, todayTime, postTime].some(Number.isNaN)) return false;
+  if ([eventTime, todayTime].some(Number.isNaN)) return false;
 
   const daysFromToday = Math.round((eventTime - todayTime) / 86_400_000);
-  const daysFromPost = Math.round((eventTime - postTime) / 86_400_000);
-  return daysFromToday <= maxFutureDays && daysFromPost <= maxPostLeadDays;
+  return daysFromToday <= maxFutureDays;
 }
 
 /**

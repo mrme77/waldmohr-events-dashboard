@@ -1,5 +1,25 @@
 {
-  "generatedAt": "2026-06-10T20:16:04.482Z",
+  "generatedAt": "2026-06-11T04:59:29.419Z",
   "source": "https://www.waldmohr-aktuell.de/",
-  "events": []
+  "events": [
+    {
+      "id": "kinder-und-familien-fest-waldmohr-am-07-09-2026",
+      "title": "Children and Family Festival Waldmohr on 07.09.2026",
+      "originalTitle": "Kinder und Familien Fest Waldmohr am 07.09.2026",
+      "summary": "Children and Family Festival Waldmohr on 07.09.2026 is a public Waldmohr Aktuell source item. It may be relevant for family planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
+      "date": "2026-09-07",
+      "time": null,
+      "venue": "Waldmohr",
+      "tags": [
+        "community",
+        "family"
+      ],
+      "familyRelevance": "Potential family outing or kid-relevant local event; confirm details at the source.",
+      "sourceUrl": "https://www.waldmohr-aktuell.de/kinder-und-familien-fest-waldmohr-am-07-09-2026/",
+      "postDate": "2025-08-21",
+      "lastChecked": "2026-06-11",
+      "status": "upcoming",
+      "dateConfidence": "inferred"
+    }
+  ]
 }
