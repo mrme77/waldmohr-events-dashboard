@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T07:52:14.756Z",
+  "generatedAt": "2026-06-13T21:34:13.182Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-pope-leo-xiv-s-flight-home-from-spain-was-grounded-so-the-king-c-0",
+      "id": "usa-police-investigate-theft-of-england-equipment-at-world-cup-2-peo-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Pope Leo XIV's flight home from Spain was grounded so the king came to his aid",
-      "url": "https://www.npr.org/2026/06/13/nx-s1-5856981/pope-leo-flight-grounded",
-      "publishedAt": "2026-06-13T04:29:38.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
+      "title": "Police investigate theft of England equipment at World Cup, 2 people in custody",
+      "url": "https://www.npr.org/2026/06/13/g-s1-128070/police-investigate-england-equipment-world-cup-kansas-city-florida",
+      "publishedAt": "2026-06-13T21:10:59.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     },
     {
-      "id": "usa-trump-says-u-s-military-strike-killed-leader-of-tren-de-aragua-g-1",
+      "id": "usa-as-bay-area-hosts-world-cup-empty-red-seats-are-everywhere-at-le-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump says U.S. military strike killed leader of Tren de Aragua gang",
-      "url": "https://www.npr.org/2026/06/12/nx-s1-5856611/u-s-military-kill-leader-tren-de-aragua",
-      "publishedAt": "2026-06-13T03:38:54.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
+      "title": "As Bay Area hosts World Cup, empty red seats are everywhere at Levi's Stadium",
+      "url": "https://www.npr.org/2026/06/13/g-s1-128068/bay-area-world-cup-empty-red-seats-levis-stadium",
+      "publishedAt": "2026-06-13T21:06:36.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     },
     {
-      "id": "stl-search-underway-for-teen-who-went-underwater-while-paddleboardin-0",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Search underway for teen who went underwater while paddleboarding in St. Charles",
-      "url": "https://www.ksdk.com/article/news/local/search-underway-for-teen-who-went-underwater-while-paddleboarding-in-st-charles/63-310b7af6-733c-496c-8d2e-5717dba2438b",
-      "publishedAt": "2026-06-13T02:50:40.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
-    },
-    {
-      "id": "usa-gene-shalit-longtime-today-show-movie-critic-dies-at-100-2",
+      "id": "usa-a-lebanon-town-s-grief-in-the-aftermath-of-a-deadly-israeli-airs-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Gene Shalit, longtime 'Today' show movie critic, dies at 100",
-      "url": "https://www.npr.org/2026/06/12/g-s1-128022/gene-shalit-movie-critic-dies",
-      "publishedAt": "2026-06-13T01:01:34.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
+      "title": "A Lebanon town's grief in the aftermath of a deadly Israeli airstrike",
+      "url": "https://www.npr.org/2026/06/13/nx-s1-5848614/a-lebanon-towns-grief-in-the-aftermath-of-a-deadly-israeli-airstrike",
+      "publishedAt": "2026-06-13T21:02:53.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     },
     {
-      "id": "usa-trump-s-name-is-still-on-the-kennedy-center-officials-say-it-wil-3",
+      "id": "usa-4-things-to-know-about-the-new-sunscreen-ingredient-the-fda-appr-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump's name is still on the Kennedy Center — officials say it will be down by noon",
-      "url": "https://www.npr.org/2026/06/12/g-s1-128017/trump-name-kennedy-center",
-      "publishedAt": "2026-06-13T00:43:32.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
+      "title": "4 things to know about the new sunscreen ingredient the FDA approved",
+      "url": "https://www.npr.org/2026/06/13/nx-s1-5856385/sunscreen-skin-protection-bemotrizinol",
+      "publishedAt": "2026-06-13T12:00:00.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     },
     {
-      "id": "usa-paramount-warner-brothers-merger-gets-justice-department-approva-4",
+      "id": "usa-a-plan-to-get-lifesaving-food-to-hungry-kids-was-working-well-un-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Paramount-Warner Brothers merger gets Justice Department approval",
-      "url": "https://www.npr.org/2026/06/12/nx-s1-5856563/justice-dept-approves-paramounts-acquisition-of-warner-bros-discovery",
-      "publishedAt": "2026-06-12T23:24:40.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
+      "title": "A plan to get lifesaving food to hungry kids was working well -- until it wasn't",
+      "url": "https://www.npr.org/2026/06/13/nx-s1-5787791/malnourished-children-senegal-therapeutic-food-plumpynut",
+      "publishedAt": "2026-06-13T11:07:38.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     },
     {
-      "id": "usa-justice-dept-approves-paramount-s-acquisition-of-warner-bros-dis-5",
+      "id": "usa-cool-ladies-club-is-directed-by-10-working-class-women-they-live-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Justice Dept. approves Paramount's acquisition of Warner Bros. Discovery",
-      "url": "https://www.npr.org/2026/06/12/nx-s1-5856567/paramount-acquisition-warner-bros-discovery-merger",
-      "publishedAt": "2026-06-12T22:29:12.000Z",
-      "lastChecked": "2026-06-13T07:52:14.746Z"
-    },
-    {
-      "id": "stl-aldermen-advance-bill-to-increase-water-rates-citywide-at-friday-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Aldermen advance bill to increase water rates citywide at Friday's meeting",
-      "url": "https://www.ksdk.com/article/news/local/aldermen-advance-bill-to-increase-water-rates-citywide-at-fridays-meeting/63-23604dd2-f5be-44ca-a273-83c66e67d498",
-      "publishedAt": "2026-06-12T21:58:29.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
-    },
-    {
-      "id": "stl-51-home-subdivision-wins-approval-in-wentzville-after-land-annex-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "51-home subdivision wins approval in Wentzville after land annexed into city limits",
-      "url": "https://www.ksdk.com/article/news/local/business-journal/51-home-subdivision-wentzville/63-9accefd0-9f8d-450c-9dcc-444ac9e7a088",
-      "publishedAt": "2026-06-12T21:06:50.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
-    },
-    {
-      "id": "stl-trial-in-sam-page-s-prop-b-mailer-case-set-for-january-2027-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Trial in Sam Page's Prop B mailer case set for January 2027",
-      "url": "https://www.ksdk.com/article/news/politics/trial-in-sam-pages-prop-b-mailer-case-set-for-january-2027/63-b487d07c-1330-47a3-a771-60f41892a561",
-      "publishedAt": "2026-06-12T20:25:40.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
-    },
-    {
-      "id": "stl-shooting-in-sherman-park-leaves-2-teens-in-critical-condition-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Shooting in Sherman Park leaves 2 teens in critical condition",
-      "url": "https://www.ksdk.com/article/news/crime/shooting-sherman-park-leaves-2-teens-critical-condition/63-f5067fab-7b75-4bf8-926e-6302799f5006",
-      "publishedAt": "2026-06-12T18:11:40.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
-    },
-    {
-      "id": "stl-missouri-courts-keep-rewriting-ballot-language-as-fights-over-di-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "KSDK Local",
-      "title": "Missouri courts keep rewriting ballot language as fights over direct democracy intensify",
-      "url": "https://www.ksdk.com/article/news/politics/missouri-courts-keep-rewriting-ballot-language-fights-over-direct-democracy-intensify/63-79e2ed72-49a0-44c1-a42b-961c61f11aee",
-      "publishedAt": "2026-06-12T17:36:36.000Z",
-      "lastChecked": "2026-06-13T07:52:14.747Z"
+      "title": "'Cool Ladies Club' is directed by 10 working-class women. They live up to the title",
+      "url": "https://www.npr.org/2026/06/13/g-s1-125467/cool-ladies-club-movies-working-class-women-documentary-india",
+      "publishedAt": "2026-06-13T10:56:45.000Z",
+      "lastChecked": "2026-06-13T21:34:12.642Z"
     }
   ]
 }
