@@ -120,3 +120,20 @@ instead, using a maintained table of official yearly dates from homburg.de.
 source is far less brittle than a headless-Chromium scrape.
 **Status**: Accepted. Supersedes the Kaiserslautern/Ramstein sources named in the 2026-06-09
 "Decouple Ingestion From Presentation" decision.
+
+## [2026-06-13] Add Kaiserslautern American UNTERWEGS As KMC Events
+**Context**: The Kaiserslautern American digital edition publishes an `UNTERWEGS` section with
+KMC-area event listings useful to the family, and the Issuu reader exposes the rendered page text
+through public SVG page assets.
+**Decision**: Add `scripts/refresh-kmc.mjs` and `scripts/validate-kmc.mjs`. The adapter discovers
+the current issue from the Kaiserslautern American homepage embed, reads Issuu document metadata,
+fetches page SVG text, parses `UNTERWEGS` event blocks, and writes `kmc-events.json` to both
+`data/` and `app/public/`. The frontend loads it as an optional calendar layer.
+**Reason**: This keeps the KMC magazine source isolated from Waldmohr Aktuell while reusing the
+existing normalized event schema. It avoids browser automation and new dependencies by using
+public text-bearing SVG assets. Dates without an explicit year are inferred from the issue year and
+marked with `dateConfidence: "inferred"`.
+**Operational note**: New digital issues usually appear on Fridays. Manual refresh is
+`cd app && npm run refresh:build`; an automated Friday PR can be added later, but scheduled
+refreshes remain an ask-first project boundary.
+**Status**: Accepted.

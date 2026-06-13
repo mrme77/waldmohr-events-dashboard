@@ -13,16 +13,21 @@ How to verify the dashboard works.
 - Confirm past events do not appear in "Next Up".
 - Confirm trash, holiday, flea-market, and family events render on the calendar with the correct
   category colors.
+- Confirm KMC magazine events from `app/public/kmc-events.json` render on the calendar as
+  neon-green diamond markers and open source-linked Issuu details.
 - Run `node scripts/validate-events.mjs`.
 - Run `node scripts/validate-news.mjs`.
 - Run `node scripts/validate-trash.mjs`.
 - Run `node scripts/validate-holidays.mjs`.
 - Run `node scripts/validate-fleamarkets.mjs`.
+- Run `node scripts/validate-kmc.mjs`.
 - Run `node scripts/validate-family.mjs` (skips cleanly if `family.json` is absent, i.e.
   `GCAL_ICS_URL` not set).
 - Or run all of the above at once: `npm run validate` (from `app/`).
 - Optional: run `node scripts/refresh-events.mjs`, then validate again and confirm `app/public/events.json` changed.
 - Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
+- Optional: run `node scripts/refresh-kmc.mjs`, then validate again and confirm
+  `app/public/kmc-events.json` changed. KMC issue updates are expected most Fridays.
 
 ## v1 Historical Checklist (retired 2026-06-09)
 The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for history only.
@@ -49,4 +54,11 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
   event-date filter was incorrectly excluding upcoming events posted far in advance; fixed by
   removing the `maxPostLeadDays` check from `isDisplayableEventDate` in
   `scripts/refresh-events.mjs` (PR #20).
+- 2026-06-13: `node scripts/refresh-kmc.mjs` refreshed 15 KMC `UNTERWEGS` events from the
+  Kaiserslautern American June 12, 2026 Issuu issue to `data/kmc-events.json` and
+  `app/public/kmc-events.json`.
+- 2026-06-13: `npm run validate` passed in `app/`, including 15 KMC events from
+  `2026-06-13T07:58:14.853Z`.
+- 2026-06-13: `npm run build` passed in `app/` after KMC events were added as a neon-green
+  diamond marker category.
 - Remaining: none for the MVP. Next validation milestone is Pi 5 deployment (plan.md Phase 8).
