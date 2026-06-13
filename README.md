@@ -51,7 +51,7 @@ Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
 ## Data sources
 
 - Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
-- KMC events: Kaiserslautern American digital edition on Issuu. `scripts/refresh-kmc.mjs`
+- KMC events: `scripts/refresh-kmc.mjs`
   extracts the current issue's `UNTERWEGS` section from the SVG text layer and writes
   `kmc-events.json`. Issues usually update on Fridays; yearless event dates are inferred from the
   issue year and marked as inferred.

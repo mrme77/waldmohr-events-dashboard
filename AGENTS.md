@@ -23,7 +23,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Landkreis Kusel waste collection iCal (Waldmohr trash).
 - Homburg flea market dates: maintained table in `scripts/refresh-fleamarkets.mjs`, synced
   yearly from the homburg.de announcement (the script warns when dates run low).
-- Kaiserslautern American digital edition on Issuu: `scripts/refresh-kmc.mjs` finds the current
+- KMC events: `scripts/refresh-kmc.mjs` finds the current
   embedded issue, extracts the `UNTERWEGS` SVG text layer, and writes KMC-area events. Dates that
   omit a year are inferred from the issue year and marked with `dateConfidence: "inferred"`.
 - Google Calendar private iCal feed (family layer): secret URL in `.env` as `GCAL_ICS_URL`,
