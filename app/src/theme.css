@@ -30,6 +30,7 @@
   --cat-trash-glas: #cbd5e1;      /* white bag — Weisse Säcke */
   --cat-trash-umweltmobil: #34d399; /* mobile recycling */
   --cat-civic: #e879f9;           /* fuchsia — civic events */
+  --cat-kmc: #39ff14;             /* neon green — KMC magazine events */
 
   --gap: clamp(0.8rem, 1.5vw, 1.6rem);
   --radius: 16px;
@@ -364,6 +365,13 @@ body::after {
 .dot.cat-trash-glas, .cat-trash-glas > .dot { background: var(--cat-trash-glas); box-shadow: 0 0 7px rgba(203, 213, 225, 0.45); }
 .dot.cat-trash-umweltmobil, .cat-trash-umweltmobil > .dot { background: var(--cat-trash-umweltmobil); box-shadow: 0 0 7px rgba(52, 211, 153, 0.5); }
 .dot.cat-civic, .cat-civic > .dot { background: var(--cat-civic); box-shadow: 0 0 7px rgba(232, 121, 249, 0.55); }
+/* KMC magazine events render as a diamond. */
+.dot.cat-kmc, .cat-kmc > .dot {
+  background: var(--cat-kmc);
+  border-radius: 1px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.75);
+}
 
 /* ---- Spotlight ---- */
 .spotlight {
@@ -395,6 +403,7 @@ body::after {
   transition: transform 0.16s ease, border-color 0.16s ease;
 }
 .spotlight__card:hover { transform: translateY(-2px); border-left-color: var(--accent); }
+.spotlight__card.cat-kmc { border-left-color: var(--cat-kmc); }
 .spotlight__card.cat-civic { border-left-color: var(--cat-civic); }
 .spotlight__card.cat-holiday { border-left-color: var(--cat-holiday); }
 .spotlight__card.cat-trash { border-left-color: var(--cat-trash); }
@@ -522,6 +531,7 @@ body::after {
 .popover__close:hover { color: var(--ink); }
 .popover__list { list-style: none; margin: var(--gap) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--gap); }
 .popover__item { border-left: 3px solid var(--cat-fun); background: var(--panel-2); border-radius: 12px; padding: var(--gap); }
+.popover__item.cat-kmc { border-left-color: var(--cat-kmc); }
 .popover__item.cat-civic { border-left-color: var(--cat-civic); }
 .popover__item.cat-holiday { border-left-color: var(--cat-holiday); }
 .popover__item.cat-trash { border-left-color: var(--cat-trash); }

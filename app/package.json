@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "refresh": "node ../scripts/refresh-events.mjs && node ../scripts/refresh-news.mjs && node ../scripts/refresh-trash.mjs && node ../scripts/refresh-holidays.mjs && node ../scripts/refresh-fleamarkets.mjs && node ../scripts/refresh-family.mjs",
-    "validate": "node ../scripts/validate-events.mjs && node ../scripts/validate-news.mjs && node ../scripts/validate-trash.mjs && node ../scripts/validate-holidays.mjs && node ../scripts/validate-fleamarkets.mjs && node ../scripts/validate-family.mjs",
+    "refresh": "node ../scripts/refresh-events.mjs && node ../scripts/refresh-news.mjs && node ../scripts/refresh-trash.mjs && node ../scripts/refresh-holidays.mjs && node ../scripts/refresh-fleamarkets.mjs && node ../scripts/refresh-kmc.mjs && node ../scripts/refresh-family.mjs",
+    "validate": "node ../scripts/validate-events.mjs && node ../scripts/validate-news.mjs && node ../scripts/validate-trash.mjs && node ../scripts/validate-holidays.mjs && node ../scripts/validate-fleamarkets.mjs && node ../scripts/validate-kmc.mjs && node ../scripts/validate-family.mjs",
     "refresh:build": "npm run refresh && npm run validate && npm run build"
   },
   "dependencies": {

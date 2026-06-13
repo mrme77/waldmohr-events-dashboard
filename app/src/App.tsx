@@ -10,6 +10,7 @@ import { loadTrash } from "./data/loadTrash";
 import { loadHolidays } from "./data/loadHolidays";
 import { loadFleamarkets } from "./data/loadFleamarkets";
 import { loadFamily } from "./data/loadFamily";
+import { loadKmc } from "./data/loadKmc";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -33,6 +34,7 @@ export function App() {
   const [holidayPayload, setHolidayPayload] = useState<EventsPayload | null>(null);
   const [fleamarketPayload, setFleamarketPayload] = useState<EventsPayload | null>(null);
   const [familyPayload, setFamilyPayload] = useState<EventsPayload | null>(null);
+  const [kmcPayload, setKmcPayload] = useState<EventsPayload | null>(null);
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -71,6 +73,12 @@ export function App() {
   }, []);
 
   useEffect(() => {
+    loadKmc()
+      .then(setKmcPayload)
+      .catch(() => { /* KMC magazine events are optional — refresh may not have run yet */ });
+  }, []);
+
+  useEffect(() => {
     loadNews()
       .then(setNewsPayload)
       .catch((err: unknown) => setNewsError(err instanceof Error ? err.message : String(err)));
@@ -88,12 +96,13 @@ export function App() {
       ...(holidayPayload?.events ?? []),
       ...(fleamarketPayload?.events ?? []),
       ...(familyPayload?.events ?? []),
+      ...(kmcPayload?.events ?? []),
     ];
     return all.map((event) => ({
       ...event,
       status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, trashPayload, holidayPayload, fleamarketPayload, familyPayload, todayKey]);
+  }, [payload, trashPayload, holidayPayload, fleamarketPayload, familyPayload, kmcPayload, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
   const visibleKey = viewKey ?? anchorKey;

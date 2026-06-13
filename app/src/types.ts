@@ -14,7 +14,8 @@ export type EventCategory =
   | "trash-papier"
   | "trash-glas"
   | "trash-umweltmobil"
-  | "civic";
+  | "civic"
+  | "kmc";
 
 /** A normalized event record as written by the ingestion layer. */
 export interface DashboardEvent {
@@ -44,6 +45,7 @@ export interface EventsPayload {
 
 /** Maps an event to its display category for calendar dot color and popover styling. */
 export function categorize(event: DashboardEvent): EventCategory {
+  if (event.tags.includes("kmc"))         return "kmc";
   if (event.tags.includes("leave"))       return "leave";
   if (event.tags.includes("family"))      return "family";
   if (event.tags.includes("holiday"))     return "holiday";

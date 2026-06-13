@@ -14,8 +14,8 @@ Build a local English-first kiosk dashboard that helps an American family moving
 - [x] A validation script checks the event payload shape before the app uses refreshed data.
 - [x] The v2 app builds with `npm run build`.
 
-All MVP criteria shipped. Later phases (weather, news, family/trash/holidays, flea markets) added
-on top — see `plan.md`.
+All MVP criteria shipped. Later phases (weather, news, family/trash/holidays, flea markets, KMC
+magazine events) added on top — see `plan.md`.
 
 ## Constraints
 - **Source-linked**: no event is displayed without a source URL.
@@ -25,8 +25,8 @@ on top — see `plan.md`.
 - **Date caution**: inferred event dates must be marked with `dateConfidence`.
 - **Local-first**: v2 is built for a local Raspberry Pi kiosk and local cached JSON.
 - **Public Waldmohr first**: the MVP shipped with only Waldmohr Aktuell before KMC-wide sources
-  (news, weather, family, trash, holidays, flea markets) were added in later phases — done, see
-  `plan.md`.
+  (news, weather, family, trash, holidays, flea markets, Kaiserslautern American `UNTERWEGS`)
+  were added in later phases — done, see `plan.md`.
 
 ## Non-Goals
 - Full clone of Waldmohr Aktuell.

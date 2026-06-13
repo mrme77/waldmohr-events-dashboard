@@ -12,8 +12,8 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 |---|---|---|
 | Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
 | Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
-| Refresh data | `cd app && npm run refresh` | Runs all six adapters (events, news, trash, holidays, flea markets, family); each writes to `data/*.json` and `app/public/*.json`. Family runs only where `GCAL_ICS_URL` is set and its outputs are gitignored. |
-| Test | `cd app && npm run validate` | Validates all six cached payloads (family skips when absent). |
+| Refresh data | `cd app && npm run refresh` | Runs all seven adapters (events, news, trash, holidays, flea markets, KMC magazine events, family); each writes to `data/*.json` and `app/public/*.json`. Family runs only where `GCAL_ICS_URL` is set and its outputs are gitignored. |
+| Test | `cd app && npm run validate` | Validates all seven cached payloads (family skips when absent). |
 | Refresh + build | `cd app && npm run refresh:build` | Refresh, validate, then production build. |
 
 ## Runtime Dependencies
@@ -23,6 +23,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Landkreis Kusel waste collection iCal (Waldmohr trash).
 - Homburg flea market dates: maintained table in `scripts/refresh-fleamarkets.mjs`, synced
   yearly from the homburg.de announcement (the script warns when dates run low).
+- Kaiserslautern American digital edition on Issuu: `scripts/refresh-kmc.mjs` finds the current
+  embedded issue, extracts the `UNTERWEGS` SVG text layer, and writes KMC-area events. Dates that
+  omit a year are inferred from the issue year and marked with `dateConfidence: "inferred"`.
 - Google Calendar private iCal feed (family layer): secret URL in `.env` as `GCAL_ICS_URL`,
   never committed; generated `family.json` caches are gitignored.
 - Browser with modern JavaScript support.
@@ -34,7 +37,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `app/src/components/` - calendar, event detail, news marquee, clocks, weather.
 - `app/public/*.json` - data files served to the app.
 - `data/*.json` - normalized English event records (pipeline source of truth).
-- `scripts/refresh-*.mjs` - public-source refresh adapters (events, news, trash, holidays, flea markets).
+- `scripts/refresh-*.mjs` - public-source refresh adapters (events, news, trash, holidays, flea markets, KMC).
 - `scripts/validate-*.mjs` - payload validators, one per adapter.
 - `docs/` - durable project truth.
 
