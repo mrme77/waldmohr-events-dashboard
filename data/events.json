@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T12:05:33.687Z",
+  "generatedAt": "2026-06-13T07:52:14.031Z",
   "source": "https://www.waldmohr-aktuell.de/",
   "events": [
     {
@@ -17,7 +17,7 @@
       "familyRelevance": "Potential family outing or kid-relevant local event; confirm details at the source.",
       "sourceUrl": "https://www.waldmohr-aktuell.de/kinder-und-familien-fest-waldmohr-am-07-09-2026/",
       "postDate": "2025-08-21",
-      "lastChecked": "2026-06-11",
+      "lastChecked": "2026-06-13",
       "status": "upcoming",
       "dateConfidence": "inferred"
     },
@@ -35,7 +35,7 @@
       "familyRelevance": "Review this public source item for newcomer relevance.",
       "sourceUrl": "https://www.waldmohr-aktuell.de/verkehrsbeschraenkungen-wegen-markplatzfest/",
       "postDate": "2026-06-11",
-      "lastChecked": "2026-06-11",
+      "lastChecked": "2026-06-13",
       "status": "upcoming",
       "dateConfidence": "inferred"
     }
