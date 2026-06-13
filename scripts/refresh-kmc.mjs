@@ -387,7 +387,7 @@ function collectDateContinuationLineCount(lines, dateLineIndex, endIndex) {
  * @returns {boolean} True when title-like.
  */
 function isLikelyTitleLine(line) {
-  return /[A-ZÄÖÜ0-9]/.test(line) && (/^[A-ZÄÖÜ0-9&:’'(),/. -]+$/.test(line) || /^.*$/.test(line));
+  return /[A-ZÄÖÜ0-9]/.test(line) && /^[A-ZÄÖÜ0-9&:’'(),/. -]+$/.test(line);
 }
 
 /**
