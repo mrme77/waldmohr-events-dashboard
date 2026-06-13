@@ -41,5 +41,8 @@ See `plan.md` for full detail.
       family schedule must never be committed). HTML in event descriptions stripped.
 - [x] ~~Phase 7: Voice~~ — dropped 2026-06-10. Touch dashboard is enough; no STT/LLM/server.
       (TTS read-aloud idea also parked.)
+- [x] Phase 7: KMC magazine events — Kaiserslautern American Issuu `UNTERWEGS` adapter
+      (`scripts/refresh-kmc.mjs`), neon-green diamond marker category, yearless dates inferred
+      and marked with `dateConfidence`.
 - [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).

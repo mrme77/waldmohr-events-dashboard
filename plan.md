@@ -46,6 +46,7 @@ INGESTION (Node, cron — Phase 8)
   scripts/refresh-trash.mjs       Landkreis Kusel waste portal (iCal)
   scripts/refresh-holidays.mjs    date.nager.at DE public holidays
   scripts/refresh-fleamarkets.mjs Homburg flea market press releases
+  scripts/refresh-kmc.mjs         Kaiserslautern American Issuu UNTERWEGS
   scripts/refresh-family.mjs      Google Calendar private iCal URL
   → normalize to shared event schema → data/*.json + app/public/*.json
     (+ app/dist/*.json once Phase 8 lands, so cron updates reach the
@@ -69,6 +70,7 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
 - Holidays: `date.nager.at` DE public holidays. **DONE.**
 - Flea markets: Homburg press releases (Kaiserslautern/Ramstein scrapes dropped in favor of
   this, 2026-06-10). **DONE.**
+- KMC events: Kaiserslautern American Issuu `UNTERWEGS` magazine listings. **DONE.**
 - Family: Google Calendar private iCal URL. **DONE.**
 
 ### Phases
@@ -81,8 +83,8 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
 5. **More event sources** — flea markets (Homburg). **DONE.**
 6. **Family layer** — Google Calendar iCal + Kusel trash iCal + DE holidays; category color
    coding. **DONE.**
-7. **Voice** — **DROPPED 2026-06-10.** Touch dashboard is sufficient; no STT/LLM/OpenRouter/
-   Node server. (A TTS read-aloud idea was also parked.)
+7. **KMC magazine events** — Kaiserslautern American Issuu `UNTERWEGS` adapter, neon-green
+   diamond marker category. **DONE.** (Voice was dropped 2026-06-10; touch dashboard sufficient.)
 8. **Pi deployment — NEXT / REMAINING**
    - `npm run build` → serve `app/dist` via a static server (e.g. `vite preview`) on the Pi;
      Chromium kiosk autostart points at it.

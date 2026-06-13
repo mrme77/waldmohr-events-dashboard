@@ -37,8 +37,11 @@
   secret URL lives in `.env` as `GCAL_ICS_URL`; generated `family.json` is gitignored so the
   family schedule never reaches this public repo. Leave/vacation/Urlaub/PTO events get their own
   calendar marker.
-- Phase 7 (Voice): dropped 2026-06-10 (see `docs/decisions.md`). The touch dashboard is enough on
-  its own — no local STT, no OpenRouter, no Node server. A TTS read-aloud idea was also parked.
+- Phase 7: added KMC magazine events — `scripts/refresh-kmc.mjs` discovers the current
+  Kaiserslautern American Issuu issue, extracts the `UNTERWEGS` SVG text layer, parses event
+  blocks, and writes KMC-area listings to `data/kmc-events.json` and `app/public/kmc-events.json`.
+  The frontend renders KMC events as neon-green diamond markers. Dates without an explicit year
+  are inferred from the issue year and marked with `dateConfidence: "inferred"`. **DONE.**
 
 ### Remaining
 - Phase 8: Pi 5 deployment — build/serve `app/dist`, cron-driven `npm run refresh`, add
