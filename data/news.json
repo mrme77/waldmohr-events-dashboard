@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T21:34:13.182Z",
+  "generatedAt": "2026-06-14T12:50:53.170Z",
   "sources": [
     {
       "id": "usa",
@@ -16,64 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-police-investigate-theft-of-england-equipment-at-world-cup-2-peo-0",
+      "id": "usa-here-s-who-s-missing-at-the-world-cup-soccer-playing-grannies-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Here's who's missing at the World Cup: Soccer-playing grannies!",
+      "url": "https://www.npr.org/2026/06/14/g-s1-127865/world-cup-soccer-grannies",
+      "publishedAt": "2026-06-14T11:17:45.000Z",
+      "lastChecked": "2026-06-14T12:50:52.563Z"
+    },
+    {
+      "id": "usa-trump-s-ufc-fights-bring-historic-spectacle-to-white-house-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump's UFC fights bring historic spectacle to White House",
+      "url": "https://www.npr.org/2026/06/14/nx-s1-5854962/trump-ufc-white-house-fights",
+      "publishedAt": "2026-06-14T09:00:00.000Z",
+      "lastChecked": "2026-06-14T12:50:52.563Z"
+    },
+    {
+      "id": "usa-want-obesity-drugs-covered-by-insurance-telehealth-companies-hav-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Want obesity drugs covered by insurance? Telehealth companies have a big say",
+      "url": "https://www.npr.org/2026/06/14/nx-s1-5805984/glp1-telehealth-weight-loss-drugs",
+      "publishedAt": "2026-06-14T09:00:00.000Z",
+      "lastChecked": "2026-06-14T12:50:52.563Z"
+    },
+    {
+      "id": "usa-britain-detains-sanctioned-oil-tanker-believed-to-be-linked-to-r-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Britain detains sanctioned oil tanker believed to be linked to Russia's shadow fleet",
+      "url": "https://www.npr.org/2026/06/14/nx-s1-5857587/britain-detains-sanctioned-oil-tanker-believed-linked-to-russias-shadow-fleet",
+      "publishedAt": "2026-06-14T08:45:23.000Z",
+      "lastChecked": "2026-06-14T12:50:52.563Z"
+    },
+    {
+      "id": "usa-trump-says-deal-to-end-iran-war-will-be-signed-sunday-as-iran-di-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump says deal to end Iran war will be signed Sunday, as Iran disagrees on timing",
+      "url": "https://www.npr.org/2026/06/13/nx-s1-5857149/trump-iran-war-peace-deal",
+      "publishedAt": "2026-06-14T03:46:07.000Z",
+      "lastChecked": "2026-06-14T12:50:52.563Z"
+    },
+    {
+      "id": "usa-police-investigate-theft-of-england-equipment-at-world-cup-2-peo-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Police investigate theft of England equipment at World Cup, 2 people in custody",
       "url": "https://www.npr.org/2026/06/13/g-s1-128070/police-investigate-england-equipment-world-cup-kansas-city-florida",
       "publishedAt": "2026-06-13T21:10:59.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
-    },
-    {
-      "id": "usa-as-bay-area-hosts-world-cup-empty-red-seats-are-everywhere-at-le-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "As Bay Area hosts World Cup, empty red seats are everywhere at Levi's Stadium",
-      "url": "https://www.npr.org/2026/06/13/g-s1-128068/bay-area-world-cup-empty-red-seats-levis-stadium",
-      "publishedAt": "2026-06-13T21:06:36.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
-    },
-    {
-      "id": "usa-a-lebanon-town-s-grief-in-the-aftermath-of-a-deadly-israeli-airs-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A Lebanon town's grief in the aftermath of a deadly Israeli airstrike",
-      "url": "https://www.npr.org/2026/06/13/nx-s1-5848614/a-lebanon-towns-grief-in-the-aftermath-of-a-deadly-israeli-airstrike",
-      "publishedAt": "2026-06-13T21:02:53.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
-    },
-    {
-      "id": "usa-4-things-to-know-about-the-new-sunscreen-ingredient-the-fda-appr-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "4 things to know about the new sunscreen ingredient the FDA approved",
-      "url": "https://www.npr.org/2026/06/13/nx-s1-5856385/sunscreen-skin-protection-bemotrizinol",
-      "publishedAt": "2026-06-13T12:00:00.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
-    },
-    {
-      "id": "usa-a-plan-to-get-lifesaving-food-to-hungry-kids-was-working-well-un-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A plan to get lifesaving food to hungry kids was working well -- until it wasn't",
-      "url": "https://www.npr.org/2026/06/13/nx-s1-5787791/malnourished-children-senegal-therapeutic-food-plumpynut",
-      "publishedAt": "2026-06-13T11:07:38.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
-    },
-    {
-      "id": "usa-cool-ladies-club-is-directed-by-10-working-class-women-they-live-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "'Cool Ladies Club' is directed by 10 working-class women. They live up to the title",
-      "url": "https://www.npr.org/2026/06/13/g-s1-125467/cool-ladies-club-movies-working-class-women-documentary-india",
-      "publishedAt": "2026-06-13T10:56:45.000Z",
-      "lastChecked": "2026-06-13T21:34:12.642Z"
+      "lastChecked": "2026-06-14T12:50:52.563Z"
     }
   ]
 }
