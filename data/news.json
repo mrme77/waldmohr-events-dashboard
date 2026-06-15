@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T12:50:53.170Z",
+  "generatedAt": "2026-06-15T20:52:10.327Z",
   "sources": [
     {
       "id": "usa",
@@ -16,64 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-here-s-who-s-missing-at-the-world-cup-soccer-playing-grannies-0",
+      "id": "usa-soccer-edition-watch-world-cup-highlights-from-across-the-npr-ne-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Here's who's missing at the World Cup: Soccer-playing grannies!",
-      "url": "https://www.npr.org/2026/06/14/g-s1-127865/world-cup-soccer-grannies",
-      "publishedAt": "2026-06-14T11:17:45.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "Soccer Edition: Watch World Cup highlights from across the NPR Network",
+      "url": "https://www.npr.org/2026/06/15/g-s1-126999/soccer-edition-watch-world-cup-highlights-from-across-the-npr-network",
+      "publishedAt": "2026-06-15T16:09:09.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     },
     {
-      "id": "usa-trump-s-ufc-fights-bring-historic-spectacle-to-white-house-1",
+      "id": "usa-as-the-u-s-turns-250-this-historian-has-blunt-advice-america-has-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump's UFC fights bring historic spectacle to White House",
-      "url": "https://www.npr.org/2026/06/14/nx-s1-5854962/trump-ufc-white-house-fights",
-      "publishedAt": "2026-06-14T09:00:00.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "As the U.S. turns 250, this historian has blunt advice: 'America has to grow up'",
+      "url": "https://www.npr.org/2026/06/15/nx-s1-5856348/america-250-eddie-glaude",
+      "publishedAt": "2026-06-15T15:42:05.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     },
     {
-      "id": "usa-want-obesity-drugs-covered-by-insurance-telehealth-companies-hav-2",
+      "id": "usa-former-american-businessman-detained-in-myanmar-after-alleged-fi-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Want obesity drugs covered by insurance? Telehealth companies have a big say",
-      "url": "https://www.npr.org/2026/06/14/nx-s1-5805984/glp1-telehealth-weight-loss-drugs",
-      "publishedAt": "2026-06-14T09:00:00.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "Former American businessman detained in Myanmar after alleged financial misconduct",
+      "url": "https://www.npr.org/2026/06/15/g-s1-128147/former-american-businessman-detained-in-myanmar-after-alleged-financial-misconduct",
+      "publishedAt": "2026-06-15T12:45:36.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     },
     {
-      "id": "usa-britain-detains-sanctioned-oil-tanker-believed-to-be-linked-to-r-3",
+      "id": "usa-as-luigi-mangione-s-lawyers-head-to-court-support-grows-for-the--3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Britain detains sanctioned oil tanker believed to be linked to Russia's shadow fleet",
-      "url": "https://www.npr.org/2026/06/14/nx-s1-5857587/britain-detains-sanctioned-oil-tanker-believed-linked-to-russias-shadow-fleet",
-      "publishedAt": "2026-06-14T08:45:23.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "As Luigi Mangione's lawyers head to court, support grows for the accused 'vigilante'",
+      "url": "https://www.npr.org/2026/06/15/nx-s1-5853110/luigi-mangione-court-hearings-growing-support",
+      "publishedAt": "2026-06-15T11:48:33.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     },
     {
-      "id": "usa-trump-says-deal-to-end-iran-war-will-be-signed-sunday-as-iran-di-4",
+      "id": "usa-trump-announces-deal-to-end-war-in-iran-and-how-to-stay-safe-in--4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump says deal to end Iran war will be signed Sunday, as Iran disagrees on timing",
-      "url": "https://www.npr.org/2026/06/13/nx-s1-5857149/trump-iran-war-peace-deal",
-      "publishedAt": "2026-06-14T03:46:07.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "Trump announces deal to end war in Iran. And, how to stay safe in deadly heat",
+      "url": "https://www.npr.org/2026/06/15/g-s1-128145/up-first-newsletter-iran-war-g7-summit-ufc-fight",
+      "publishedAt": "2026-06-15T10:59:23.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     },
     {
-      "id": "usa-police-investigate-theft-of-england-equipment-at-world-cup-2-peo-5",
+      "id": "usa-britain-will-ban-under-16s-from-social-media-apps-including-tikt-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Police investigate theft of England equipment at World Cup, 2 people in custody",
-      "url": "https://www.npr.org/2026/06/13/g-s1-128070/police-investigate-england-equipment-world-cup-kansas-city-florida",
-      "publishedAt": "2026-06-13T21:10:59.000Z",
-      "lastChecked": "2026-06-14T12:50:52.563Z"
+      "title": "Britain will ban under-16s from social media apps, including TikTok and YouTube",
+      "url": "https://www.npr.org/2026/06/15/nx-s1-5858644/britain-social-media-ban",
+      "publishedAt": "2026-06-15T10:32:39.000Z",
+      "lastChecked": "2026-06-15T20:52:09.622Z"
     }
   ]
 }
