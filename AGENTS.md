@@ -12,7 +12,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 |---|---|---|
 | Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
 | Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
-| Refresh data | `cd app && npm run refresh` | Runs all seven adapters (events, news, trash, holidays, flea markets, KMC magazine events, family); each writes to `data/*.json` and `app/public/*.json`. Family runs only where `GCAL_ICS_URL` is set and its outputs are gitignored. |
+| Refresh data | `cd app && npm run refresh` | Runs all seven adapters (events, news, trash, holidays, flea markets, KMC magazine events, family); each writes its `app/public/*.json` cache. Family runs only where `GCAL_ICS_URL` is set and its output is gitignored. |
 | Test | `cd app && npm run validate` | Validates all seven cached payloads (family skips when absent). |
 | Refresh + build | `cd app && npm run refresh:build` | Refresh, validate, then production build. |
 
@@ -35,10 +35,10 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `app/` - Vite + React + TypeScript application (the only UI).
 - `app/src/App.tsx` - app shell and layout.
 - `app/src/components/` - calendar, event detail, news marquee, clocks, weather.
-- `app/public/*.json` - data files served to the app.
-- `data/*.json` - normalized English event records (pipeline source of truth).
+- `app/public/*.json` - normalized English event payloads; the single source served to and read by the app.
 - `scripts/refresh-*.mjs` - public-source refresh adapters (events, news, trash, holidays, flea markets, KMC).
 - `scripts/validate-*.mjs` - payload validators, one per adapter.
+- `scripts/lib.mjs` - shared script helpers: `writeJson`, `runMain`, and the `runValidation` harness.
 - `docs/` - durable project truth.
 
 ## Durable Docs

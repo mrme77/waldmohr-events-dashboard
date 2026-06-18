@@ -1,3 +1,5 @@
+import { fetchJson } from "./fetchJson";
+
 export interface NewsItem {
   id: string;
   sourceId: string;
@@ -25,10 +27,6 @@ export interface NewsPayload {
  *
  * @throws If the file cannot be fetched or parsed.
  */
-export async function loadNews(): Promise<NewsPayload> {
-  const response = await fetch("/news.json", { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`Failed to load news.json: ${response.status} ${response.statusText}`);
-  }
-  return (await response.json()) as NewsPayload;
+export function loadNews(): Promise<NewsPayload> {
+  return fetchJson<NewsPayload>("/news.json");
 }

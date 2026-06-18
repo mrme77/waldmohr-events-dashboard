@@ -1,6 +1,7 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { URL, fileURLToPath } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 // Private Google Calendar iCal feed. The secret URL lives in .env as
 // GCAL_ICS_URL and must never appear in committed files or in the generated
@@ -21,10 +22,7 @@ const berlinTime = new Intl.DateTimeFormat("en-GB", {
 const today = new Date();
 const todayKey = berlinDateKey(today);
 
-const outputTargets = [
-  new URL("../data/family.json", import.meta.url),
-  new URL("../app/public/family.json", import.meta.url),
-];
+const output = new URL("../app/public/family.json", import.meta.url);
 
 /** Formats a Date as a Berlin-local YYYY-MM-DD key. */
 function berlinDateKey(date) {
@@ -303,9 +301,9 @@ function normalizeVevent(vevent, windowStart, windowEnd, overridesByUid) {
 
 /**
  * Fetches the private family iCal feed and writes normalized JSON to the
- * gitignored data/family.json and app/public/family.json caches. Exits
- * quietly when GCAL_ICS_URL is not configured so the shared refresh chain
- * still works on machines without the secret.
+ * gitignored app/public/family.json cache. Exits quietly when GCAL_ICS_URL is
+ * not configured so the shared refresh chain still works on machines without
+ * the secret.
  *
  * @returns {Promise<void>}
  */
@@ -345,13 +343,9 @@ async function main() {
     events,
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((t) => writeFile(t, json)));
+  await writeJson(output, payload);
 
-  console.log(`Refreshed ${events.length} family events to ${outputTargets.length} JSON files.`);
+  console.log(`Refreshed ${events.length} family events.`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+runMain(main);

@@ -1,5 +1,5 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const SOURCE_URL = "https://date.nager.at/";
 const COUNTRY = "DE";
@@ -8,10 +8,7 @@ const STATE = "DE-RP";
 const today = new Date();
 const todayKey = today.toISOString().slice(0, 10);
 
-const outputTargets = [
-  new URL("../data/holidays.json", import.meta.url),
-  new URL("../app/public/holidays.json", import.meta.url),
-];
+const output = new URL("../app/public/holidays.json", import.meta.url);
 
 /**
  * Returns true when a holiday applies to Rheinland-Pfalz (Waldmohr).
@@ -60,7 +57,7 @@ async function fetchYear(year) {
 
 /**
  * Fetches German (Rheinland-Pfalz) public holidays for the current and next
- * year, deduplicates, and writes normalized JSON to data/ and app/public/.
+ * year, deduplicates, and writes normalized JSON to app/public/.
  *
  * @returns {Promise<void>}
  */
@@ -86,13 +83,9 @@ async function main() {
     events,
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((t) => writeFile(t, json)));
+  await writeJson(output, payload);
 
-  console.log(`Refreshed ${events.length} RLP public holidays to ${outputTargets.length} JSON files.`);
+  console.log(`Refreshed ${events.length} RLP public holidays.`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+runMain(main);

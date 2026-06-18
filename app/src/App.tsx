@@ -5,12 +5,7 @@ import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
-import { loadEvents } from "./data/loadEvents";
-import { loadTrash } from "./data/loadTrash";
-import { loadHolidays } from "./data/loadHolidays";
-import { loadFleamarkets } from "./data/loadFleamarkets";
-import { loadFamily } from "./data/loadFamily";
-import { loadKmc } from "./data/loadKmc";
+import { EVENT_LAYERS, loadLayer } from "./data/layers";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
@@ -29,12 +24,7 @@ function chooseAnchorKey(events: DashboardEvent[], todayKey: string): string {
 
 export function App() {
   const now = useNow(60_000);
-  const [payload, setPayload] = useState<EventsPayload | null>(null);
-  const [trashPayload, setTrashPayload] = useState<EventsPayload | null>(null);
-  const [holidayPayload, setHolidayPayload] = useState<EventsPayload | null>(null);
-  const [fleamarketPayload, setFleamarketPayload] = useState<EventsPayload | null>(null);
-  const [familyPayload, setFamilyPayload] = useState<EventsPayload | null>(null);
-  const [kmcPayload, setKmcPayload] = useState<EventsPayload | null>(null);
+  const [layers, setLayers] = useState<Record<string, EventsPayload>>({});
   const [newsPayload, setNewsPayload] = useState<NewsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [newsError, setNewsError] = useState<string | null>(null);
@@ -43,39 +33,15 @@ export function App() {
   const [viewKey, setViewKey] = useState<string | null>(null);
 
   useEffect(() => {
-    loadEvents()
-      .then(setPayload)
-      .catch((err: unknown) => setError(err instanceof Error ? err.message : String(err)));
-  }, []);
-
-  useEffect(() => {
-    loadTrash()
-      .then(setTrashPayload)
-      .catch(() => { /* trash is optional — silently degrade */ });
-  }, []);
-
-  useEffect(() => {
-    loadHolidays()
-      .then(setHolidayPayload)
-      .catch(() => { /* holidays are optional — silently degrade */ });
-  }, []);
-
-  useEffect(() => {
-    loadFleamarkets()
-      .then(setFleamarketPayload)
-      .catch(() => { /* flea markets are optional — silently degrade */ });
-  }, []);
-
-  useEffect(() => {
-    loadFamily()
-      .then(setFamilyPayload)
-      .catch(() => { /* family feed is optional — only exists where GCAL_ICS_URL is set */ });
-  }, []);
-
-  useEffect(() => {
-    loadKmc()
-      .then(setKmcPayload)
-      .catch(() => { /* KMC magazine events are optional — refresh may not have run yet */ });
+    for (const layer of EVENT_LAYERS) {
+      loadLayer(layer.path)
+        .then((payload) => setLayers((prev) => ({ ...prev, [layer.key]: payload })))
+        .catch((err: unknown) => {
+          // Only the required base feed surfaces an error; optional layers
+          // silently degrade (cache may be absent or not refreshed yet).
+          if (layer.required) setError(err instanceof Error ? err.message : String(err));
+        });
+    }
   }, []);
 
   useEffect(() => {
@@ -85,24 +51,17 @@ export function App() {
   }, []);
 
   const todayKey = dateKey(now);
-  const updatedAt = payload?.generatedAt ?? null;
+  const updatedAt = layers.events?.generatedAt ?? null;
 
   // Recompute status client-side against the real "today" so the v1 hardcoded
   // date can never go stale.
   const events = useMemo<DashboardEvent[]>(() => {
-    const all = [
-      ...(payload?.events ?? []),
-      ...(trashPayload?.events ?? []),
-      ...(holidayPayload?.events ?? []),
-      ...(fleamarketPayload?.events ?? []),
-      ...(familyPayload?.events ?? []),
-      ...(kmcPayload?.events ?? []),
-    ];
+    const all = EVENT_LAYERS.flatMap((layer) => layers[layer.key]?.events ?? []);
     return all.map((event) => ({
       ...event,
       status: computeStatus(event.date, todayKey),
     }));
-  }, [payload, trashPayload, holidayPayload, fleamarketPayload, familyPayload, kmcPayload, todayKey]);
+  }, [layers, todayKey]);
 
   const anchorKey = useMemo(() => chooseAnchorKey(events, todayKey), [events, todayKey]);
   const visibleKey = viewKey ?? anchorKey;
