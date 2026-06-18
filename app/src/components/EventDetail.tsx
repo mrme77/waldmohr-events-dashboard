@@ -27,15 +27,17 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
           <p className="popover__empty">No events on this day.</p>
         ) : (
           <ul className="popover__list">
-            {events.map((event) => (
-              <li key={event.id} className={`popover__item cat-${categorize(event)}`}>
+            {events.map((event) => {
+              const cat = categorize(event);
+              return (
+              <li key={event.id} className={`popover__item cat-${cat}`}>
                 <p className="popover__status">
                   {event.status} · {event.dateConfidence} date
                   {event.time ? ` · ${event.time}` : ""}
                 </p>
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>
-                {categorize(event) === "holiday" ? (
+                {cat === "holiday" ? (
                   <dl>
                     <div>
                       <dt>German name</dt>
@@ -46,7 +48,7 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                       <dd>{event.familyRelevance}</dd>
                     </div>
                   </dl>
-                ) : categorize(event).startsWith("trash") ? (
+                ) : cat.startsWith("trash") ? (
                   <dl>
                     <div>
                       <dt>Reminder</dt>
@@ -83,7 +85,8 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                   </>
                 )}
               </li>
-            ))}
+              );
+            })}
           </ul>
         )}
       </div>

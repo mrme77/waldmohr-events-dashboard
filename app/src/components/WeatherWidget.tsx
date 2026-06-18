@@ -2,27 +2,23 @@ import { useEffect, useMemo, useState } from "react";
 import { loadWaldmohrWeather, type WeatherReport } from "../data/loadWeather";
 import { relativeDayLabel } from "../lib/dates";
 
-interface WeatherCondition {
-  label: string;
-}
-
 const REFRESH_MS = 15 * 60 * 1000;
 
 /**
- * Maps Open-Meteo WMO weather codes into compact kiosk labels.
+ * Maps an Open-Meteo WMO weather code into a compact kiosk label.
  *
  * @param code WMO weather code.
- * @returns Display label and symbol.
+ * @returns Display label.
  */
-function describeWeather(code: number): WeatherCondition {
-  if (code === 0) return { label: "Sunny" };
-  if ([1, 2, 3].includes(code)) return { label: "Cloud mix" };
-  if ([45, 48].includes(code)) return { label: "Fog" };
-  if ([51, 53, 55, 56, 57].includes(code)) return { label: "Drizzle" };
-  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return { label: "Rain" };
-  if ([71, 73, 75, 77, 85, 86].includes(code)) return { label: "Snow" };
-  if ([95, 96, 99].includes(code)) return { label: "Storm" };
-  return { label: "Weather" };
+function describeWeather(code: number): string {
+  if (code === 0) return "Sunny";
+  if ([1, 2, 3].includes(code)) return "Cloud mix";
+  if ([45, 48].includes(code)) return "Fog";
+  if ([51, 53, 55, 56, 57].includes(code)) return "Drizzle";
+  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return "Rain";
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return "Snow";
+  if ([95, 96, 99].includes(code)) return "Storm";
+  return "Weather";
 }
 
 /**
@@ -55,9 +51,7 @@ export function WeatherWidget() {
     };
   }, []);
 
-  const condition = useMemo(() => {
-    return report ? describeWeather(report.current.weatherCode) : null;
-  }, [report]);
+  const condition = report ? describeWeather(report.current.weatherCode) : null;
 
   const updatedLabel = useMemo(() => {
     if (!report) return "Waiting for Open-Meteo";
@@ -78,7 +72,7 @@ export function WeatherWidget() {
           <div className="weather__main">
             <div>
               <strong className="weather__temp">{Math.round(report.current.temperatureC)}°</strong>
-              <p className="weather__condition">{condition.label}</p>
+              <p className="weather__condition">{condition}</p>
             </div>
           </div>
 

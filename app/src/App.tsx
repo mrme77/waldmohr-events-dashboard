@@ -5,11 +5,35 @@ import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
-import { EVENT_LAYERS, loadLayer } from "./data/layers";
+import { fetchJson } from "./data/fetchJson";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
 import { useNow } from "./hooks/useNow";
 import type { DashboardEvent, EventsPayload } from "./types";
+
+/** One calendar data layer served from /public as an EventsPayload. */
+interface EventLayer {
+  /** Stable key for React state and the merge order. */
+  key: string;
+  /** Public JSON path written by the ingestion layer. */
+  path: string;
+  /**
+   * When true, a load failure surfaces as a dashboard error. Optional layers
+   * silently degrade — their cache may be absent or not refreshed yet (family
+   * only exists where GCAL_ICS_URL is set).
+   */
+  required: boolean;
+}
+
+/** Calendar layers in merge order; the first is the required Waldmohr feed. */
+const EVENT_LAYERS: EventLayer[] = [
+  { key: "events", path: "/events.json", required: true },
+  { key: "trash", path: "/trash.json", required: false },
+  { key: "holidays", path: "/holidays.json", required: false },
+  { key: "fleamarkets", path: "/fleamarkets.json", required: false },
+  { key: "family", path: "/family.json", required: false },
+  { key: "kmc", path: "/kmc-events.json", required: false },
+];
 
 /** Picks which month the calendar opens on: the next upcoming event, else the most recent. */
 function chooseAnchorKey(events: DashboardEvent[], todayKey: string): string {
@@ -34,7 +58,7 @@ export function App() {
 
   useEffect(() => {
     for (const layer of EVENT_LAYERS) {
-      loadLayer(layer.path)
+      fetchJson<EventsPayload>(layer.path)
         .then((payload) => setLayers((prev) => ({ ...prev, [layer.key]: payload })))
         .catch((err: unknown) => {
           // Only the required base feed surfaces an error; optional layers
