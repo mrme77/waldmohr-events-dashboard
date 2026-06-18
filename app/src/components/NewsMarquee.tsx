@@ -6,9 +6,7 @@ interface NewsMarqueeProps {
   error?: string | null;
 }
 
-const PLACEHOLDER: readonly string[] = [
-  "Loading USA and St. Louis headlines"
-];
+const PLACEHOLDER = "Loading USA and St. Louis headlines";
 
 /**
  * A continuous headline marquee pinned across the top of the dashboard. The
@@ -17,7 +15,7 @@ const PLACEHOLDER: readonly string[] = [
 export function NewsMarquee({ items = [], error = null }: NewsMarqueeProps) {
   const headlines = items.length > 0
     ? items.map((item) => `${item.sourceLabel}: ${item.title}`)
-    : [error ? "News feed unavailable" : PLACEHOLDER[0]];
+    : [error ? "News feed unavailable" : PLACEHOLDER];
   const text = headlines.join(" • ");
   return (
     <div className="marquee" aria-label="News headlines">
