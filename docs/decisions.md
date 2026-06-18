@@ -137,3 +137,18 @@ marked with `dateConfidence: "inferred"`.
 `cd app && npm run refresh:build`; an automated Friday PR can be added later, but scheduled
 refreshes remain an ask-first project boundary.
 **Status**: Accepted.
+
+## [2026-06-18] Drop The data/ Tree; app/public/ Is The Only Cache
+**Context**: Every adapter dual-wrote each payload to both `data/*.json` and `app/public/*.json`,
+and each validator checked both copies. Once the v1 static app was retired, only `app/public/`
+is fetched by the app — the `data/` copies were byte-identical, read by nothing, and validated
+only against themselves. An over-engineering audit flagged the duplication; investigation found no
+CI, build step, or external script that consumes `data/`.
+**Decision**: Delete the `data/` tree. Refresh and validate scripts now target a single
+`app/public/*.json` cache each. The dual-write arrays, the validator's "caches out of sync" check,
+and the `data/family.json`/`data/raw/` gitignore entries are removed.
+**Reason**: A second identical copy that nothing reads is pure drift risk and doubled validation
+work. One cache, served and validated in place, removes both.
+**Status**: Accepted. Supersedes the "`data/events.json` remains the pipeline source of truth"
+note in the 2026-06-09 "Retire The v1 Static App" decision and the dual `data/` + `app/public/`
+write described in the 2026-06-13 KMC decision.

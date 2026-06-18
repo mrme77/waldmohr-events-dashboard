@@ -25,7 +25,7 @@ Links to source material and technical references.
   format"; the Reset button there revokes a leaked URL).
 
 ## Generated Payloads
-Each cache is written to both `data/` and `app/public/`.
+Each cache is written to `app/public/`, the single source served to and read by the app.
 - Events cache: `events.json` (Waldmohr Aktuell).
 - News cache: `news.json` (NPR + KSDK).
 - Trash cache: `trash.json` (Kusel iCal).

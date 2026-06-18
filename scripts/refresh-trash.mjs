@@ -1,5 +1,5 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const WALDMOHR_ID = "57616c646d6f6872";
 const WASTE_TYPES = "8,3,7,6,1,5";
@@ -13,10 +13,7 @@ const endDate = new Date(today.getFullYear() + 1, today.getMonth(), today.getDat
 
 const icsUrl = `${SOURCE_URL}ical?location=${WALDMOHR_ID}&wasteTypes=${WASTE_TYPES}&startDate=${todayKey}&endDate=${endDate}`;
 
-const outputTargets = [
-  new URL("../data/trash.json", import.meta.url),
-  new URL("../app/public/trash.json", import.meta.url),
-];
+const output = new URL("../app/public/trash.json", import.meta.url);
 
 /** Human-friendly names and summaries for each waste type keyword. */
 const WASTE_MAP = {
@@ -96,7 +93,7 @@ function parseIcs(icsText) {
 
 /**
  * Fetches Waldmohr trash collection schedule from Landkreis Kusel and writes
- * normalized JSON to data/ and app/public/.
+ * normalized JSON to app/public/.
  *
  * @returns {Promise<void>} Resolves after files are written.
  */
@@ -115,15 +112,11 @@ async function main() {
     events,
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((t) => writeFile(t, json)));
+  await writeJson(output, payload);
 
   console.log(
-    `Refreshed ${events.length} trash collection events to ${outputTargets.length} JSON files.`
+    `Refreshed ${events.length} trash collection events.`
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+runMain(main);

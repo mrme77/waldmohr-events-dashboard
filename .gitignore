@@ -1,13 +1,11 @@
 .env*
 !.env.example
 # Family calendar cache — private schedule, never commit (public repo).
-data/family.json
 app/public/family.json
 node_modules/
 dist/
 app/node_modules/
 app/dist/
 .DS_Store
-data/raw/
 cookies*.txt
 app/.vite/

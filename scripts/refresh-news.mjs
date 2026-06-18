@@ -1,12 +1,9 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const userAgent = "waldmohr-events-dashboard/0.1 personal household dashboard";
 const maxItemsPerSource = 6;
-const outputTargets = [
-  new URL("../data/news.json", import.meta.url),
-  new URL("../app/public/news.json", import.meta.url)
-];
+const output = new URL("../app/public/news.json", import.meta.url);
 
 const sources = [
   {
@@ -54,9 +51,8 @@ async function main() {
     items
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((target) => writeFile(target, json)));
-  console.log(`Refreshed ${items.length} news headlines to ${outputTargets.length} JSON files.`);
+  await writeJson(output, payload);
+  console.log(`Refreshed ${items.length} news headlines.`);
 }
 
 /**
@@ -168,7 +164,4 @@ function slugify(value) {
     .slice(0, 64) || "headline";
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exitCode = 1;
-});
+runMain(main);

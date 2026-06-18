@@ -1,15 +1,12 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const apiUrl = "https://www.waldmohr-aktuell.de/wp-json/wp/v2/posts?per_page=50&_embed=1";
 const eventCategoryIds = new Set([7, 111, 113, 115]);
 const today = new Date();
 const todayKey = today.toISOString().slice(0, 10);
 const maxFutureDays = 180;
-const outputTargets = [
-  new URL("../data/events.json", import.meta.url),
-  new URL("../app/public/events.json", import.meta.url)
-];
+const output = new URL("../app/public/events.json", import.meta.url);
 
 /**
  * Pulls public Waldmohr Aktuell posts and writes normalized candidate event files.
@@ -34,10 +31,9 @@ async function main() {
     events
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((target) => writeFile(target, json)));
+  await writeJson(output, payload);
 
-  console.log(`Refreshed ${events.length} live events from ${candidates.length} candidates to ${outputTargets.length} JSON files.`);
+  console.log(`Refreshed ${events.length} live events from ${candidates.length} candidates.`);
 }
 
 /**
@@ -281,7 +277,4 @@ function stripHtml(value) {
     .trim();
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exitCode = 1;
-});
+runMain(main);

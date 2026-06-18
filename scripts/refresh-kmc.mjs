@@ -1,14 +1,11 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const KAISERSLAUTERN_AMERICAN_URL = "https://www.kaiserslauternamerican.com/";
 const ISSUU_DOC_BASE_URL = "https://issuu.com/advantinews/docs/";
 const USER_AGENT =
   "Mozilla/5.0 (compatible; WaldmohrEventsDashboard/0.1; +https://www.kaiserslauternamerican.com/)";
-const outputTargets = [
-  new URL("../data/kmc-events.json", import.meta.url),
-  new URL("../app/public/kmc-events.json", import.meta.url),
-];
+const output = new URL("../app/public/kmc-events.json", import.meta.url);
 
 const ENGLISH_MONTHS = {
   january: 1,
@@ -44,11 +41,10 @@ async function main() {
     events,
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((target) => writeFile(target, json)));
+  await writeJson(output, payload);
 
   console.log(
-    `Refreshed ${events.length} KMC UNTERWEGS events from ${pageTexts.length} page(s) to ${outputTargets.length} JSON files.`
+    `Refreshed ${events.length} KMC UNTERWEGS events from ${pageTexts.length} page(s).`
   );
 }
 
@@ -475,7 +471,4 @@ function slugify(value) {
     .slice(0, 80);
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exitCode = 1;
-});
+runMain(main);

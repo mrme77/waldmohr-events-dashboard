@@ -25,8 +25,8 @@ See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) f
 | Path | What |
 |---|---|
 | `app/` | Vite + React + TypeScript application (the only UI). |
+| `app/public/*.json` | Normalized event JSON — the single cache served to and read by the app. |
 | `scripts/` | Data ingestion + validation (Node ESM). |
-| `data/` | Normalized event JSON. |
 | `docs/` | Durable project docs — spec, decisions, compliance, validation. |
 
 ## Running the v2 app

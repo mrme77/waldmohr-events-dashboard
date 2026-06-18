@@ -1,5 +1,5 @@
-import { writeFile } from "node:fs/promises";
 import { URL } from "node:url";
+import { writeJson, runMain } from "./lib.mjs";
 
 const SOURCE_URL =
   "https://www.homburg.de/rathaus/aktuelle-informationen/pressemitteilungen/flohmarkt-jahr-startet-am-3-januar-rund-ums-forum/";
@@ -28,10 +28,7 @@ const LOW_DATE_WARNING_THRESHOLD = 3;
 const today = new Date();
 const todayKey = today.toISOString().slice(0, 10);
 
-const outputTargets = [
-  new URL("../data/fleamarkets.json", import.meta.url),
-  new URL("../app/public/fleamarkets.json", import.meta.url),
-];
+const output = new URL("../app/public/fleamarkets.json", import.meta.url);
 
 /**
  * Builds a normalized DashboardEvent for one Homburg flea market date.
@@ -61,7 +58,7 @@ function toEvent(date) {
 
 /**
  * Writes all Homburg flea market dates (past ones included, so the calendar
- * can show them grayed out) as normalized JSON to data/ and app/public/.
+ * can show them grayed out) as normalized JSON to app/public/.
  * Warns when the hardcoded date table is nearly exhausted so the next year's
  * official announcement gets folded in before the feed runs dry.
  *
@@ -88,13 +85,9 @@ async function main() {
     events,
   };
 
-  const json = `${JSON.stringify(payload, null, 2)}\n`;
-  await Promise.all(outputTargets.map((t) => writeFile(t, json)));
+  await writeJson(output, payload);
 
-  console.log(`Refreshed ${events.length} flea market dates to ${outputTargets.length} JSON files.`);
+  console.log(`Refreshed ${events.length} flea market dates.`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+runMain(main);
