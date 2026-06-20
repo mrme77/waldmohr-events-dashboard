@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T13:36:27.906Z",
+  "generatedAt": "2026-06-20T06:00:22.505Z",
   "sources": [
     {
       "id": "usa",
@@ -16,64 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-us-iran-talks-in-switzerland-canceled-and-dhs-to-give-police-fac-0",
+      "id": "usa-james-burrows-director-of-classic-shows-cheers-and-friends-dies--0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "James Burrows, director of classic shows 'Cheers' and 'Friends,' dies at 85",
+      "url": "https://www.npr.org/2026/06/19/g-s1-129137/james-burrows-death-obit-cheers-friends",
+      "publishedAt": "2026-06-19T21:16:15.000Z",
+      "lastChecked": "2026-06-20T06:00:21.931Z"
+    },
+    {
+      "id": "usa-air-force-one-gifted-to-trump-from-qatar-arrives-at-joint-base-a-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Air Force One, gifted to Trump from Qatar, arrives at Joint Base Andrews",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5864503/air-force-one-trump-qatar",
+      "publishedAt": "2026-06-19T21:01:21.000Z",
+      "lastChecked": "2026-06-20T06:00:21.932Z"
+    },
+    {
+      "id": "usa-italy-s-meloni-once-trump-s-closest-ally-in-europe-says-he-made--2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Italy's Meloni, once Trump's closest ally in Europe, says he made up a story about her",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5864264/meloni-trump-fight-beg",
+      "publishedAt": "2026-06-19T20:32:35.000Z",
+      "lastChecked": "2026-06-20T06:00:21.932Z"
+    },
+    {
+      "id": "usa-algae-clouded-trump-s-vision-for-the-reflecting-pool-but-scienti-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Algae clouded Trump's vision for the Reflecting Pool. But scientists aren't surprised",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5863044/dc-reflecting-pool-algae-green-trump",
+      "publishedAt": "2026-06-19T15:43:05.000Z",
+      "lastChecked": "2026-06-20T06:00:21.932Z"
+    },
+    {
+      "id": "usa-us-iran-talks-in-switzerland-canceled-and-dhs-to-give-police-fac-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "US-Iran talks in Switzerland canceled. And, DHS to give police facial recognition app",
       "url": "https://www.npr.org/2026/06/19/g-s1-129076/up-first-newsletter-vice-president-vance-iran-agreement-obama-presidential-center-judicial-system-dhs-facial-recognition",
       "publishedAt": "2026-06-19T11:27:49.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
+      "lastChecked": "2026-06-20T06:00:21.932Z"
     },
     {
-      "id": "usa-what-you-need-to-know-about-the-preliminary-u-s-iran-agreement-s-1",
+      "id": "usa-what-you-need-to-know-about-the-preliminary-u-s-iran-agreement-s-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "What you need to know about the preliminary U.S.-Iran agreement signed by Trump",
       "url": "https://www.npr.org/2026/06/19/nx-s1-5863544/trump-us-iran-agreement",
       "publishedAt": "2026-06-19T10:30:52.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
-    },
-    {
-      "id": "usa-how-the-1874-freedman-s-bank-collapse-connects-to-economic-dispa-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How the 1874 Freedman's Bank collapse connects to economic disparities we see today",
-      "url": "https://www.npr.org/2026/06/19/nx-s1-5862645/how-the-1874-freedmans-bank-collapse-connects-to-economic-disparities-we-see-today",
-      "publishedAt": "2026-06-19T09:00:00.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
-    },
-    {
-      "id": "usa-it-s-toys-vs-tech-in-toy-story-5-here-are-4-ways-to-keep-tech-in-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "It's toys vs. tech in 'Toy Story 5.' Here are 4 ways to keep tech in check this summer",
-      "url": "https://www.npr.org/2026/06/19/nx-s1-5845874/toy-story-5-tech-social-media-screentime-summer-movie",
-      "publishedAt": "2026-06-19T09:00:00.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
-    },
-    {
-      "id": "usa-some-local-police-have-access-to-an-ice-facial-recognition-app-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Some local police have access to an ICE facial recognition app",
-      "url": "https://www.npr.org/2026/06/19/nx-s1-5863058/homeland-security-local-police-facial-recognition-identify-immigrants",
-      "publishedAt": "2026-06-19T09:00:00.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
-    },
-    {
-      "id": "usa-meet-the-law-students-working-to-bring-workplace-protections-to--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Meet the law students working to bring workplace protections to federal courts",
-      "url": "https://www.npr.org/2026/06/19/nx-s1-5849913/meet-the-law-students-working-to-bring-workplace-protections-to-federal-courts",
-      "publishedAt": "2026-06-19T09:00:00.000Z",
-      "lastChecked": "2026-06-19T13:36:27.164Z"
+      "lastChecked": "2026-06-20T06:00:21.932Z"
     }
   ]
 }
