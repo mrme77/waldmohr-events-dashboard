@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T14:14:51.149Z",
+  "generatedAt": "2026-06-19T13:36:27.906Z",
   "sources": [
     {
       "id": "usa",
@@ -16,64 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-survey-confirms-the-struggle-of-working-parents-no-way-to-be-two-0",
+      "id": "usa-us-iran-talks-in-switzerland-canceled-and-dhs-to-give-police-fac-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Survey confirms the struggle of working parents: 'No way to be two things at once'",
-      "url": "https://www.npr.org/2026/06/16/nx-s1-5856274/working-parents-balance-work-pew",
-      "publishedAt": "2026-06-16T14:00:00.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "US-Iran talks in Switzerland canceled. And, DHS to give police facial recognition app",
+      "url": "https://www.npr.org/2026/06/19/g-s1-129076/up-first-newsletter-vice-president-vance-iran-agreement-obama-presidential-center-judicial-system-dhs-facial-recognition",
+      "publishedAt": "2026-06-19T11:27:49.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     },
     {
-      "id": "usa-how-israel-could-complicate-iran-peace-negotiations-and-world-cu-1",
+      "id": "usa-what-you-need-to-know-about-the-preliminary-u-s-iran-agreement-s-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How Israel could complicate Iran peace negotiations. And, World Cup highlights",
-      "url": "https://www.npr.org/2026/06/16/g-s1-128341/up-first-newsletter-iran-israel-g7-primaries-luigi-mangione",
-      "publishedAt": "2026-06-16T10:53:19.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "What you need to know about the preliminary U.S.-Iran agreement signed by Trump",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5863544/trump-us-iran-agreement",
+      "publishedAt": "2026-06-19T10:30:52.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     },
     {
-      "id": "usa-is-it-a-renter-s-market-it-depends-on-where-you-live-2",
+      "id": "usa-how-the-1874-freedman-s-bank-collapse-connects-to-economic-dispa-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Is it a renter's market? It depends on where you live",
-      "url": "https://www.npr.org/2026/06/16/nx-s1-5847678/rent-apartment-landlord-construction-boom",
-      "publishedAt": "2026-06-16T10:00:00.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "How the 1874 Freedman's Bank collapse connects to economic disparities we see today",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5862645/how-the-1874-freedmans-bank-collapse-connects-to-economic-disparities-we-see-today",
+      "publishedAt": "2026-06-19T09:00:00.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     },
     {
-      "id": "usa-is-a-transparent-fish-the-future-of-brain-science-this-center-is-3",
+      "id": "usa-it-s-toys-vs-tech-in-toy-story-5-here-are-4-ways-to-keep-tech-in-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Is a transparent fish the future of brain science? This center is betting on it",
-      "url": "https://www.npr.org/2026/06/16/nx-s1-5859393/ai-science-brain-humans-fruit-fly-danionella",
-      "publishedAt": "2026-06-16T09:00:00.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "It's toys vs. tech in 'Toy Story 5.' Here are 4 ways to keep tech in check this summer",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5845874/toy-story-5-tech-social-media-screentime-summer-movie",
+      "publishedAt": "2026-06-19T09:00:00.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     },
     {
-      "id": "usa-voting-officials-fear-dhs-may-actually-be-a-threat-to-elections--4",
+      "id": "usa-some-local-police-have-access-to-an-ice-facial-recognition-app-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Voting officials fear DHS may actually be a threat to elections this year",
-      "url": "https://www.npr.org/2026/06/16/nx-s1-5702491/trump-voting-threat-midterm-election-dhs",
-      "publishedAt": "2026-06-16T09:00:00.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "Some local police have access to an ICE facial recognition app",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5863058/homeland-security-local-police-facial-recognition-identify-immigrants",
+      "publishedAt": "2026-06-19T09:00:00.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     },
     {
-      "id": "usa-morning-news-brief-5",
+      "id": "usa-meet-the-law-students-working-to-bring-workplace-protections-to--5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/06/16/nx-s1-5857623/morning-news-brief",
-      "publishedAt": "2026-06-16T08:46:51.000Z",
-      "lastChecked": "2026-06-16T14:14:50.380Z"
+      "title": "Meet the law students working to bring workplace protections to federal courts",
+      "url": "https://www.npr.org/2026/06/19/nx-s1-5849913/meet-the-law-students-working-to-bring-workplace-protections-to-federal-courts",
+      "publishedAt": "2026-06-19T09:00:00.000Z",
+      "lastChecked": "2026-06-19T13:36:27.164Z"
     }
   ]
 }
