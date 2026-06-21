@@ -27,17 +27,16 @@ const sources = [
  */
 async function main() {
   const results = await Promise.allSettled(sources.map(loadSource));
-  const failures = results
-    .map((result, index) => ({ result, source: sources[index] }))
-    .filter(({ result }) => result.status === "rejected");
+  const pairs = results.map((result, index) => ({ result, source: sources[index] }));
 
-  failures.forEach(({ result, source }) => {
-    const reason = result.status === "rejected" ? result.reason : "unknown error";
-    console.error(`Failed to refresh ${source.name}: ${reason instanceof Error ? reason.message : String(reason)}`);
-  });
+  pairs
+    .filter(({ result }) => result.status === "rejected")
+    .forEach(({ result, source }) => {
+      const reason = result.status === "rejected" ? result.reason : "unknown error";
+      console.error(`Failed to refresh ${source.name}: ${reason instanceof Error ? reason.message : String(reason)}`);
+    });
 
-  results
-    .map((result, index) => ({ result, source: sources[index] }))
+  pairs
     .filter(({ result }) => result.status === "fulfilled" && result.value.length === 0)
     .forEach(({ source }) => {
       console.warn(`${source.name} returned 0 items — feed URL may have changed or gone dead.`);
