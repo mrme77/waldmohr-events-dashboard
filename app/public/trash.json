@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-21T05:17:29.211Z",
+  "generatedAt": "2026-06-21T14:26:50.922Z",
   "source": "https://abfallwirtschaft.landkreis-kusel.de/",
   "events": [
     {
-      "id": "trash-91d0f4daebcc6459a467b720c988b467",
+      "id": "trash-8b6b89cb6419dac860fd515052d2d786",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -22,7 +22,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-bfa31742032d880ca42c7529a6c642b0",
+      "id": "trash-d19514ba091675e5937a1e1a82b8e7b8",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -41,7 +41,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-7755c2ebb78ab97c43a4323ee6bd6ea2",
+      "id": "trash-d4602fa1e21a3c1221ac34d5691b038e",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -60,7 +60,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-4a3f03ecc3e9ef59937b42f302155bc8",
+      "id": "trash-3bbedad4b56efba16e1361f025f74322",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -79,7 +79,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-86040b0268484582d97842aeefb66e7b",
+      "id": "trash-663b0cc27b7128c1990a2ef2923b0a7b",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -98,7 +98,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-f2ee089157331e3480bdcff83f39c234",
+      "id": "trash-0e83f2a03015297edfcaffd5bb549f53",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -117,7 +117,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-068a77a54a71b065f02a42b9dc81afb5",
+      "id": "trash-68fb390e5edf1ab913fa2077837d3f44",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -136,7 +136,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-d5997e5c56705c0b1c8772d25520fa90",
+      "id": "trash-d6fe7023ea37b74a9ed8f377f15e4592",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -155,7 +155,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-ecbe4cb293a9e6440ae055a88221f605",
+      "id": "trash-a99c9072886fb95aea2ad69cce283ea5",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -174,7 +174,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-b16a77e924712a0aeb316e431220414c",
+      "id": "trash-64ee23d5801cb7b2b617e0a9a847862b",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -193,7 +193,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-4c38be4e0f5dd80f04f9941fa1a54371",
+      "id": "trash-1caaa2e117028f5e0d1e9820646b364b",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -212,7 +212,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-80e0c4eeb3f309be6d0a7eeb0bfb11ee",
+      "id": "trash-db677eedb8ae270f41bf841cd0469a56",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -231,7 +231,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-4624d47d95e7712d93aeb576b7547da4",
+      "id": "trash-86925bd49256aabe8dd14f6375e50cbb",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -250,7 +250,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-064ffd68bff10543a4e13d461bef15d8",
+      "id": "trash-f8fe2f1ec54f5693863e43b42435c5e2",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -269,7 +269,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-f0afcbd8ae738e8f0645f30ea3a330ea",
+      "id": "trash-32d4bdc6f78fea39be7789c8dc86dae4",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -288,7 +288,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-30104e35af01f3f2e8744360c0333e08",
+      "id": "trash-3fab26375627f91451d0c259566d3a33",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -307,7 +307,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-1dfb9b46f74114965174822f0ee6b3b2",
+      "id": "trash-d6a83f27881c0553000d559a5953116c",
       "title": "Mobile Recycling (Umweltmobil)",
       "originalTitle": "Umweltmobil ()",
       "summary": "Mobile recycling unit (Umweltmobil) visiting Waldmohr.",
@@ -326,7 +326,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-98ebe47af9e2793886cc7d5b9ce2f20d",
+      "id": "trash-34db4f134442d8c6002ba4c60d844678",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -345,7 +345,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-e202b1b0925ee05aa981e91eb2566960",
+      "id": "trash-3fb81ce564652d8983ee5edac28d54d8",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -364,7 +364,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-03fffe0fb6946c85d589d021e28af782",
+      "id": "trash-b705b24467b575af2163a5fbce358946",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -383,7 +383,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-34984bee4e61677ac760727285feff18",
+      "id": "trash-8419963b0aa3e66406327a1780875d5f",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -402,7 +402,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-2330ad8f731786a531a96405c836ab35",
+      "id": "trash-140d6f04651366ea5ff89544be43448b",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -421,7 +421,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-0a073ecccf8ecaa94c431f8456a59b0d",
+      "id": "trash-5804e15a650b4bd9c3f73b0c6c7ba182",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -440,7 +440,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-f161537b92313059695511157d15dca6",
+      "id": "trash-7bcc57a6ce3c0f54ef72aa4a9826f700",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -459,7 +459,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-848246f52b229ec380d15fcb3edbebca",
+      "id": "trash-b27b7f37fe1c11a2cdfe17b0482509d8",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -478,7 +478,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-62cff41536ab04922e086f58508fcfed",
+      "id": "trash-add39a18b9bf790a9efa30bf32695f53",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -497,7 +497,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-2dfd63bc8a34946a2f7f78ad7a5d3793",
+      "id": "trash-560d9fdbde0d3bd4e0575340ed076e1f",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -516,7 +516,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-deae2217810384dc1e59d05bfa2bc5a0",
+      "id": "trash-fdbd6173ca2abafac0fa774edc39fb77",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -535,7 +535,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-ea9d43510b61542ed1bf7de0c879fa3a",
+      "id": "trash-1720e5feb5a04aa0be13762527d73784",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -554,7 +554,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-0cf98d01cbaea751e571d3ad80141c20",
+      "id": "trash-19b54bedc2339de2214cee8e21604b6f",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -573,7 +573,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-1bbe7323a4bb689f53f854520f054a89",
+      "id": "trash-14b617c1bbd20a13a29a23ad5af353fb",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -592,7 +592,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-6794aea6aa83d2b7bcde1228f9539dee",
+      "id": "trash-930bc9d1d4d3a9681f7b5f7d0180de3d",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -611,7 +611,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-c819fe51dc2ebcc194eafb5b43bb214f",
+      "id": "trash-d19d9fec7836f1441af0ec0c6038c230",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -630,7 +630,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-b82923a9d226726ef55046eac6a47acc",
+      "id": "trash-dea3a544ca0168d139bb1abb6b8fed4a",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -649,7 +649,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-8b5aa33b751e0357746281a0a180a4d2",
+      "id": "trash-c426c8ac0665dffcbda8e6e2f0131d40",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -668,7 +668,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-2162ae89ebc58a05cf7794c25802f119",
+      "id": "trash-6600b4e719890728dd6913c958ddd75c",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -687,7 +687,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-71129331e77d95f192a39b96f620a6c3",
+      "id": "trash-f2076d3f7f40cec75ae4b16a1332a5a8",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -706,7 +706,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-e997fa25398dff011d7d1bb637b4874d",
+      "id": "trash-914d9fd409b1e2cdd8bd51c2625a2231",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -725,7 +725,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-d56557e2c33bbc001ab52f04e88fe9e0",
+      "id": "trash-54d8b0cba27dff9783b74275b7b54b5c",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -744,7 +744,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-c8e0e4a2f47537d3b0c7d593b4b6b118",
+      "id": "trash-913ce63c9adffc60ce32fa4dbd99a333",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -763,7 +763,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-e6b0d9c4bfb4a75ad8c0217058386ade",
+      "id": "trash-649fe00f4d93a6cab2564c9e32c9aeb8",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -782,7 +782,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-0ebf147dd9a47eb7aeb5eda695d5bbe2",
+      "id": "trash-796101b807d5fbde1fe5a0c679f27da4",
       "title": "Mobile Recycling (Umweltmobil)",
       "originalTitle": "Umweltmobil ()",
       "summary": "Mobile recycling unit (Umweltmobil) visiting Waldmohr.",
@@ -801,7 +801,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-76efddd181bdf1a4b05bad7d73b83edc",
+      "id": "trash-0de440d2c91b1c93ba57081e4f56f029",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -820,7 +820,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-700da8acb29193432ff6b0f84a508995",
+      "id": "trash-b904438f4e1d0e5dab10ee6c72cdef08",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -839,7 +839,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-1b2f3d26e033bc892286cbaab9b81cf2",
+      "id": "trash-20430073c333bde72c63c4791439703a",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -858,7 +858,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-7a7670dc072fef3876b59571cf5c2f87",
+      "id": "trash-b87e4b00a6204137b7b2359a3360df29",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -877,7 +877,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-57a03ba1b1e9889d2b3abe99ced60213",
+      "id": "trash-5111f4db0d2acba778b485e94377e0bf",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -896,7 +896,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-ca5ed46e13a1f033340cd43792211a4e",
+      "id": "trash-a1402a64ca56dfc41316920eb9af206d",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -915,7 +915,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-38a57354ff693b61981c0bafbb60a7f3",
+      "id": "trash-e9f999139ae0e1eefbc4e7c85abc8efa",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -934,7 +934,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-c6a5c139a93b689a3912e8fccf2c8dc5",
+      "id": "trash-7d9f95d266f6b4207ed2cd65e28a6e49",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -953,7 +953,7 @@
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-1018c29b4459eabc8a78bd95e07fe14a",
+      "id": "trash-5dcbd01a4bf2306f3d81262f73009af2",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
