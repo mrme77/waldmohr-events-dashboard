@@ -64,5 +64,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 
 **Never**
 - Store credentials or API keys in the repo.
-- Commit without explicit user approval.
+- Commit or push without explicit user approval.
+- Push directly to the `main` branch (always create a new branch and open a pull request for code changes).
+- Auto-commit or auto-push code changes; all changes must undergo manual user review first.
 - Present inferred dates as confirmed facts; use `dateConfidence`.
