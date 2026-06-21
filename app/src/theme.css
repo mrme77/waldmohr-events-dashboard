@@ -100,12 +100,12 @@ body::after {
   flex: none;
   display: flex;
   align-items: center;
-  padding: 0.45rem 1.1rem;
+  padding: 0.7rem 1.4rem;
   background: var(--accent);
   color: #06241a;
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 0.74rem;
+  font-size: 0.92rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
@@ -123,7 +123,7 @@ body::after {
   gap: 4rem;
   padding-left: 100%;
   white-space: nowrap;
-  font-size: 0.92rem;
+  font-size: 1.2rem;
   letter-spacing: 0.02em;
   color: var(--ink);
   animation: marquee 80s linear infinite;
