@@ -346,14 +346,13 @@ async function main() {
     return;
   }
 
-  const ics = await fetchIcs(location);
   const windowStart = shiftDays(todayKey, -PAST_WINDOW_DAYS);
   const windowEnd = shiftDays(todayKey, FUTURE_WINDOW_DAYS);
 
   // Detached overrides (RECURRENCE-ID) replace their generated instance: the
   // master expansion skips the original date and the detached VEVENT itself
   // contributes the (possibly moved/edited) replacement.
-  const vevents = parseVevents(ics);
+  const vevents = await fetchVeventsUnion(location);
   const overridesByUid = new Map();
   for (const v of vevents) {
     const recurrence = parseIcsDate(prop(v, "RECURRENCE-ID"));
