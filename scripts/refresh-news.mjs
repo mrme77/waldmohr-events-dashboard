@@ -15,8 +15,8 @@ const sources = [
   {
     id: "stl",
     label: "St. Louis",
-    name: "KSDK Local",
-    url: "https://www.ksdk.com/feeds/syndication/rss/news/local"
+    name: "FOX 2 News",
+    url: "https://fox2now.com/feed/"
   }
 ];
 
@@ -35,6 +35,13 @@ async function main() {
     const reason = result.status === "rejected" ? result.reason : "unknown error";
     console.error(`Failed to refresh ${source.name}: ${reason instanceof Error ? reason.message : String(reason)}`);
   });
+
+  results
+    .map((result, index) => ({ result, source: sources[index] }))
+    .filter(({ result }) => result.status === "fulfilled" && result.value.length === 0)
+    .forEach(({ source }) => {
+      console.warn(`${source.name} returned 0 items — feed URL may have changed or gone dead.`);
+    });
 
   const items = results
     .filter((result) => result.status === "fulfilled")
