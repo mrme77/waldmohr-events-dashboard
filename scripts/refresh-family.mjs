@@ -60,6 +60,38 @@ async function fetchIcs(location) {
   return response.text();
 }
 
+// Google's "secret address" ICS export for accounts with many subscribed
+// calendars has been observed returning a different partial snapshot on each
+// request (same byte size, different VEVENTs) rather than the full feed.
+// Fetching a few times and unioning by UID makes the cache resilient to that.
+const FETCH_ATTEMPTS = 3;
+
+/**
+ * Fetches the ICS feed (repeatedly, for http(s) sources) and returns the
+ * union of VEVENTs seen across attempts, keyed by UID + RECURRENCE-ID so a
+ * detached override and its master aren't merged into one.
+ *
+ * @param {string} location
+ * @returns {Promise<Array<Map<string, string[]>>>}
+ */
+async function fetchVeventsUnion(location) {
+  if (!location.startsWith("http")) return parseVevents(await fetchIcs(location));
+
+  const attempts = await Promise.all(
+    Array.from({ length: FETCH_ATTEMPTS }, () => fetchIcs(location).then(parseVevents))
+  );
+
+  const byKey = new Map();
+  for (const vevents of attempts) {
+    for (const vevent of vevents) {
+      const uid = prop(vevent, "UID")?.value ?? "";
+      const recurrence = prop(vevent, "RECURRENCE-ID")?.value ?? "";
+      byKey.set(`${uid}::${recurrence}`, vevent);
+    }
+  }
+  return [...byKey.values()];
+}
+
 /**
  * Unfolds ICS continuation lines and splits a feed into VEVENT property maps.
  * Property parameters (e.g. DTSTART;VALUE=DATE) are kept on the key.
