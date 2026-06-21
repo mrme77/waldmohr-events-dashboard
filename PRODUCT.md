@@ -13,8 +13,9 @@ Board" view. Calendar is the primary surface; everything else is a glanceable ra
 ## Visual Direction
 - "Civic Departure Board": high-contrast dark theme (`#0a0e12` background, `#eef3f2` ink),
   Fraunces serif headings, Archivo UI text, JetBrains Mono numerals.
-- Civic green accent (`#3ed68a`); category colors for Fun/Public, Family Sports, Leave, Trash,
-  Civic/Holiday, KMC (neon-green diamond).
+- Civic green accent (`#3ed68a`); categories are distinguished by color and shape: Fun/Public
+  (circle), Family (star), Leave (star), Holiday (triangle), Trash (square, color-coded by
+  bin type), Flea Markets (hollow ring), KMC (diamond).
 - Layered glow + grain background, live pulse, staggered load reveal — built to be read from
   across a room on an always-on display.
 - Calendar dots are colored by category; tap a day/dot opens a detail popover (no filter

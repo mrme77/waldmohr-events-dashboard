@@ -20,8 +20,9 @@
   --amber: #f0a83a;         /* today / signal */
   --cat-fun: #f97316;             /* orange — public events */
   --cat-family: #c89bff;
-  --cat-leave: #f0883e;
+  --cat-leave: #c2410c;           /* burnt orange — personal leave */
   --cat-holiday: #ef4444;         /* red — public holidays */
+  --cat-flea: #f0a83a;            /* amber — flea markets */
   --cat-trash: #fb923c;           /* fallback / unknown trash type */
   --cat-trash-bio: #a16207;       /* brown bin — Bioabfall */
   --cat-trash-rest: #9ca3af;      /* grey bin  — Restmüll */
@@ -342,21 +343,38 @@ body::after {
   display: inline-block; background: var(--faint);
 }
 .dot.cat-fun, .cat-fun > .dot { background: var(--cat-fun); box-shadow: 0 0 7px rgba(249, 115, 22, 0.55); }
-/* Family events render as a star, not a dot. clip-path would clip box-shadow,
-   so the glow uses drop-shadow instead. */
-.dot.cat-family, .cat-family > .dot {
-  background: var(--cat-family);
+/* Personal events (family, leave) render as a star, not a dot. clip-path would
+   clip box-shadow, so the glow uses drop-shadow instead. */
+.dot.cat-family, .cat-family > .dot,
+.dot.cat-leave, .cat-leave > .dot {
   width: 13px; height: 13px; border-radius: 0;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.dot.cat-family, .cat-family > .dot {
+  background: var(--cat-family);
   filter: drop-shadow(0 0 4px rgba(200, 155, 255, 0.7));
 }
-/* Leave/vacation days render as a square. */
 .dot.cat-leave, .cat-leave > .dot {
   background: var(--cat-leave);
-  border-radius: 2px;
-  box-shadow: 0 0 7px rgba(240, 136, 62, 0.5);
+  filter: drop-shadow(0 0 4px rgba(194, 65, 12, 0.7));
 }
-.dot.cat-holiday, .cat-holiday > .dot { background: var(--cat-holiday); box-shadow: 0 0 7px rgba(239, 68, 68, 0.55); }
+/* Holidays render as a triangle. */
+.dot.cat-holiday, .cat-holiday > .dot {
+  background: var(--cat-holiday);
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  filter: drop-shadow(0 0 4px rgba(239, 68, 68, 0.55));
+}
+/* Trash pickups render as squares, color-coded by bin type. */
+.dot.cat-trash, .cat-trash > .dot,
+.dot.cat-trash-bio, .cat-trash-bio > .dot,
+.dot.cat-trash-rest, .cat-trash-rest > .dot,
+.dot.cat-trash-lvp, .cat-trash-lvp > .dot,
+.dot.cat-trash-papier, .cat-trash-papier > .dot,
+.dot.cat-trash-glas, .cat-trash-glas > .dot,
+.dot.cat-trash-umweltmobil, .cat-trash-umweltmobil > .dot {
+  border-radius: 2px;
+}
 .dot.cat-trash, .cat-trash > .dot { background: var(--cat-trash); box-shadow: 0 0 7px rgba(249, 115, 22, 0.5); }
 .dot.cat-trash-bio, .cat-trash-bio > .dot { background: var(--cat-trash-bio); box-shadow: 0 0 7px rgba(161, 98, 7, 0.55); }
 .dot.cat-trash-rest, .cat-trash-rest > .dot { background: var(--cat-trash-rest); box-shadow: 0 0 7px rgba(156, 163, 175, 0.45); }
@@ -365,6 +383,12 @@ body::after {
 .dot.cat-trash-glas, .cat-trash-glas > .dot { background: var(--cat-trash-glas); box-shadow: 0 0 7px rgba(203, 213, 225, 0.45); }
 .dot.cat-trash-umweltmobil, .cat-trash-umweltmobil > .dot { background: var(--cat-trash-umweltmobil); box-shadow: 0 0 7px rgba(52, 211, 153, 0.5); }
 .dot.cat-civic, .cat-civic > .dot { background: var(--cat-civic); box-shadow: 0 0 7px rgba(232, 121, 249, 0.55); }
+/* Flea markets render as a hollow ring. */
+.dot.cat-flea, .cat-flea > .dot {
+  background: transparent;
+  border: 2px solid var(--cat-flea);
+  box-shadow: 0 0 7px rgba(240, 168, 58, 0.6);
+}
 /* KMC magazine events render as a diamond. */
 .dot.cat-kmc, .cat-kmc > .dot {
   background: var(--cat-kmc);
@@ -406,6 +430,9 @@ body::after {
 .spotlight__card.cat-kmc { border-left-color: var(--cat-kmc); }
 .spotlight__card.cat-civic { border-left-color: var(--cat-civic); }
 .spotlight__card.cat-holiday { border-left-color: var(--cat-holiday); }
+.spotlight__card.cat-family { border-left-color: var(--cat-family); }
+.spotlight__card.cat-leave { border-left-color: var(--cat-leave); }
+.spotlight__card.cat-flea { border-left-color: var(--cat-flea); }
 .spotlight__card.cat-trash { border-left-color: var(--cat-trash); }
 .spotlight__card.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
 .spotlight__card.cat-trash-rest { border-left-color: var(--cat-trash-rest); }
@@ -534,6 +561,9 @@ body::after {
 .popover__item.cat-kmc { border-left-color: var(--cat-kmc); }
 .popover__item.cat-civic { border-left-color: var(--cat-civic); }
 .popover__item.cat-holiday { border-left-color: var(--cat-holiday); }
+.popover__item.cat-family { border-left-color: var(--cat-family); }
+.popover__item.cat-leave { border-left-color: var(--cat-leave); }
+.popover__item.cat-flea { border-left-color: var(--cat-flea); }
 .popover__item.cat-trash { border-left-color: var(--cat-trash); }
 .popover__item.cat-trash-bio { border-left-color: var(--cat-trash-bio); }
 .popover__item.cat-trash-rest { border-left-color: var(--cat-trash-rest); }

@@ -11,10 +11,12 @@ How to verify the dashboard works.
 - Confirm month cells render category-colored event markers.
 - Confirm selecting a day/event opens details with source link, original German title, post date, last checked date, and date confidence.
 - Confirm past events do not appear in "Next Up".
-- Confirm trash, holiday, flea-market, and family events render on the calendar with the correct
-  category colors.
+- Confirm trash (squares), holiday (triangle), flea-market (hollow ring), family (star), and
+  leave (star) events render on the calendar with the correct category colors and shapes.
 - Confirm KMC magazine events from `app/public/kmc-events.json` render on the calendar as
   neon-green diamond markers and open source-linked Issuu details.
+- Confirm flea-market events from `app/public/fleamarkets.json` render as hollow ring markers
+  with amber color.
 - Run `node scripts/validate-events.mjs`.
 - Run `node scripts/validate-news.mjs`.
 - Run `node scripts/validate-trash.mjs`.
