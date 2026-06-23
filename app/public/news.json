@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T14:26:50.645Z",
+  "generatedAt": "2026-06-23T17:57:39.813Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-ukrainian-attacks-prompt-russian-held-crimea-to-halt-civilian-ga-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Ukrainian attacks prompt Russian-held Crimea to halt civilian gasoline sales",
-      "url": "https://www.npr.org/2026/06/21/g-s1-129200/ukrainian-attacks-russia-crimea-halt-gas-sales",
-      "publishedAt": "2026-06-21T13:55:06.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
-    },
-    {
-      "id": "usa-trump-claims-vandals-damaged-d-c-reflecting-pool-and-says-it-wil-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump claims vandals damaged D.C. Reflecting Pool, and says it will be drained again",
-      "url": "https://www.npr.org/2026/06/21/nx-s1-5865636/trump-reflecting-pool-dc-vandals-drain-green",
-      "publishedAt": "2026-06-21T13:46:25.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
-    },
-    {
-      "id": "stl-father-s-day-forecast-severe-storms-and-flash-flood-threat-0",
+      "id": "stl-absentee-voting-begins-in-missouri-for-august-primary-election-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Father's Day forecast: Severe storms and flash flood threat",
-      "url": "https://fox2now.com/news/weather/fathers-day-forecast-severe-storms-and-flash-flood-threat/",
-      "publishedAt": "2026-06-21T12:57:21.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
+      "title": "Absentee voting begins in Missouri for August primary election",
+      "url": "https://fox2now.com/news/missouri/absentee-voting-begins-in-missouri-for-august-primary-election/",
+      "publishedAt": "2026-06-23T17:19:00.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
     },
     {
-      "id": "usa-a-new-survey-on-dads-found-that-9-out-of-10-had-a-surprising-rea-2",
+      "id": "stl-man-charged-with-fighting-family-guests-at-wedding-reception-she-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Man charged with fighting family, guests at wedding reception: Sheriff’s Office",
+      "url": "https://fox2now.com/news/missouri/man-charged-with-fighting-family-guests-at-wedding-reception-sheriffs-office/",
+      "publishedAt": "2026-06-23T16:57:03.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
+    },
+    {
+      "id": "stl-small-plane-crashes-in-st-francois-county-no-injuries-reported-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Small plane crashes in St. Francois County, no injuries reported",
+      "url": "https://fox2now.com/news/missouri/small-plane-crashes-in-st-francois-county-no-injuries-reported/",
+      "publishedAt": "2026-06-23T16:45:48.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
+    },
+    {
+      "id": "usa-a-revolutionary-war-soldier-s-dna-links-him-to-living-relatives-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "A new survey on dads found that 9 out of 10 had a surprising reaction to fatherhood",
-      "url": "https://www.npr.org/2026/06/21/g-s1-128889/a-new-survey-on-dads-found-that-9-out-of-10-had-a-surprising-reaction-to-fatherhood",
-      "publishedAt": "2026-06-21T10:38:48.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
+      "title": "A Revolutionary War soldier's DNA links him to living relatives",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5866455/revolutionary-war-continental-army-camden-south-carolina-maryland",
+      "publishedAt": "2026-06-23T15:59:35.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
     },
     {
-      "id": "usa-freed-from-cambodia-s-scam-compounds-trafficking-victims-face-a--3",
+      "id": "usa-afghan-taliban-hold-first-closed-door-talks-with-eu-on-deportati-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Freed from Cambodia's scam compounds, trafficking victims face a new crisis",
-      "url": "https://www.npr.org/2026/06/21/g-s1-128624/freed-from-cambodias-scam-compounds-trafficking-victims-face-a-new-crisis",
-      "publishedAt": "2026-06-21T10:00:00.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
+      "title": "Afghan Taliban hold first, closed-door talks with EU on deportations",
+      "url": "https://www.npr.org/2026/06/23/g-s1-129648/afghan-taliban-hold-first-closed-door-talks-with-eu-on-deportations",
+      "publishedAt": "2026-06-23T15:34:44.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
     },
     {
-      "id": "usa-want-to-improve-your-agility-try-these-explosive-power-exercises-4",
+      "id": "stl-old-town-donuts-repeats-as-best-donuts-in-america-champion-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Old Town Donuts repeats as 'Best Donuts in America' champion",
+      "url": "https://fox2now.com/news/missouri/old-town-donuts-repeats-as-best-donuts-in-america-champion/",
+      "publishedAt": "2026-06-23T15:33:20.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
+    },
+    {
+      "id": "stl-jefferson-county-bus-driver-facing-dwi-child-endangerment-charge-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Jefferson County bus driver facing DWI, child endangerment charges",
+      "url": "https://fox2now.com/news/missouri/jefferson-county-bus-driver-facing-dwi-child-endangerment-charges/",
+      "publishedAt": "2026-06-23T15:02:27.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
+    },
+    {
+      "id": "usa-u-s-lifts-iran-oil-sanctions-and-federal-judge-rules-save-voter--2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Want to improve your agility? Try these 'explosive power' exercises",
-      "url": "https://www.npr.org/2026/06/21/nx-s1-5776814/improve-your-agility-explosive-power-exercises-prevent-injury",
-      "publishedAt": "2026-06-21T09:00:00.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
+      "title": "U.S. lifts Iran oil sanctions. And, federal judge rules SAVE voter tool unlawful",
+      "url": "https://www.npr.org/2026/06/23/g-s1-129603/up-first-newsletter-iran-oil-sanctions-trump-economy-minnesota-subpoenas-save-voter-info",
+      "publishedAt": "2026-06-23T11:17:26.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
     },
     {
-      "id": "stl-man-shot-during-group-altercation-in-north-st-louis-county-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Man shot during group altercation in north St. Louis County",
-      "url": "https://fox2now.com/news/missouri/man-shot-during-group-altercation-in-north-st-louis-county/",
-      "publishedAt": "2026-06-21T02:57:10.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
-    },
-    {
-      "id": "stl-bj-s-bar-and-grill-to-close-owners-and-locals-reflect-on-70-year-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "BJ's Bar and Grill to close; Owners and locals reflect on 70 years of memories",
-      "url": "https://fox2now.com/news/missouri/bjs-bar-and-grill-to-close-owners-and-locals-reflect-on-70-years-of-memories/",
-      "publishedAt": "2026-06-21T02:38:15.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
-    },
-    {
-      "id": "stl-st-louis-police-work-to-prevent-teen-takeovers-this-weekend-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis police work to prevent 'teen takeovers' this weekend",
-      "url": "https://fox2now.com/news/missouri/st-louis-police-work-to-prevent-teen-takeovers-this-weekend/",
-      "publishedAt": "2026-06-21T02:28:58.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
-    },
-    {
-      "id": "stl-should-the-st-louis-cardinals-keep-dustin-may-for-the-long-term-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Should the St. Louis Cardinals keep Dustin May for the long term?",
-      "url": "https://fox2now.com/sports/st-louis-cardinals/should-the-st-louis-cardinals-keep-dustin-may-for-the-long-term/",
-      "publishedAt": "2026-06-21T01:11:00.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
-    },
-    {
-      "id": "usa-doj-memo-stokes-fear-among-disability-advocates-of-a-return-to-i-5",
+      "id": "usa-who-would-pay-for-trump-s-proposed-300-billion-iran-reconstructi-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "DOJ memo stokes fear among disability advocates of a return to institutionalization",
-      "url": "https://www.npr.org/2026/06/20/nx-s1-5865100/doj-memo-trump-disability-civil-rights-institutionalization",
-      "publishedAt": "2026-06-20T20:33:14.000Z",
-      "lastChecked": "2026-06-21T14:26:50.607Z"
+      "title": "Who would pay for Trump's proposed $300 billion Iran reconstruction fund?",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5866577/iran-trump-deal-300-billion-obama",
+      "publishedAt": "2026-06-23T10:51:02.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
     },
     {
-      "id": "stl-why-dead-trees-remain-a-common-sight-around-missouri-5",
+      "id": "usa-when-falling-housing-prices-are-good-news-and-when-they-re-not-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "When falling housing prices are good news — and when they're not",
+      "url": "https://www.npr.org/sections/planet-money/2026/06/23/g-s1-129339/when-falling-housing-prices-are-good-news-and-when-theyre-not",
+      "publishedAt": "2026-06-23T10:30:00.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
+    },
+    {
+      "id": "usa-a-u-s-iran-dispute-over-nuclear-inspections-clouds-work-to-final-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "A U.S.-Iran dispute over nuclear inspections clouds work to finalize a war-ending deal",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5867322/us-iran-finalize-war-ending-deal",
+      "publishedAt": "2026-06-23T09:29:01.000Z",
+      "lastChecked": "2026-06-23T17:57:39.291Z"
+    },
+    {
+      "id": "stl-hawley-slams-mlb-over-bible-verse-warning-league-responds-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Why dead trees remain a common sight around Missouri",
-      "url": "https://fox2now.com/news/missouri/why-dead-trees-remain-a-common-sight-around-missouri/",
-      "publishedAt": "2026-06-20T20:12:04.000Z",
-      "lastChecked": "2026-06-21T14:26:50.640Z"
+      "title": "Hawley slams MLB over Bible verse warning, league responds",
+      "url": "https://fox2now.com/news/missouri/hawley-slams-mlb-over-bible-verse-warning-league-responds/",
+      "publishedAt": "2026-06-23T03:04:37.000Z",
+      "lastChecked": "2026-06-23T17:57:39.800Z"
     }
   ]
 }
