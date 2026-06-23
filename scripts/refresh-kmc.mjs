@@ -1,10 +1,13 @@
 import { URL } from "node:url";
 import { writeJson, runMain } from "./lib.mjs";
+import { fetchTextWithRetry } from "./fetch-text.mjs";
 
 const KAISERSLAUTERN_AMERICAN_URL = "https://www.kaiserslauternamerican.com/";
 const ISSUU_DOC_BASE_URL = "https://issuu.com/advantinews/docs/";
 const USER_AGENT =
   "Mozilla/5.0 (compatible; WaldmohrEventsDashboard/0.1; +https://www.kaiserslauternamerican.com/)";
+const FETCH_TIMEOUT_MS = 20_000;
+const PAGE_PROGRESS_INTERVAL = 5;
 const output = new URL("../app/public/kmc-events.json", import.meta.url);
 
 const ENGLISH_MONTHS = {
@@ -29,6 +32,7 @@ const ENGLISH_MONTHS = {
  */
 async function main() {
   const issue = await fetchCurrentIssue();
+  console.log(`Scanning ${issue.pageCount} pages from the current KMC issue...`);
   const pageTexts = await fetchUnterwegsPages(issue);
   const events = pageTexts
     .flatMap((page) => parseUnterwegsEvents(page, issue))
@@ -95,12 +99,16 @@ async function fetchUnterwegsPages(issue) {
   for (let pageNumber = 1; pageNumber <= issue.pageCount; pageNumber += 1) {
     const svgUrl = `https://svg.issuu.com/${issue.revisionId}-${issue.publicationId}/page_${pageNumber}.svg`;
     const svg = await fetchText(svgUrl);
-    if (!svg.includes("UNTERWEGS")) continue;
+    if (svg.includes("UNTERWEGS")) {
+      pages.push({
+        pageNumber,
+        lines: extractSvgLines(svg, pageNumber),
+      });
+    }
 
-    pages.push({
-      pageNumber,
-      lines: extractSvgLines(svg, pageNumber),
-    });
+    if (pageNumber % PAGE_PROGRESS_INTERVAL === 0 || pageNumber === issue.pageCount) {
+      console.log(`Scanned ${pageNumber}/${issue.pageCount} KMC issue pages.`);
+    }
   }
   return pages;
 }
@@ -311,11 +319,10 @@ function summarizeFamilyRelevance(text) {
  * @returns {Promise<string>} Response body text.
  */
 async function fetchText(url) {
-  const response = await fetch(url, { headers: { "user-agent": USER_AGENT } });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
-  }
-  return response.text();
+  return fetchTextWithRetry(url, {
+    headers: { "user-agent": USER_AGENT },
+    timeoutMs: FETCH_TIMEOUT_MS,
+  });
 }
 
 /**
