@@ -50,6 +50,17 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `plan.md`, `progress.md`, `TASKS.md` - live work state.
 - `learnings.md` - fragile commands and toolchain notes.
 
+## GitHub Operations
+- Use the installed, authenticated GitHub CLI for GitHub operations. Run
+  `gh auth status` before pushing, opening pull requests, or inspecting remote
+  GitHub state.
+- If authentication is invalid, stop and ask the user to run `gh auth login`.
+  Use `gh auth setup-git` when Git transport needs GitHub CLI credentials.
+- Use `git push` for Git transport and `gh pr`, `gh issue`, and `gh run` for
+  GitHub workflows. Do not switch to a GitHub app or connector as a fallback.
+- Direct pushes to `main` require the user to explicitly choose and authorize
+  that exception for the current change. Otherwise, use a branch and pull request.
+
 ## Boundaries
 **Always**
 - Keep every displayed event tied to a source URL.
@@ -65,6 +76,6 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 **Never**
 - Store credentials or API keys in the repo.
 - Commit or push without explicit user approval.
-- Push directly to the `main` branch (always create a new branch and open a pull request for code changes).
+- Push directly to the `main` branch unless the user explicitly authorizes it for the current change.
 - Auto-commit or auto-push code changes; all changes must undergo manual user review first.
 - Present inferred dates as confirmed facts; use `dateConfidence`.
