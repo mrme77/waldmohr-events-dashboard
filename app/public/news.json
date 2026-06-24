@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T17:57:39.813Z",
+  "generatedAt": "2026-06-24T05:58:11.593Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-absentee-voting-begins-in-missouri-for-august-primary-election-4",
+      "id": "stl-missouri-hearing-on-data-center-regulations-set-for-september-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Absentee voting begins in Missouri for August primary election",
-      "url": "https://fox2now.com/news/missouri/absentee-voting-begins-in-missouri-for-august-primary-election/",
-      "publishedAt": "2026-06-23T17:19:00.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
+      "title": "Missouri hearing on data center regulations set for September",
+      "url": "https://fox2now.com/news/missouri/missouri-hearing-on-data-center-regulations-set-for-september/",
+      "publishedAt": "2026-06-24T03:54:34.000Z",
+      "lastChecked": "2026-06-24T05:58:11.523Z"
     },
     {
-      "id": "stl-man-charged-with-fighting-family-guests-at-wedding-reception-she-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Man charged with fighting family, guests at wedding reception: Sheriff’s Office",
-      "url": "https://fox2now.com/news/missouri/man-charged-with-fighting-family-guests-at-wedding-reception-sheriffs-office/",
-      "publishedAt": "2026-06-23T16:57:03.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
-    },
-    {
-      "id": "stl-small-plane-crashes-in-st-francois-county-no-injuries-reported-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Small plane crashes in St. Francois County, no injuries reported",
-      "url": "https://fox2now.com/news/missouri/small-plane-crashes-in-st-francois-county-no-injuries-reported/",
-      "publishedAt": "2026-06-23T16:45:48.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
-    },
-    {
-      "id": "usa-a-revolutionary-war-soldier-s-dna-links-him-to-living-relatives-0",
+      "id": "usa-mamdani-s-political-gamble-pays-off-as-his-endorsed-candidates-s-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "A Revolutionary War soldier's DNA links him to living relatives",
-      "url": "https://www.npr.org/2026/06/23/nx-s1-5866455/revolutionary-war-continental-army-camden-south-carolina-maryland",
-      "publishedAt": "2026-06-23T15:59:35.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
+      "title": "Mamdani's political gamble pays off as his endorsed candidates sweep their primaries",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5868676/mamdani-nyc-primaries-progressive-dsa",
+      "publishedAt": "2026-06-24T02:41:32.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
     },
     {
-      "id": "usa-afghan-taliban-hold-first-closed-door-talks-with-eu-on-deportati-1",
+      "id": "stl-collinsville-man-found-guilty-of-4th-of-july-machete-attack-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Collinsville man found guilty of 4th of July machete attack",
+      "url": "https://fox2now.com/news/illinois/collinsville-man-found-guilty-of-4th-of-july-machete-attack/",
+      "publishedAt": "2026-06-24T01:11:39.000Z",
+      "lastChecked": "2026-06-24T05:58:11.523Z"
+    },
+    {
+      "id": "usa-supreme-court-rules-that-prison-guards-can-t-be-sued-for-shaving-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Afghan Taliban hold first, closed-door talks with EU on deportations",
-      "url": "https://www.npr.org/2026/06/23/g-s1-129648/afghan-taliban-hold-first-closed-door-talks-with-eu-on-deportations",
-      "publishedAt": "2026-06-23T15:34:44.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
+      "title": "Supreme Court rules that prison guards can't be sued for shaving Rastafarian's head",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5867684/supreme-court-prison-guards-rastafarian-dreadlocks",
+      "publishedAt": "2026-06-23T22:33:08.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
     },
     {
-      "id": "stl-old-town-donuts-repeats-as-best-donuts-in-america-champion-3",
+      "id": "stl-blues-trade-jordan-kyrou-to-capitals-acquire-two-forwards-and-fi-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Old Town Donuts repeats as 'Best Donuts in America' champion",
-      "url": "https://fox2now.com/news/missouri/old-town-donuts-repeats-as-best-donuts-in-america-champion/",
-      "publishedAt": "2026-06-23T15:33:20.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
+      "title": "Blues trade Jordan Kyrou to Capitals, acquire two forwards and first-round pick",
+      "url": "https://fox2now.com/sports/st-louis-blues/blues-trade-jordan-kyrou-to-capitals-acquire-two-forwards-and-first-round-pick/",
+      "publishedAt": "2026-06-23T22:10:36.000Z",
+      "lastChecked": "2026-06-24T05:58:11.523Z"
     },
     {
-      "id": "stl-jefferson-county-bus-driver-facing-dwi-child-endangerment-charge-0",
+      "id": "stl-st-charles-bar-owner-sues-missouri-ag-over-gaming-machine-crackd-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Jefferson County bus driver facing DWI, child endangerment charges",
+      "title": "St. Charles bar owner sues Missouri AG over gaming machine crackdown",
+      "url": "https://fox2now.com/news/missouri/st-charles-bar-owner-sues-missouri-ag-over-gaming-machine-crackdown/",
+      "publishedAt": "2026-06-23T21:29:41.000Z",
+      "lastChecked": "2026-06-24T05:58:11.523Z"
+    },
+    {
+      "id": "stl-oakville-couple-charged-with-sex-crimes-against-children-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Oakville couple charged with sex crimes against children",
+      "url": "https://fox2now.com/news/missouri/oakville-couple-charged-with-sex-crimes-against-children/",
+      "publishedAt": "2026-06-23T21:19:01.000Z",
+      "lastChecked": "2026-06-24T05:58:11.523Z"
+    },
+    {
+      "id": "usa-in-symbolic-vote-congress-directs-trump-to-remove-forces-from-ir-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "In symbolic vote, Congress directs Trump to remove forces from Iran war",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5868599/senate-iran-war-powers-resolution",
+      "publishedAt": "2026-06-23T20:50:44.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
+    },
+    {
+      "id": "usa-congress-passes-the-largest-housing-affordability-bill-in-decade-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Congress passes the largest housing affordability bill in decades",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5867575/congress-passes-housing-affordability-bill",
+      "publishedAt": "2026-06-23T20:46:10.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
+    },
+    {
+      "id": "usa-is-ai-one-big-bubble-behind-the-tech-sell-off-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Is AI 'one big bubble'? Behind the tech sell-off",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5867633/ai-selloff-tech-stocks-bubble-nasdaq",
+      "publishedAt": "2026-06-23T19:31:54.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
+    },
+    {
+      "id": "usa-portugal-s-ronaldo-shakes-off-world-cup-doubters-scores-2-after--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Portugal's Ronaldo shakes off World Cup doubters, scores 2 after sluggish start",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5867692/2026-world-cup-fifa-cristiano-ronaldo-goal",
+      "publishedAt": "2026-06-23T18:59:56.000Z",
+      "lastChecked": "2026-06-24T05:58:11.585Z"
+    },
+    {
+      "id": "stl-jefferson-county-school-bus-driver-accused-of-drinking-before-ro-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Jefferson County school bus driver accused of drinking before route",
       "url": "https://fox2now.com/news/missouri/jefferson-county-bus-driver-facing-dwi-child-endangerment-charges/",
       "publishedAt": "2026-06-23T15:02:27.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
-    },
-    {
-      "id": "usa-u-s-lifts-iran-oil-sanctions-and-federal-judge-rules-save-voter--2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "U.S. lifts Iran oil sanctions. And, federal judge rules SAVE voter tool unlawful",
-      "url": "https://www.npr.org/2026/06/23/g-s1-129603/up-first-newsletter-iran-oil-sanctions-trump-economy-minnesota-subpoenas-save-voter-info",
-      "publishedAt": "2026-06-23T11:17:26.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
-    },
-    {
-      "id": "usa-who-would-pay-for-trump-s-proposed-300-billion-iran-reconstructi-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Who would pay for Trump's proposed $300 billion Iran reconstruction fund?",
-      "url": "https://www.npr.org/2026/06/23/nx-s1-5866577/iran-trump-deal-300-billion-obama",
-      "publishedAt": "2026-06-23T10:51:02.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
-    },
-    {
-      "id": "usa-when-falling-housing-prices-are-good-news-and-when-they-re-not-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "When falling housing prices are good news — and when they're not",
-      "url": "https://www.npr.org/sections/planet-money/2026/06/23/g-s1-129339/when-falling-housing-prices-are-good-news-and-when-theyre-not",
-      "publishedAt": "2026-06-23T10:30:00.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
-    },
-    {
-      "id": "usa-a-u-s-iran-dispute-over-nuclear-inspections-clouds-work-to-final-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A U.S.-Iran dispute over nuclear inspections clouds work to finalize a war-ending deal",
-      "url": "https://www.npr.org/2026/06/23/nx-s1-5867322/us-iran-finalize-war-ending-deal",
-      "publishedAt": "2026-06-23T09:29:01.000Z",
-      "lastChecked": "2026-06-23T17:57:39.291Z"
-    },
-    {
-      "id": "stl-hawley-slams-mlb-over-bible-verse-warning-league-responds-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Hawley slams MLB over Bible verse warning, league responds",
-      "url": "https://fox2now.com/news/missouri/hawley-slams-mlb-over-bible-verse-warning-league-responds/",
-      "publishedAt": "2026-06-23T03:04:37.000Z",
-      "lastChecked": "2026-06-23T17:57:39.800Z"
+      "lastChecked": "2026-06-24T05:58:11.523Z"
     }
   ]
 }
