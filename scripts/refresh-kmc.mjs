@@ -1,5 +1,6 @@
-import { URL } from "node:url";
-import { writeJson, runMain } from "./lib.mjs";
+import { readFile } from "node:fs/promises";
+import { URL, fileURLToPath } from "node:url";
+import { writeJson, runMain, isRecord } from "./lib.mjs";
 import { fetchTextWithRetry } from "./fetch-text.mjs";
 
 const KAISERSLAUTERN_AMERICAN_URL = "https://www.kaiserslauternamerican.com/";
@@ -34,10 +35,47 @@ async function main() {
   const issue = await fetchCurrentIssue();
   console.log(`Scanning ${issue.pageCount} pages from the current KMC issue...`);
   const pageTexts = await fetchUnterwegsPages(issue);
+  if (pageTexts.length === 0) {
+    const preservedPayload = await readPreservedPayload(
+      issue,
+      "The current KMC issue did not expose an UNTERWEGS text page."
+    );
+    if (preservedPayload !== null) {
+      await writeJson(output, preservedPayload);
+      console.warn(
+        `No KMC UNTERWEGS pages found in ${issue.sourceUrl}; preserved ` +
+          `${preservedPayload.events.length} events from ${preservedPayload.source}.`
+      );
+      return;
+    }
+
+    throw new Error(
+      `No KMC UNTERWEGS pages found in ${issue.sourceUrl}, and no previous non-empty KMC cache exists.`
+    );
+  }
+
   const events = pageTexts
     .flatMap((page) => parseUnterwegsEvents(page, issue))
     .filter((event) => event !== null)
     .sort((left, right) => left.date.localeCompare(right.date) || left.title.localeCompare(right.title));
+  if (events.length === 0) {
+    const preservedPayload = await readPreservedPayload(
+      issue,
+      "The current KMC issue exposed UNTERWEGS text, but no events could be parsed."
+    );
+    if (preservedPayload !== null) {
+      await writeJson(output, preservedPayload);
+      console.warn(
+        `No parseable KMC UNTERWEGS events found in ${issue.sourceUrl}; preserved ` +
+          `${preservedPayload.events.length} events from ${preservedPayload.source}.`
+      );
+      return;
+    }
+
+    throw new Error(
+      `No parseable KMC UNTERWEGS events found in ${issue.sourceUrl}, and no previous non-empty KMC cache exists.`
+    );
+  }
 
   const payload = {
     generatedAt: new Date().toISOString(),
@@ -50,6 +88,105 @@ async function main() {
   console.log(
     `Refreshed ${events.length} KMC UNTERWEGS events from ${pageTexts.length} page(s).`
   );
+}
+
+/**
+ * Reads the last non-empty KMC payload and wraps it as a preserved fallback.
+ *
+ * @param {{sourceUrl: string}} issue Current issue attempted by the refresh.
+ * @param {string} reason Human-readable preservation reason.
+ * @returns {Promise<Record<string, unknown> | null>} Preserved payload or null when unavailable.
+ */
+async function readPreservedPayload(issue, reason) {
+  const previousPayload = await readPreviousPayload();
+  if (previousPayload === null) return null;
+  return buildPreservedKmcPayload(previousPayload, issue, reason);
+}
+
+/**
+ * Reads the existing KMC cache if it contains at least one event.
+ *
+ * @returns {Promise<Record<string, unknown> | null>} Previous non-empty payload or null.
+ */
+async function readPreviousPayload() {
+  let rawPayload;
+  try {
+    rawPayload = await readFile(output, "utf8");
+  } catch (error) {
+    if (isFileNotFoundError(error)) return null;
+    const reason = error instanceof Error ? error.message : String(error);
+    throw new Error(`Could not read existing KMC cache: ${reason}`, { cause: error });
+  }
+
+  const payload = JSON.parse(rawPayload);
+  if (
+    !isRecord(payload) ||
+    typeof payload.source !== "string" ||
+    !Array.isArray(payload.events) ||
+    payload.events.length === 0
+  ) {
+    return null;
+  }
+
+  return payload;
+}
+
+/**
+ * Builds a preserved KMC payload from the previous non-empty cache.
+ *
+ * @param {{source: string, events: unknown[]}} previousPayload Previous payload.
+ * @param {{sourceUrl: string}} issue Current issue attempted by the refresh.
+ * @param {string} reason Human-readable preservation reason.
+ * @param {Date} [now=new Date()] Timestamp source.
+ * @returns {Record<string, unknown>} Preserved payload.
+ */
+export function buildPreservedKmcPayload(previousPayload, issue, reason, now = new Date()) {
+  const todayKey = now.toISOString().slice(0, 10);
+  return {
+    generatedAt: now.toISOString(),
+    source: previousPayload.source,
+    attemptedSource: issue.sourceUrl,
+    refreshWarning: `${reason} Preserved the last non-empty KMC cache while the source is reviewed.`,
+    events: refreshKmcEventStatuses(previousPayload.events, todayKey),
+  };
+}
+
+/**
+ * Recomputes status and last-checked date for preserved KMC events.
+ *
+ * @param {unknown[]} events Previous event records.
+ * @param {string} todayKey Current date key, YYYY-MM-DD.
+ * @returns {Record<string, unknown>[]} Event records with refreshed status.
+ */
+export function refreshKmcEventStatuses(events, todayKey) {
+  return events.filter(isRecord).map((event) => ({
+    ...event,
+    lastChecked: todayKey,
+    status: computeEventStatus(typeof event.date === "string" ? event.date : "", todayKey),
+  }));
+}
+
+/**
+ * Computes the dashboard status for one event date.
+ *
+ * @param {string} date Event date key.
+ * @param {string} todayKey Current date key.
+ * @returns {"past" | "current" | "upcoming"} Event status.
+ */
+function computeEventStatus(date, todayKey) {
+  if (date < todayKey) return "past";
+  if (date > todayKey) return "upcoming";
+  return "current";
+}
+
+/**
+ * Checks whether a caught file-system error represents a missing file.
+ *
+ * @param {unknown} error Caught error.
+ * @returns {boolean} True when the error is ENOENT.
+ */
+function isFileNotFoundError(error) {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
 }
 
 /**
@@ -478,4 +615,6 @@ function slugify(value) {
     .slice(0, 80);
 }
 
-runMain(main);
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  runMain(main);
+}
