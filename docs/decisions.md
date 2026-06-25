@@ -152,3 +152,24 @@ work. One cache, served and validated in place, removes both.
 **Status**: Accepted. Supersedes the "`data/events.json` remains the pipeline source of truth"
 note in the 2026-06-09 "Retire The v1 Static App" decision and the dual `data/` + `app/public/`
 write described in the 2026-06-13 KMC decision.
+
+## [2026-06-25] Add OpenRouter-Backed KMC Trip Summaries
+**Context**: Some Kaiserslautern American issues do not publish `UNTERWEGS`, but the broader issue
+can still contain useful day trips, attractions, vacations, tours, hikes, markets, and places to
+visit. The SVG text layer already used by the KMC event adapter exposes issue text without browser
+automation.
+**Decision**: Add a separate KMC trip-summary adapter that reuses shared Issuu issue discovery and
+SVG text extraction, scans the whole issue in bounded page chunks, and calls OpenRouter with
+`google/gemini-2.5-flash` to produce structured `kmc-trip-ideas.json`. The dashboard renders the
+cache as an optional right-rail Trip Ideas panel, three ideas at a time, rotating every 10 seconds
+with manual previous/next controls.
+**Reason**: Trip summaries are recommendation-style content, not dated calendar events. Keeping
+them in a separate payload avoids polluting the event schema while still surfacing useful family
+outing ideas. The OpenRouter key stays local to refresh time in `.env`; no secret is shipped to
+the client, and every displayed idea links back to the originating Issuu page.
+**Operational note**: The adapter skips cleanly when the OpenRouter key is absent and preserves a
+previous non-empty cache where possible. It retries malformed model JSON once with a stricter
+prompt and then skips only the failed chunk so one bad model response does not lose the whole
+issue.
+**Status**: Accepted. This does not reverse the 2026-06-10 voice decision: OpenRouter is used only
+for offline ingestion, not for a live voice assistant or backend.

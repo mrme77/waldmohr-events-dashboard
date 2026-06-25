@@ -15,18 +15,19 @@ Build a local English-first kiosk dashboard that helps an American family moving
 - [x] The v2 app builds with `npm run build`.
 
 All MVP criteria shipped. Later phases (weather, news, family/trash/holidays, flea markets, KMC
-magazine events) added on top — see `plan.md`.
+events, and KMC trip summaries) added on top — see `plan.md`.
 
 ## Constraints
 - **Source-linked**: no event is displayed without a source URL.
 - **Freshness-visible**: the app must show last refreshed time.
 - **No client secrets**: secrets stay in `.env`, used only by refresh scripts (e.g. `GCAL_ICS_URL`
-  for the family calendar feed), never shipped to the client.
+  for the family calendar feed and the OpenRouter key for KMC trip summaries), never shipped to
+  the client.
 - **Date caution**: inferred event dates must be marked with `dateConfidence`.
 - **Local-first**: v2 is built for a local Raspberry Pi kiosk and local cached JSON.
 - **Public Waldmohr first**: the MVP shipped with only Waldmohr Aktuell before KMC-wide sources
-  (news, weather, family, trash, holidays, flea markets, Kaiserslautern American `UNTERWEGS`)
-  were added in later phases — done, see `plan.md`.
+  (news, weather, family, trash, holidays, flea markets, Kaiserslautern American `UNTERWEGS`,
+  and KMC trip summaries) were added in later phases — done, see `plan.md`.
 
 ## Non-Goals
 - Full clone of Waldmohr Aktuell.

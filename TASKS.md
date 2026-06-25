@@ -44,5 +44,8 @@ See `plan.md` for full detail.
 - [x] Phase 7: KMC magazine events — Kaiserslautern American Issuu `UNTERWEGS` adapter
       (`scripts/refresh-kmc.mjs`), neon-green diamond marker category, yearless dates inferred
       and marked with `dateConfidence`.
+- [x] Phase 7b: KMC trip summaries — issue-wide KMC trip/day-trip/visit idea adapter
+      (`scripts/refresh-kmc-trips.mjs`) using OpenRouter `google/gemini-2.5-flash`, optional
+      right-rail Trip Ideas panel with 10-second paging.
 - [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).

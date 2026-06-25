@@ -7,8 +7,8 @@ An American family relocating to the KMC area that needs fast answers: what is h
 
 ## Product Shape
 A single-page, always-on kiosk dashboard for a wall-mounted Raspberry Pi 5: news marquee, dual
-clocks, calendar with rotating "Next Up" spotlight, and weather, all on one "Civic Departure
-Board" view. Calendar is the primary surface; everything else is a glanceable rail.
+clocks, calendar with rotating "Next Up" spotlight, Trip Ideas, and weather, all on one "Civic
+Departure Board" view. Calendar is the primary surface; everything else is a glanceable rail.
 
 ## Visual Direction
 - "Civic Departure Board": high-contrast dark theme (`#0a0e12` background, `#eef3f2` ink),
@@ -23,6 +23,8 @@ Board" view. Calendar is the primary surface; everything else is a glanceable ra
 
 ## UI Priorities
 - Current/upcoming events above past events; "Next Up" spotlight surfaces what's next.
+- Trip Ideas surfaces KMC day trips and places to visit without turning them into dated calendar
+  events.
 - Source links and freshness metadata ("Last Updated") always visible.
 - One color dimension (category) for glanceability; tap for detail, not filters.
 - Touchscreen-first, sized for the Pi 5 kiosk display.

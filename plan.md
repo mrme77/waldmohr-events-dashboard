@@ -22,6 +22,7 @@ covering the Kaiserslautern Military Community (KMC) area for a relocating Ameri
 - Calendar, one view, color = category (Fun/Public · Family Sports · Leave · Trash · Civic).
   Tap a day/dot → detail popover (time, venue, city, brief description, source link).
 - Rotating "Next Up" spotlight (auto-advances; tap to pin).
+- Rotating Trip Ideas card from KMC trip summaries, three ideas at a time.
 - Weather strip: Waldmohr (Open-Meteo, keyless), live client-side fetch every 15 min.
 
 Layout (news marquee pinned top):
@@ -47,14 +48,15 @@ INGESTION (Node, cron — Phase 8)
   scripts/refresh-holidays.mjs    date.nager.at DE public holidays
   scripts/refresh-fleamarkets.mjs Homburg flea market press releases
   scripts/refresh-kmc.mjs         Kaiserslautern American Issuu UNTERWEGS
+  scripts/refresh-kmc-trips.mjs   KMC trip ideas via OpenRouter
   scripts/refresh-family.mjs      Google Calendar private iCal URL
-  → normalize to shared event schema → data/*.json + app/public/*.json
+  → normalize to app/public/*.json caches
     (+ app/dist/*.json once Phase 8 lands, so cron updates reach the
     served build without a rebuild)
 
 FRONTEND (Vite + React + TypeScript → Chromium kiosk)
   No backend / Node server — fully static.
-  widgets: NewsMarquee · DualClock · Calendar · Spotlight · EventDetail · WeatherWidget
+  widgets: NewsMarquee · DualClock · Calendar · Spotlight · EventDetail · WeatherWidget · TripIdeas
   WeatherWidget polls Open-Meteo directly (client-side, every 15 min); everything
   else reads cached *.json from same origin via fetch({ cache: "no-store" }).
 ```
@@ -62,6 +64,8 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
 ### Secrets (`.env`, gitignored)
 - `GCAL_ICS_URL` — Google family calendar private iCal address. Used only by
   `scripts/refresh-family.mjs` at refresh time; never shipped to the client.
+- OpenRouter API key — used only by `scripts/refresh-kmc-trips.mjs` at refresh time to summarize
+  KMC trip ideas with `google/gemini-2.5-flash`; never shipped to the client or committed.
 
 ### Event sources — status
 - Waldmohr events: `waldmohr-aktuell.de` WP REST API. **DONE.**
@@ -71,6 +75,8 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
 - Flea markets: Homburg press releases (Kaiserslautern/Ramstein scrapes dropped in favor of
   this, 2026-06-10). **DONE.**
 - KMC events: Kaiserslautern American Issuu `UNTERWEGS` magazine listings. **DONE.**
+- KMC trip summaries: Kaiserslautern American issue-wide trip/day-trip/visit ideas via
+  OpenRouter. **DONE.**
 - Family: Google Calendar private iCal URL. **DONE.**
 
 ### Phases
@@ -85,14 +91,16 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
    coding. **DONE.**
 7. **KMC magazine events** — Kaiserslautern American Issuu `UNTERWEGS` adapter, neon-green
    diamond marker category. **DONE.** (Voice was dropped 2026-06-10; touch dashboard sufficient.)
+7b. **KMC trip summaries** — issue-wide KMC trip/day-trip/visit idea adapter plus right-rail
+    Trip Ideas panel. **DONE.**
 8. **Pi deployment — NEXT / REMAINING**
    - `npm run build` → serve `app/dist` via a static server (e.g. `vite preview`) on the Pi;
      Chromium kiosk autostart points at it.
    - Cron job(s) on the Pi run `npm run refresh` on a low-frequency schedule (every few hours
-     per `docs/compliance.md`) to keep `data/*.json` current.
+     per `docs/compliance.md`) to keep `app/public/*.json` current.
    - Add `app/dist/*.json` as a third write target in each `refresh-*.mjs` (alongside
-     `data/*.json` and `app/public/*.json`) so cron-refreshed data reaches the served build
-     without a full rebuild. This also fixes the manual-refresh staleness issue.
+     `app/public/*.json`) so cron-refreshed data reaches the served build without a full rebuild.
+     This also fixes the manual-refresh staleness issue.
    - Weather needs no cron: `WeatherWidget` fetches Open-Meteo live every 15 min as long as the
      Pi has internet.
 

@@ -24,6 +24,7 @@ exemption.
 |---|---|
 | Family calendar entries | Local only. Pulled via private iCal URL, never republished. |
 | Event organizer names in scraped posts | Already public; store minimal fields; keep source link. |
+| KMC issue text sent to OpenRouter | Public magazine text only; used at refresh time to create trip summaries, never mixed with family data. |
 
 ## The real legal exposure is copyright, not GDPR
 
@@ -31,6 +32,8 @@ Scraping public event listings raises **copyright** and the **EU sui generis dat
 (Directive 96/9/EC) more than data-protection law. Mitigations, baked into the adapters:
 
 - **Store minimal facts** (date, title, venue) — not wholesale copies of articles.
+- **Summarize, do not republish full articles** for KMC trip ideas; keep summaries short and
+  source-linked to Issuu pages.
 - **Always attribute + link** the source (`sourceUrl` on every event). Already a project rule.
 - **Personal use only.** No redistribution, no public republishing of aggregated data.
 
@@ -46,6 +49,8 @@ Scraping public event listings raises **copyright** and the **EU sui generis dat
 - All keys/URLs in `.env`, gitignored. Never committed, never in the client bundle.
 - `GCAL_ICS_URL` is itself a secret (it grants read access to the calendar) — used only by
   `scripts/refresh-family.mjs` at refresh time, never shipped to the client.
+- The OpenRouter key is also local-only and used only by `scripts/refresh-kmc-trips.mjs` at
+  refresh time; no OpenRouter secret is committed or shipped to the client.
 
 ## Retention
 

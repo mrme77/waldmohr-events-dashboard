@@ -18,6 +18,7 @@ Links to source material and technical references.
 - Kaiserslautern American Issuu publisher: https://issuu.com/advantinews
 - Current KMC digital issue source pattern: `https://issuu.com/advantinews/docs/{issue-slug}`;
   page SVG text is read from `https://svg.issuu.com/{revisionId}-{publicationId}/page_{n}.svg`.
+- OpenRouter chat completions API for KMC trip summaries: https://openrouter.ai/docs/api-reference/chat-completion
 
 ## Private Sources
 - Google Calendar family iCal feed: secret URL kept in `.env` as `GCAL_ICS_URL` (get it from
@@ -32,6 +33,8 @@ Each cache is written to `app/public/`, the single source served to and read by 
 - Holidays cache: `holidays.json` (date.nager.at, RLP).
 - Flea markets cache: `fleamarkets.json` (Homburg official dates, maintained table).
 - KMC events cache: `kmc-events.json` (Kaiserslautern American `UNTERWEGS` listings from Issuu).
+- KMC trip ideas cache: `kmc-trip-ideas.json` (OpenRouter summaries from Kaiserslautern American
+  issue text; source URLs point back to Issuu pages).
 - Family cache: `family.json` (Google Calendar iCal) — gitignored, never committed.
 
 ## Project References

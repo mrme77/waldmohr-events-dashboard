@@ -15,6 +15,9 @@ How to verify the dashboard works.
   leave (star) events render on the calendar with the correct category colors and shapes.
 - Confirm KMC magazine events from `app/public/kmc-events.json` render on the calendar as
   neon-green diamond markers and open source-linked Issuu details.
+- Confirm KMC trip summaries from `app/public/kmc-trip-ideas.json`, when present, render in the
+  right rail as Trip Ideas, three at a time, rotating every 10 seconds with previous/next controls
+  and source-linked cards.
 - Confirm flea-market events from `app/public/fleamarkets.json` render as hollow ring markers
   with amber color.
 - Run `node scripts/validate-events.mjs`.
@@ -23,6 +26,7 @@ How to verify the dashboard works.
 - Run `node scripts/validate-holidays.mjs`.
 - Run `node scripts/validate-fleamarkets.mjs`.
 - Run `node scripts/validate-kmc.mjs`.
+- Run `node scripts/validate-kmc-trips.mjs` (skips cleanly if `kmc-trip-ideas.json` is absent).
 - Run `node scripts/validate-family.mjs` (skips cleanly if `family.json` is absent, i.e.
   `GCAL_ICS_URL` not set).
 - Or run all of the above at once: `npm run validate` (from `app/`).
@@ -30,6 +34,8 @@ How to verify the dashboard works.
 - Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
 - Optional: run `node scripts/refresh-kmc.mjs`, then validate again and confirm
   `app/public/kmc-events.json` changed. KMC issue updates are expected most Fridays.
+- Optional: run `node scripts/refresh-kmc-trips.mjs`, then validate again and confirm
+  `app/public/kmc-trip-ideas.json` changed. Requires a local OpenRouter key in `.env`.
 
 ## v1 Historical Checklist (retired 2026-06-09)
 The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for history only.
@@ -63,4 +69,10 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
   `2026-06-13T07:58:14.853Z`.
 - 2026-06-13: `npm run build` passed in `app/` after KMC events were added as a neon-green
   diamond marker category.
+- 2026-06-25: `node scripts/refresh-kmc-trips.mjs` refreshed 28 KMC trip ideas from the
+  Kaiserslautern American June 26, 2026 Issuu issue to `app/public/kmc-trip-ideas.json`.
+- 2026-06-25: `npm run validate` passed in `app/`, including 28 KMC trip ideas from
+  `2026-06-25T19:14:42.604Z`.
+- 2026-06-25: `npm run build` and `npm test` passed after the Trip Ideas panel was added with
+  10-second paging.
 - Remaining: none for the MVP. Next validation milestone is Pi 5 deployment (plan.md Phase 8).

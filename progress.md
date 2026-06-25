@@ -17,8 +17,8 @@
   spelled-out condition, wind, humidity, and loading/error states. The clock widget includes the
   event-data updated date.
 - Phase 4: added keyless RSS refresh for NPR USA and KSDK St. Louis headlines. The refresh writes
-  cached news JSON to `data/news.json` and `app/public/news.json`; the top marquee now loads the
-  cached payload with a fallback error/loading state. The marquee is constrained so long RSS
+  cached news JSON to `app/public/news.json`; the top marquee now loads the cached payload with
+  a fallback error/loading state. The marquee is constrained so long RSS
   headlines cannot stretch the app layout, and it scrolls at 80 seconds per loop.
 - MVP browser QA/demo pass in a normal browser: layout, theme, marquee, clocks, calendar, weather,
   and family layer all render correctly. QA found that the event-date filter was incorrectly
@@ -39,14 +39,18 @@
   calendar marker.
 - Phase 7: added KMC magazine events — `scripts/refresh-kmc.mjs` discovers the current
   Kaiserslautern American Issuu issue, extracts the `UNTERWEGS` SVG text layer, parses event
-  blocks, and writes KMC-area listings to `data/kmc-events.json` and `app/public/kmc-events.json`.
+  blocks, and writes KMC-area listings to `app/public/kmc-events.json`.
   The frontend renders KMC events as neon-green diamond markers. Dates without an explicit year
   are inferred from the issue year and marked with `dateConfidence: "inferred"`. **DONE.**
+- Phase 7b: added KMC trip summaries — `scripts/refresh-kmc-trips.mjs` reuses KMC Issuu SVG text,
+  scans the whole issue, and uses OpenRouter `google/gemini-2.5-flash` to write
+  `app/public/kmc-trip-ideas.json`. The right rail renders an optional Trip Ideas panel showing
+  three ideas at a time, rotating every 10 seconds with manual previous/next controls. **DONE.**
 
 ### Remaining
 - Phase 8: Pi 5 deployment — build/serve `app/dist`, cron-driven `npm run refresh`, add
-  `app/dist/*.json` as a third write target so cron updates reach the served build without a
-  rebuild, Chromium kiosk autostart. See `plan.md` Phase 8.
+  `app/dist/*.json` as an additional write target so cron updates reach the served build without
+  a rebuild, Chromium kiosk autostart. See `plan.md` Phase 8.
 
 ## v1 — Static Dashboard (done, retained until v2 parity)
 - Built a static local calendar dashboard with seeded English event data, refresh + validation

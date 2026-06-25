@@ -12,8 +12,8 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 |---|---|---|
 | Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
 | Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
-| Refresh data | `cd app && npm run refresh` | Runs all seven adapters (events, news, trash, holidays, flea markets, KMC magazine events, family); each writes its `app/public/*.json` cache. Family runs only where `GCAL_ICS_URL` is set and its output is gitignored. |
-| Test | `cd app && npm run validate` | Validates all seven cached payloads (family skips when absent). |
+| Refresh data | `cd app && npm run refresh` | Runs the public/family adapters plus optional KMC trip summaries; each writes its `app/public/*.json` cache. Family and KMC trips run only where their local secrets are set. |
+| Test | `cd app && npm run validate` | Validates cached payloads; optional family and KMC trip caches skip when absent. |
 | Refresh + build | `cd app && npm run refresh:build` | Refresh, validate, then production build. |
 
 ## Runtime Dependencies
@@ -26,6 +26,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - KMC events: `scripts/refresh-kmc.mjs` finds the current
   embedded issue, extracts the `UNTERWEGS` SVG text layer, and writes KMC-area events. Dates that
   omit a year are inferred from the issue year and marked with `dateConfidence: "inferred"`.
+- KMC trip summaries: `scripts/refresh-kmc-trips.mjs` scans the current Kaiserslautern American
+  issue text and uses OpenRouter `google/gemini-2.5-flash` to write `kmc-trip-ideas.json`.
+  The OpenRouter key lives only in local `.env`; do not commit it or add values to examples.
 - Google Calendar private iCal feed (family layer): secret URL in `.env` as `GCAL_ICS_URL`,
   never committed; generated `family.json` caches are gitignored.
 - Browser with modern JavaScript support.
@@ -34,9 +37,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 ## Key Paths
 - `app/` - Vite + React + TypeScript application (the only UI).
 - `app/src/App.tsx` - app shell and layout.
-- `app/src/components/` - calendar, event detail, news marquee, clocks, weather.
+- `app/src/components/` - calendar, event detail, news marquee, clocks, weather, trip ideas.
 - `app/public/*.json` - normalized English event payloads; the single source served to and read by the app.
-- `scripts/refresh-*.mjs` - public-source refresh adapters (events, news, trash, holidays, flea markets, KMC).
+- `scripts/refresh-*.mjs` - refresh adapters (events, news, trash, holidays, flea markets, KMC events, KMC trips, family).
 - `scripts/validate-*.mjs` - payload validators, one per adapter.
 - `scripts/lib.mjs` - shared script helpers: `writeJson`, `runMain`, and the `runValidation` harness.
 - `docs/` - durable project truth.
@@ -67,6 +70,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Show when data was last refreshed.
 - Mark past events separately from upcoming/current events.
 - Keep `.env*` out of version control.
+- Keep OpenRouter output source-linked to the originating KMC issue page.
 
 **Ask First**
 - Adding dependencies or switching to a framework.

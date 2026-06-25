@@ -5,9 +5,9 @@ Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German ev
 glanceable, source-linked calendar.
 
 > **Status: feature-complete, pre-deploy.** v2 — a touch kiosk for a Raspberry Pi 5 — has all data
-> surfaces shipped (events, KMC magazine listings, news, weather, trash, holidays, flea markets,
-> family) and is now the only app (the v1 static dashboard has been retired). Remaining work: Pi 5 deployment (see
-> `plan.md` Phase 8).
+> surfaces shipped (events, KMC listings, KMC trip summaries, news, weather, trash, holidays,
+> flea markets, family) and is now the only app (the v1 static dashboard has been retired).
+> Remaining work: Pi 5 deployment (see `plan.md` Phase 8).
 
 ## What it does (v2 vision)
 
@@ -17,6 +17,7 @@ A single-page, high-contrast "Civic Departure Board" designed for an always-on w
 - **News marquee** across the top (USA + St. Louis RSS cache, 80-second scroll).
 - **Dual clocks** — Napoli and St. Louis / Central.
 - **Weather** for Waldmohr via Open-Meteo.
+- **Trip Ideas** rotating right-rail card from KMC trip summaries where available.
 
 See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) for project truth.
 
@@ -41,8 +42,8 @@ npm run dev      # preview at http://localhost:5173
 
 ```bash
 cd app
-npm run refresh        # run all seven adapters (events, news, trash, holidays, flea markets, KMC, family)
-npm run validate       # validate all seven cached payloads
+npm run refresh        # refresh public/event caches plus optional KMC trip summaries and family
+npm run validate       # validate cached payloads; optional KMC trip/family caches skip when absent
 npm run refresh:build  # refresh + validate + production build in one command
 ```
 
@@ -55,6 +56,11 @@ Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
   extracts the current issue's `UNTERWEGS` section from the SVG text layer and writes
   `kmc-events.json`. Issues usually update on Fridays; yearless event dates are inferred from the
   issue year and marked as inferred.
+- KMC trip summaries: `scripts/refresh-kmc-trips.mjs`
+  scans the current Kaiserslautern American issue text and uses OpenRouter
+  (`google/gemini-2.5-flash`) to identify trip, day-trip, vacation, attraction, and things-to-do
+  ideas. It writes `kmc-trip-ideas.json`; when the OpenRouter key is absent, it skips cleanly or
+  preserves the previous non-empty cache.
 - News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
 - Weather: Open-Meteo current conditions for Waldmohr.
 - Trash: Landkreis Kusel waste collection iCal for Waldmohr (live).
