@@ -21,6 +21,10 @@ A single-page, high-contrast "Civic Departure Board" designed for an always-on w
 
 See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) for project truth.
 
+## Video presentation
+
+[Watch the dashboard video presentation](./videopresentation.mov)
+
 ## Repository layout
 
 | Path | What |
