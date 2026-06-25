@@ -5,6 +5,7 @@ import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
+import { TripIdeas } from "./components/TripIdeas";
 import { fetchJson } from "./data/fetchJson";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
@@ -128,6 +129,7 @@ export function App() {
             <aside className="side-rail">
               <WeatherWidget />
               <DualClock updatedAt={updatedAt} />
+              <TripIdeas />
               <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
             </aside>
           </>

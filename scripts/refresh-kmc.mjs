@@ -1,13 +1,8 @@
 import { readFile } from "node:fs/promises";
 import { URL, fileURLToPath } from "node:url";
 import { writeJson, runMain, isRecord } from "./lib.mjs";
-import { fetchTextWithRetry } from "./fetch-text.mjs";
+import { cleanLine, fetchCurrentIssue, fetchIssuePages } from "./kmc-issue.mjs";
 
-const KAISERSLAUTERN_AMERICAN_URL = "https://www.kaiserslauternamerican.com/";
-const ISSUU_DOC_BASE_URL = "https://issuu.com/advantinews/docs/";
-const USER_AGENT =
-  "Mozilla/5.0 (compatible; WaldmohrEventsDashboard/0.1; +https://www.kaiserslauternamerican.com/)";
-const FETCH_TIMEOUT_MS = 20_000;
 const PAGE_PROGRESS_INTERVAL = 5;
 const output = new URL("../app/public/kmc-events.json", import.meta.url);
 
@@ -190,64 +185,18 @@ function isFileNotFoundError(error) {
 }
 
 /**
- * Finds the current Kaiserslautern American Issuu issue from the homepage embed.
- *
- * @returns {Promise<{slug: string, sourceUrl: string, title: string, revisionId: string, publicationId: string, pageCount: number, publishDate: string}>}
- */
-async function fetchCurrentIssue() {
-  const homepage = await fetchText(KAISERSLAUTERN_AMERICAN_URL);
-  const embedMatch = homepage.match(/<iframe[^>]+src="([^"]*e\.issuu\.com\/embed\.html[^"]+)"/i);
-  if (!embedMatch) {
-    throw new Error("Could not find the Kaiserslautern American Issuu embed on the homepage.");
-  }
-
-  const embedUrl = decodeHtml(embedMatch[1]);
-  const slug = new URL(embedUrl).searchParams.get("d");
-  if (slug === null || slug.trim() === "") {
-    throw new Error("Could not find the Issuu document slug in the homepage embed.");
-  }
-
-  const sourceUrl = `${ISSUU_DOC_BASE_URL}${encodeURIComponent(slug)}`;
-  const documentHtml = await fetchText(sourceUrl);
-  const revisionId = extractJsonString(documentHtml, "revisionId");
-  const publicationId = extractJsonString(documentHtml, "publicationId");
-  const title = extractJsonString(documentHtml, "title");
-  const publishDate = extractJsonString(documentHtml, "originalPublishDateInISOString").slice(0, 10);
-  const pageCount = Number(extractJsonNumber(documentHtml, "pageCount"));
-
-  if ([revisionId, publicationId, title, publishDate].some((value) => value === "")) {
-    throw new Error("Could not extract Issuu issue metadata from the document page.");
-  }
-  if (!Number.isInteger(pageCount) || pageCount < 1) {
-    throw new Error("Could not extract a valid Issuu page count from the document page.");
-  }
-
-  return { slug, sourceUrl, title, revisionId, publicationId, pageCount, publishDate };
-}
-
-/**
  * Fetches SVG text for pages that contain the UNTERWEGS section.
  *
  * @param {{revisionId: string, publicationId: string, pageCount: number}} issue Current issue metadata.
  * @returns {Promise<Array<{pageNumber: number, lines: string[]}>>} Readable page text.
  */
 async function fetchUnterwegsPages(issue) {
-  const pages = [];
-  for (let pageNumber = 1; pageNumber <= issue.pageCount; pageNumber += 1) {
-    const svgUrl = `https://svg.issuu.com/${issue.revisionId}-${issue.publicationId}/page_${pageNumber}.svg`;
-    const svg = await fetchText(svgUrl);
-    if (svg.includes("UNTERWEGS")) {
-      pages.push({
-        pageNumber,
-        lines: extractSvgLines(svg, pageNumber),
-      });
-    }
-
+  const pages = await fetchIssuePages(issue, (pageNumber, pageCount) => {
     if (pageNumber % PAGE_PROGRESS_INTERVAL === 0 || pageNumber === issue.pageCount) {
-      console.log(`Scanned ${pageNumber}/${issue.pageCount} KMC issue pages.`);
+      console.log(`Scanned ${pageNumber}/${pageCount} KMC issue pages.`);
     }
-  }
-  return pages;
+  });
+  return pages.filter((page) => page.lines.includes("UNTERWEGS"));
 }
 
 /**
@@ -322,35 +271,6 @@ function buildEvent(titleLines, dateLine, bodyLines, pageNumber, issue) {
     status: parsedDate.date < todayKey ? "past" : parsedDate.date > todayKey ? "upcoming" : "current",
     dateConfidence: parsedDate.hasExplicitYear ? "confirmed" : "inferred",
   };
-}
-
-/**
- * Extracts readable text lines from Issuu SVG textPath fragments.
- *
- * @param {string} svg Page SVG.
- * @param {number} pageNumber Page number.
- * @returns {string[]} Text lines in page order.
- */
-function extractSvgLines(svg, pageNumber) {
-  const lineMap = new Map();
-  const pattern = new RegExp(
-    `<textPath\\b[^>]*href="#p${pageNumber}___(\\d+)___0"[^>]*>([\\s\\S]*?)<\\/textPath>`,
-    "g"
-  );
-
-  for (const match of svg.matchAll(pattern)) {
-    const lineNumber = Number(match[1]);
-    const text = cleanLine(match[2].replace(/<[^>]+>/g, " "));
-    if (text === "") continue;
-
-    const parts = lineMap.get(lineNumber) ?? [];
-    parts.push(text);
-    lineMap.set(lineNumber, parts);
-  }
-
-  return Array.from(lineMap.entries())
-    .sort(([left], [right]) => left - right)
-    .map(([, parts]) => cleanLine(parts.join(" ")));
 }
 
 /**
@@ -450,43 +370,6 @@ function summarizeFamilyRelevance(text) {
 }
 
 /**
- * Fetches text with a browser-like user agent.
- *
- * @param {string} url URL to fetch.
- * @returns {Promise<string>} Response body text.
- */
-async function fetchText(url) {
-  return fetchTextWithRetry(url, {
-    headers: { "user-agent": USER_AGENT },
-    timeoutMs: FETCH_TIMEOUT_MS,
-  });
-}
-
-/**
- * Extracts a JSON string value from escaped Next.js page data.
- *
- * @param {string} html Page HTML.
- * @param {string} key JSON key.
- * @returns {string} Extracted value or empty string.
- */
-function extractJsonString(html, key) {
-  const match = html.match(new RegExp(`\\\\"${key}\\\\":\\\\"([^\\\\"]+)\\\\"`));
-  return match ? match[1].replace(/\\u0026/g, "&") : "";
-}
-
-/**
- * Extracts a JSON number value from escaped Next.js page data.
- *
- * @param {string} html Page HTML.
- * @param {string} key JSON key.
- * @returns {string} Extracted value or empty string.
- */
-function extractJsonNumber(html, key) {
-  const match = html.match(new RegExp(`\\\\"${key}\\\\":(\\d+)`));
-  return match ? match[1] : "";
-}
-
-/**
  * Returns how many title lines precede a date line.
  *
  * @param {string[]} lines Parsed lines.
@@ -558,45 +441,6 @@ function isContentLine(line) {
  */
 function isPhotoCredit(line) {
   return /^Photo by /i.test(line);
-}
-
-/**
- * Normalizes text from HTML/SVG sources.
- *
- * @param {string} value Raw value.
- * @returns {string} Cleaned text.
- */
-function cleanLine(value) {
-  const cleaned = decodeHtml(value)
-    .replace(/[]/g, "(")
-    .replace(/[]/g, ")")
-    .replace(/[]/g, "-")
-    .replace(/ﬁ/g, "fi")
-    .replace(/ﬂ/g, "fl")
-    .replace(/\b([AP])\s+\.\s*M\./g, "$1.M.")
-    .replace(/\bCIT Y\b/g, "CITY")
-    .replace(/\s+/g, " ")
-    .trim();
-  if (/^(?:[A-ZÄÖÜ]{1,2}\s+){2,}[A-ZÄÖÜ]{1,2}$/.test(cleaned)) {
-    return cleaned.replace(/\s+/g, "");
-  }
-  return cleaned;
-}
-
-/**
- * Decodes the small set of HTML entities encountered in source pages.
- *
- * @param {string} value Encoded text.
- * @returns {string} Decoded text.
- */
-function decodeHtml(value) {
-  return value
-    .replace(/&amp;/g, "&")
-    .replace(/&#038;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#8211;/g, "–")
-    .replace(/&#8212;/g, "—")
-    .replace(/&nbsp;/g, " ");
 }
 
 /**

@@ -532,6 +532,98 @@ body::after {
 }
 .weather__status--error { color: var(--cat-leave); }
 
+/* ---- KMC Trip Ideas ---- */
+.trip-ideas {
+  background:
+    linear-gradient(180deg, rgba(57, 255, 20, 0.07), rgba(255, 255, 255, 0.03)),
+    var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--gap);
+  box-shadow: var(--shadow-raise);
+  animation: rise 0.6s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.trip-ideas__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.trip-ideas__meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.trip-ideas__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+.trip-ideas__controls button {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+.trip-ideas__controls button:hover {
+  border-color: var(--cat-kmc);
+  color: var(--cat-kmc);
+}
+.trip-ideas__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.trip-ideas__list li {
+  border-top: 1px solid var(--line);
+  padding-top: 0.65rem;
+}
+.trip-ideas__list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.trip-ideas__list a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.trip-ideas__list a:hover strong {
+  color: var(--cat-kmc);
+}
+.trip-ideas__list strong {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.15;
+  transition: color 0.16s ease;
+}
+.trip-ideas__list span:not(.trip-ideas__meta) {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.trip-ideas__list em {
+  color: var(--accent);
+  font-style: normal;
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
 /* ---- Detail popover ---- */
 .overlay {
   position: fixed; inset: 0; z-index: 20;
