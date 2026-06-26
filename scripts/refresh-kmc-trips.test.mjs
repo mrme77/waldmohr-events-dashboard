@@ -63,7 +63,7 @@ test("parseJsonObject extracts JSON from noisy responses", () => {
 test("summarizeTripIdeas sends OpenRouter request and returns response items", async () => {
   const requests = [];
   const fakeFetch = async (url, options) => {
-    requests.push({ url, body: JSON.parse(options.body) });
+    requests.push({ url, headers: options.headers, body: JSON.parse(options.body) });
     return {
       ok: true,
       async json() {
@@ -93,6 +93,9 @@ test("summarizeTripIdeas sends OpenRouter request and returns response items", a
   });
 
   assert.equal(requests[0].url, "https://openrouter.ai/api/v1/chat/completions");
+  assert.equal(requests[0].headers.Authorization, "Bearer test-key");
+  assert.equal(requests[0].headers["HTTP-Referer"], "https://github.com/mrme77/waldmohr-events-dashboard");
+  assert.equal(requests[0].headers["X-Title"], "waldmohr");
   assert.equal(requests[0].body.model, "google/gemini-2.5-flash");
   assert.equal(requests[0].body.response_format.type, "json_object");
   assert.match(requests[0].body.messages[1].content, /Return at most 5 strongest ideas/);

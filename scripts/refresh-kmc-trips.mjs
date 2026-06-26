@@ -7,6 +7,8 @@ import { fetchCurrentIssue, fetchIssuePages } from "./kmc-issue.mjs";
 
 const OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions";
 const OPENROUTER_MODEL = "google/gemini-2.5-flash";
+const OPENROUTER_APP_REFERER = "https://github.com/mrme77/waldmohr-events-dashboard";
+const OPENROUTER_APP_TITLE = "waldmohr";
 const PAGE_PROGRESS_INTERVAL = 5;
 const MAX_PAGES_PER_CHUNK = 4;
 const MAX_ITEMS_PER_CHUNK = 5;
@@ -97,6 +99,8 @@ export async function summarizeTripIdeas({ chunk, issue, apiKey, fetchImpl = fet
       headers: {
         "Authorization": `Bearer ${apiKey}`,
         "Content-Type": "application/json",
+        "HTTP-Referer": OPENROUTER_APP_REFERER,
+        "X-Title": OPENROUTER_APP_TITLE,
       },
       body: JSON.stringify({
         model: OPENROUTER_MODEL,
