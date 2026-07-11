@@ -1,4 +1,5 @@
 import { URL } from "node:url";
+import { fetchTextWithRetry } from "./fetch-text.mjs";
 import { writeJson, runMain } from "./lib.mjs";
 
 const apiUrl = "https://www.waldmohr-aktuell.de/wp-json/wp/v2/posts?per_page=50&_embed=1";
@@ -14,12 +15,14 @@ const output = new URL("../app/public/events.json", import.meta.url);
  * @returns {Promise<void>} Resolves after files are written.
  */
 async function main() {
-  const response = await fetch(apiUrl);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch posts: ${response.status} ${response.statusText}`);
+  const body = await fetchTextWithRetry(apiUrl, {
+    headers: { "User-Agent": "waldmohr-events-dashboard/0.1 personal household dashboard" },
+    attempts: 3,
+  });
+  const posts = JSON.parse(body);
+  if (!Array.isArray(posts)) {
+    throw new TypeError(`WordPress posts response from ${apiUrl} was not an array.`);
   }
-
-  const posts = await response.json();
   const candidates = posts.filter(isEventCandidate).map(normalizePost);
   const events = candidates
     .filter((event) => event !== null)

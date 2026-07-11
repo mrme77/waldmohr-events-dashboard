@@ -23,6 +23,19 @@ test("fetchText reports the URL when a request times out", async () => {
   );
 });
 
+test("fetchText includes a nested DNS failure in its error", async () => {
+  const dnsError = new Error("getaddrinfo ENOTFOUND www.waldmohr-aktuell.de");
+  dnsError.code = "ENOTFOUND";
+  const fetchImpl = async () => {
+    throw new TypeError("fetch failed", { cause: dnsError });
+  };
+
+  await assert.rejects(
+    fetchText("https://www.waldmohr-aktuell.de/wp-json/wp/v2/posts", { fetchImpl }),
+    /Failed to fetch https:\/\/www\.waldmohr-aktuell\.de\/wp-json\/wp\/v2\/posts: fetch failed: getaddrinfo ENOTFOUND www\.waldmohr-aktuell\.de \(ENOTFOUND\)/
+  );
+});
+
 test("fetchTextWithRetry retries a transient failure", async () => {
   let requestCount = 0;
   const fetchImpl = async () => {
