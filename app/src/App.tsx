@@ -76,7 +76,15 @@ export function App() {
   }, []);
 
   const todayKey = dateKey(now);
-  const updatedAt = layers.events?.generatedAt ?? null;
+  // The most recent successful refresh across all layers, so one dead
+  // source (e.g. an upstream outage) doesn't make the whole dashboard
+  // read as stale when everything else refreshed fine.
+  const updatedAt = useMemo(() => {
+    const timestamps = Object.values(layers)
+      .map((layer) => layer.generatedAt)
+      .filter((value): value is string => Boolean(value));
+    return timestamps.length > 0 ? timestamps.sort().at(-1)! : null;
+  }, [layers]);
 
   // Recompute status client-side against the real "today" so the v1 hardcoded
   // date can never go stale.
