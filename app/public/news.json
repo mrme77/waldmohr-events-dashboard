@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T11:56:04.442Z",
+  "generatedAt": "2026-07-11T12:10:53.106Z",
   "sources": [
     {
       "id": "usa",
@@ -16,6 +16,26 @@
   ],
   "items": [
     {
+      "id": "usa-opinion-is-democracy-a-joke-count-binface-says-no-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Opinion: Is democracy a joke? Count Binface says no.",
+      "url": "https://www.npr.org/2026/07/11/nx-s1-5881251/opinion-is-democracy-a-joke-count-binface-says-no",
+      "publishedAt": "2026-07-11T12:00:00.000Z",
+      "lastChecked": "2026-07-11T12:10:52.740Z"
+    },
+    {
+      "id": "usa-most-people-who-need-glasses-don-t-have-them-can-the-post-office-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Most people who need glasses don't have them. Can the post office change that?",
+      "url": "https://www.npr.org/2026/07/11/nx-s1-5887653/reading-glasses-post-office-india",
+      "publishedAt": "2026-07-11T11:49:47.000Z",
+      "lastChecked": "2026-07-11T12:10:52.740Z"
+    },
+    {
       "id": "stl-missouri-guard-rescues-202-children-staff-from-flooded-camp-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
@@ -23,7 +43,7 @@
       "title": "Missouri Guard rescues 202 children, staff from flooded camp",
       "url": "https://fox2now.com/news/missouri-guard-rescues-202-children-staff-from-flooded-camp/",
       "publishedAt": "2026-07-11T10:51:12.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     },
     {
       "id": "stl-missing-5-year-old-disappears-from-florissant-bowling-alley-1",
@@ -33,67 +53,47 @@
       "title": "Missing 5-year-old disappears from Florissant bowling alley",
       "url": "https://fox2now.com/news/missouri/missing-5-year-old-disappears-from-florissant-bowling-alley/",
       "publishedAt": "2026-07-11T10:41:24.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     },
     {
-      "id": "usa-minnesota-is-pulling-troops-early-from-d-c-as-pressure-grows-on--0",
+      "id": "usa-minnesota-is-pulling-troops-early-from-d-c-as-pressure-grows-on--2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Minnesota is pulling troops early from D.C., as pressure grows on Michigan",
       "url": "https://www.npr.org/2026/07/11/nx-s1-5887666/national-guard-dc-trump-michigan-minnesota",
       "publishedAt": "2026-07-11T10:00:00.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
+      "lastChecked": "2026-07-11T12:10:52.740Z"
     },
     {
-      "id": "usa-shy-on-the-dance-floor-virtual-reality-partners-aim-to-help-you--1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Shy on the dance floor? Virtual reality 'partners' aim to help you find your groove",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5882228/dance-virtual-reality-vr-app-augmented-world-expo-weddings",
-      "publishedAt": "2026-07-11T09:00:00.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
-    },
-    {
-      "id": "usa-with-the-white-nationalist-group-patriot-front-what-you-see-is-n-2",
+      "id": "usa-with-the-white-nationalist-group-patriot-front-what-you-see-is-n-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "With the white nationalist group Patriot Front, what you see is not what you get",
       "url": "https://www.npr.org/2026/07/11/nx-s1-5888571/patriot-front-washington-dc",
       "publishedAt": "2026-07-11T09:00:00.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
+      "lastChecked": "2026-07-11T12:10:52.740Z"
     },
     {
-      "id": "usa-spain-edges-belgium-and-will-face-france-in-world-cup-semifinal-3",
+      "id": "usa-shy-on-the-dance-floor-virtual-reality-partners-aim-to-help-you--4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Shy on the dance floor? Virtual reality 'partners' aim to help you find your groove",
+      "url": "https://www.npr.org/2026/07/11/nx-s1-5882228/dance-virtual-reality-vr-app-augmented-world-expo-weddings",
+      "publishedAt": "2026-07-11T09:00:00.000Z",
+      "lastChecked": "2026-07-11T12:10:52.740Z"
+    },
+    {
+      "id": "usa-spain-edges-belgium-and-will-face-france-in-world-cup-semifinal-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Spain edges Belgium and will face France in World Cup semifinal",
       "url": "https://www.npr.org/2026/07/11/nx-s1-5890030/spain-will-face-france-world-cup-semifinal",
       "publishedAt": "2026-07-11T06:58:56.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
-    },
-    {
-      "id": "usa-trump-threatens-iran-after-ayatollah-ali-khamenei-s-funeral-saw--4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump threatens Iran after Ayatollah Ali Khamenei's funeral saw calls for his killing",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5890029/trump-threatens-iran",
-      "publishedAt": "2026-07-11T06:34:09.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
-    },
-    {
-      "id": "usa-trump-administration-rolls-back-a-key-protection-for-imperiled-w-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump administration rolls back a key protection for imperiled wildlife",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5890025/trump-administration-imperiled-wildlife",
-      "publishedAt": "2026-07-11T05:48:40.000Z",
-      "lastChecked": "2026-07-11T11:56:04.434Z"
+      "lastChecked": "2026-07-11T12:10:52.740Z"
     },
     {
       "id": "stl-food-truck-serves-500-meals-to-homeless-in-east-st-louis-5",
@@ -103,7 +103,7 @@
       "title": "Food truck serves 500 meals to homeless in East St. Louis",
       "url": "https://fox2now.com/news/illinois/food-truck-serves-500-meals-to-homeless-in-east-st-louis/",
       "publishedAt": "2026-07-11T04:16:48.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     },
     {
       "id": "stl-at-least-350-rescued-from-southern-missouri-floods-more-rescues--0",
@@ -113,7 +113,7 @@
       "title": "At least 350 rescued from southern Missouri floods; More rescues ongoing",
       "url": "https://fox2now.com/news/missouri/at-least-100-rescued-from-southern-missouri-floods-more-rescues-ongoing/",
       "publishedAt": "2026-07-10T22:42:25.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     },
     {
       "id": "stl-shooting-on-metrobus-in-st-louis-county-leaves-two-dead-4",
@@ -123,7 +123,7 @@
       "title": "Shooting on MetroBus in St. Louis County leaves two dead",
       "url": "https://fox2now.com/news/missouri/altercation-leads-to-deadly-shooting-on-metrobus-in-st-louis-county/",
       "publishedAt": "2026-07-10T21:49:32.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     },
     {
       "id": "stl-two-killed-in-plane-crash-near-waterloo-illinois-victims-were-fa-2",
@@ -133,7 +133,7 @@
       "title": "Two killed in plane crash near Waterloo, Illinois; Victims were father and son",
       "url": "https://fox2now.com/news/illinois/plane-crashes-near-waterloo-illinois-ntsb-investigating/",
       "publishedAt": "2026-07-10T17:45:11.000Z",
-      "lastChecked": "2026-07-11T11:56:04.202Z"
+      "lastChecked": "2026-07-11T12:10:53.093Z"
     }
   ]
 }
