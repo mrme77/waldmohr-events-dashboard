@@ -38,11 +38,31 @@ export async function fetchText(
       throw error;
     }
 
-    const reason = error instanceof Error ? error.message : String(error);
+    const reason = describeFetchError(error);
     throw new Error(`Failed to fetch ${url}: ${reason}`, { cause: error });
   } finally {
     clearTimeout(timeout);
   }
+}
+
+/**
+ * Turns a nested network error into a useful, non-sensitive diagnostic.
+ *
+ * Node's fetch wraps DNS and socket failures in a generic "fetch failed"
+ * error. Including its cause makes operational failures actionable without
+ * exposing request credentials (none are used by these public feeds).
+ *
+ * @param {unknown} error Request error.
+ * @returns {string} Human-readable error reason.
+ */
+function describeFetchError(error) {
+  if (!(error instanceof Error)) return String(error);
+
+  const cause = error.cause;
+  if (!(cause instanceof Error)) return error.message;
+
+  const code = typeof cause.code === "string" ? ` (${cause.code})` : "";
+  return `${error.message}: ${cause.message}${code}`;
 }
 
 /**
