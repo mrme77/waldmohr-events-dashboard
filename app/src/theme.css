@@ -250,6 +250,11 @@ body::after {
   flex-direction: column;
   gap: var(--gap);
   min-height: 0;
+  overflow-y: auto;
+}
+.side-rail > .weather,
+.side-rail > .trip-ideas {
+  flex: none;
 }
 
 /* ---- Calendar ---- */
@@ -406,7 +411,10 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  min-height: 0;
+  flex: 1 1 auto;
+  min-height: 240px;
+  min-width: 0;
+  overflow-y: auto;
   box-shadow: var(--shadow-raise);
   animation: rise 0.6s 0.26s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -424,6 +432,8 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
+  min-width: 0;
+  width: 100%;
   transition: transform 0.16s ease, border-color 0.16s ease;
 }
 .spotlight__card:hover { transform: translateY(-2px); border-left-color: var(--accent); }
@@ -441,8 +451,8 @@ body::after {
 .spotlight__card.cat-trash-glas { border-left-color: var(--cat-trash-glas); }
 .spotlight__card.cat-trash-umweltmobil { border-left-color: var(--cat-trash-umweltmobil); }
 .spotlight__date { font-family: var(--font-mono); color: var(--accent); font-size: 0.76rem; letter-spacing: 0.04em; }
-.spotlight__title { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; line-height: 1.1; }
-.spotlight__summary { color: var(--muted); font-size: 0.92rem; line-height: 1.4; }
+.spotlight__title { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; line-height: 1.1; overflow-wrap: break-word; }
+.spotlight__summary { color: var(--muted); font-size: 0.92rem; line-height: 1.4; overflow-wrap: break-word; }
 .spotlight__empty { color: var(--muted); }
 .spotlight__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .spotlight__list li { border-top: 1px solid var(--line); }
@@ -451,7 +461,14 @@ body::after {
   width: 100%; text-align: left;
   background: none; border: none; color: var(--ink); font: inherit; cursor: pointer;
   padding: 0.55rem 0;
+  min-width: 0;
   transition: padding-left 0.16s ease, color 0.16s ease;
+}
+.spotlight__list button span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .spotlight__list button:hover { padding-left: 0.35rem; color: var(--accent); }
 
