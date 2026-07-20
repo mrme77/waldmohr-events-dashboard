@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T06:12:30.971Z",
+  "generatedAt": "2026-07-20T04:59:48.600Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-trump-will-speak-on-elections-in-thursday-primetime-address-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump will speak on elections in Thursday primetime address",
-      "url": "https://www.npr.org/2026/07/15/nx-s1-5894580/trump-elections-primetime-address",
-      "publishedAt": "2026-07-15T06:00:46.000Z",
-      "lastChecked": "2026-07-15T06:12:30.915Z"
-    },
-    {
-      "id": "usa-ebola-is-spreading-faster-in-eastern-congo-than-it-can-be-tracke-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Ebola is spreading faster in eastern Congo than it can be tracked, as deaths pass 700",
-      "url": "https://www.npr.org/2026/07/15/g-s1-133630/ebola-congo-deaths",
-      "publishedAt": "2026-07-15T05:39:55.000Z",
-      "lastChecked": "2026-07-15T06:12:30.916Z"
-    },
-    {
-      "id": "stl-admiration-for-jordan-walker-turns-into-inspiration-in-stl-5",
+      "id": "stl-hundreds-gather-to-honor-family-members-killed-in-mass-shooting-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Admiration for Jordan Walker turns into inspiration in STL",
-      "url": "https://fox2now.com/news/missouri/admiration-for-jordan-walker-turns-into-inspiration-in-stl/",
-      "publishedAt": "2026-07-15T04:10:56.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
+      "title": "Hundreds gather to honor family members killed in mass shooting",
+      "url": "https://fox2now.com/news/illinois/hundreds-gather-to-honor-family-members-killed-in-mass-shooting/",
+      "publishedAt": "2026-07-20T02:09:07.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
     },
     {
-      "id": "stl-texas-man-charged-for-entering-nga-campus-in-st-louis-with-7-gun-3",
+      "id": "stl-skeletal-remains-discovered-in-north-st-louis-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Texas man charged for entering NGA campus in St. Louis with 7 guns",
-      "url": "https://fox2now.com/news/missouri/texas-man-charged-for-entering-nga-campus-in-st-louis-with-7-guns/",
-      "publishedAt": "2026-07-15T03:29:00.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
+      "title": "Skeletal remains discovered in north St. Louis",
+      "url": "https://fox2now.com/news/missouri/skeletal-remains-discovered-in-north-st-louis/",
+      "publishedAt": "2026-07-20T01:28:46.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
     },
     {
-      "id": "usa-supreme-court-justices-give-chilling-accounts-of-threats-to-thei-2",
+      "id": "stl-13-year-old-shot-while-riding-with-father-in-downtown-st-louis-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "13-year-old shot while riding with father in downtown St. Louis",
+      "url": "https://fox2now.com/news/missouri/13-year-old-shot-while-riding-with-father-in-downtown-st-louis/",
+      "publishedAt": "2026-07-20T01:12:42.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
+    },
+    {
+      "id": "stl-pasta-house-location-gets-new-shipment-of-lettuce-sells-salads-a-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Pasta House location gets new shipment of lettuce, sells salads again",
+      "url": "https://fox2now.com/news/missouri/pasta-house-location-gets-new-shipment-of-lettuce-sells-salads-again/",
+      "publishedAt": "2026-07-19T23:56:07.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
+    },
+    {
+      "id": "stl-charging-documents-identify-brothers-in-2025-shootout-that-kille-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Charging documents identify brothers in 2025 shootout that killed teen bystander",
+      "url": "https://fox2now.com/news/missouri/charging-documents-identify-brothers-in-2025-shootout-that-killed-teen-bystander/",
+      "publishedAt": "2026-07-19T22:11:06.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
+    },
+    {
+      "id": "usa-a-cavalcade-of-international-stars-headlined-the-world-cup-s-fir-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Supreme Court Justices give chilling accounts of threats to their safety",
-      "url": "https://www.npr.org/2026/07/14/nx-s1-5893664/supreme-court-justices-kagan-barrett-give-chilling-accounts-of-threats-to-their-safety",
-      "publishedAt": "2026-07-15T03:19:25.000Z",
-      "lastChecked": "2026-07-15T06:12:30.916Z"
+      "title": "A cavalcade of international stars headlined the World Cup's first-ever halftime final show",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5888626/world-cup-halftime-final-show-bts-madonna-shakira-burna-boy-chris-martin-muppets-bieber",
+      "publishedAt": "2026-07-19T21:29:52.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     },
     {
-      "id": "stl-wrong-way-driver-killed-in-st-louis-county-crash-on-i-64-0",
+      "id": "stl-pedestrian-struck-by-motorcycle-and-killed-on-i-64-in-o-fallon-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Wrong-way driver killed in St. Louis County crash on I-64",
-      "url": "https://fox2now.com/news/missouri/wrong-way-driver-killed-in-st-louis-county-crash-on-i-64/",
-      "publishedAt": "2026-07-15T00:57:40.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
+      "title": "Pedestrian struck by motorcycle and killed on I-64 in O'Fallon",
+      "url": "https://fox2now.com/news/missouri/pedestrian-struck-by-motorcycle-and-killed-on-i-64/",
+      "publishedAt": "2026-07-19T19:35:21.000Z",
+      "lastChecked": "2026-07-20T04:59:48.587Z"
     },
     {
-      "id": "stl-gov-kehoe-signs-missouri-born-alive-anti-abortion-bill-into-law-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Gov. Kehoe signs Missouri 'born alive' anti-abortion bill into law",
-      "url": "https://fox2now.com/news/missouri/gov-kehoe-signs-missouri-born-alive-anti-abortion-bill-into-law/",
-      "publishedAt": "2026-07-14T21:47:09.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
-    },
-    {
-      "id": "usa-spain-sparkles-to-shock-france-2-0-and-advance-to-the-world-cup--3",
+      "id": "usa-who-is-andy-burnham-the-u-k-s-new-prime-minister-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Spain sparkles to shock France 2-0 and advance to the World Cup final",
-      "url": "https://www.npr.org/2026/07/14/nx-s1-5893692/2026-world-cup-fifa-spain-france-semifinal",
-      "publishedAt": "2026-07-14T20:59:10.000Z",
-      "lastChecked": "2026-07-15T06:12:30.916Z"
+      "title": "Who is Andy Burnham, the U.K.'s new prime minister?",
+      "url": "https://www.npr.org/2026/07/19/g-s1-134001/andy-burnham-new-british-prime-minister",
+      "publishedAt": "2026-07-19T16:00:00.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     },
     {
-      "id": "usa-supreme-court-justices-barrett-and-kagan-discuss-security-fundin-4",
+      "id": "usa-violence-repeatedly-erupts-in-dementia-care-despite-warnings-ins-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Supreme Court Justices Barrett and Kagan discuss security funding on Capitol Hill",
-      "url": "https://www.npr.org/2026/07/14/nx-s1-5888645/supreme-court-justices-barrett-and-kagan-discuss-security-funding-on-capitol-hill",
-      "publishedAt": "2026-07-14T20:29:34.000Z",
-      "lastChecked": "2026-07-15T06:12:30.916Z"
+      "title": "Violence repeatedly erupts in dementia care despite warnings, inspections show",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5894692/dementia-violence-warning-supervision-nursing-homes-assisted-living-facility",
+      "publishedAt": "2026-07-19T11:00:00.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     },
     {
-      "id": "usa-how-do-young-people-feel-about-ai-7-teens-weigh-in-5",
+      "id": "usa-an-israeli-paraglider-tries-to-save-migrating-swifts-that-nest-i-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How do young people feel about AI? 7 teens weigh in",
-      "url": "https://www.npr.org/2026/07/14/nx-s1-5863025/teens-artificial-intelligence-ai-school",
-      "publishedAt": "2026-07-14T20:00:00.000Z",
-      "lastChecked": "2026-07-15T06:12:30.916Z"
+      "title": "An Israeli paraglider tries to save migrating swifts that nest in the Western Wall",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5870684/israel-swift-birds-jerusalem",
+      "publishedAt": "2026-07-19T10:00:00.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     },
     {
-      "id": "stl-juveniles-charged-in-jefferson-county-16-year-old-s-death-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Juveniles charged in Jefferson County 16-year-old’s death",
-      "url": "https://fox2now.com/news/missouri/juveniles-charged-in-jefferson-county-16-year-olds-death/",
-      "publishedAt": "2026-07-14T18:16:56.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
+      "id": "usa-deadly-overnight-russian-attack-on-ukraine-targets-the-capital-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Deadly overnight Russian attack on Ukraine targets the capital",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5899518/russia-attack-kyiv",
+      "publishedAt": "2026-07-19T09:14:38.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     },
     {
-      "id": "stl-body-found-in-fenton-on-bluff-near-shopping-center-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Body found in Fenton on bluff near shopping center",
-      "url": "https://fox2now.com/news/missouri/body-found-in-fenton-on-bluff-near-shopping-center/",
-      "publishedAt": "2026-07-14T18:00:02.000Z",
-      "lastChecked": "2026-07-15T06:12:30.964Z"
+      "id": "usa-5-clever-design-tricks-to-make-a-small-home-look-bigger-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "5 clever design tricks to make a small home look bigger",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5891817/5-clever-design-tricks-to-make-a-small-home-look-bigger",
+      "publishedAt": "2026-07-19T09:01:00.000Z",
+      "lastChecked": "2026-07-20T04:59:48.046Z"
     }
   ]
 }
