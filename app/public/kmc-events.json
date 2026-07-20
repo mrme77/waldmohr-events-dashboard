@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T12:12:04.741Z",
+  "generatedAt": "2026-07-15T06:12:43.361Z",
   "source": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026",
   "events": [
     {
@@ -18,7 +18,7 @@
       "familyRelevance": "Potential weekend outing in the Kaiserslautern Military Community area.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "past",
       "dateConfidence": "inferred"
     },
@@ -39,7 +39,7 @@
       "familyRelevance": "Potential weekend outing in the Kaiserslautern Military Community area.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "past",
       "dateConfidence": "inferred"
     },
@@ -58,8 +58,8 @@
       "familyRelevance": "KMC-area public event listing; review the source page for fit and details.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
-      "status": "current",
+      "lastChecked": "2026-07-15",
+      "status": "past",
       "dateConfidence": "inferred"
     },
     {
@@ -78,8 +78,8 @@
       "familyRelevance": "Potential weekend outing in the Kaiserslautern Military Community area.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
-      "status": "upcoming",
+      "lastChecked": "2026-07-15",
+      "status": "current",
       "dateConfidence": "inferred"
     },
     {
@@ -98,7 +98,7 @@
       "familyRelevance": "Potential weekend outing in the Kaiserslautern Military Community area.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "upcoming",
       "dateConfidence": "inferred"
     },
@@ -118,7 +118,7 @@
       "familyRelevance": "KMC-area public event listing; review the source page for fit and details.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "upcoming",
       "dateConfidence": "inferred"
     },
@@ -137,7 +137,7 @@
       "familyRelevance": "KMC-area public event listing; review the source page for fit and details.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "upcoming",
       "dateConfidence": "inferred"
     },
@@ -157,7 +157,7 @@
       "familyRelevance": "Potential weekend outing in the Kaiserslautern Military Community area.",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
       "postDate": "2026-07-09",
-      "lastChecked": "2026-07-11",
+      "lastChecked": "2026-07-15",
       "status": "upcoming",
       "dateConfidence": "inferred"
     }

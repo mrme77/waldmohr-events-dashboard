@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T12:13:30.986Z",
+  "generatedAt": "2026-07-15T06:13:05.275Z",
   "source": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026",
   "issueTitle": "Kaiserslautern American - July 10, 2026",
   "model": "google/gemini-2.5-flash",
@@ -7,20 +7,20 @@
     {
       "id": "kmc-trip-1-burghausen-castle",
       "title": "Burghausen Castle",
-      "summary": "Visit Burghausen, a small, walkable town in southeast Bavaria on the Austrian border, to see the world's longest castle and enjoy a long weekend getaway.",
+      "summary": "Visit Burghausen in southeast Bavaria, near the Austrian border, to explore the world's longest castle and enjoy a walkable town, ideal for a long weekend trip.",
       "location": "Burghausen, Bavaria, Germany",
       "pageNumber": 1,
-      "category": "day-trip",
+      "category": "trip",
       "audience": "general",
       "dateHint": null,
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/1",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-1-german-american-friendship-fest",
       "title": "German-American Friendship Fest",
-      "summary": "Celebrate partnership and 250 years of American independence at the German-American Friendship Fest, featuring carnival attractions for families.",
+      "summary": "Celebrate partnership and 250 years of American independence at the German-American Friendship Fest, a two-day event with carnival attractions for families.",
       "location": "Ramstein Air Base",
       "pageNumber": 1,
       "category": "event",
@@ -28,7 +28,7 @@
       "dateHint": "July 4",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/1",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-5-german-american-friendship-fest",
@@ -41,25 +41,12 @@
       "dateHint": "July 3-5",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/5",
-      "lastChecked": "2026-07-11"
-    },
-    {
-      "id": "kmc-trip-10-alles-muss-raus-theater-musikfest",
-      "title": "\"Alles Muss Raus!\" - Theater-/Musikfest",
-      "summary": "Germany's unique street theater and music festival brings hundreds of artists with and without disabilities from all over Europe to the city center.",
-      "location": "City Center, Kaiserslautern",
-      "pageNumber": 10,
-      "category": "event",
-      "audience": "general",
-      "dateHint": "July 17-19",
-      "confidence": "high",
-      "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-10-brezelfest-pretzel-festival",
       "title": "Brezelfest (Pretzel Festival)",
-      "summary": "Experience the biggest folk festival in the Upper Rhine region, featuring over 100 vendors, rides, food, and drinks, centered around pretzels and beer.",
+      "summary": "Experience the biggest folk festival in the Upper Rhine region, famous for pretzels, beer, and socializing, with over 100 vendors, rides, and food booths.",
       "location": "Fair Grounds, Speyer",
       "pageNumber": 10,
       "category": "event",
@@ -67,12 +54,12 @@
       "dateHint": "Until July 14",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-10-hahnenfest",
       "title": "Hahnenfest",
-      "summary": "Look forward to sociable hours with live music, tasty chicken, other food, cool drinks, a bouncy castle for kids, and bull riding.",
+      "summary": "Look forward to sociable hours with live music, tasty chicken, food, drinks, a bouncy castle for kids, and bull riding for those who want to show off skills.",
       "location": "Heissenberg, Queidersbach",
       "pageNumber": 10,
       "category": "event",
@@ -80,7 +67,7 @@
       "dateHint": "July 11-12",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-10-ramstein-summer-night-with-cuban-affairs",
@@ -93,7 +80,7 @@
       "dateHint": "July 10, 7:30 p.m.",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-10-zurlaubener-mosel-festival",
@@ -106,7 +93,20 @@
       "dateHint": "July 10-12",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/10",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
+    },
+    {
+      "id": "kmc-trip-11-north-sea-coast-islands",
+      "title": "North Sea Coast & Islands",
+      "summary": "Explore Germany's North Sea coastline, including islands like Borkum and Sylt, the Wadden Sea UNESCO site, and charming towns like Papenburg and Leer.",
+      "location": "North Sea, Germany",
+      "pageNumber": 11,
+      "category": "vacation",
+      "audience": "general",
+      "dateHint": null,
+      "confidence": "high",
+      "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/11",
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-16-freedom-fest",
@@ -119,7 +119,7 @@
       "dateHint": "July 3-4",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/16",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-18-dungeons-and-dragons-club",
@@ -129,23 +129,23 @@
       "pageNumber": 18,
       "category": "event",
       "audience": "kids",
-      "dateHint": "July 16, every Thursday",
+      "dateHint": "every Thursday from 4 to 5:30 p.m., next one is July 16",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/18",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-18-family-fundays-at-baumholder-recreation-center",
       "title": "Family Fundays at Baumholder Recreation Center",
-      "summary": "Enjoy a monthly Family Funday with a hands-on craft, a family movie on the big screen, and free popcorn. Craft kits are free but limited, and registration is required.",
+      "summary": "Enjoy a monthly Family Funday with a hands-on craft, a family movie on the big screen, and free popcorn. Registration is required.",
       "location": "Baumholder Recreation Center, Smith Barracks",
       "pageNumber": 18,
       "category": "event",
       "audience": "family",
-      "dateHint": "July 12, every second Sunday of the month",
+      "dateHint": "every second Sunday from 2 to 4 p.m., next one is July 12",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/18",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-18-legoland-kmc-boss-trip",
@@ -158,20 +158,20 @@
       "dateHint": "July 11, with registration open through July 10",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/18",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-18-skies-irish-dance-classes",
       "title": "SKIES Irish Dance Classes",
-      "summary": "Enroll children aged 4 to 18 in SKIES Unlimited Irish Dance Classes. Summer camps are offered on specific dates.",
+      "summary": "Enroll children aged 4 to 18 in summer Irish Dance Camps. All participants must be registered with Army MWR Child and Youth Services.",
       "location": "SKIES Bldg. 3819 on Landstuhl Post",
       "pageNumber": 18,
       "category": "culture",
       "audience": "kids",
-      "dateHint": "July 13 to 16, and July 20 to 23",
+      "dateHint": "July 13 to 16, and July 20 to 23, Monday to Thursday",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/18",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-18-skies-soccer-summer-camps",
@@ -184,72 +184,72 @@
       "dateHint": "July 13-15 and Aug. 12-14",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/18",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
+    },
+    {
+      "id": "kmc-trip-30-burghausen-as-a-base-for-day-trips",
+      "title": "Burghausen as a base for day trips",
+      "summary": "Use Burghausen as a central hub to visit Munich, Salzburg, Berchtesgaden, and the Austrian Alps, all within an hour's drive.",
+      "location": "Burghausen, Bavaria, Germany",
+      "pageNumber": 30,
+      "category": "trip",
+      "audience": "general",
+      "dateHint": "long weekend",
+      "confidence": "high",
+      "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-30-burghausen-castle",
       "title": "Burghausen Castle",
-      "summary": "Explore the world's longest castle, over a kilometer long, offering rich history, stunning views, and on-site museums. It's a memorable experience with plenty of photo opportunities.",
-      "location": "Burghausen, Germany",
+      "summary": "Explore the world's longest castle, over a kilometer long, with rich history, medieval architecture, museums, and stunning views of Austria.",
+      "location": "Burghausen, Bavaria, Germany",
       "pageNumber": 30,
       "category": "day-trip",
       "audience": "family",
       "dateHint": null,
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-30-burghausen-old-town",
       "title": "Burghausen Old Town",
-      "summary": "Wander through narrow cobblestone streets, admire Bavarian architecture, and enjoy shops, restaurants, and biergartens in this beautiful medieval town.",
-      "location": "Burghausen, Germany",
+      "summary": "Wander through narrow cobblestone streets, admire Bavarian architecture, enjoy shops, restaurants, and biergartens in this charming medieval town.",
+      "location": "Burghausen, Bavaria, Germany",
       "pageNumber": 30,
       "category": "day-trip",
       "audience": "general",
-      "dateHint": null,
+      "dateHint": "any season",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-30-lake-wohrsee",
       "title": "Lake Wöhrsee",
-      "summary": "Enjoy a perfect spot for picnickers, swimmers, and relaxation beneath shade trees, located just beneath the impressive Burghausen Castle.",
-      "location": "Burghausen, Germany",
+      "summary": "Enjoy picnicking, swimming, and relaxing under shade trees at this beautiful lake located beneath Burghausen Castle, easily accessible from the old town.",
+      "location": "Burghausen, Bavaria, Germany",
       "pageNumber": 30,
       "category": "outdoor",
       "audience": "family",
       "dateHint": "summer",
       "confidence": "high",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
-      "lastChecked": "2026-07-11"
-    },
-    {
-      "id": "kmc-trip-30-side-trips-from-burghausen",
-      "title": "Side trips from Burghausen",
-      "summary": "Burghausen is conveniently located an hour from Munich, Salzburg, and Berchtesgaden, making it an ideal base for exploring these famous regional destinations.",
-      "location": "Burghausen, Germany (near Munich, Salzburg, Berchtesgaden)",
-      "pageNumber": 30,
-      "category": "trip",
-      "audience": "general",
-      "dateHint": null,
-      "confidence": "medium",
-      "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     },
     {
       "id": "kmc-trip-30-skiing-near-burghausen",
       "title": "Skiing near Burghausen",
-      "summary": "Burghausen is a short drive from prime skiing destinations in Austria and Italy, making it an excellent base for winter sports enthusiasts.",
-      "location": "Burghausen, Germany (near Austrian/Italian Alps)",
+      "summary": "Take a short drive from Burghausen to prime skiing destinations in Austria and Italy, perfect for winter sports enthusiasts.",
+      "location": "Burghausen, Bavaria, Germany (near Austrian/Italian Alps)",
       "pageNumber": 30,
       "category": "outdoor",
-      "audience": "family",
+      "audience": "general",
       "dateHint": "winter",
       "confidence": "medium",
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_july_10_2026#page/30",
-      "lastChecked": "2026-07-11"
+      "lastChecked": "2026-07-15"
     }
   ]
 }

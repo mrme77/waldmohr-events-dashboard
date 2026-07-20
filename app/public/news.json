@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T12:10:53.106Z",
+  "generatedAt": "2026-07-15T06:12:30.971Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-opinion-is-democracy-a-joke-count-binface-says-no-0",
+      "id": "usa-trump-will-speak-on-elections-in-thursday-primetime-address-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Opinion: Is democracy a joke? Count Binface says no.",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5881251/opinion-is-democracy-a-joke-count-binface-says-no",
-      "publishedAt": "2026-07-11T12:00:00.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "Trump will speak on elections in Thursday primetime address",
+      "url": "https://www.npr.org/2026/07/15/nx-s1-5894580/trump-elections-primetime-address",
+      "publishedAt": "2026-07-15T06:00:46.000Z",
+      "lastChecked": "2026-07-15T06:12:30.915Z"
     },
     {
-      "id": "usa-most-people-who-need-glasses-don-t-have-them-can-the-post-office-1",
+      "id": "usa-ebola-is-spreading-faster-in-eastern-congo-than-it-can-be-tracke-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Most people who need glasses don't have them. Can the post office change that?",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5887653/reading-glasses-post-office-india",
-      "publishedAt": "2026-07-11T11:49:47.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "Ebola is spreading faster in eastern Congo than it can be tracked, as deaths pass 700",
+      "url": "https://www.npr.org/2026/07/15/g-s1-133630/ebola-congo-deaths",
+      "publishedAt": "2026-07-15T05:39:55.000Z",
+      "lastChecked": "2026-07-15T06:12:30.916Z"
     },
     {
-      "id": "stl-missouri-guard-rescues-202-children-staff-from-flooded-camp-3",
+      "id": "stl-admiration-for-jordan-walker-turns-into-inspiration-in-stl-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri Guard rescues 202 children, staff from flooded camp",
-      "url": "https://fox2now.com/news/missouri-guard-rescues-202-children-staff-from-flooded-camp/",
-      "publishedAt": "2026-07-11T10:51:12.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
+      "title": "Admiration for Jordan Walker turns into inspiration in STL",
+      "url": "https://fox2now.com/news/missouri/admiration-for-jordan-walker-turns-into-inspiration-in-stl/",
+      "publishedAt": "2026-07-15T04:10:56.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
     },
     {
-      "id": "stl-missing-5-year-old-disappears-from-florissant-bowling-alley-1",
+      "id": "stl-texas-man-charged-for-entering-nga-campus-in-st-louis-with-7-gun-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missing 5-year-old disappears from Florissant bowling alley",
-      "url": "https://fox2now.com/news/missouri/missing-5-year-old-disappears-from-florissant-bowling-alley/",
-      "publishedAt": "2026-07-11T10:41:24.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
+      "title": "Texas man charged for entering NGA campus in St. Louis with 7 guns",
+      "url": "https://fox2now.com/news/missouri/texas-man-charged-for-entering-nga-campus-in-st-louis-with-7-guns/",
+      "publishedAt": "2026-07-15T03:29:00.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
     },
     {
-      "id": "usa-minnesota-is-pulling-troops-early-from-d-c-as-pressure-grows-on--2",
+      "id": "usa-supreme-court-justices-give-chilling-accounts-of-threats-to-thei-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Minnesota is pulling troops early from D.C., as pressure grows on Michigan",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5887666/national-guard-dc-trump-michigan-minnesota",
-      "publishedAt": "2026-07-11T10:00:00.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "Supreme Court Justices give chilling accounts of threats to their safety",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5893664/supreme-court-justices-kagan-barrett-give-chilling-accounts-of-threats-to-their-safety",
+      "publishedAt": "2026-07-15T03:19:25.000Z",
+      "lastChecked": "2026-07-15T06:12:30.916Z"
     },
     {
-      "id": "usa-with-the-white-nationalist-group-patriot-front-what-you-see-is-n-3",
+      "id": "stl-wrong-way-driver-killed-in-st-louis-county-crash-on-i-64-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Wrong-way driver killed in St. Louis County crash on I-64",
+      "url": "https://fox2now.com/news/missouri/wrong-way-driver-killed-in-st-louis-county-crash-on-i-64/",
+      "publishedAt": "2026-07-15T00:57:40.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
+    },
+    {
+      "id": "stl-gov-kehoe-signs-missouri-born-alive-anti-abortion-bill-into-law-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Gov. Kehoe signs Missouri 'born alive' anti-abortion bill into law",
+      "url": "https://fox2now.com/news/missouri/gov-kehoe-signs-missouri-born-alive-anti-abortion-bill-into-law/",
+      "publishedAt": "2026-07-14T21:47:09.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
+    },
+    {
+      "id": "usa-spain-sparkles-to-shock-france-2-0-and-advance-to-the-world-cup--3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "With the white nationalist group Patriot Front, what you see is not what you get",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5888571/patriot-front-washington-dc",
-      "publishedAt": "2026-07-11T09:00:00.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "Spain sparkles to shock France 2-0 and advance to the World Cup final",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5893692/2026-world-cup-fifa-spain-france-semifinal",
+      "publishedAt": "2026-07-14T20:59:10.000Z",
+      "lastChecked": "2026-07-15T06:12:30.916Z"
     },
     {
-      "id": "usa-shy-on-the-dance-floor-virtual-reality-partners-aim-to-help-you--4",
+      "id": "usa-supreme-court-justices-barrett-and-kagan-discuss-security-fundin-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Shy on the dance floor? Virtual reality 'partners' aim to help you find your groove",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5882228/dance-virtual-reality-vr-app-augmented-world-expo-weddings",
-      "publishedAt": "2026-07-11T09:00:00.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "Supreme Court Justices Barrett and Kagan discuss security funding on Capitol Hill",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5888645/supreme-court-justices-barrett-and-kagan-discuss-security-funding-on-capitol-hill",
+      "publishedAt": "2026-07-14T20:29:34.000Z",
+      "lastChecked": "2026-07-15T06:12:30.916Z"
     },
     {
-      "id": "usa-spain-edges-belgium-and-will-face-france-in-world-cup-semifinal-5",
+      "id": "usa-how-do-young-people-feel-about-ai-7-teens-weigh-in-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Spain edges Belgium and will face France in World Cup semifinal",
-      "url": "https://www.npr.org/2026/07/11/nx-s1-5890030/spain-will-face-france-world-cup-semifinal",
-      "publishedAt": "2026-07-11T06:58:56.000Z",
-      "lastChecked": "2026-07-11T12:10:52.740Z"
+      "title": "How do young people feel about AI? 7 teens weigh in",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5863025/teens-artificial-intelligence-ai-school",
+      "publishedAt": "2026-07-14T20:00:00.000Z",
+      "lastChecked": "2026-07-15T06:12:30.916Z"
     },
     {
-      "id": "stl-food-truck-serves-500-meals-to-homeless-in-east-st-louis-5",
+      "id": "stl-juveniles-charged-in-jefferson-county-16-year-old-s-death-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Food truck serves 500 meals to homeless in East St. Louis",
-      "url": "https://fox2now.com/news/illinois/food-truck-serves-500-meals-to-homeless-in-east-st-louis/",
-      "publishedAt": "2026-07-11T04:16:48.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
+      "title": "Juveniles charged in Jefferson County 16-year-old’s death",
+      "url": "https://fox2now.com/news/missouri/juveniles-charged-in-jefferson-county-16-year-olds-death/",
+      "publishedAt": "2026-07-14T18:16:56.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
     },
     {
-      "id": "stl-at-least-350-rescued-from-southern-missouri-floods-more-rescues--0",
+      "id": "stl-body-found-in-fenton-on-bluff-near-shopping-center-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "At least 350 rescued from southern Missouri floods; More rescues ongoing",
-      "url": "https://fox2now.com/news/missouri/at-least-100-rescued-from-southern-missouri-floods-more-rescues-ongoing/",
-      "publishedAt": "2026-07-10T22:42:25.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
-    },
-    {
-      "id": "stl-shooting-on-metrobus-in-st-louis-county-leaves-two-dead-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Shooting on MetroBus in St. Louis County leaves two dead",
-      "url": "https://fox2now.com/news/missouri/altercation-leads-to-deadly-shooting-on-metrobus-in-st-louis-county/",
-      "publishedAt": "2026-07-10T21:49:32.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
-    },
-    {
-      "id": "stl-two-killed-in-plane-crash-near-waterloo-illinois-victims-were-fa-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Two killed in plane crash near Waterloo, Illinois; Victims were father and son",
-      "url": "https://fox2now.com/news/illinois/plane-crashes-near-waterloo-illinois-ntsb-investigating/",
-      "publishedAt": "2026-07-10T17:45:11.000Z",
-      "lastChecked": "2026-07-11T12:10:53.093Z"
+      "title": "Body found in Fenton on bluff near shopping center",
+      "url": "https://fox2now.com/news/missouri/body-found-in-fenton-on-bluff-near-shopping-center/",
+      "publishedAt": "2026-07-14T18:00:02.000Z",
+      "lastChecked": "2026-07-15T06:12:30.964Z"
     }
   ]
 }
