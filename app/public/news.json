@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T04:59:48.600Z",
+  "generatedAt": "2026-07-29T14:14:14.360Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-hundreds-gather-to-honor-family-members-killed-in-mass-shooting-0",
+      "id": "stl-temp-tag-changes-are-coming-to-missouri-but-not-until-2027-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Hundreds gather to honor family members killed in mass shooting",
-      "url": "https://fox2now.com/news/illinois/hundreds-gather-to-honor-family-members-killed-in-mass-shooting/",
-      "publishedAt": "2026-07-20T02:09:07.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
+      "title": "Temp tag changes are coming to Missouri - But not until 2027",
+      "url": "https://fox2now.com/news/missouri/temp-tag-changes-are-coming-to-missouri-but-not-until-2027/",
+      "publishedAt": "2026-07-29T14:04:30.000Z",
+      "lastChecked": "2026-07-29T14:14:14.350Z"
     },
     {
-      "id": "stl-skeletal-remains-discovered-in-north-st-louis-3",
+      "id": "stl-missouri-reports-nearly-600-cyclosporiasis-cases-amid-lettuce-re-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Skeletal remains discovered in north St. Louis",
-      "url": "https://fox2now.com/news/missouri/skeletal-remains-discovered-in-north-st-louis/",
-      "publishedAt": "2026-07-20T01:28:46.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
+      "title": "Missouri reports nearly 600 cyclosporiasis cases amid lettuce recall",
+      "url": "https://fox2now.com/news/missouri/missouri-reports-nearly-600-cyclosporiasis-cases-amid-lettuce-recall/",
+      "publishedAt": "2026-07-29T13:33:41.000Z",
+      "lastChecked": "2026-07-29T14:14:14.350Z"
     },
     {
-      "id": "stl-13-year-old-shot-while-riding-with-father-in-downtown-st-louis-1",
+      "id": "stl-the-break-from-the-big-heat-and-humidity-is-here-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "13-year-old shot while riding with father in downtown St. Louis",
-      "url": "https://fox2now.com/news/missouri/13-year-old-shot-while-riding-with-father-in-downtown-st-louis/",
-      "publishedAt": "2026-07-20T01:12:42.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
+      "title": "The break from the big heat and humidity is here",
+      "url": "https://fox2now.com/news/weather/the-break-from-the-big-heat-and-humidity-is-here/",
+      "publishedAt": "2026-07-29T11:11:32.000Z",
+      "lastChecked": "2026-07-29T14:14:14.350Z"
     },
     {
-      "id": "stl-pasta-house-location-gets-new-shipment-of-lettuce-sells-salads-a-5",
+      "id": "usa-u-s-and-iran-resume-attacks-and-fauci-to-face-senate-questions-o-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "U.S. and Iran resume attacks. And, Fauci to face Senate questions on COVID pandemic",
+      "url": "https://www.npr.org/2026/07/29/g-s1-136076/up-first-newsletter-iran-benjamin-netanyahu-trump-iowa-water-anthony-fauci-fed-rates",
+      "publishedAt": "2026-07-29T11:00:47.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "stl-police-searching-for-suspects-in-attempted-ambush-on-officers-in-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Pasta House location gets new shipment of lettuce, sells salads again",
-      "url": "https://fox2now.com/news/missouri/pasta-house-location-gets-new-shipment-of-lettuce-sells-salads-again/",
-      "publishedAt": "2026-07-19T23:56:07.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
+      "title": "Police searching for suspects in 'attempted ambush' on officers in north St. Louis",
+      "url": "https://fox2now.com/news/missouri/police-searching-for-suspects-in-attempted-ambush-on-officers-in-north-st-louis/",
+      "publishedAt": "2026-07-29T11:00:03.000Z",
+      "lastChecked": "2026-07-29T14:14:14.349Z"
     },
     {
-      "id": "stl-charging-documents-identify-brothers-in-2025-shootout-that-kille-2",
+      "id": "usa-new-york-school-pauses-plan-to-deploy-humanlike-ai-robot-teacher-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "New York school pauses plan to deploy humanlike AI robot teacher after backlash",
+      "url": "https://www.npr.org/2026/07/29/g-s1-136072/ai-robot-teacher",
+      "publishedAt": "2026-07-29T09:24:52.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "usa-jordan-intercepts-iranian-missiles-as-u-s-and-saudi-arabia-strik-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Jordan intercepts Iranian missiles as U.S. and Saudi Arabia strike militias in Iraq",
+      "url": "https://www.npr.org/2026/07/29/g-s1-136063/us-saudi-arabia-iran-iraq",
+      "publishedAt": "2026-07-29T09:07:03.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "usa-machines-are-collaborators-at-this-new-museum-of-ai-art-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "'Machines are collaborators' at this new museum of AI art",
+      "url": "https://www.npr.org/2026/07/29/nx-s1-5894941/ai-art-dataland-refik-anadol",
+      "publishedAt": "2026-07-29T09:00:00.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "usa-as-extreme-heat-grips-the-south-and-west-here-s-how-to-stay-safe-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "As extreme heat grips the South and West, here's how to stay safe",
+      "url": "https://www.npr.org/2026/07/29/nx-s1-5910515/heat-dome-stroke-weather",
+      "publishedAt": "2026-07-29T09:00:00.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "usa-the-federal-reserve-faces-a-critical-decision-on-interest-rates-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The Federal Reserve faces a critical decision on interest rates",
+      "url": "https://www.npr.org/2026/07/29/nx-s1-5910558/federal-reserve-interest-rates-inflation",
+      "publishedAt": "2026-07-29T09:00:00.000Z",
+      "lastChecked": "2026-07-29T14:14:13.811Z"
+    },
+    {
+      "id": "stl-jail-videos-reveal-final-days-for-dying-father-of-four-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Charging documents identify brothers in 2025 shootout that killed teen bystander",
-      "url": "https://fox2now.com/news/missouri/charging-documents-identify-brothers-in-2025-shootout-that-killed-teen-bystander/",
-      "publishedAt": "2026-07-19T22:11:06.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
+      "title": "Jail videos reveal final days for dying father of four",
+      "url": "https://fox2now.com/news/fox-files/jail-videos-reveal-final-days-for-dying-father-of-four/",
+      "publishedAt": "2026-07-28T21:27:56.000Z",
+      "lastChecked": "2026-07-29T14:14:14.349Z"
     },
     {
-      "id": "usa-a-cavalcade-of-international-stars-headlined-the-world-cup-s-fir-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A cavalcade of international stars headlined the World Cup's first-ever halftime final show",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5888626/world-cup-halftime-final-show-bts-madonna-shakira-burna-boy-chris-martin-muppets-bieber",
-      "publishedAt": "2026-07-19T21:29:52.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
-    },
-    {
-      "id": "stl-pedestrian-struck-by-motorcycle-and-killed-on-i-64-in-o-fallon-4",
+      "id": "stl-honor-walk-for-mother-daughter-shooting-victims-murder-charges-f-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Pedestrian struck by motorcycle and killed on I-64 in O'Fallon",
-      "url": "https://fox2now.com/news/missouri/pedestrian-struck-by-motorcycle-and-killed-on-i-64/",
-      "publishedAt": "2026-07-19T19:35:21.000Z",
-      "lastChecked": "2026-07-20T04:59:48.587Z"
-    },
-    {
-      "id": "usa-who-is-andy-burnham-the-u-k-s-new-prime-minister-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Who is Andy Burnham, the U.K.'s new prime minister?",
-      "url": "https://www.npr.org/2026/07/19/g-s1-134001/andy-burnham-new-british-prime-minister",
-      "publishedAt": "2026-07-19T16:00:00.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
-    },
-    {
-      "id": "usa-violence-repeatedly-erupts-in-dementia-care-despite-warnings-ins-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Violence repeatedly erupts in dementia care despite warnings, inspections show",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5894692/dementia-violence-warning-supervision-nursing-homes-assisted-living-facility",
-      "publishedAt": "2026-07-19T11:00:00.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
-    },
-    {
-      "id": "usa-an-israeli-paraglider-tries-to-save-migrating-swifts-that-nest-i-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "An Israeli paraglider tries to save migrating swifts that nest in the Western Wall",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5870684/israel-swift-birds-jerusalem",
-      "publishedAt": "2026-07-19T10:00:00.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
-    },
-    {
-      "id": "usa-deadly-overnight-russian-attack-on-ukraine-targets-the-capital-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Deadly overnight Russian attack on Ukraine targets the capital",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5899518/russia-attack-kyiv",
-      "publishedAt": "2026-07-19T09:14:38.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
-    },
-    {
-      "id": "usa-5-clever-design-tricks-to-make-a-small-home-look-bigger-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "5 clever design tricks to make a small home look bigger",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5891817/5-clever-design-tricks-to-make-a-small-home-look-bigger",
-      "publishedAt": "2026-07-19T09:01:00.000Z",
-      "lastChecked": "2026-07-20T04:59:48.046Z"
+      "title": "Honor walk for mother, daughter shooting victims; murder charges filed",
+      "url": "https://fox2now.com/news/missouri/honor-walk-for-mother-daughter-shooting-victims-murder-charges-filed/",
+      "publishedAt": "2026-07-28T21:04:47.000Z",
+      "lastChecked": "2026-07-29T14:14:14.350Z"
     }
   ]
 }
