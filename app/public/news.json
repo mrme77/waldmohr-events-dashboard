@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T19:03:40.911Z",
+  "generatedAt": "2026-09-07T11:40:19.952Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-families-of-uss-lincoln-crew-say-trump-should-be-ashamed-of-cond-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Families of USS Lincoln crew say Trump should be 'ashamed' of conditions on board",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5932539/uss-lincoln-trump-dire-conditions",
-      "publishedAt": "2026-08-15T18:21:32.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
-    },
-    {
-      "id": "stl-mid-missouri-teen-dies-after-drowning-in-swimming-pool-2",
+      "id": "stl-florissant-hosts-final-day-of-gateway-cup-racing-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Mid-Missouri teen dies after drowning in swimming pool",
-      "url": "https://fox2now.com/news/missouri/mid-missouri-teen-dies-after-drowning-in-swimming-pool/",
-      "publishedAt": "2026-08-15T18:02:38.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
+      "title": "Florissant hosts final day of Gateway Cup racing",
+      "url": "https://fox2now.com/news/missouri/florissant-hosts-final-day-of-gateway-cup-racing/",
+      "publishedAt": "2026-09-07T11:13:55.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
     },
     {
-      "id": "stl-e-coli-levels-in-missouri-s-big-river-slightly-improve-but-still-0",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "E. coli levels in Missouri's Big River slightly improve, but still unsafe",
-      "url": "https://fox2now.com/news/missouri/e-coli-levels-in-missouris-big-river-slightly-improve-but-still-unsafe/",
-      "publishedAt": "2026-08-15T17:46:44.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
-    },
-    {
-      "id": "usa-trump-administration-wants-to-allow-companies-to-hack-foreign-cy-1",
+      "id": "usa-5-dead-after-crash-at-miami-airport-and-germany-s-far-right-wins-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump administration wants to allow companies to hack foreign cybercriminals",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5930311/trump-companies-hack-foreign-cybercriminals",
-      "publishedAt": "2026-08-15T17:25:34.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
+      "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
+      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
+      "publishedAt": "2026-09-07T11:11:51.000Z",
+      "lastChecked": "2026-09-07T11:40:18.983Z"
     },
     {
-      "id": "usa-jason-arday-cambridge-professor-accused-of-plagiarism-is-found-d-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Jason Arday, Cambridge professor accused of plagiarism, is found dead",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5932488/jason-arday-dead",
-      "publishedAt": "2026-08-15T17:04:43.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
-    },
-    {
-      "id": "stl-extreme-heat-warning-remains-through-sunday-with-index-to-110-de-1",
+      "id": "stl-elderly-man-dead-woman-injured-in-house-fire-in-jefferson-county-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Extreme Heat Warning remains through Sunday with index to 110 degrees",
-      "url": "https://fox2now.com/news/weather/extreme-heat-warning-remains-through-sunday-with-index-to-110-degrees/",
-      "publishedAt": "2026-08-15T13:21:26.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
+      "title": "Elderly man dead, woman injured in house fire in Jefferson County",
+      "url": "https://fox2now.com/news/missouri/elderly-man-dead-woman-injured-in-house-fire-in-jefferson-county/",
+      "publishedAt": "2026-09-07T10:47:43.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
     },
     {
-      "id": "usa-ice-detained-a-venezuelan-soccer-pro-his-case-shows-the-immigrat-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "ICE detained a Venezuelan soccer pro. His case shows the immigration backlog crisis",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5928322/ice-detained-a-venezuelan-soccer-pro-his-case-shows-the-immigration-backlog-crisis",
-      "publishedAt": "2026-08-15T10:10:00.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
-    },
-    {
-      "id": "usa-5-exercises-that-can-prevent-and-relieve-pregnancy-pain-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "5 exercises that can prevent (and relieve!) pregnancy pain",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5930423/strength-exercises-to-relieve-prevent-pregnancy-pain",
-      "publishedAt": "2026-08-15T09:04:00.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
-    },
-    {
-      "id": "usa-they-fought-for-the-u-s-in-afghanistan-now-they-worry-about-losi-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "They fought for the U.S. in Afghanistan. Now they worry about losing their green cards",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5897606/afghanistan-visa-green-card-deport",
-      "publishedAt": "2026-08-15T09:00:00.000Z",
-      "lastChecked": "2026-08-15T19:03:40.459Z"
-    },
-    {
-      "id": "stl-commuters-brace-for-westbound-i-64-shutdown-in-illinois-4",
+      "id": "stl-more-comfortable-labor-day-before-big-heat-makes-a-brief-return-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Commuters brace for westbound I-64 shutdown in Illinois",
-      "url": "https://fox2now.com/news/illinois/commuters-brace-for-westbound-i-64-shutdown-in-illinois/",
-      "publishedAt": "2026-08-15T02:27:20.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
+      "title": "More comfortable Labor Day before big heat makes a brief return",
+      "url": "https://fox2now.com/news/weather/more-comfortable-labor-day-before-big-heat-makes-a-brief-return/",
+      "publishedAt": "2026-09-07T10:28:52.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
     },
     {
-      "id": "stl-cardinals-to-promote-powerful-prospect-joshua-baez-5",
+      "id": "usa-the-first-day-of-school-bells-bikes-buses-and-big-feelings-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The first day of school: Bells, bikes, buses and big feelings",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
+      "publishedAt": "2026-09-07T09:00:00.000Z",
+      "lastChecked": "2026-09-07T11:40:18.983Z"
+    },
+    {
+      "id": "usa-her-body-temperature-was-106-how-heat-is-killing-americans-in-th-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "'Her body temperature was 106': How heat is killing Americans in their homes",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5644782/heat-deaths-manufactured-mobile-homes",
+      "publishedAt": "2026-09-07T09:00:00.000Z",
+      "lastChecked": "2026-09-07T11:40:18.983Z"
+    },
+    {
+      "id": "usa-the-copper-peptide-trend-has-gone-from-creams-to-injections-ahea-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The copper peptide trend has gone from creams to injections — ahead of the science",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5955552/copper-peptides-skin-aging-health-safe",
+      "publishedAt": "2026-09-07T09:00:00.000Z",
+      "lastChecked": "2026-09-07T11:40:18.984Z"
+    },
+    {
+      "id": "usa-morning-news-brief-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Morning news brief",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5955374/morning-news-brief",
+      "publishedAt": "2026-09-07T08:44:02.000Z",
+      "lastChecked": "2026-09-07T11:40:18.984Z"
+    },
+    {
+      "id": "stl-witnesses-react-to-bevo-street-takeover-car-fire-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Cardinals to promote powerful prospect Joshua Baez",
-      "url": "https://fox2now.com/sports/st-louis-cardinals/cardinals-to-promote-powerful-prospect-joshua-baez/",
-      "publishedAt": "2026-08-15T00:41:25.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
+      "title": "Witnesses react to Bevo street takeover, car fire",
+      "url": "https://fox2now.com/news/missouri/witnesses-react-to-bevo-street-takeover-car-fire/",
+      "publishedAt": "2026-09-07T03:39:03.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
     },
     {
-      "id": "stl-branson-mansion-of-former-mlb-player-set-for-auction-3",
+      "id": "stl-14-year-old-injured-in-midtown-shooting-man-in-custody-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Branson mansion of former MLB player set for auction",
-      "url": "https://fox2now.com/news/missouri/branson-mansion-of-former-mlb-player-set-for-auction/",
-      "publishedAt": "2026-08-14T17:35:09.000Z",
-      "lastChecked": "2026-08-15T19:03:40.898Z"
+      "title": "14-year-old injured in Midtown shooting; man in custody",
+      "url": "https://fox2now.com/news/missouri/14-year-old-injured-in-midtown-shooting-suspects-in-custody/",
+      "publishedAt": "2026-09-06T20:54:02.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
+    },
+    {
+      "id": "usa-five-dead-after-amazon-cargo-plane-crashes-at-miami-airport-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Five dead after Amazon cargo plane crashes at Miami airport",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959749/amazon-cargo-plane-crashes-at-miami-airport",
+      "publishedAt": "2026-09-06T19:54:28.000Z",
+      "lastChecked": "2026-09-07T11:40:18.984Z"
+    },
+    {
+      "id": "stl-husband-and-wife-dead-in-farmington-suspected-murder-suicide-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Husband and wife dead in Farmington suspected murder-suicide",
+      "url": "https://fox2now.com/news/missouri/husband-and-wife-dead-in-farmington-suspected-murder-suicide/",
+      "publishedAt": "2026-09-06T17:02:20.000Z",
+      "lastChecked": "2026-09-07T11:40:19.940Z"
     }
   ]
 }
