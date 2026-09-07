@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-06-26T05:50:08.994Z",
+  "generatedAt": "2026-09-07T11:40:18.208Z",
   "source": "https://www.waldmohr-aktuell.de/",
   "events": [
+    {
+      "id": "und-die-choere-singen-fuer-dich-am-19-09-2026-ab-15-00-uhr-am-doerrberg",
+      "title": "&#8222;and die Chöre singen für Dich&#8220; on 19.09.2026 ab 15.00 Uhr am Dörrberg",
+      "originalTitle": "&#8222;Und die Chöre singen für Dich&#8220; am 19.09.2026 ab 15.00 Uhr am Dörrberg",
+      "summary": "&#8222;and die Chöre singen für Dich&#8220; on 19.09.2026 ab 15.00 Uhr am Dörrberg is a public Waldmohr Aktuell source item. It may be relevant for clubs planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
+      "date": "2026-09-19",
+      "time": "00:00",
+      "venue": "Waldmohr",
+      "tags": [
+        "community",
+        "clubs"
+      ],
+      "familyRelevance": "Useful for discovering local clubs and community groups.",
+      "sourceUrl": "https://www.waldmohr-aktuell.de/und-die-choere-singen-fuer-dich-am-19-09-2026-ab-15-00-uhr-am-doerrberg/",
+      "postDate": "2026-08-21",
+      "lastChecked": "2026-09-07",
+      "status": "upcoming",
+      "dateConfidence": "inferred"
+    },
     {
       "id": "kinder-und-familien-fest-waldmohr-am-07-09-2026",
       "title": "Children and Family Festival Waldmohr on 07.09.2026",
@@ -17,7 +36,7 @@
       "familyRelevance": "Potential family outing or kid-relevant local event; confirm details at the source.",
       "sourceUrl": "https://www.waldmohr-aktuell.de/kinder-und-familien-fest-waldmohr-am-07-09-2026/",
       "postDate": "2025-08-21",
-      "lastChecked": "2026-06-26",
+      "lastChecked": "2026-09-07",
       "status": "upcoming",
       "dateConfidence": "inferred"
     }
