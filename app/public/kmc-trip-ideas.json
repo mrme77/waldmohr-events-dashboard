@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T11:47:19.065Z",
+  "generatedAt": "2026-10-08T19:27:25.843Z",
   "source": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_september_4_2026",
   "issueTitle": "Kaiserslautern American - September 4, 2026",
   "model": "google/gemini-2.5-flash",
@@ -225,5 +225,6 @@
       "sourceUrl": "https://issuu.com/advantinews/docs/kaiserslautern_american_-_september_4_2026#page/29",
       "lastChecked": "2026-09-07"
     }
-  ]
+  ],
+  "refreshWarning": "OPENROUTER_API_KEY is not set. Preserved the previous KMC trip idea cache."
 }

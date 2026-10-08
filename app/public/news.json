@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T11:40:19.952Z",
+  "generatedAt": "2026-10-08T19:26:40.941Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-florissant-hosts-final-day-of-gateway-cup-racing-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Florissant hosts final day of Gateway Cup racing",
-      "url": "https://fox2now.com/news/missouri/florissant-hosts-final-day-of-gateway-cup-racing/",
-      "publishedAt": "2026-09-07T11:13:55.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
-    },
-    {
-      "id": "usa-5-dead-after-crash-at-miami-airport-and-germany-s-far-right-wins-0",
+      "id": "usa-suicide-is-up-among-black-americans-we-need-to-talk-about-it-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
-      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
-      "publishedAt": "2026-09-07T11:11:51.000Z",
-      "lastChecked": "2026-09-07T11:40:18.983Z"
+      "title": "Suicide is up among Black Americans. We need to talk about it.",
+      "url": "https://www.npr.org/2026/10/08/nx-s1-5963905/suicide-black-americans-discussion-analysis",
+      "publishedAt": "2026-10-08T18:37:02.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
     },
     {
-      "id": "stl-elderly-man-dead-woman-injured-in-house-fire-in-jefferson-county-4",
+      "id": "stl-joe-buck-to-guest-judge-on-dancing-with-the-stars-next-week-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Elderly man dead, woman injured in house fire in Jefferson County",
-      "url": "https://fox2now.com/news/missouri/elderly-man-dead-woman-injured-in-house-fire-in-jefferson-county/",
-      "publishedAt": "2026-09-07T10:47:43.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
+      "title": "Joe Buck to guest judge on 'Dancing With the Stars' next week",
+      "url": "https://fox2now.com/news/missouri/joe-buck-to-guest-judge-on-dancing-with-the-stars-next-week/",
+      "publishedAt": "2026-10-08T17:52:27.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
     },
     {
-      "id": "stl-more-comfortable-labor-day-before-big-heat-makes-a-brief-return-2",
+      "id": "stl-st-louis-man-charged-after-3-000-in-disputed-imo-s-pizza-purchas-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "More comfortable Labor Day before big heat makes a brief return",
-      "url": "https://fox2now.com/news/weather/more-comfortable-labor-day-before-big-heat-makes-a-brief-return/",
-      "publishedAt": "2026-09-07T10:28:52.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
+      "title": "St. Louis man charged after $3,000 in disputed Imo's Pizza purchases",
+      "url": "https://fox2now.com/news/missouri/st-louis-man-charged-after-3000-in-disputed-imos-pizza-purchases/",
+      "publishedAt": "2026-10-08T17:33:36.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
     },
     {
-      "id": "usa-the-first-day-of-school-bells-bikes-buses-and-big-feelings-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "The first day of school: Bells, bikes, buses and big feelings",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
-      "publishedAt": "2026-09-07T09:00:00.000Z",
-      "lastChecked": "2026-09-07T11:40:18.983Z"
-    },
-    {
-      "id": "usa-her-body-temperature-was-106-how-heat-is-killing-americans-in-th-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "'Her body temperature was 106': How heat is killing Americans in their homes",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5644782/heat-deaths-manufactured-mobile-homes",
-      "publishedAt": "2026-09-07T09:00:00.000Z",
-      "lastChecked": "2026-09-07T11:40:18.983Z"
-    },
-    {
-      "id": "usa-the-copper-peptide-trend-has-gone-from-creams-to-injections-ahea-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "The copper peptide trend has gone from creams to injections — ahead of the science",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5955552/copper-peptides-skin-aging-health-safe",
-      "publishedAt": "2026-09-07T09:00:00.000Z",
-      "lastChecked": "2026-09-07T11:40:18.984Z"
-    },
-    {
-      "id": "usa-morning-news-brief-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5955374/morning-news-brief",
-      "publishedAt": "2026-09-07T08:44:02.000Z",
-      "lastChecked": "2026-09-07T11:40:18.984Z"
-    },
-    {
-      "id": "stl-witnesses-react-to-bevo-street-takeover-car-fire-0",
+      "id": "stl-man-accused-of-stealing-solar-panels-possessing-meth-in-hazelwoo-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Witnesses react to Bevo street takeover, car fire",
-      "url": "https://fox2now.com/news/missouri/witnesses-react-to-bevo-street-takeover-car-fire/",
-      "publishedAt": "2026-09-07T03:39:03.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
+      "title": "Man accused of stealing solar panels, possessing meth in Hazelwood",
+      "url": "https://fox2now.com/news/missouri/man-accused-of-stealing-solar-panels-possessing-meth-in-hazelwood/",
+      "publishedAt": "2026-10-08T17:30:01.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
     },
     {
-      "id": "stl-14-year-old-injured-in-midtown-shooting-man-in-custody-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "14-year-old injured in Midtown shooting; man in custody",
-      "url": "https://fox2now.com/news/missouri/14-year-old-injured-in-midtown-shooting-suspects-in-custody/",
-      "publishedAt": "2026-09-06T20:54:02.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
-    },
-    {
-      "id": "usa-five-dead-after-amazon-cargo-plane-crashes-at-miami-airport-5",
+      "id": "usa-new-u-s-indictment-charges-former-venezuelan-president-nicol-s-m-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Five dead after Amazon cargo plane crashes at Miami airport",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5959749/amazon-cargo-plane-crashes-at-miami-airport",
-      "publishedAt": "2026-09-06T19:54:28.000Z",
-      "lastChecked": "2026-09-07T11:40:18.984Z"
+      "title": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture",
+      "url": "https://www.npr.org/2026/10/08/nx-s1-5995360/venezuela-nicolas-maduro-torture-charges",
+      "publishedAt": "2026-10-08T16:05:37.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
     },
     {
-      "id": "stl-husband-and-wife-dead-in-farmington-suspected-murder-suicide-5",
+      "id": "usa-4-people-on-nasa-s-crew-12-mission-return-to-earth-after-8-month-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "4 people on NASA's Crew-12 mission return to Earth after 8 months in space",
+      "url": "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown",
+      "publishedAt": "2026-10-08T15:34:39.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
+    },
+    {
+      "id": "usa-white-house-correspondent-april-ryan-reflects-on-reporting-while-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "White House correspondent April Ryan reflects on reporting while under attack",
+      "url": "https://www.npr.org/2026/10/08/nx-s1-5994416/white-house-correspondent-april-ryan-reflects-on-reporting-while-under-attack",
+      "publishedAt": "2026-10-08T15:24:23.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
+    },
+    {
+      "id": "stl-man-charged-after-school-shooting-threat-in-franklin-county-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Husband and wife dead in Farmington suspected murder-suicide",
-      "url": "https://fox2now.com/news/missouri/husband-and-wife-dead-in-farmington-suspected-murder-suicide/",
-      "publishedAt": "2026-09-06T17:02:20.000Z",
-      "lastChecked": "2026-09-07T11:40:19.940Z"
+      "title": "Man charged after school shooting threat in Franklin County",
+      "url": "https://fox2now.com/news/missouri/man-charged-after-school-shooting-threat-in-franklin-county/",
+      "publishedAt": "2026-10-08T15:13:42.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
+    },
+    {
+      "id": "usa-south-korea-to-recall-its-ambassador-to-ukraine-over-north-korea-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute",
+      "publishedAt": "2026-10-08T12:13:54.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
+    },
+    {
+      "id": "usa-south-korea-test-flies-its-first-domestically-developed-hyperson-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "South Korea test-flies its first domestically developed hypersonic weapon",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147113/south-korea-test-flies-its-first-domestically-developed-hypersonic-weapon",
+      "publishedAt": "2026-10-08T12:01:34.000Z",
+      "lastChecked": "2026-10-08T19:26:40.435Z"
+    },
+    {
+      "id": "stl-st-louis-blues-home-opener-what-to-know-and-how-to-watch-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "St. Louis Blues home opener: What to know and how to watch",
+      "url": "https://fox2now.com/sports/st-louis-blues/st-louis-blues-home-opener-what-to-know-and-how-to-watch/",
+      "publishedAt": "2026-10-08T11:00:00.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
+    },
+    {
+      "id": "stl-terminal-1-reopened-after-suspicious-vehicle-found-at-st-louis-l-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Terminal 1 reopened after suspicious vehicle found at St. Louis Lambert Airport",
+      "url": "https://fox2now.com/news/missouri/police-presence-at-st-louis-airport-terminal-1/",
+      "publishedAt": "2026-10-08T01:58:46.000Z",
+      "lastChecked": "2026-10-08T19:26:40.928Z"
     }
   ]
 }

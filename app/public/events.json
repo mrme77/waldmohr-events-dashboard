@@ -1,42 +1,24 @@
 {
-  "generatedAt": "2026-09-07T11:40:18.208Z",
+  "generatedAt": "2026-10-08T19:26:40.183Z",
   "source": "https://www.waldmohr-aktuell.de/",
   "events": [
     {
-      "id": "und-die-choere-singen-fuer-dich-am-19-09-2026-ab-15-00-uhr-am-doerrberg",
-      "title": "&#8222;and die Chöre singen für Dich&#8220; on 19.09.2026 ab 15.00 Uhr am Dörrberg",
-      "originalTitle": "&#8222;Und die Chöre singen für Dich&#8220; am 19.09.2026 ab 15.00 Uhr am Dörrberg",
-      "summary": "&#8222;and die Chöre singen für Dich&#8220; on 19.09.2026 ab 15.00 Uhr am Dörrberg is a public Waldmohr Aktuell source item. It may be relevant for clubs planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
-      "date": "2026-09-19",
-      "time": "00:00",
+      "id": "2-waldmohrer-poetry-slam-am-16-10-2026-im-festsaal-des-buergerhauses",
+      "title": "2. Waldmohrer Poetry Slam on 16.10.2026 im Festsaal of the Bürgerhauses",
+      "originalTitle": "2. Waldmohrer Poetry Slam am 16.10.2026 im Festsaal des Bürgerhauses",
+      "summary": "2. Waldmohrer Poetry Slam on 16.10.2026 im Festsaal of the Bürgerhauses is a public Waldmohr Aktuell source item. It may be relevant for culture, civic planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
+      "date": "2026-10-16",
+      "time": "20:00",
       "venue": "Waldmohr",
       "tags": [
         "community",
-        "clubs"
+        "culture",
+        "civic"
       ],
-      "familyRelevance": "Useful for discovering local clubs and community groups.",
-      "sourceUrl": "https://www.waldmohr-aktuell.de/und-die-choere-singen-fuer-dich-am-19-09-2026-ab-15-00-uhr-am-doerrberg/",
-      "postDate": "2026-08-21",
-      "lastChecked": "2026-09-07",
-      "status": "upcoming",
-      "dateConfidence": "inferred"
-    },
-    {
-      "id": "kinder-und-familien-fest-waldmohr-am-07-09-2026",
-      "title": "Children and Family Festival Waldmohr on 07.09.2026",
-      "originalTitle": "Kinder und Familien Fest Waldmohr am 07.09.2026",
-      "summary": "Children and Family Festival Waldmohr on 07.09.2026 is a public Waldmohr Aktuell source item. It may be relevant for family planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
-      "date": "2026-09-07",
-      "time": null,
-      "venue": "Waldmohr",
-      "tags": [
-        "community",
-        "family"
-      ],
-      "familyRelevance": "Potential family outing or kid-relevant local event; confirm details at the source.",
-      "sourceUrl": "https://www.waldmohr-aktuell.de/kinder-und-familien-fest-waldmohr-am-07-09-2026/",
-      "postDate": "2025-08-21",
-      "lastChecked": "2026-09-07",
+      "familyRelevance": "Useful for understanding local decisions, services, and town priorities after moving.",
+      "sourceUrl": "https://www.waldmohr-aktuell.de/2-waldmohrer-poetry-slam-am-16-10-2026-im-festsaal-des-buergerhauses/",
+      "postDate": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "status": "upcoming",
       "dateConfidence": "inferred"
     }
