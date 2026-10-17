@@ -13,12 +13,13 @@ Links to source material and technical references.
 - German public holidays API (Rheinland-Pfalz): https://date.nager.at/
 - Landkreis Kusel waste collection iCal (Waldmohr): https://www.landkreis-kusel.de/
 - Homburg Flohmarkt official dates (yearly announcement): https://www.homburg.de/rathaus/aktuelle-informationen/pressemitteilungen/flohmarkt-jahr-startet-am-3-januar-rund-ums-forum/
+- Homburg official calendar JSON feed: https://www.homburg.de/umbraco/api/veranstaltungen/getall?katId=&search=&ort=&showall=
 - Flea market aggregators (deferred, listings sparse): https://www.flohmarkt.info/homburg/ and https://www.flohmarkt-termine.org/landkreis/saarpfalz-kreis/
 - Kaiserslautern American homepage and digital edition embed: https://www.kaiserslauternamerican.com/
 - Kaiserslautern American Issuu publisher: https://issuu.com/advantinews
 - Current KMC digital issue source pattern: `https://issuu.com/advantinews/docs/{issue-slug}`;
   page SVG text is read from `https://svg.issuu.com/{revisionId}-{publicationId}/page_{n}.svg`.
-- OpenRouter chat completions API for KMC trip summaries: https://openrouter.ai/docs/api-reference/chat-completion
+- OpenRouter chat completions API for Homburg translations: https://openrouter.ai/docs/api-reference/chat-completion
 
 ## Private Sources
 - Google Calendar family iCal feed: secret URL kept in `.env` as `GCAL_ICS_URL` (get it from
@@ -32,9 +33,8 @@ Each cache is written to `app/public/`, the single source served to and read by 
 - Trash cache: `trash.json` (Kusel iCal).
 - Holidays cache: `holidays.json` (date.nager.at, RLP).
 - Flea markets cache: `fleamarkets.json` (Homburg official dates, maintained table).
-- KMC events cache: `kmc-events.json` (Kaiserslautern American `UNTERWEGS` listings from Issuu).
-- KMC trip ideas cache: `kmc-trip-ideas.json` (OpenRouter summaries from Kaiserslautern American
-  issue text; source URLs point back to Issuu pages).
+- Homburg events cache: `homburg-events.json` (official city calendar, translated at refresh time
+  when configured).
 - Family cache: `family.json` (Google Calendar iCal) — gitignored, never committed.
 
 ## Project References

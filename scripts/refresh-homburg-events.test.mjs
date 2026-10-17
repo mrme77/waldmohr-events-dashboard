@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { normalizeEvent, normalizeEvents } from "./refresh-homburg-events.mjs";
+import { normalizeEvent, normalizeEvents, translateEvents } from "./refresh-homburg-events.mjs";
 
 const todayKey = "2026-10-17";
 const sourceEvent = {
@@ -35,4 +35,17 @@ test("normalizeEvents removes duplicate occurrences and ignores malformed record
   const events = normalizeEvents([sourceEvent, sourceEvent, { id: 7, title: "Missing date" }], todayKey);
   assert.equal(events.length, 1);
   assert.equal(events[0].id, "homburg-42-2026-11-01T14:30");
+});
+
+test("translateEvents translates distinct listings once and applies results to recurrences", async () => {
+  const event = normalizeEvent(sourceEvent, todayKey);
+  const recurring = { ...event, id: "homburg-42-2026-11-08T14:30", date: "2026-11-08" };
+  let calls = 0;
+  const translated = await translateEvents([event, recurring], "test-key", async () => {
+    calls += 1;
+    return { ok: true, json: async () => ({ choices: [{ message: { content: JSON.stringify({ items: [{ index: 0, title: "Children's concert & games", summary: "Music and games for the whole family." }] }) } }] }) };
+  });
+  assert.equal(calls, 1);
+  assert.equal(translated[0].title, "Children's concert & games");
+  assert.equal(translated[1].summary, "Music and games for the whole family.");
 });

@@ -12,8 +12,8 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 |---|---|---|
 | Run | `cd app && npm install && npm run dev` | Vite dev server at `http://localhost:5173`. |
 | Build | `cd app && npm run build` | Type-checks then builds to `app/dist/`. |
-| Refresh data | `cd app && npm run refresh` | Runs the public/family adapters plus optional KMC trip summaries; each writes its `app/public/*.json` cache. Family and KMC trips run only where their local secrets are set. |
-| Test | `cd app && npm run validate` | Validates cached payloads; optional family and KMC trip caches skip when absent. |
+| Refresh data | `cd app && npm run refresh` | Runs public and family adapters; each writes its `app/public/*.json` cache. |
+| Test | `cd app && npm run validate` | Validates cached payloads; the optional family cache skips when absent. |
 | Refresh + build | `cd app && npm run refresh:build` | Refresh, validate, then production build. |
 
 ## Runtime Dependencies
@@ -24,13 +24,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Homburg flea market dates: maintained table in `scripts/refresh-fleamarkets.mjs`, synced
   yearly from the homburg.de announcement (the script warns when dates run low).
 - Homburg official events: public city-calendar JSON feed, normalized by
-  `scripts/refresh-homburg-events.mjs` into `app/public/homburg-events.json`.
-- KMC events: `scripts/refresh-kmc.mjs` finds the current
-  embedded issue, extracts the `UNTERWEGS` SVG text layer, and writes KMC-area events. Dates that
-  omit a year are inferred from the issue year and marked with `dateConfidence: "inferred"`.
-- KMC trip summaries: `scripts/refresh-kmc-trips.mjs` scans the current Kaiserslautern American
-  issue text and uses OpenRouter `google/gemini-2.5-flash` to write `kmc-trip-ideas.json`.
-  The OpenRouter key lives only in local `.env`; do not commit it or add values to examples.
+  `scripts/refresh-homburg-events.mjs` into `app/public/homburg-events.json`; it uses
+  OpenRouter `google/gemini-2.5-flash` to translate distinct listings when `OPENROUTER_API_KEY`
+  is set, otherwise preserving original German.
 - Google Calendar private iCal feed (family layer): secret URL in `.env` as `GCAL_ICS_URL`,
   never committed; generated `family.json` caches are gitignored.
 - Browser with modern JavaScript support.
@@ -39,9 +35,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 ## Key Paths
 - `app/` - Vite + React + TypeScript application (the only UI).
 - `app/src/App.tsx` - app shell and layout.
-- `app/src/components/` - calendar, event detail, news marquee, clocks, weather, trip ideas.
+- `app/src/components/` - calendar, event detail, news marquee, clocks, weather, Homburg highlights.
 - `app/public/*.json` - normalized English event payloads; the single source served to and read by the app.
-- `scripts/refresh-*.mjs` - refresh adapters (events, news, trash, holidays, flea markets, KMC events, KMC trips, family).
+- `scripts/refresh-*.mjs` - refresh adapters (events, news, trash, holidays, flea markets, Homburg, family).
 - `scripts/validate-*.mjs` - payload validators, one per adapter.
 - `scripts/lib.mjs` - shared script helpers: `writeJson`, `runMain`, and the `runValidation` harness.
 - `docs/` - durable project truth.
@@ -72,7 +68,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - Show when data was last refreshed.
 - Mark past events separately from upcoming/current events.
 - Keep `.env*` out of version control.
-- Keep OpenRouter output source-linked to the originating KMC issue page.
+- Keep Homburg translations source-linked to the originating official city listing.
 
 **Ask First**
 - Adding dependencies or switching to a framework.

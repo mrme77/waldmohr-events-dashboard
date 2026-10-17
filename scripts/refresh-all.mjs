@@ -10,8 +10,6 @@ const adapters = [
   "refresh-holidays.mjs",
   "refresh-fleamarkets.mjs",
   "refresh-homburg-events.mjs",
-  "refresh-kmc.mjs",
-  "refresh-kmc-trips.mjs",
   "refresh-family.mjs",
 ];
 
