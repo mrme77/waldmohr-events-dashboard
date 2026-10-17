@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T11:13:53.966Z",
+  "generatedAt": "2026-10-17T11:53:16.335Z",
   "sources": [
     {
       "id": "usa",
@@ -16,64 +16,64 @@
   ],
   "items": [
     {
-      "id": "usa-decades-after-apartheid-south-africans-seek-justice-for-crimes-o-0",
+      "id": "usa-fraud-affordability-and-trump-policies-drive-friction-in-minneso-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Fraud, affordability and Trump policies drive friction in Minnesota Senate debate",
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6004910/minn-us-senate-race",
+      "publishedAt": "2026-10-17T11:43:14.000Z",
+      "lastChecked": "2026-10-17T11:53:16.325Z"
+    },
+    {
+      "id": "usa-decades-after-apartheid-south-africans-seek-justice-for-crimes-o-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Decades after apartheid, South Africans seek justice for crimes of the past",
       "url": "https://www.npr.org/2026/10/17/nx-s1-5987671/south-africa-justice-sharpeville-apartheid",
       "publishedAt": "2026-10-17T11:00:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
+      "lastChecked": "2026-10-17T11:53:16.325Z"
     },
     {
-      "id": "usa-no-kings-turns-its-focus-to-voting-this-weekend-here-s-what-we-k-1",
+      "id": "usa-no-kings-turns-its-focus-to-voting-this-weekend-here-s-what-we-k-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "No Kings turns its focus to voting this weekend. Here's what we know",
       "url": "https://www.npr.org/2026/10/17/nx-s1-6004887/no-kings-voting-trump",
       "publishedAt": "2026-10-17T09:00:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
+      "lastChecked": "2026-10-17T11:53:16.325Z"
     },
     {
-      "id": "usa-sidewalk-sleepers-they-have-nowhere-else-to-stay-while-a-loved-o-2",
+      "id": "usa-sidewalk-sleepers-they-have-nowhere-else-to-stay-while-a-loved-o-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
       "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
       "publishedAt": "2026-10-17T09:00:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
+      "lastChecked": "2026-10-17T11:53:16.325Z"
     },
     {
-      "id": "usa-trump-promised-a-swing-district-blitz-he-s-going-to-a-lot-of-ver-3",
+      "id": "usa-trump-promised-a-swing-district-blitz-he-s-going-to-a-lot-of-ver-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Trump promised a swing district blitz. He's going to a lot of very red states",
       "url": "https://www.npr.org/2026/10/17/nx-s1-6004276/trump-travel-midterms",
       "publishedAt": "2026-10-17T09:00:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
+      "lastChecked": "2026-10-17T11:53:16.325Z"
     },
     {
-      "id": "usa-weddings-are-expensive-how-about-a-grocery-store-cake-4",
+      "id": "usa-weddings-are-expensive-how-about-a-grocery-store-cake-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Weddings are expensive. How about a grocery store cake?",
       "url": "https://www.npr.org/2026/10/17/nx-s1-5976921/grocery-store-wedding-cakes",
       "publishedAt": "2026-10-17T09:00:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
-    },
-    {
-      "id": "usa-coastal-homes-burn-as-hot-winds-fuel-california-fires-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Coastal homes burn as hot winds fuel California fires",
-      "url": "https://www.npr.org/2026/10/17/g-s1-148569/coastal-homes-burn-in-california-fires",
-      "publishedAt": "2026-10-17T08:20:00.000Z",
-      "lastChecked": "2026-10-17T11:13:53.958Z"
+      "lastChecked": "2026-10-17T11:53:16.325Z"
     },
     {
       "id": "stl-illinois-trooper-reunites-with-woman-he-rescued-from-mississippi-4",
@@ -83,7 +83,7 @@
       "title": "Illinois trooper reunites with woman he rescued from Mississippi River",
       "url": "https://fox2now.com/news/illinois/illinois-trooper-reunites-with-woman-he-rescued-from-mississippi-river/",
       "publishedAt": "2026-10-17T03:02:07.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     },
     {
       "id": "stl-doj-challenges-state-efforts-to-regulate-federal-officers-2",
@@ -93,7 +93,7 @@
       "title": "DOJ challenges state efforts to regulate federal officers",
       "url": "https://fox2now.com/news/illinois/doj-challenges-state-efforts-to-regulate-federal-officers/",
       "publishedAt": "2026-10-17T02:19:35.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     },
     {
       "id": "stl-northern-village-apartments-reach-deal-with-spire-to-avoid-natur-5",
@@ -103,7 +103,7 @@
       "title": "Northern Village apartments reach deal with Spire to avoid natural gas shutoff",
       "url": "https://fox2now.com/news/missouri/northern-village-apartments-reach-deal-with-spire-to-avoid-natural-gas-shutoff/",
       "publishedAt": "2026-10-17T00:47:34.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     },
     {
       "id": "stl-man-admits-to-scheme-to-steal-14-st-louis-area-properties-throug-1",
@@ -113,7 +113,7 @@
       "title": "Man admits to scheme to steal 14 St. Louis-area properties through fraudulent deeds",
       "url": "https://fox2now.com/news/missouri/man-admits-to-scheme-to-steal-14-st-louis-area-properties-through-fraudulent-deeds/",
       "publishedAt": "2026-10-16T23:12:20.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     },
     {
       "id": "stl-st-louis-high-school-football-team-s-season-canceled-amid-miscon-0",
@@ -123,7 +123,7 @@
       "title": "St. Louis high school football team's season canceled amid misconduct investigation",
       "url": "https://fox2now.com/news/missouri/st-louis-high-school-football-teams-season-canceled-amid-misconduct-investigation/",
       "publishedAt": "2026-10-16T21:11:45.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     },
     {
       "id": "stl-two-in-custody-after-teen-girl-killed-in-shooting-crash-on-i-170-3",
@@ -133,7 +133,7 @@
       "title": "Two in custody after teen girl killed in shooting, crash on I-170",
       "url": "https://fox2now.com/news/missouri/two-arrested-after-teenage-girl-killed-in-shooting-crash-on-i-170/",
       "publishedAt": "2026-10-16T20:26:23.000Z",
-      "lastChecked": "2026-10-17T11:13:53.959Z"
+      "lastChecked": "2026-10-17T11:53:16.312Z"
     }
   ]
 }
