@@ -5,7 +5,7 @@ import { Calendar } from "./components/Calendar";
 import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
-import { TripIdeas } from "./components/TripIdeas";
+import { HomburgHighlights } from "./components/HomburgHighlights";
 import { fetchJson } from "./data/fetchJson";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
@@ -34,7 +34,6 @@ const EVENT_LAYERS: EventLayer[] = [
   { key: "fleamarkets", path: "/fleamarkets.json", required: false },
   { key: "homburg", path: "/homburg-events.json", required: false },
   { key: "family", path: "/family.json", required: false },
-  { key: "kmc", path: "/kmc-events.json", required: false },
 ];
 
 /** Picks which month the calendar opens on: the next upcoming event, else the most recent. */
@@ -138,7 +137,7 @@ export function App() {
             <aside className="side-rail">
               <WeatherWidget />
               <DualClock updatedAt={updatedAt} />
-              <TripIdeas />
+              <HomburgHighlights />
               <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
             </aside>
           </>

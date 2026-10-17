@@ -173,3 +173,9 @@ prompt and then skips only the failed chunk so one bad model response does not l
 issue.
 **Status**: Accepted. This does not reverse the 2026-06-10 voice decision: OpenRouter is used only
 for offline ingestion, not for a live voice assistant or backend.
+
+## [2026-10-17] Replace KMC Content With Official Homburg Highlights
+**Context**: The official Homburg calendar is closer and more reliable for the household than KMC magazine content.
+**Decision**: Remove KMC event/trip ingestion, caches, and UI. Translate distinct Homburg titles and teasers at refresh time through OpenRouter when configured; retain German originals and city source links; show the next three in the right rail.
+**Reason**: Concentrates the dashboard on an official nearby source. Missing or failed translation falls back to German so an OpenRouter outage cannot block refresh.
+**Status**: Accepted. Supersedes the KMC-source decisions above.
