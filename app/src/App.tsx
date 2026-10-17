@@ -32,6 +32,7 @@ const EVENT_LAYERS: EventLayer[] = [
   { key: "trash", path: "/trash.json", required: false },
   { key: "holidays", path: "/holidays.json", required: false },
   { key: "fleamarkets", path: "/fleamarkets.json", required: false },
+  { key: "homburg", path: "/homburg-events.json", required: false },
   { key: "family", path: "/family.json", required: false },
   { key: "kmc", path: "/kmc-events.json", required: false },
 ];

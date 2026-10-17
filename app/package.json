@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "node --test ../scripts/*.test.mjs",
     "refresh": "node ../scripts/refresh-all.mjs",
-    "validate": "node ../scripts/validate-events.mjs && node ../scripts/validate-news.mjs && node ../scripts/validate-trash.mjs && node ../scripts/validate-holidays.mjs && node ../scripts/validate-fleamarkets.mjs && node ../scripts/validate-kmc.mjs && node ../scripts/validate-kmc-trips.mjs && node ../scripts/validate-family.mjs",
+    "validate": "node ../scripts/validate-events.mjs && node ../scripts/validate-news.mjs && node ../scripts/validate-trash.mjs && node ../scripts/validate-holidays.mjs && node ../scripts/validate-fleamarkets.mjs && node ../scripts/validate-homburg-events.mjs && node ../scripts/validate-kmc.mjs && node ../scripts/validate-kmc-trips.mjs && node ../scripts/validate-family.mjs",
     "refresh:build": "npm run refresh && npm run validate && npm run build"
   },
   "dependencies": {
