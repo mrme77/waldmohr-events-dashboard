@@ -49,6 +49,11 @@ the × button or by tapping outside them. QR codes are SVGs generated locally by
 `qrcode.react`; no external QR service receives the source URL. Invalid or
 unsupported URLs show an unavailable message instead of a code.
 
+Personal entries from the family calendar appear before public events in day
+details so birthdays and leave are visible before the larger source QR cards.
+Personal entries show their description and location without a QR code. The
+close control stays visible while scrolling. The news marquee loops in 50 seconds.
+
 Embedding source sites in an iframe is not a reliable universal replacement:
 external websites may prohibit embedding. Changing links to the same tab alone
 also leaves kiosk users without a visible way back.

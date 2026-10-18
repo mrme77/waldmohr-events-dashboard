@@ -61,3 +61,26 @@ test("Homburg highlights render touch buttons and exclude past or unrelated even
     events: [], onSelect() {},
   })), "");
 });
+
+test("birthdays appear before public QR cards on a shared day without changing input order", () => {
+  const birthday = { ...event, id: "family-birthday", title: "Birthday", tags: ["family"] };
+  const events = [event, birthday];
+  const html = renderToStaticMarkup(createElement(EventDetail, {
+    dayKey: event.date, events, onClose() {},
+  }));
+  assert.ok(html.indexOf("<h3>Birthday</h3>") < html.indexOf("<h3>Concert</h3>"));
+  assert.match(html, /Family calendar/);
+  assert.equal((html.match(/<svg/g) ?? []).length, 1);
+  assert.equal(events[0], event);
+});
+
+test("a day with only a personal leave entry shows details without a source QR", () => {
+  const html = renderToStaticMarkup(createElement(EventDetail, {
+    dayKey: event.date,
+    events: [{ ...event, id: "family-leave", title: "Vacation", tags: ["family", "leave"] }],
+    onClose() {},
+  }));
+  assert.match(html, /Vacation/);
+  assert.match(html, /Family calendar/);
+  assert.doesNotMatch(html, /<svg|Scan to read/);
+});
