@@ -126,7 +126,7 @@ body::after {
   font-size: 1.2rem;
   letter-spacing: 0.02em;
   color: var(--ink);
-  animation: marquee 40s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 .marquee__track span { opacity: 0.85; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -641,7 +641,7 @@ body::after {
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
   animation: rise 0.28s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.popover__head { display: flex; align-items: center; justify-content: space-between; }
+.popover__head { display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1; background: var(--bg); }
 .popover__head h2 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; }
 .popover__close { background: none; border: none; color: var(--muted); font-size: 1.9rem; line-height: 1; cursor: pointer; min-width: 48px; min-height: 48px; }
 .popover__close:hover { color: var(--ink); }

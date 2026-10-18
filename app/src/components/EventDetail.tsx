@@ -14,6 +14,11 @@ interface EventDetailProps {
 export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
   if (dayKey === null) return null;
 
+  // Family entries arrive after public feeds; show them before tall QR cards.
+  const orderedEvents = [...events].sort((left, right) =>
+    Number(right.id.startsWith("family-")) - Number(left.id.startsWith("family-"))
+  );
+
   return (
     <div className="overlay" role="dialog" aria-modal="true" aria-label="Event details" onClick={onClose}>
       <div className="popover" onClick={(e) => e.stopPropagation()}>
@@ -28,8 +33,9 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
           <p className="popover__empty">No events on this day.</p>
         ) : (
           <ul className="popover__list">
-            {events.map((event) => {
+            {orderedEvents.map((event) => {
               const cat = categorize(event);
+              const isPersonal = event.id.startsWith("family-");
               return (
               <li key={event.id} className={`popover__item cat-${cat}`}>
                 <p className="popover__status">
@@ -38,7 +44,18 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                 </p>
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>
-                {cat === "holiday" ? (
+                {isPersonal ? (
+                  <dl>
+                    <div>
+                      <dt>Calendar</dt>
+                      <dd>Family calendar</dd>
+                    </div>
+                    <div>
+                      <dt>Location</dt>
+                      <dd>{event.venue || "Not specified"}</dd>
+                    </div>
+                  </dl>
+                ) : cat === "holiday" ? (
                   <dl>
                     <div>
                       <dt>German name</dt>
