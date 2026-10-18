@@ -36,7 +36,9 @@ jobs:
 
       - name: Refresh data
         working-directory: app
-        run: npm run refresh
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: npm run refresh 
 
       - name: Validate data
         working-directory: app
