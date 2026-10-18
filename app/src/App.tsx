@@ -137,7 +137,7 @@ export function App() {
             <aside className="side-rail">
               <WeatherWidget />
               <DualClock updatedAt={updatedAt} />
-              <HomburgHighlights />
+              <HomburgHighlights events={events} onSelect={(event) => setSelectedKey(event.date)} />
               <Spotlight upcoming={upcoming} onSelect={(event) => setSelectedKey(event.date)} />
             </aside>
           </>
