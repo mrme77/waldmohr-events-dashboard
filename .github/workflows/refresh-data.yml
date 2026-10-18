@@ -34,6 +34,16 @@ jobs:
         working-directory: app
         run: npm ci
 
+      - name: Verify dotenv installation
+        run: |
+          echo "Checking root dependencies..."
+          npm ls dotenv
+          echo "Checking module resolution..."
+          node -e "console.log(import.meta.resolve('dotenv'))"
+          echo "Checking from scripts directory..."
+          cd scripts
+          node -e "import('dotenv').then(() => console.log('dotenv imported successfully'))"
+   
       - name: Refresh data
         working-directory: app
         env:
