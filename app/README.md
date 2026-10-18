@@ -54,6 +54,10 @@ details so birthdays and leave are visible before the larger source QR cards.
 Personal entries show their description and location without a QR code. The
 close control stays visible while scrolling. The news marquee loops in 50 seconds.
 
+The clock panel adapts to its own available width: Napoli and St. Louis stack
+when the sidebar is narrow, including on small HDMI displays. City/time rows and
+refresh metadata can wrap instead of overlapping at larger text sizes.
+
 Embedding source sites in an iframe is not a reliable universal replacement:
 external websites may prohibit embedding. Changing links to the same tab alone
 also leaves kiosk users without a visible way back.
