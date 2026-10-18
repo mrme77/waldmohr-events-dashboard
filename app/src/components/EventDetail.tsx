@@ -1,5 +1,6 @@
 import { categorize, type DashboardEvent } from "../types";
 import { formatLongDate } from "../lib/dates";
+import { SourceQr } from "./SourceQr";
 
 interface EventDetailProps {
   /** Day key being shown, or null when closed. */
@@ -79,9 +80,7 @@ export function EventDetail({ dayKey, events, onClose }: EventDetailProps) {
                         <dd>{event.lastChecked}</dd>
                       </div>
                     </dl>
-                    <a href={event.sourceUrl} target="_blank" rel="noreferrer">
-                      Open source post →
-                    </a>
+                    <SourceQr url={event.sourceUrl} title={event.title} />
                   </>
                 )}
               </li>
