@@ -4,10 +4,9 @@ A local, English-first events board for an American family living in the Kaisers
 Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German event posts into a
 glanceable, source-linked calendar.
 
-> **Status: feature-complete, pre-deploy.** v2 — a touch kiosk for a Raspberry Pi 5 — has all data
-> surfaces shipped (events, KMC listings, KMC trip summaries, news, weather, trash, holidays,
-> flea markets, family) and is now the only app (the v1 static dashboard has been retired).
-> Remaining work: Pi 5 deployment (see `plan.md` Phase 8).
+> **Status: running on the Raspberry Pi.** GitHub Actions refreshes public data daily; an hourly
+> systemd timer on the Pi builds and deploys it to Nginx. Remaining automation work: refresh the
+> private family calendar on the Pi and have the open dashboard reload updated JSON automatically.
 
 ## What it does (v2 vision)
 
@@ -17,9 +16,11 @@ A single-page, high-contrast "Civic Departure Board" designed for an always-on w
 - **News marquee** across the top (USA + St. Louis RSS cache, 80-second scroll).
 - **Dual clocks** — Napoli and St. Louis / Central.
 - **Weather** for Waldmohr via Open-Meteo.
-- **Trip Ideas** rotating right-rail card from KMC trip summaries where available.
+- **Seven-day forecast** for Waldmohr, opened by tapping the current-weather card.
+- **Nearby in Homburg** panel with the next official city-calendar listings.
 
-See [`plan.md`](./plan.md) for the full roadmap and [`AGENTS.md`](./AGENTS.md) for project truth.
+See [`plan.md`](./plan.md) for the current roadmap and [`progress.md`](./progress.md) for the
+deployment handoff. The Pi deployment and remaining automation work are documented there.
 
 ## Video presentation
 
@@ -46,8 +47,8 @@ npm run dev      # preview at http://localhost:5173
 
 ```bash
 cd app
-npm run refresh        # refresh public/event caches plus optional KMC trip summaries and family
-npm run validate       # validate cached payloads; optional KMC trip/family caches skip when absent
+npm run refresh        # refresh public caches and optional private family cache
+npm run validate       # validate cached payloads; private family cache is optional
 npm run refresh:build  # refresh + validate + production build in one command
 ```
 
@@ -56,17 +57,11 @@ Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
 ## Data sources
 
 - Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
-- KMC events: `scripts/refresh-kmc.mjs`
-  extracts the current issue's `UNTERWEGS` section from the SVG text layer and writes
-  `kmc-events.json`. Issues usually update on Fridays; yearless event dates are inferred from the
-  issue year and marked as inferred.
-- KMC trip summaries: `scripts/refresh-kmc-trips.mjs`
-  scans the current Kaiserslautern American issue text and uses OpenRouter
-  (`google/gemini-2.5-flash`) to identify trip, day-trip, vacation, attraction, and things-to-do
-  ideas. It writes `kmc-trip-ideas.json`; when the OpenRouter key is absent, it skips cleanly or
-  preserves the previous non-empty cache.
+- Homburg official events: `scripts/refresh-homburg-events.mjs` loads the city's public
+  calendar and translates distinct listings at refresh time when `OPENROUTER_API_KEY` is set;
+  failed or missing translations fall back to German.
 - News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
-- Weather: Open-Meteo current conditions for Waldmohr.
+- Weather: Open-Meteo current conditions and seven-day forecast for Waldmohr.
 - Trash: Landkreis Kusel waste collection iCal for Waldmohr (live).
 - Holidays: Rheinland-Pfalz public holidays via [date.nager.at](https://date.nager.at/) (live).
 - Flea markets: Homburg Floh- und Antiquitätenmarkt, official yearly dates from

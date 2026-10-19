@@ -1,7 +1,21 @@
 # Progress
 
-## v2 — KMC Kiosk Dashboard (current)
+## Current dashboard
+### 2026-10-19 — Pi operation and weather forecast
+- Pi operator confirmed `myai` runs an hourly `waldmohr-deploy.timer`; the service
+  fast-forwards `main`, validates/builds, and publishes `app/dist` to Nginx.
+- `GCAL_ICS_URL` is configured on the Pi and its private family cache exists, but
+  deployment does not refresh it. The open Chromium page also does not reload event/news
+  JSON after deployment; these remain the full-automation gaps.
+- Added a touch-friendly seven-day Waldmohr forecast panel to the weather card
+  in the current feature branch. Production build passes.
+- Recent merged kiosk fixes: source QR codes (#37), family entries before public
+  QR cards and 50-second marquee (#38), responsive clocks for the 7-inch panel (#39).
+
 ### Completed
+- Current sources are Waldmohr events, official Homburg events, flea markets, weather, news,
+  trash, holidays, and the private family calendar. The KMC event/trip surfaces below are
+  historical and were removed in October 2026 when the dashboard focused on Homburg.
 - Confirmed the three target city sites have no usable APIs (Waldmohr→IONOS, KL→TYPO3, Ramstein→JS);
   every new event source is a bespoke scrape. Documented in `plan.md`.
 - Confirmed Landkreis Kusel publishes a Waldmohr trash iCal export (params TBD at build time).
@@ -37,20 +51,11 @@
   secret URL lives in `.env` as `GCAL_ICS_URL`; generated `family.json` is gitignored so the
   family schedule never reaches this public repo. Leave/vacation/Urlaub/PTO events get their own
   calendar marker.
-- Phase 7: added KMC magazine events — `scripts/refresh-kmc.mjs` discovers the current
-  Kaiserslautern American Issuu issue, extracts the `UNTERWEGS` SVG text layer, parses event
-  blocks, and writes KMC-area listings to `app/public/kmc-events.json`.
-  The frontend renders KMC events as neon-green diamond markers. Dates without an explicit year
-  are inferred from the issue year and marked with `dateConfidence: "inferred"`. **DONE.**
-- Phase 7b: added KMC trip summaries — `scripts/refresh-kmc-trips.mjs` reuses KMC Issuu SVG text,
-  scans the whole issue, and uses OpenRouter `google/gemini-2.5-flash` to write
-  `app/public/kmc-trip-ideas.json`. The right rail renders an optional Trip Ideas panel showing
-  three ideas at a time, rotating every 10 seconds with manual previous/next controls. **DONE.**
 
 ### Remaining
-- Phase 8: Pi 5 deployment — build/serve `app/dist`, cron-driven `npm run refresh`, add
-  `app/dist/*.json` as an additional write target so cron updates reach the served build without
-  a rebuild, Chromium kiosk autostart. See `plan.md` Phase 8.
+- Refresh the Pi's private family cache locally before deployment; never commit `family.json`.
+- Make the open dashboard re-fetch event/news JSON while preserving the current month and
+  selected day. Weather already refreshes every 15 minutes.
 
 ## v1 — Static Dashboard (done, retained until v2 parity)
 - Built a static local calendar dashboard with seeded English event data, refresh + validation

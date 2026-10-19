@@ -62,6 +62,32 @@ Embedding source sites in an iframe is not a reliable universal replacement:
 external websites may prohibit embedding. Changing links to the same tab alone
 also leaves kiosk users without a visible way back.
 
+The Waldmohr weather card opens a seven-day forecast (daily condition, high/low,
+and precipitation probability) in a touch-friendly panel. The existing keyless
+Open-Meteo request returns both current conditions and the forecast; close the
+panel with its × button, an outside tap, or Escape.
+
+## Pi automation handoff (2026-10-19)
+
+The Pi hostname is `myai`. Its `waldmohr-deploy.timer` runs five minutes after
+boot and one hour after each deployment finishes. The service runs
+`/home/pasquale/dashboard-ops/deploy.sh` as `pasquale`. That script fast-forwards
+the checkout from `origin/main`, runs `npm ci`, `npm run validate`, and
+`npm run build`, then rsyncs `app/dist/` into `/var/www/waldmohr/`, excluding
+`family.json` so its private copy at the deploy destination is preserved.
+
+The Pi has `GCAL_ICS_URL` configured and a local `app/public/family.json` cache
+last modified 2026-10-18 15:21 CEST. The deployment script does not run the
+family refresh adapter, so birthdays will not update automatically yet. The
+hourly Pi deployment updates Nginx, but an open Chromium page does not re-fetch
+event and news JSON automatically. Weather currently refreshes every 15 minutes.
+Remaining full-automation work: refresh the private family cache locally before
+build/deploy and refresh dashboard JSON in the open page without discarding the
+current view or selected date.
+
+The seven-day forecast UI is implemented in the active feature branch; after its
+PR merges, the Pi's hourly deployment and a Chromium reload will show it.
+
 ## Operation and verification
 
 From `app/`:
@@ -74,12 +100,9 @@ npm run refresh:build  # Fetch sources, validate, and rebuild
 ```
 
 Refreshing caches does not itself refresh an already open dashboard: event and
-news caches are loaded on component mount. A deployed static build must also
-receive updated cache files (or be rebuilt), and the browser must reload to
-read them.
+news caches are loaded on component mount. The Pi deploys updated files hourly,
+but the browser must reload to read them.
 
-The Pi's OS version, Chromium launch command, server process, startup mechanism,
-and refresh schedule have not been verified from this local checkout. No Pi
-configuration or scheduled jobs were changed during this review. The proposed
-display schedule is 05:00–21:00 while leaving the Pi and app running overnight;
-implementation still depends on the Pi's desktop/display stack.
+The Pi's display schedule and Chromium launch command have not been checked. The
+Pi deployment timer and script have been inspected; their behavior is described
+in the automation handoff above.

@@ -1,25 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { loadWaldmohrWeather, type WeatherReport } from "../data/loadWeather";
 import { relativeDayLabel } from "../lib/dates";
+import { describeWeather } from "../lib/weather";
+import { WeatherForecast } from "./WeatherForecast";
 
 const REFRESH_MS = 15 * 60 * 1000;
-
-/**
- * Maps an Open-Meteo WMO weather code into a compact kiosk label.
- *
- * @param code WMO weather code.
- * @returns Display label.
- */
-function describeWeather(code: number): string {
-  if (code === 0) return "Sunny";
-  if ([1, 2, 3].includes(code)) return "Cloud mix";
-  if ([45, 48].includes(code)) return "Fog";
-  if ([51, 53, 55, 56, 57].includes(code)) return "Drizzle";
-  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return "Rain";
-  if ([71, 73, 75, 77, 85, 86].includes(code)) return "Snow";
-  if ([95, 96, 99].includes(code)) return "Storm";
-  return "Weather";
-}
 
 /**
  * Single-location current weather module for the kiosk right rail.
@@ -27,6 +12,7 @@ function describeWeather(code: number): string {
 export function WeatherWidget() {
   const [report, setReport] = useState<WeatherReport | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [forecastOpen, setForecastOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -62,6 +48,15 @@ export function WeatherWidget() {
 
   return (
     <section className="weather" aria-label="Current Waldmohr weather">
+      <button
+        className="weather__button"
+        type="button"
+        onClick={() => setForecastOpen(true)}
+        disabled={!report}
+        aria-haspopup="dialog"
+        aria-expanded={forecastOpen}
+        aria-label="Show the seven-day Waldmohr forecast"
+      >
       <div className="weather__head">
         <p className="eyebrow">Weather</p>
         <span className="weather__source">Open-Meteo</span>
@@ -94,6 +89,10 @@ export function WeatherWidget() {
       <p className={error ? "weather__status weather__status--error" : "weather__status"}>
         {error ?? updatedLabel}
       </p>
+      </button>
+      {forecastOpen && report && (
+        <WeatherForecast days={report.forecast} onClose={() => setForecastOpen(false)} />
+      )}
     </section>
   );
 }
