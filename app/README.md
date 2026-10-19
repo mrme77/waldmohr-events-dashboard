@@ -86,10 +86,10 @@ Remaining full-automation work: refresh the private family cache locally before
 build/deploy and refresh dashboard JSON in the open page without discarding the
 current view or selected date.
 
-The seven-day forecast UI was merged in PR #40. This follow-up moves it into a
-screen-level modal because the sidebar's scrolling container clipped the popup;
-after this fix merges, the Pi's hourly deployment and a Chromium reload will
-show the full-width version.
+The seven-day forecast UI was merged in PR #40, and PR #41 moved it into a
+screen-level modal because the sidebar's scrolling container clipped the
+popup. The user confirmed the full-width modal works on the Pi touchscreen on
+2026-10-19.
 
 ## Operation and verification
 

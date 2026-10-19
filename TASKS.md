@@ -54,5 +54,5 @@ See `plan.md` for full detail.
 - [ ] Full automation: refresh dashboard event/news JSON in the open page without losing its
       current month or selected date.
 - [x] Seven-day weather forecast panel implemented (PR #40).
-- [ ] Merge/deploy full-width modal fix and visually check it on the Pi touchscreen.
+- [x] Full-width weather modal merged and visually verified on the Pi touchscreen (PR #41).
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).
