@@ -63,9 +63,10 @@ external websites may prohibit embedding. Changing links to the same tab alone
 also leaves kiosk users without a visible way back.
 
 The Waldmohr weather card opens a seven-day forecast (daily condition, high/low,
-and precipitation probability) in a touch-friendly panel. The existing keyless
-Open-Meteo request returns both current conditions and the forecast; close the
-panel with its × button, an outside tap, or Escape.
+and precipitation probability) in a screen-level touch-friendly modal. It is
+rendered above the scrollable sidebar and expands up to 700px while fitting the
+screen width. The existing keyless Open-Meteo request returns current conditions
+and the forecast; close the panel with its × button, an outside tap, or Escape.
 
 ## Pi automation handoff (2026-10-19)
 
@@ -85,8 +86,10 @@ Remaining full-automation work: refresh the private family cache locally before
 build/deploy and refresh dashboard JSON in the open page without discarding the
 current view or selected date.
 
-The seven-day forecast UI is implemented in the active feature branch; after its
-PR merges, the Pi's hourly deployment and a Chromium reload will show it.
+The seven-day forecast UI was merged in PR #40. This follow-up moves it into a
+screen-level modal because the sidebar's scrolling container clipped the popup;
+after this fix merges, the Pi's hourly deployment and a Chromium reload will
+show the full-width version.
 
 ## Operation and verification
 

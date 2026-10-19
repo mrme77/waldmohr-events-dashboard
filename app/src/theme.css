@@ -549,7 +549,7 @@ body::after {
   color: var(--accent);
 }
 .weather__status--error { color: var(--cat-leave); }
-.weather-forecast { width: min(620px, 100%); }
+.weather-forecast { width: min(700px, calc(100vw - 2 * var(--gap))); }
 .weather-forecast__subtitle { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.8rem; }
 .weather-forecast__days { list-style: none; margin: 1rem 0 0; padding: 0; }
 .weather-forecast__day {

@@ -8,7 +8,8 @@
   deployment does not refresh it. The open Chromium page also does not reload event/news
   JSON after deployment; these remain the full-automation gaps.
 - Added a touch-friendly seven-day Waldmohr forecast panel to the weather card
-  in the current feature branch. Production build passes.
+  (PR #40); its first version was clipped by the Pi sidebar. Follow-up PR moves
+  it to a screen-level modal. Production build passes.
 - Recent merged kiosk fixes: source QR codes (#37), family entries before public
   QR cards and 50-second marquee (#38), responsive clocks for the 7-inch panel (#39).
 

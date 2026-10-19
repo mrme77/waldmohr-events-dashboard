@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import type { DailyForecast } from "../data/loadWeather";
 import { describeWeather } from "../lib/weather";
 
@@ -17,7 +18,7 @@ export function WeatherForecast({ days, onClose }: WeatherForecastProps): JSX.El
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
-  return (
+  return createPortal(
     <div className="overlay" role="presentation" onClick={onClose}>
       <section
         className="popover weather-forecast"
@@ -56,6 +57,7 @@ export function WeatherForecast({ days, onClose }: WeatherForecastProps): JSX.El
           </ul>
         )}
       </section>
-    </div>
+    </div>,
+    document.body
   );
 }
