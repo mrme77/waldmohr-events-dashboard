@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T07:05:52.874Z",
+  "generatedAt": "2026-10-19T10:35:05.587Z",
   "sources": [
     {
       "id": "usa",
@@ -16,114 +16,114 @@
   ],
   "items": [
     {
-      "id": "usa-trump-endorses-embattled-israeli-prime-minister-benjamin-netanya-0",
+      "id": "stl-gradually-warming-up-this-week-and-very-dry-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Gradually warming up this week and very dry",
+      "url": "https://fox2now.com/news/weather/gradually-warming-up-this-week-and-very-dry/",
+      "publishedAt": "2026-10-19T10:22:15.000Z",
+      "lastChecked": "2026-10-19T10:35:05.538Z"
+    },
+    {
+      "id": "usa-the-real-reason-it-s-going-to-take-a-while-to-know-who-won-in-so-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The real reason it's going to take a while to know who won in some midterm races",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-5982027/california-vote-counting-margins",
+      "publishedAt": "2026-10-19T09:00:00.000Z",
+      "lastChecked": "2026-10-19T10:35:05.582Z"
+    },
+    {
+      "id": "usa-a-kelvin-wave-raised-sea-levels-on-the-west-coast-more-are-comin-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "A Kelvin wave raised sea levels on the West Coast. More are coming",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6001744/el-nino-kelvin-wave-west-coast",
+      "publishedAt": "2026-10-19T09:00:00.000Z",
+      "lastChecked": "2026-10-19T10:35:05.582Z"
+    },
+    {
+      "id": "usa-morning-news-brief-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Morning news brief",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6003499/morning-news-brief",
+      "publishedAt": "2026-10-19T08:46:44.000Z",
+      "lastChecked": "2026-10-19T10:35:05.582Z"
+    },
+    {
+      "id": "usa-solar-power-is-changing-agriculture-in-pakistan-but-some-fear-it-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Solar power is changing agriculture in Pakistan, but some fear it could cause issues",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-5993523/solar-power-is-changing-agriculture-in-pakistan-but-some-fear-it-could-cause-issues",
+      "publishedAt": "2026-10-19T08:45:58.000Z",
+      "lastChecked": "2026-10-19T10:35:05.582Z"
+    },
+    {
+      "id": "usa-trump-endorses-embattled-israeli-prime-minister-benjamin-netanya-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Trump endorses embattled Israeli Prime Minister Benjamin Netanyahu for reelection",
       "url": "https://www.npr.org/2026/10/19/g-s1-148731/trump-endorses-netanyahu",
       "publishedAt": "2026-10-19T05:35:39.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
+      "lastChecked": "2026-10-19T10:35:05.582Z"
     },
     {
-      "id": "stl-what-was-that-mysterious-oversized-object-on-lindbergh-turns-hea-1",
+      "id": "stl-what-was-that-mysterious-oversized-object-on-lindbergh-turns-hea-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "What was that? Mysterious oversized object on Lindbergh turns heads",
       "url": "https://fox2now.com/news/missouri/what-was-that-mysterious-oversized-object-on-lindbergh-turns-heads/",
       "publishedAt": "2026-10-19T03:22:37.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
+      "lastChecked": "2026-10-19T10:35:05.538Z"
     },
     {
-      "id": "stl-karla-may-thanks-st-louis-community-as-legislative-career-nears--5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Karla May thanks St. Louis community as legislative career nears end",
-      "url": "https://fox2now.com/news/missouri/karla-may-thanks-st-louis-community-as-legislative-career-nears-end/",
-      "publishedAt": "2026-10-19T02:32:03.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
-    },
-    {
-      "id": "usa-trump-to-close-and-renovate-d-c-golf-course-despite-legal-battle-1",
+      "id": "usa-trump-to-close-and-renovate-d-c-golf-course-despite-legal-battle-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Trump to close and renovate D.C. golf course, despite legal battle",
       "url": "https://www.npr.org/2026/10/18/nx-s1-6007384/trump-to-close-and-renovate-d-c-golf-course-despite-legal-battle",
       "publishedAt": "2026-10-19T02:09:43.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
+      "lastChecked": "2026-10-19T10:35:05.582Z"
     },
     {
-      "id": "usa-what-does-a-white-house-press-secretary-do-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "What does a White House press secretary do?",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6006807/what-does-a-white-house-press-secretary-do",
-      "publishedAt": "2026-10-19T01:41:24.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
-    },
-    {
-      "id": "stl-st-louis-lawsuits-target-124-northside-regeneration-properties-2",
+      "id": "stl-st-louis-lawsuits-target-124-northside-regeneration-properties-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "St. Louis lawsuits target 124 Northside Regeneration properties",
       "url": "https://fox2now.com/news/missouri/st-louis-lawsuits-target-124-northside-regeneration-properties/",
       "publishedAt": "2026-10-18T23:36:27.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
+      "lastChecked": "2026-10-19T10:35:05.538Z"
     },
     {
-      "id": "stl-man-shot-killed-sunday-afternoon-in-north-st-louis-3",
+      "id": "stl-man-shot-killed-sunday-afternoon-in-north-st-louis-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "Man shot, killed Sunday afternoon in north St. Louis",
       "url": "https://fox2now.com/news/missouri/man-shot-killed-sunday-afternoon-in-north-st-louis/",
       "publishedAt": "2026-10-18T22:41:50.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
+      "lastChecked": "2026-10-19T10:35:05.538Z"
     },
     {
-      "id": "stl-several-cows-loose-in-kansas-city-after-truck-overturns-4",
+      "id": "stl-several-cows-loose-in-kansas-city-after-truck-overturns-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "Several cows loose in Kansas City after truck overturns",
       "url": "https://fox2now.com/news/missouri/several-cows-loose-in-kansas-city-after-truck-overturns/",
       "publishedAt": "2026-10-18T21:38:12.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
-    },
-    {
-      "id": "usa-ukraine-and-the-u-s-are-at-odds-over-starshield-here-s-what-to-k-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump",
-      "publishedAt": "2026-10-18T18:38:49.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
-    },
-    {
-      "id": "usa-noah-adams-longtime-host-of-npr-s-all-things-considered-has-died-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Noah Adams, longtime host of NPR's All Things Considered, has died",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-5556931/noah-adams-all-things-considered-has-died",
-      "publishedAt": "2026-10-18T16:30:00.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
-    },
-    {
-      "id": "usa-pope-leo-says-he-will-gradually-resume-duties-after-cancer-surge-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Pope Leo says he will gradually resume duties after cancer surgery",
-      "url": "https://www.npr.org/2026/10/18/g-s1-148654/pope-leo-says-he-will-gradually-resume-duties-after-cancer-surgery",
-      "publishedAt": "2026-10-18T12:55:01.000Z",
-      "lastChecked": "2026-10-19T07:05:52.866Z"
+      "lastChecked": "2026-10-19T10:35:05.538Z"
     },
     {
       "id": "stl-st-louis-inmate-who-escaped-now-back-in-custody-0",
@@ -133,7 +133,7 @@
       "title": "St. Louis inmate who escaped now back in custody",
       "url": "https://fox2now.com/news/police-warn-st-louis-residents-to-lock-doors-after-escape/",
       "publishedAt": "2026-10-18T11:42:30.000Z",
-      "lastChecked": "2026-10-19T07:05:52.813Z"
+      "lastChecked": "2026-10-19T10:35:05.538Z"
     }
   ]
 }
