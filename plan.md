@@ -9,7 +9,8 @@ then retired in favor of v2 (see `docs/decisions.md`, 2026-06-09).
 **Objective**: a single-page, high-contrast, touch dashboard for a wall-mounted Raspberry Pi 5,
 covering the Kaiserslautern Military Community (KMC) area for a relocating American family.
 
-**Status**: all data surfaces shipped. Remaining work is Phase 8 (Pi deployment).
+**Status**: deployed to the Pi. Remaining work: automate local family-cache refresh and in-page
+JSON refresh. The seven-day forecast panel is being added separately.
 
 ### Target hardware
 - Raspberry Pi 5, 8 GB RAM, 1 TB NVMe SSD.
@@ -93,16 +94,17 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
    diamond marker category. **DONE.** (Voice was dropped 2026-06-10; touch dashboard sufficient.)
 7b. **KMC trip summaries** — issue-wide KMC trip/day-trip/visit idea adapter plus right-rail
     Trip Ideas panel. **DONE.**
-8. **Pi deployment — NEXT / REMAINING**
-   - `npm run build` → serve `app/dist` via a static server (e.g. `vite preview`) on the Pi;
-     Chromium kiosk autostart points at it.
-   - Cron job(s) on the Pi run `npm run refresh` on a low-frequency schedule (every few hours
-     per `docs/compliance.md`) to keep `app/public/*.json` current.
-   - Add `app/dist/*.json` as a third write target in each `refresh-*.mjs` (alongside
-     `app/public/*.json`) so cron-refreshed data reaches the served build without a full rebuild.
-     This also fixes the manual-refresh staleness issue.
-   - Weather needs no cron: `WeatherWidget` fetches Open-Meteo live every 15 min as long as the
-     Pi has internet.
+8. **Pi deployment — RUNNING; automation follow-up remains**
+   - The Pi runs `waldmohr-deploy.timer` hourly. The service fast-forwards `main`, runs
+     `npm ci`, validates and builds, then publishes `app/dist` to `/var/www/waldmohr`.
+   - GitHub Actions refreshes and commits public data daily at 05:00 UTC.
+   - `GCAL_ICS_URL` is configured on the Pi and a private local family cache exists, but the
+     deploy script does not refresh it. Add a local family-only refresh before build; retain the
+     private cache outside Git and preserve it on deploy.
+   - Chromium does not automatically re-fetch event/news JSON after deployment. Add periodic
+     client refresh that preserves the current month and selected day.
+   - Weather refreshes every 15 minutes; a seven-day forecast panel is implemented on the active
+     feature branch.
 
 ### Open questions
 - Touchscreen size / resolution (drives layout density).

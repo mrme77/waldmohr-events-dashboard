@@ -40,6 +40,9 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
 - Confirm clicking an event opens details with source link and original German title.
 
 ## Last Run
+- 2026-10-19: production build passed after adding a touch-openable seven-day Waldmohr forecast
+  panel. The panel shows condition, daily high/low, and precipitation probability; visual
+  verification on the 7-inch Pi display remains after deployment.
 - 2026-06-08: `node scripts/validate-events.mjs` passed.
 - Result: `Validated 6 events from 2026-06-08T15:30:00+02:00.`
 - 2026-06-08: Browser QA via local server `http://127.0.0.1:4173/` passed.

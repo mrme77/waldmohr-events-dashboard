@@ -47,5 +47,11 @@ See `plan.md` for full detail.
 - [x] Phase 7b: KMC trip summaries — issue-wide KMC trip/day-trip/visit idea adapter
       (`scripts/refresh-kmc-trips.mjs`) using OpenRouter `google/gemini-2.5-flash`, optional
       right-rail Trip Ideas panel with 10-second paging.
-- [ ] Phase 8: Pi 5 deployment — Chromium kiosk autostart, cron schedule, daily reload.
+- [x] Pi deployment runs hourly using `waldmohr-deploy.timer`, builds, validates, and publishes
+      `app/dist` to Nginx.
+- [ ] Full automation: refresh the Pi's private family cache from `.env` before deploy; never
+      commit `family.json`.
+- [ ] Full automation: refresh dashboard event/news JSON in the open page without losing its
+      current month or selected date.
+- [ ] Merge and deploy the seven-day weather forecast panel from the active feature branch.
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).
