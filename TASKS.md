@@ -53,5 +53,6 @@ See `plan.md` for full detail.
       commit `family.json`.
 - [ ] Full automation: refresh dashboard event/news JSON in the open page without losing its
       current month or selected date.
-- [ ] Merge and deploy the seven-day weather forecast panel from the active feature branch.
+- [x] Seven-day weather forecast panel implemented (PR #40).
+- [ ] Merge/deploy full-width modal fix and visually check it on the Pi touchscreen.
 - [x] Update `docs/reference-index.md` with new sources and APIs (holidays, trash, flea markets).
