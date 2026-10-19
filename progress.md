@@ -8,10 +8,14 @@
   deployment does not refresh it. The open Chromium page also does not reload event/news
   JSON after deployment; these remain the full-automation gaps.
 - Added a touch-friendly seven-day Waldmohr forecast panel to the weather card
-  (PR #40); its first version was clipped by the Pi sidebar. Follow-up PR moves
-  it to a screen-level modal. Production build passes.
+  (PR #40); its first version was clipped by the Pi sidebar. PR #41 moved it to
+  a screen-level modal. User confirmed the full-width modal works on the Pi
+  touchscreen after pulling and deploying the update.
 - Recent merged kiosk fixes: source QR codes (#37), family entries before public
   QR cards and 50-second marquee (#38), responsive clocks for the 7-inch panel (#39).
+- PR #41 is merged and verified on the Pi. Deploy manually with
+  `sudo systemctl start waldmohr-deploy.service` after pulling `main`; confirm
+  `Deployment completed` in its journal, then reload Chromium.
 
 ### Completed
 - Current sources are Waldmohr events, official Homburg events, flea markets, weather, news,

@@ -44,7 +44,9 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
   panel. The panel shows condition, daily high/low, and precipitation probability; visual
   verification on the 7-inch Pi display remains after deployment.
 - 2026-10-19: forecast panel moved to a screen-level portal to avoid clipping by the sidebar's
-  scroll container; production build passed. Verify full-width layout on the Pi after deployment.
+  scroll container; production build passed. Pi verification is recorded in the next entry.
+- 2026-10-19: PR #41 merged, deployed using `waldmohr-deploy.service`, and user confirmed the
+  forecast modal opens at full width on the Pi touchscreen.
 - 2026-06-08: `node scripts/validate-events.mjs` passed.
 - Result: `Validated 6 events from 2026-06-08T15:30:00+02:00.`
 - 2026-06-08: Browser QA via local server `http://127.0.0.1:4173/` passed.
@@ -75,4 +77,6 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
   `2026-06-25T19:14:42.604Z`.
 - 2026-06-25: `npm run build` and `npm test` passed after the Trip Ideas panel was added with
   10-second paging.
-- Remaining: none for the MVP. Next validation milestone is Pi 5 deployment (plan.md Phase 8).
+- Remaining automation: refresh the private family cache locally before deployment and reload
+  event/news JSON in an already-open Chromium page. Pi deployment and forecast modal were verified
+  on 2026-10-19.

@@ -10,7 +10,8 @@ then retired in favor of v2 (see `docs/decisions.md`, 2026-06-09).
 covering the Kaiserslautern Military Community (KMC) area for a relocating American family.
 
 **Status**: deployed to the Pi. Remaining work: automate local family-cache refresh and in-page
-JSON refresh. Seven-day weather forecast is implemented; a follow-up makes its modal full-width.
+JSON refresh. The seven-day weather forecast is implemented and its full-width modal is verified
+on the Pi touchscreen (PRs #40–#41).
 
 ### Target hardware
 - Raspberry Pi 5, 8 GB RAM, 1 TB NVMe SSD.
@@ -103,8 +104,8 @@ FRONTEND (Vite + React + TypeScript → Chromium kiosk)
      private cache outside Git and preserve it on deploy.
    - Chromium does not automatically re-fetch event/news JSON after deployment. Add periodic
      client refresh that preserves the current month and selected day.
-   - Weather refreshes every 15 minutes; its seven-day forecast panel is in PR #40, with a
-     full-width modal layout follow-up in progress.
+   - Weather refreshes every 15 minutes; the seven-day forecast and full-width modal are
+     implemented and verified on the Pi (PRs #40–#41).
 
 ### Open questions
 - Touchscreen size / resolution (drives layout density).
