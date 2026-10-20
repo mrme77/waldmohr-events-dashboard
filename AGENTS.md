@@ -25,8 +25,9 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
   yearly from the homburg.de announcement (the script warns when dates run low).
 - Homburg official events: public city-calendar JSON feed, normalized by
   `scripts/refresh-homburg-events.mjs` into `app/public/homburg-events.json`; it uses
-  OpenRouter `google/gemini-2.5-flash` to translate distinct listings when `OPENROUTER_API_KEY`
-  is set, otherwise preserving original German.
+  OpenRouter `minimax/minimax-m3.1-flash:free` to translate distinct listings when the
+  GitHub Actions secret `OPENROUTER_API_KEY` is set, otherwise preserving original German.
+  The generated cache records the model and translated/total listing counts.
 - Google Calendar private iCal feed (family layer): secret URL in `.env` as `GCAL_ICS_URL`,
   never committed; generated `family.json` caches are gitignored.
 - Browser with modern JavaScript support.

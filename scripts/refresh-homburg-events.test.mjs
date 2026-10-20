@@ -41,11 +41,26 @@ test("translateEvents translates distinct listings once and applies results to r
   const event = normalizeEvent(sourceEvent, todayKey);
   const recurring = { ...event, id: "homburg-42-2026-11-08T14:30", date: "2026-11-08" };
   let calls = 0;
-  const translated = await translateEvents([event, recurring], "test-key", async () => {
+  let requestedBody;
+  const result = await translateEvents([event, recurring], "test-key", async (_url, options) => {
     calls += 1;
+    requestedBody = JSON.parse(options.body);
     return { ok: true, json: async () => ({ choices: [{ message: { content: JSON.stringify({ items: [{ index: 0, title: "Children's concert & games", summary: "Music and games for the whole family." }] }) } }] }) };
   });
   assert.equal(calls, 1);
-  assert.equal(translated[0].title, "Children's concert & games");
-  assert.equal(translated[1].summary, "Music and games for the whole family.");
+  assert.equal(requestedBody.model, "minimax/minimax-m3.1-flash:free");
+  assert.deepEqual(requestedBody.response_format, { type: "json_object" });
+  assert.equal(result.events[0].title, "Children's concert & games");
+  assert.equal(result.events[1].summary, "Music and games for the whole family.");
+  assert.equal(result.translatedListings, 1);
+  assert.equal(result.totalListings, 1);
+});
+
+test("translateEvents reports German fallback when no API key is configured", async () => {
+  const event = normalizeEvent(sourceEvent, todayKey);
+  const result = await translateEvents([event], "");
+
+  assert.equal(result.events[0].title, event.originalTitle);
+  assert.equal(result.translatedListings, 0);
+  assert.equal(result.totalListings, 1);
 });

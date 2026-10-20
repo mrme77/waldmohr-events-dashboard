@@ -7,7 +7,7 @@ export const SOURCE_URL = "https://www.homburg.de/veranstaltungen/";
 export const API_URL = "https://www.homburg.de/umbraco/api/veranstaltungen/getall?katId=&search=&ort=&showall=";
 const output = new URL("../app/public/homburg-events.json", import.meta.url);
 const OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions";
-const OPENROUTER_MODEL = "google/gemini-2.5-flash";
+const OPENROUTER_MODEL = "minimax/minimax-m3.1-flash:free";
 const TRANSLATION_BATCH_SIZE = 20;
 
 loadDotenv({ path: new URL("../.env", import.meta.url).pathname, quiet: true });
@@ -115,8 +115,8 @@ function translationKey(event) {
 
 /** Translates distinct official listings in bounded batches, retaining German on failure. */
 export async function translateEvents(events, apiKey, fetchImpl = fetch) {
-  if (!apiKey) return events;
   const distinct = [...new Map(events.map((event) => [translationKey(event), event])).values()];
+  if (!apiKey) return { events, translatedListings: 0, totalListings: distinct.length };
   const translations = new Map();
   for (let offset = 0; offset < distinct.length; offset += TRANSLATION_BATCH_SIZE) {
     const batch = distinct.slice(offset, offset + TRANSLATION_BATCH_SIZE);
@@ -147,10 +147,11 @@ export async function translateEvents(events, apiKey, fetchImpl = fetch) {
       console.warn(`Homburg translation batch ${offset / TRANSLATION_BATCH_SIZE + 1} skipped: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
-  return events.map((event) => {
+  const translatedEvents = events.map((event) => {
     const translated = translations.get(translationKey(event));
     return translated ? { ...event, title: translated.title, summary: translated.summary } : event;
   });
+  return { events: translatedEvents, translatedListings: translations.size, totalListings: distinct.length };
 }
 
 /** Fetches all public Homburg calendar categories and writes their normalized cache. */
@@ -161,10 +162,20 @@ async function main() {
   });
   const todayKey = new Date().toISOString().slice(0, 10);
   const normalizedEvents = normalizeEvents(JSON.parse(body), todayKey);
-  const events = await translateEvents(normalizedEvents, process.env.OPENROUTER_API_KEY);
+  const translation = await translateEvents(normalizedEvents, process.env.OPENROUTER_API_KEY);
+  const { events } = translation;
   if (events.length === 0) throw new Error(`No usable events returned by ${API_URL}`);
 
-  await writeJson(output, { generatedAt: new Date().toISOString(), source: SOURCE_URL, model: process.env.OPENROUTER_API_KEY ? OPENROUTER_MODEL : "original German fallback", events });
+  const model = translation.translatedListings > 0 ? OPENROUTER_MODEL : "original German fallback";
+  console.log(`Translated ${translation.translatedListings} of ${translation.totalListings} distinct Homburg listings.`);
+  await writeJson(output, {
+    generatedAt: new Date().toISOString(),
+    source: SOURCE_URL,
+    model,
+    translatedListings: translation.translatedListings,
+    totalListings: translation.totalListings,
+    events,
+  });
   console.log(`Refreshed ${events.length} Homburg event occurrences.`);
 }
 

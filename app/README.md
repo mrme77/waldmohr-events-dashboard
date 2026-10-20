@@ -86,6 +86,13 @@ Remaining full-automation work: refresh the private family cache locally before
 build/deploy and refresh dashboard JSON in the open page without discarding the
 current view or selected date.
 
+The GitHub Actions `Refresh Dashboard Data` workflow translates distinct Homburg
+listings with OpenRouter `minimax/minimax-m3.1-flash:free`. It requires the
+repository Actions secret `OPENROUTER_API_KEY`; the Pi does not need this key
+because it deploys the generated JSON. Each Homburg cache records `model`,
+`translatedListings`, and `totalListings`; the workflow log reports the same
+translation count. German text remains as a safe fallback when a batch fails.
+
 The seven-day forecast UI was merged in PR #40. This follow-up moves it into a
 screen-level modal because the sidebar's scrolling container clipped the popup;
 after this fix merges, the Pi's hourly deployment and a Chromium reload will

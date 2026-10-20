@@ -58,8 +58,9 @@ Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
 
 - Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
 - Homburg official events: `scripts/refresh-homburg-events.mjs` loads the city's public
-  calendar and translates distinct listings at refresh time when `OPENROUTER_API_KEY` is set;
-  failed or missing translations fall back to German.
+  calendar and translates distinct listings at refresh time with OpenRouter
+  `minimax/minimax-m3.1-flash:free` when `OPENROUTER_API_KEY` is set; failed or missing
+  translations fall back to German. The cache records the model and translation counts.
 - News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
 - Weather: Open-Meteo current conditions and seven-day forecast for Waldmohr.
 - Trash: Landkreis Kusel waste collection iCal for Waldmohr (live).
