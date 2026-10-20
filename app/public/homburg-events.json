@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-20T09:51:52.634Z",
+  "generatedAt": "2026-10-20T17:57:48.322Z",
   "source": "https://www.homburg.de/veranstaltungen/",
-  "model": "original German fallback",
+  "model": "google/gemini-2.5-flash",
   "events": [
     {
       "id": "homburg-62786-2026-10-19T18:00",
