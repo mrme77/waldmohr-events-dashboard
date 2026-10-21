@@ -5,8 +5,10 @@ Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German ev
 glanceable, source-linked calendar.
 
 > **Status: running on the Raspberry Pi.** GitHub Actions refreshes public data daily; an hourly
-> systemd timer on the Pi builds and deploys it to Nginx. Remaining automation work: refresh the
-> private family calendar on the Pi and have the open dashboard reload updated JSON automatically.
+> systemd timer on the Pi builds and deploys it to Nginx. The weather forecast modal, clocks,
+> family-event ordering, and source QR behavior have been verified on the touchscreen. Remaining
+> automation work: refresh the private family calendar on the Pi and reload updated dashboard JSON
+> in an already-open page.
 
 ## What it does (v2 vision)
 
