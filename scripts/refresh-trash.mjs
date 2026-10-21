@@ -1,4 +1,5 @@
 import { URL } from "node:url";
+import { fetchTextWithRetry } from "./fetch-text.mjs";
 import { writeJson, runMain } from "./lib.mjs";
 
 const WALDMOHR_ID = "57616c646d6f6872";
@@ -98,12 +99,7 @@ function parseIcs(icsText) {
  * @returns {Promise<void>} Resolves after files are written.
  */
 async function main() {
-  const response = await fetch(icsUrl);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch trash ICS: ${response.status} ${response.statusText}`);
-  }
-
-  const icsText = await response.text();
+  const icsText = await fetchTextWithRetry(icsUrl, { attempts: 3 });
   const events = parseIcs(icsText);
 
   const payload = {

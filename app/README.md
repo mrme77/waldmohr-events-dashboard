@@ -92,6 +92,10 @@ repository Actions secret `OPENROUTER_API_KEY`; the Pi does not need this key
 because it deploys the generated JSON. Each Homburg cache records `model`,
 `translatedListings`, and `totalListings`; the workflow log reports the same
 translation count. German text remains as a safe fallback when a batch fails.
+Transient source failures are retried (including three attempts for the trash
+calendar). If an adapter still fails, the workflow emits a warning but continues
+to validate and commit datasets refreshed successfully; the failed adapter's
+existing cache remains unchanged for the next scheduled attempt.
 
 The seven-day forecast UI was merged in PR #40. This follow-up moves it into a
 screen-level modal because the sidebar's scrolling container clipped the popup;
