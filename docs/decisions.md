@@ -192,3 +192,13 @@ original German listings so data collection can complete.
 needed on the Pi, which only deploys the generated JSON. Free model availability and limits may
 change, so inspect the translation counts after a scheduled run.
 **Status**: Accepted.
+
+## [2026-10-21] Publish Successful Datasets During Partial Refreshes
+**Context**: A transient source timeout caused `npm run refresh` to return non-zero after other
+adapters had successfully refreshed. GitHub Actions stopped before validation and commit, discarding
+the successful datasets from that run.
+**Decision**: Retry trash-calendar requests three times, matching the Waldmohr events adapter. In
+GitHub Actions, convert a partial refresh exit into a warning and continue validation and commit.
+**Reason**: A failed source should retain its previous valid cache without blocking fresh datasets
+from unrelated sources. The refresh summary and warning remain visible in the workflow log.
+**Status**: Accepted.

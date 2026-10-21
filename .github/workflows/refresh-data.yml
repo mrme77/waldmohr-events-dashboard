@@ -48,7 +48,13 @@ jobs:
         working-directory: app
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: npm run refresh 
+        run: |
+          if npm run refresh; then
+            echo "Refresh completed without adapter failures."
+          else
+            refresh_exit_code=$?
+            echo "::warning title=Partial data refresh::One or more adapters failed (exit ${refresh_exit_code}). Continuing to validate and publish successful dataset updates; see the refresh summary for failures."
+          fi
 
       - name: Validate data
         working-directory: app
