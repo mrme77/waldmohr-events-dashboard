@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T09:53:42.485Z",
+  "generatedAt": "2026-10-21T18:59:59.515Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-2025-policing-trend-fewer-serious-crimes-more-minor-arrests-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "2025 policing trend: Fewer serious crimes, more minor arrests",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6003663/crime-data-down-low-level-offenses-increase",
-      "publishedAt": "2026-10-21T09:00:00.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "usa-expecting-a-baby-5-tips-to-help-you-prepare-for-pregnancy-costs-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Expecting a baby? 5 tips to help you prepare for pregnancy costs",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-5996849/insurance-cost-baby-pregnancy",
-      "publishedAt": "2026-10-21T09:00:00.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "usa-morning-news-brief-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6003502/morning-news-brief",
-      "publishedAt": "2026-10-21T08:42:59.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "usa-lebron-james-talks-smack-with-knicks-fans-in-victorious-76ers-de-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "LeBron James talks smack with Knicks fans in victorious 76ers debut",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6010350/lebron-knicks-76ers",
-      "publishedAt": "2026-10-21T06:07:16.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "usa-faa-clears-the-way-for-airlines-to-put-boeing-s-long-delayed-737-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "FAA clears the way for airlines to put Boeing's long-delayed 737 Max 10 into service",
-      "url": "https://www.npr.org/2026/10/21/g-s1-149032/faa-boeing-737-max-10",
-      "publishedAt": "2026-10-21T06:05:18.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "usa-zelenskyy-says-early-warning-system-for-russian-missile-attacks--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Zelenskyy says early warning system for Russian missile attacks resumes",
-      "url": "https://www.npr.org/2026/10/21/g-s1-149026/zelenskyy-russian-missiles-warning",
-      "publishedAt": "2026-10-21T05:43:24.000Z",
-      "lastChecked": "2026-10-21T09:53:42.478Z"
-    },
-    {
-      "id": "stl-broberg-breaks-tie-on-3rd-period-power-play-blues-top-jets-2-1-3",
+      "id": "stl-alton-steel-could-sell-former-mill-site-to-data-center-developer-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Broberg breaks tie on 3rd-period power play, Blues top Jets 2-1",
-      "url": "https://fox2now.com/sports/st-louis-blues/broberg-breaks-tie-on-3rd-period-power-play-blues-top-jets-2-1/",
-      "publishedAt": "2026-10-21T03:11:09.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "Alton Steel could sell former mill site to data center developer",
+      "url": "https://fox2now.com/news/illinois/alton-steel-could-sell-former-mill-site-to-data-center-developer/",
+      "publishedAt": "2026-10-21T18:38:33.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
     },
     {
-      "id": "stl-northern-village-tenants-demand-relocation-assistance-0",
+      "id": "stl-man-set-cahokia-heights-spas-on-fire-upset-over-sexual-encounter-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Northern Village tenants demand relocation assistance",
-      "url": "https://fox2now.com/news/missouri/northern-village-tenants-demand-relocation-assistance/",
-      "publishedAt": "2026-10-21T02:27:11.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "Man set Cahokia Heights spas on fire, upset over sexual encounter, court docs say",
+      "url": "https://fox2now.com/news/illinois/man-set-cahokia-heights-spas-on-fire-upset-over-sexual-encounter-court-docs-say/",
+      "publishedAt": "2026-10-21T18:02:21.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
     },
     {
-      "id": "stl-remains-recovered-from-cahokia-heights-massage-parlor-fire-4",
+      "id": "stl-st-louis-police-board-president-defends-chief-tracy-s-pay-raise-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Remains recovered from Cahokia Heights massage parlor fire",
-      "url": "https://fox2now.com/news/illinois/remains-recovered-from-cahokia-heights-massage-parlor-fire/",
-      "publishedAt": "2026-10-21T02:05:28.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "St. Louis police board president defends Chief Tracy's pay raise",
+      "url": "https://fox2now.com/news/missouri/st-louis-police-board-president-defends-chief-tracys-pay-raise/",
+      "publishedAt": "2026-10-21T17:11:35.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
     },
     {
-      "id": "stl-close-call-reported-at-st-louis-lambert-airport-1",
+      "id": "stl-new-banner-program-honors-legends-in-downtown-st-louis-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Close call reported at St. Louis Lambert Airport",
-      "url": "https://fox2now.com/news/missouri/close-call-reported-at-st-louis-lambert-airport/",
-      "publishedAt": "2026-10-21T01:05:43.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "New banner program honors legends in downtown St. Louis",
+      "url": "https://fox2now.com/news/missouri/new-banner-program-honors-legends-in-downtown-st-louis/",
+      "publishedAt": "2026-10-21T17:01:39.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
     },
     {
-      "id": "stl-lincoln-county-foster-mom-defies-judge-after-custody-ruling-5",
+      "id": "stl-man-charged-in-i-170-shooting-appears-confused-during-court-hear-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Lincoln County foster mom defies judge after custody ruling",
-      "url": "https://fox2now.com/news/fox-files/lincoln-county-foster-mom-defies-judge-after-custody-ruling/",
-      "publishedAt": "2026-10-20T22:07:35.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "Man charged in I-170 shooting appears confused during court hearing",
+      "url": "https://fox2now.com/news/missouri/man-charged-in-i-170-shooting-appears-confused-during-court-hearing/",
+      "publishedAt": "2026-10-21T16:01:49.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
     },
     {
-      "id": "stl-71-year-old-charged-in-city-justice-center-escape-2",
+      "id": "usa-how-trump-s-attacks-on-voting-system-integrity-might-affect-upco-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How Trump's attacks on voting system integrity might affect upcoming elections",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6010463/how-trumps-attacks-on-voting-system-integrity-might-affect-upcoming-elections",
+      "publishedAt": "2026-10-21T16:01:44.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
+    },
+    {
+      "id": "usa-why-local-officials-are-feeling-on-edge-as-election-day-approach-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Why local officials are feeling 'on edge' as election day approaches",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6010517/why-local-officials-are-feeling-on-edge-as-election-day-approaches",
+      "publishedAt": "2026-10-21T16:01:17.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
+    },
+    {
+      "id": "usa-supreme-court-upholds-pause-on-trump-s-anti-trans-prison-policy-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Supreme Court upholds pause on Trump's anti-trans prison policy",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-5993878/supreme-court-trump-trans-prison-policy",
+      "publishedAt": "2026-10-21T15:46:27.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
+    },
+    {
+      "id": "usa-new-human-data-hints-at-psychedelics-potential-to-combat-inflamm-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "New human data hints at psychedelics' potential to combat inflammation",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6009441/psychedelics-brain-inflammation-immune-system",
+      "publishedAt": "2026-10-21T15:33:18.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
+    },
+    {
+      "id": "usa-sentenced-to-death-at-17-at-68-quilt-artist-receives-solo-museum-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Sentenced to death at 17, at 68, quilt artist receives solo museum exhibition",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6003634/sentenced-to-death-at-17-at-68-quilt-artist-receives-solo-museum-exhibition",
+      "publishedAt": "2026-10-21T15:21:47.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
+    },
+    {
+      "id": "stl-modot-announces-new-75-mph-speed-limits-on-four-interstates-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "71-year-old charged in City Justice Center escape",
-      "url": "https://fox2now.com/news/missouri/71-year-old-charged-in-city-justice-center-escape/",
-      "publishedAt": "2026-10-20T20:19:31.000Z",
-      "lastChecked": "2026-10-21T09:53:42.366Z"
+      "title": "MoDOT announces new 75 mph speed limits on four interstates",
+      "url": "https://fox2now.com/news/missouri/modot-announces-new-75-mph-speed-limits-on-four-interstates/",
+      "publishedAt": "2026-10-21T15:10:18.000Z",
+      "lastChecked": "2026-10-21T18:59:59.507Z"
+    },
+    {
+      "id": "usa-israel-detains-dozens-of-americans-including-a-congressional-can-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Israel detains dozens of Americans, including a congressional candidate, in West Bank",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6010460/brad-lander-detained-west-bank-israel-palestinians",
+      "publishedAt": "2026-10-21T13:28:04.000Z",
+      "lastChecked": "2026-10-21T18:59:59.314Z"
     }
   ]
 }
