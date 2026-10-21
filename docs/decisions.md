@@ -179,3 +179,16 @@ for offline ingestion, not for a live voice assistant or backend.
 **Decision**: Remove KMC event/trip ingestion, caches, and UI. Translate distinct Homburg titles and teasers at refresh time through OpenRouter when configured; retain German originals and city source links; show the next three in the right rail.
 **Reason**: Concentrates the dashboard on an official nearby source. Missing or failed translation falls back to German so an OpenRouter outage cannot block refresh.
 **Status**: Accepted. Supersedes the KMC-source decisions above.
+
+## [2026-10-20] Use MiniMax Free for Homburg Event Translation
+**Context**: OpenRouter retired `google/gemini-2.5-flash` on October 20, 2026, so Homburg
+translation batches began returning 404 while the event refresh itself still succeeded.
+**Decision**: Use `minimax/minimax-m3.1-flash:free` for the scheduled Homburg translation
+batches. Record translated and total distinct listing counts in the generated cache and log.
+**Reason**: The free model supports the JSON response format used by the adapter and the daily
+refresh currently makes only three translation requests. Failed batches continue to retain the
+original German listings so data collection can complete.
+**Operational note**: `OPENROUTER_API_KEY` belongs in GitHub Actions repository secrets. It is not
+needed on the Pi, which only deploys the generated JSON. Free model availability and limits may
+change, so inspect the translation counts after a scheduled run.
+**Status**: Accepted.
