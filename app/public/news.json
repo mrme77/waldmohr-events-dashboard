@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T18:59:59.515Z",
+  "generatedAt": "2026-10-22T06:50:21.541Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-alton-steel-could-sell-former-mill-site-to-data-center-developer-4",
+      "id": "usa-north-korea-says-it-will-resume-propaganda-broadcasts-across-bor-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "North Korea says it will resume propaganda broadcasts across border into South Korea",
+      "url": "https://www.npr.org/2026/10/22/g-s1-149306/north-korea-propaganda-broadcasts",
+      "publishedAt": "2026-10-22T06:36:07.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "stl-st-louis-city-sc-fans-celebrate-club-s-first-trophy-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Alton Steel could sell former mill site to data center developer",
-      "url": "https://fox2now.com/news/illinois/alton-steel-could-sell-former-mill-site-to-data-center-developer/",
-      "publishedAt": "2026-10-21T18:38:33.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
+      "title": "St. Louis City SC fans celebrate club’s first trophy",
+      "url": "https://fox2now.com/sports/stl-city-sc/st-louis-city-sc-fans-celebrate-clubs-first-trophy/",
+      "publishedAt": "2026-10-22T03:40:17.000Z",
+      "lastChecked": "2026-10-22T06:50:21.473Z"
     },
     {
-      "id": "stl-man-set-cahokia-heights-spas-on-fire-upset-over-sexual-encounter-0",
+      "id": "stl-year-long-i-64-closure-planned-for-midtown-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Year-long I-64 closure planned for Midtown",
+      "url": "https://fox2now.com/news/missouri/year-long-i-64-closure-planned-for-midtown/",
+      "publishedAt": "2026-10-22T02:42:11.000Z",
+      "lastChecked": "2026-10-22T06:50:21.473Z"
+    },
+    {
+      "id": "stl-convicted-shooter-in-st-louis-murder-for-hire-sentenced-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Convicted shooter in St. Louis murder-for-hire sentenced",
+      "url": "https://fox2now.com/news/missouri/convicted-shooter-in-st-louis-murder-for-hire-sentenced/",
+      "publishedAt": "2026-10-22T02:10:59.000Z",
+      "lastChecked": "2026-10-22T06:50:21.473Z"
+    },
+    {
+      "id": "usa-aipac-halts-endorsements-and-direct-contributions-to-candidates-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "AIPAC halts endorsements and direct contributions to candidates",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6011531/aipac-campaign-contributions-israel-democrats",
+      "publishedAt": "2026-10-22T00:22:48.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "usa-the-justice-department-begins-notifying-counties-where-it-wants--2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The Justice Department begins notifying counties where it wants to monitor elections",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6009896/justice-department-monitors",
+      "publishedAt": "2026-10-22T00:18:47.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "stl-mayor-spencer-opposes-proposed-slmpd-reality-series-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Mayor Spencer opposes proposed SLMPD reality series",
+      "url": "https://fox2now.com/news/missouri/mayor-spencer-opposes-proposed-slmpd-reality-series/",
+      "publishedAt": "2026-10-21T23:13:48.000Z",
+      "lastChecked": "2026-10-22T06:50:21.473Z"
+    },
+    {
+      "id": "stl-former-fire-marshal-claims-retaliation-in-pattonville-fire-prote-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Former fire marshal claims retaliation in Pattonville Fire Protection District lawsuit",
+      "url": "https://fox2now.com/news/fox-files/former-fire-marshal-claims-retaliation-in-pattonville-fire-protection-district-lawsuit/",
+      "publishedAt": "2026-10-21T21:34:00.000Z",
+      "lastChecked": "2026-10-22T06:50:21.473Z"
+    },
+    {
+      "id": "usa-poll-voters-want-congress-to-be-a-check-on-trump-trust-democrats-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Poll: Voters want Congress to be a check on Trump, trust Democrats more on issues",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6011179/poll-democrats-republicans-trump-approval",
+      "publishedAt": "2026-10-21T20:56:07.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "usa-meet-the-people-moving-north-to-escape-increasingly-hot-summers-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Meet the people moving north to escape increasingly hot summers",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-5977837/climate-uk-usa-housing",
+      "publishedAt": "2026-10-21T20:00:00.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "usa-top-2-democrats-on-intel-say-they-re-preparing-for-trump-to-clai-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Top 2 Democrats on Intel say they're preparing for Trump to claim foreign meddling",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6011170/democrats-election-interference-preparations-president-trump",
+      "publishedAt": "2026-10-21T19:47:18.000Z",
+      "lastChecked": "2026-10-22T06:50:21.536Z"
+    },
+    {
+      "id": "stl-man-set-cahokia-heights-spas-on-fire-upset-over-sexual-encounter-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "Man set Cahokia Heights spas on fire, upset over sexual encounter, court docs say",
       "url": "https://fox2now.com/news/illinois/man-set-cahokia-heights-spas-on-fire-upset-over-sexual-encounter-court-docs-say/",
       "publishedAt": "2026-10-21T18:02:21.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
-    },
-    {
-      "id": "stl-st-louis-police-board-president-defends-chief-tracy-s-pay-raise-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis police board president defends Chief Tracy's pay raise",
-      "url": "https://fox2now.com/news/missouri/st-louis-police-board-president-defends-chief-tracys-pay-raise/",
-      "publishedAt": "2026-10-21T17:11:35.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
-    },
-    {
-      "id": "stl-new-banner-program-honors-legends-in-downtown-st-louis-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "New banner program honors legends in downtown St. Louis",
-      "url": "https://fox2now.com/news/missouri/new-banner-program-honors-legends-in-downtown-st-louis/",
-      "publishedAt": "2026-10-21T17:01:39.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
-    },
-    {
-      "id": "stl-man-charged-in-i-170-shooting-appears-confused-during-court-hear-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Man charged in I-170 shooting appears confused during court hearing",
-      "url": "https://fox2now.com/news/missouri/man-charged-in-i-170-shooting-appears-confused-during-court-hearing/",
-      "publishedAt": "2026-10-21T16:01:49.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
-    },
-    {
-      "id": "usa-how-trump-s-attacks-on-voting-system-integrity-might-affect-upco-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How Trump's attacks on voting system integrity might affect upcoming elections",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6010463/how-trumps-attacks-on-voting-system-integrity-might-affect-upcoming-elections",
-      "publishedAt": "2026-10-21T16:01:44.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
-    },
-    {
-      "id": "usa-why-local-officials-are-feeling-on-edge-as-election-day-approach-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Why local officials are feeling 'on edge' as election day approaches",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6010517/why-local-officials-are-feeling-on-edge-as-election-day-approaches",
-      "publishedAt": "2026-10-21T16:01:17.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
-    },
-    {
-      "id": "usa-supreme-court-upholds-pause-on-trump-s-anti-trans-prison-policy-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Supreme Court upholds pause on Trump's anti-trans prison policy",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-5993878/supreme-court-trump-trans-prison-policy",
-      "publishedAt": "2026-10-21T15:46:27.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
-    },
-    {
-      "id": "usa-new-human-data-hints-at-psychedelics-potential-to-combat-inflamm-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "New human data hints at psychedelics' potential to combat inflammation",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6009441/psychedelics-brain-inflammation-immune-system",
-      "publishedAt": "2026-10-21T15:33:18.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
-    },
-    {
-      "id": "usa-sentenced-to-death-at-17-at-68-quilt-artist-receives-solo-museum-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Sentenced to death at 17, at 68, quilt artist receives solo museum exhibition",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6003634/sentenced-to-death-at-17-at-68-quilt-artist-receives-solo-museum-exhibition",
-      "publishedAt": "2026-10-21T15:21:47.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
-    },
-    {
-      "id": "stl-modot-announces-new-75-mph-speed-limits-on-four-interstates-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "MoDOT announces new 75 mph speed limits on four interstates",
-      "url": "https://fox2now.com/news/missouri/modot-announces-new-75-mph-speed-limits-on-four-interstates/",
-      "publishedAt": "2026-10-21T15:10:18.000Z",
-      "lastChecked": "2026-10-21T18:59:59.507Z"
-    },
-    {
-      "id": "usa-israel-detains-dozens-of-americans-including-a-congressional-can-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Israel detains dozens of Americans, including a congressional candidate, in West Bank",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6010460/brad-lander-detained-west-bank-israel-palestinians",
-      "publishedAt": "2026-10-21T13:28:04.000Z",
-      "lastChecked": "2026-10-21T18:59:59.314Z"
+      "lastChecked": "2026-10-22T06:50:21.473Z"
     }
   ]
 }
