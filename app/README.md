@@ -26,9 +26,10 @@ and upcoming events. News headlines scroll across the top.
   Original titles and official source URLs remain in the normalized events.
 - `484dd0b`: refreshed the committed public JSON caches; no UI changes.
 
-The repository-root README still describes removed KMC adapters, Trip Ideas,
-and a pending Pi deployment. Use the current source and this note when those
-historical descriptions disagree.
+The repository-root README is the public project overview and setup guide. This
+file is an internal handoff for the Raspberry Pi deployment; deployment
+details and personal host information belong here rather than in the public
+README.
 
 ## External links on the touchscreen
 

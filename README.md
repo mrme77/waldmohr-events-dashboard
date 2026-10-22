@@ -1,85 +1,68 @@
 # Waldmohr Events Dashboard
 
-A local, English-first events board for an American family living in the Kaiserslautern Military
-Community (KMC) area of Rhineland-Palatinate, Germany. It turns public German event posts into a
-glanceable, source-linked calendar.
+A touch-friendly, English-language dashboard for local events and useful updates in Waldmohr, Germany. It brings community events, nearby Homburg listings, weather, and practical calendar information together in one screen.
 
-> **Status: running on the Raspberry Pi.** GitHub Actions refreshes public data daily; an hourly
-> systemd timer on the Pi builds and deploys it to Nginx. The weather forecast modal, clocks,
-> family-event ordering, and source QR behavior have been verified on the touchscreen. Remaining
-> automation work: refresh the private family calendar on the Pi and reload updated dashboard JSON
-> in an already-open page.
+[Watch the dashboard video](./videopresentation.mov)
 
-## What it does (v2 vision)
+## Features
 
-A single-page, high-contrast "Civic Departure Board" designed for an always-on wall display:
+- Waldmohr events and nearby Homburg events, with dates and links to their original sources.
+- US and St. Louis news headlines.
+- Trash collection dates, Rheinland-Pfalz public holidays, and Homburg flea-market dates.
+- Current Waldmohr weather and a seven-day forecast.
+- Napoli and St. Louis clocks.
+- Touch-friendly event details and QR codes for opening source links on a phone.
+- Optional family-calendar entries for a private installation.
 
-- **Calendar** of local events, colored by category, tap a day for details + source link.
-- **News marquee** across the top (USA + St. Louis RSS cache, 80-second scroll).
-- **Dual clocks** — Napoli and St. Louis / Central.
-- **Weather** for Waldmohr via Open-Meteo.
-- **Seven-day forecast** for Waldmohr, opened by tapping the current-weather card.
-- **Nearby in Homburg** panel with the next official city-calendar listings.
+## Run locally
 
-See [`plan.md`](./plan.md) for the current roadmap and [`progress.md`](./progress.md) for the
-deployment handoff. The Pi deployment and remaining automation work are documented there.
+Requirements: Node.js 22 and npm.
 
-## Video presentation
-
-[Watch the dashboard video presentation](./videopresentation.mov)
-
-## Repository layout
-
-| Path | What |
-|---|---|
-| `app/` | Vite + React + TypeScript application (the only UI). |
-| `app/public/*.json` | Normalized event JSON — the single cache served to and read by the app. |
-| `scripts/` | Data ingestion + validation (Node ESM). |
-| `docs/` | Durable project docs — spec, decisions, compliance, validation. |
-
-## Running the v2 app
-
-```bash
-cd app
-npm install
-npm run dev      # preview at http://localhost:5173
+```sh
+git clone https://github.com/mrme77/waldmohr-events-dashboard.git
+cd waldmohr-events-dashboard/app
+npm ci
+npm run dev
 ```
 
-## Refreshing data
+Vite prints the local development URL, usually `http://localhost:5173`. The dashboard uses the committed public JSON datasets, so no API keys are needed to run it. Weather is fetched from Open-Meteo by the browser.
 
-```bash
-cd app
-npm run refresh        # refresh public caches and optional private family cache
-npm run validate       # validate cached payloads; private family cache is optional
-npm run refresh:build  # refresh + validate + production build in one command
+To build and preview the static site:
+
+```sh
+npm run build
+npm run preview
 ```
 
-Individual adapters still run directly, e.g. `node scripts/refresh-events.mjs`.
+## Refresh and validate data
+
+The refresh scripts are in the repository root and need the root dependencies as well as the app dependencies:
+
+```sh
+cd ..
+npm ci
+cd app
+npm ci
+npm run refresh
+npm run validate
+```
+
+The scheduled GitHub Actions workflow refreshes the public datasets daily at 05:00 UTC. The dashboard reads the JSON datasets when it loads, so a running display needs to reload to show newly published data. Individual data sources can be temporarily unavailable; check the refresh workflow logs for adapter results.
+
+## Optional configuration
+
+The dashboard can include a private Google Calendar feed for a personal installation. Copy the root `.env.example` to `.env` and set `GCAL_ICS_URL` to the calendar's secret iCal URL. Treat that URL as a password: anyone who has it can read the calendar. The generated family cache is gitignored and must not be committed or served from a public deployment.
+
+Homburg event translations use OpenRouter when `OPENROUTER_API_KEY` is available to the data-refresh workflow. Add it as a GitHub Actions repository secret to enable translations. Without the key, event titles and descriptions remain in German. Never commit `.env` files, secret URLs, or API keys.
 
 ## Data sources
 
-- Events: [waldmohr-aktuell.de](https://www.waldmohr-aktuell.de/) WordPress REST API (live).
-- Homburg official events: `scripts/refresh-homburg-events.mjs` loads the city's public
-  calendar and translates distinct listings at refresh time with OpenRouter
-  `minimax/minimax-m3.1-flash:free` when `OPENROUTER_API_KEY` is set; failed or missing
-  translations fall back to German. The cache records the model and translation counts.
-- News: NPR News RSS and KSDK St. Louis local RSS, cached by `scripts/refresh-news.mjs`.
-- Weather: Open-Meteo current conditions and seven-day forecast for Waldmohr.
-- Trash: Landkreis Kusel waste collection iCal for Waldmohr (live).
-- Holidays: Rheinland-Pfalz public holidays via [date.nager.at](https://date.nager.at/) (live).
-- Flea markets: Homburg Floh- und Antiquitätenmarkt, official yearly dates from
-  [homburg.de](https://www.homburg.de/) as a maintained table (live).
-- Family: Google Calendar private iCal feed (live). Secret URL in `.env` (`GCAL_ICS_URL`);
-  the generated `family.json` caches are gitignored so the family schedule never reaches
-  this public repo. Events titled leave/vacation/Urlaub/PTO get their own calendar marker.
+- Local events: [Waldmohr Aktuell](https://www.waldmohr-aktuell.de/)
+- Homburg events and flea-market dates: [City of Homburg](https://www.homburg.de/)
+- News: NPR News and KSDK St. Louis RSS feeds
+- Trash collection: Landkreis Kusel calendar
+- Public holidays: [Nager.Date](https://date.nager.at/)
+- Weather: [Open-Meteo](https://open-meteo.com/)
+- Optional personal calendar: a private Google Calendar iCal feed
 
-## Privacy & legal
-
-This is a personal household project. The family/personal layer stays local-network only and is
-never publicly broadcast. Scraped public data is stored minimally and always source-linked. See
-[`docs/compliance.md`](./docs/compliance.md) for the GDPR posture.
-
-## Tech
-
-v2: Vite, React, TypeScript. Fonts: Fraunces, Archivo, JetBrains Mono. No backend — fully static
-build served as-is; the voice/Node-server plan was dropped 2026-06-10.
+The application is a static React, TypeScript, and Vite site. Data collection and normalization run separately in Node.js scripts; the browser does not need a backend server.
