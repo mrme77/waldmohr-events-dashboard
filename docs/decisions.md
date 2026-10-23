@@ -191,6 +191,13 @@ original German listings so data collection can complete.
 **Operational note**: `OPENROUTER_API_KEY` belongs in GitHub Actions repository secrets. It is not
 needed on the Pi, which only deploys the generated JSON. Free model availability and limits may
 change, so inspect the translation counts after a scheduled run.
+**Status**: Superseded on 2026-10-23; see the decision below.
+
+## [2026-10-23] Use paid MiniMax base route after free launch ended
+**Context**: OpenRouter retired `minimax/minimax-m3.1-flash:free` at 2026-10-22 12:00 UTC. The next scheduled refresh received `404 Not Found` for every translation batch and published German fallback text.
+**Decision**: Use `minimax/minimax-m3.1-flash`, without the `:free` suffix.
+**Reason**: OpenRouter lists the base route at $0.15 per million input tokens and $0.60 per million output tokens (cached input: $0.015 per million). The refresh translates up to 42 distinct listings in three batches, keeping expected daily usage small while avoiding the retired launch route.
+**Operational note**: API usage is billable. Keep `OPENROUTER_API_KEY` in GitHub Actions repository secrets; the Pi only deploys the generated JSON. If a batch fails, the adapter retains German originals and reports a warning.
 **Status**: Accepted.
 
 ## [2026-10-21] Publish Successful Datasets During Partial Refreshes

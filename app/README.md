@@ -88,9 +88,11 @@ build/deploy and refresh dashboard JSON in the open page without discarding the
 current view or selected date.
 
 The GitHub Actions `Refresh Dashboard Data` workflow translates distinct Homburg
-listings with OpenRouter `minimax/minimax-m3.1-flash:free`. It requires the
-repository Actions secret `OPENROUTER_API_KEY`; the Pi does not need this key
-because it deploys the generated JSON. Each Homburg cache records `model`,
+listings with OpenRouter `minimax/minimax-m3.1-flash`. The former `:free` launch
+route was retired on 2026-10-22 and returned 404s. The base model is paid at
+OpenRouter's listed rates, so daily translations incur a small usage charge.
+It requires the repository Actions secret `OPENROUTER_API_KEY`; the Pi does not
+need this key because it deploys the generated JSON. Each Homburg cache records `model`,
 `translatedListings`, and `totalListings`; the workflow log reports the same
 translation count. German text remains as a safe fallback when a batch fails.
 Transient source failures are retried (including three attempts for the trash
