@@ -48,7 +48,7 @@ test("translateEvents translates distinct listings once and applies results to r
     return { ok: true, json: async () => ({ choices: [{ message: { content: JSON.stringify({ items: [{ index: 0, title: "Children's concert & games", summary: "Music and games for the whole family." }] }) } }] }) };
   });
   assert.equal(calls, 1);
-  assert.equal(requestedBody.model, "minimax/minimax-m3.1-flash:free");
+  assert.equal(requestedBody.model, "minimax/minimax-m3.1-flash");
   assert.deepEqual(requestedBody.response_format, { type: "json_object" });
   assert.equal(result.events[0].title, "Children's concert & games");
   assert.equal(result.events[1].summary, "Music and games for the whole family.");

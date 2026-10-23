@@ -7,7 +7,7 @@ export const SOURCE_URL = "https://www.homburg.de/veranstaltungen/";
 export const API_URL = "https://www.homburg.de/umbraco/api/veranstaltungen/getall?katId=&search=&ort=&showall=";
 const output = new URL("../app/public/homburg-events.json", import.meta.url);
 const OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions";
-const OPENROUTER_MODEL = "minimax/minimax-m3.1-flash:free";
+const OPENROUTER_MODEL = "minimax/minimax-m3.1-flash";
 const TRANSLATION_BATCH_SIZE = 20;
 
 loadDotenv({ path: new URL("../.env", import.meta.url).pathname, quiet: true });
