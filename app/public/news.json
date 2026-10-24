@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:47:10.070Z",
+  "generatedAt": "2026-10-24T09:33:19.816Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-the-pentagon-s-guidelines-for-responsible-ai-aren-t-always-follo-0",
+      "id": "usa-this-decade-has-been-missing-its-big-impact-midterm-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "This decade has been missing its big-impact midterm",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6014811/midterm-election-history-house-senate",
+      "publishedAt": "2026-10-24T09:00:00.000Z",
+      "lastChecked": "2026-10-24T09:33:19.531Z"
+    },
+    {
+      "id": "usa-drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houth-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
+      "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
+      "publishedAt": "2026-10-24T07:04:13.000Z",
+      "lastChecked": "2026-10-24T09:33:19.531Z"
+    },
+    {
+      "id": "stl-robbie-avila-could-rejoin-slu-billikens-per-court-order-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Robbie Avila could rejoin SLU Billikens, per court order",
+      "url": "https://fox2now.com/sports/college/robbie-avila-could-rejoin-slu-billikens-per-court-order/",
+      "publishedAt": "2026-10-24T01:25:43.000Z",
+      "lastChecked": "2026-10-24T09:33:19.809Z"
+    },
+    {
+      "id": "usa-severe-flooding-hits-four-corners-region-more-expected-through-t-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Severe flooding hits Four Corners region, more expected through the weekend",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6014742/flooding-weather-four-corners",
+      "publishedAt": "2026-10-24T00:40:42.000Z",
+      "lastChecked": "2026-10-24T09:33:19.531Z"
+    },
+    {
+      "id": "stl-man-reunites-with-foster-brother-after-15-years-of-deception-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Man reunites with foster brother after 15 years of deception",
+      "url": "https://fox2now.com/news/fox-files/man-reunites-with-foster-brother-after-15-years-of-deception/",
+      "publishedAt": "2026-10-23T22:37:52.000Z",
+      "lastChecked": "2026-10-24T09:33:19.809Z"
+    },
+    {
+      "id": "usa-russia-steps-up-election-influence-efforts-in-final-stretch-of-m-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Russia steps up election influence efforts in final stretch of midterms",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-5995508/russia-midterms-election-influence",
+      "publishedAt": "2026-10-23T21:40:02.000Z",
+      "lastChecked": "2026-10-24T09:33:19.531Z"
+    },
+    {
+      "id": "stl-st-louis-pauses-police-chief-robert-tracy-s-pay-increase-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "St. Louis pauses Police Chief Robert Tracy's pay increase",
+      "url": "https://fox2now.com/news/missouri/st-louis-pauses-police-chief-robert-tracys-pay-increase/",
+      "publishedAt": "2026-10-23T21:13:42.000Z",
+      "lastChecked": "2026-10-24T09:33:19.809Z"
+    },
+    {
+      "id": "stl-st-louis-dog-park-k9-garden-to-close-less-than-a-year-after-open-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "St. Louis dog park K9 Garden to close, less than a year after opening",
+      "url": "https://fox2now.com/news/missouri/st-louis-dog-park-k9-garden-to-close-less-than-a-year-after-opening/",
+      "publishedAt": "2026-10-23T20:53:52.000Z",
+      "lastChecked": "2026-10-24T09:33:19.809Z"
+    },
+    {
+      "id": "usa-the-pentagon-s-guidelines-for-responsible-ai-aren-t-always-follo-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "The Pentagon's guidelines for \"responsible AI\" aren't always followed, report shows",
       "url": "https://www.npr.org/2026/10/23/nx-s1-6012296/ai-department-of-defense-war",
       "publishedAt": "2026-10-23T19:31:15.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
+      "lastChecked": "2026-10-24T09:33:19.531Z"
     },
     {
-      "id": "usa-ohio-could-decide-control-of-the-senate-its-rural-voters-might-d-1",
+      "id": "usa-ohio-could-decide-control-of-the-senate-its-rural-voters-might-d-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Ohio could decide control of the Senate. Its rural voters might decide the winner",
       "url": "https://www.npr.org/2026/10/23/nx-s1-6012809/ohio-senate-governor-election-rural-voters",
       "publishedAt": "2026-10-23T18:30:00.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
+      "lastChecked": "2026-10-24T09:33:19.531Z"
     },
     {
-      "id": "stl-cbc-high-school-president-phil-riley-resigns-after-administrativ-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "CBC High School President Phil Riley resigns after administrative leave",
-      "url": "https://fox2now.com/news/missouri/cbc-high-school-president-phil-riley-resigns-after-administrative-leave/",
-      "publishedAt": "2026-10-23T17:50:49.000Z",
-      "lastChecked": "2026-10-23T19:47:10.054Z"
-    },
-    {
-      "id": "usa-a-d-c-park-was-made-for-the-pleasure-of-the-people-trump-s-plan--2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A D.C. park was made 'for the pleasure of the people.' Trump's plan would change that",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6010488/east-potomac-trump-golf-hains-point",
-      "publishedAt": "2026-10-23T17:35:14.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
-    },
-    {
-      "id": "stl-missouri-ag-to-investigate-st-louis-police-board-after-request-f-0",
+      "id": "stl-missouri-ag-to-investigate-st-louis-police-board-after-request-f-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "Missouri AG to investigate St. Louis Police Board after request from Gov. Mike Kehoe",
       "url": "https://fox2now.com/news/missouri/missouri-ag-to-investigate-st-louis-police-board-after-request-from-gov-mike-kehoe/",
       "publishedAt": "2026-10-23T17:20:23.000Z",
-      "lastChecked": "2026-10-23T19:47:10.053Z"
+      "lastChecked": "2026-10-24T09:33:19.809Z"
     },
     {
-      "id": "stl-st-louis-weekend-events-oct-23-25-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis Weekend Events: Oct. 23-25",
-      "url": "https://fox2now.com/news/missouri/st-louis-weekend-events-oct-23-25/",
-      "publishedAt": "2026-10-23T16:27:29.000Z",
-      "lastChecked": "2026-10-23T19:47:10.054Z"
-    },
-    {
-      "id": "usa-ex-fbi-employees-charged-with-lying-to-congress-over-hunter-bide-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Ex-FBI employees charged with lying to Congress over Hunter Biden inquiries",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149534/justice-fbi-charged-hunter-biden-laptop",
-      "publishedAt": "2026-10-23T15:51:04.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
-    },
-    {
-      "id": "usa-will-a-macaque-eat-a-grape-sitting-on-a-pile-of-poo-a-study-on-g-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Will a macaque eat a grape sitting on a pile of poo? A study on germophobia",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6009527/monkey-macaque-germs-virus-outbreak",
-      "publishedAt": "2026-10-23T14:16:10.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
-    },
-    {
-      "id": "stl-beloved-saint-louis-zoo-elephant-raja-saying-goodbye-this-weeken-1",
+      "id": "stl-beloved-saint-louis-zoo-elephant-raja-saying-goodbye-this-weeken-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "Beloved Saint Louis Zoo elephant Raja saying goodbye this weekend",
       "url": "https://fox2now.com/news/missouri/st-louis-zoo-raja-leaving/",
       "publishedAt": "2026-10-23T14:15:04.000Z",
-      "lastChecked": "2026-10-23T19:47:10.053Z"
-    },
-    {
-      "id": "stl-alabama-duo-accused-in-22k-theft-spree-targeting-st-louis-multip-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Alabama duo accused in $22K theft spree targeting St. Louis, multiple states",
-      "url": "https://fox2now.com/news/missouri/alabama-duo-accused-in-22k-theft-spree-targeting-st-louis-multiple-states/",
-      "publishedAt": "2026-10-23T13:25:43.000Z",
-      "lastChecked": "2026-10-23T19:47:10.054Z"
-    },
-    {
-      "id": "usa-authorities-investigating-whether-first-kenya-and-nigeria-ebola--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-      "publishedAt": "2026-10-23T12:41:39.000Z",
-      "lastChecked": "2026-10-23T19:47:10.060Z"
-    },
-    {
-      "id": "stl-driver-airlifted-after-overnight-crash-on-i-270-in-north-st-loui-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Driver airlifted after overnight crash on I-270 in north St. Louis County",
-      "url": "https://fox2now.com/news/missouri/person-hospitalized-after-overnight-crash-on-i-270/",
-      "publishedAt": "2026-10-23T10:47:35.000Z",
-      "lastChecked": "2026-10-23T19:47:10.053Z"
+      "lastChecked": "2026-10-24T09:33:19.809Z"
     }
   ]
 }
