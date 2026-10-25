@@ -27,7 +27,7 @@ function formatTime(date: Date, timeZone: string): string {
 
 /** Dual time display plus compact event refresh metadata. */
 export function DualClock({ updatedAt = null }: DualClockProps) {
-  const now = useNow(1000);
+  const now = useNow(60_000);
   const updatedKey = updatedAt ? updatedAt.slice(0, 10) : null;
   const todayKey = now.toISOString().slice(0, 10);
 

@@ -115,7 +115,7 @@ export function App() {
 
       <header className="topbar">
         <div className="topbar__brand">
-          <span className="topbar__pulse" aria-hidden="true" />
+          <span className="topbar__indicator" aria-hidden="true" />
           <h1>Waldmohr Events</h1>
         </div>
       </header>
