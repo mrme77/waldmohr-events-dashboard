@@ -53,7 +53,9 @@ unsupported URLs show an unavailable message instead of a code.
 Personal entries from the family calendar appear before public events in day
 details so birthdays and leave are visible before the larger source QR cards.
 Personal entries show their description and location without a QR code. The
-close control stays visible while scrolling. The news marquee loops in 50 seconds.
+close control stays visible while scrolling. News displays one wrapping headline at a time, changing every 30 seconds without
+scrolling or transition animations. The brand indicator is static. The Napoli
+and St. Louis clocks update at minute boundaries rather than every second.
 
 The clock panel adapts to its own available width: Napoli and St. Louis stack
 when the sidebar is narrow, including on small HDMI displays. City/time rows and
@@ -123,3 +125,42 @@ but the browser must reload to read them.
 The Pi's display schedule and Chromium launch command have not been checked. The
 Pi deployment timer and script have been inspected; their behavior is described
 in the automation handoff above.
+
+## Lower-load Pi changes (2026-10-25)
+
+The UI removes continuous headline scrolling and the pulsing brand indicator.
+Clock updates align to minute boundaries; headlines rotate every 30 seconds.
+These changes reduce unnecessary rendering, but temperature improvement has not
+been measured on the Pi.
+
+The replacement deployment script is versioned at `app/ops/deploy.sh`. It keeps
+the existing lock, clean-checkout requirement, fast-forward update, private-family
+exclusion, and Chromium refresh. The existing service and timer need no changes.
+It records the last successfully published commit in `~/dashboard-ops/published-commit`
+and skips install/validation/build/publish when that commit is unchanged and
+the published `index.html` exists. The first run establishes this marker by
+building and publishing once. Failed builds and rsync runs do not advance it.
+
+Dependency installation runs on the first deployment, changed app manifests,
+lockfile, npm configuration, Node/npm versions, install environment, or missing
+installation markers/tools. Other changed commits reuse installed dependencies.
+A successful publish attempts a Chromium refresh, including retries of previously
+failed deployments. A refresh failure remains a visible warning.
+
+After this branch is reviewed, merged, and pulled onto the Pi, install there:
+
+```sh
+cp "$HOME/dashboard-ops/deploy.sh" "$HOME/dashboard-ops/deploy.sh.backup-$(date +%Y%m%d-%H%M%S)"
+install -m 755 "$HOME/Desktop/waldmohr-events-dashboard/app/ops/deploy.sh" "$HOME/dashboard-ops/deploy.sh"
+sudo systemctl start waldmohr-deploy.service
+journalctl -u waldmohr-deploy.service -n 50 --no-pager
+```
+
+Run the service again after completion to confirm it reports `No build needed`.
+This installation has not been performed: SSH from the development machine to
+`192.168.1.46` returned `No route to host`. Temperature changes remain unmeasured.
+
+Local verification: 26 tests pass, production build and cache validation pass.
+Browser checks at 375px, 768px, and 1024px found no horizontal overflow, wrapping
+headlines fit their container, and the headline and brand indicator have no CSS
+animation. The browser reported only an existing missing favicon (404).
