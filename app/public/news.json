@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:33:19.816Z",
+  "generatedAt": "2026-10-25T09:49:56.429Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-this-decade-has-been-missing-its-big-impact-midterm-0",
+      "id": "usa-more-dads-taking-paid-family-leave-for-a-new-baby-sometimes-as-m-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "This decade has been missing its big-impact midterm",
-      "url": "https://www.npr.org/2026/10/24/nx-s1-6014811/midterm-election-history-house-senate",
-      "publishedAt": "2026-10-24T09:00:00.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "More dads taking paid family leave for a new baby, sometimes as much as moms are",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-5977810/paid-family-bonding-leave-dads-moms-california-colorado-washington-states",
+      "publishedAt": "2026-10-25T09:00:00.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "usa-drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houth-1",
+      "id": "usa-in-arkansas-democrats-see-an-opening-at-the-edge-of-the-competit-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
-      "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
-      "publishedAt": "2026-10-24T07:04:13.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "In Arkansas, Democrats see an opening at the edge of the competitive midterms map",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6009402/midterm-blue-wave-map-arkansas-democrats-cotton-shoffner-hill-jones",
+      "publishedAt": "2026-10-25T09:00:00.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "stl-robbie-avila-could-rejoin-slu-billikens-per-court-order-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Robbie Avila could rejoin SLU Billikens, per court order",
-      "url": "https://fox2now.com/sports/college/robbie-avila-could-rejoin-slu-billikens-per-court-order/",
-      "publishedAt": "2026-10-24T01:25:43.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
-    },
-    {
-      "id": "usa-severe-flooding-hits-four-corners-region-more-expected-through-t-2",
+      "id": "usa-independent-candidates-sense-a-moment-in-the-west-democrats-are--2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Severe flooding hits Four Corners region, more expected through the weekend",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6014742/flooding-weather-four-corners",
-      "publishedAt": "2026-10-24T00:40:42.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "Independent candidates sense a moment in the West. Democrats are hoping they're right",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-5995460/midterms-independent-candidates-nebraska-montana",
+      "publishedAt": "2026-10-25T09:00:00.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "stl-man-reunites-with-foster-brother-after-15-years-of-deception-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Man reunites with foster brother after 15 years of deception",
-      "url": "https://fox2now.com/news/fox-files/man-reunites-with-foster-brother-after-15-years-of-deception/",
-      "publishedAt": "2026-10-23T22:37:52.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
-    },
-    {
-      "id": "usa-russia-steps-up-election-influence-efforts-in-final-stretch-of-m-3",
+      "id": "usa-soldiers-guard-center-of-milan-as-thousands-of-protesters-march--3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Russia steps up election influence efforts in final stretch of midterms",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-5995508/russia-midterms-election-influence",
-      "publishedAt": "2026-10-23T21:40:02.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
+      "publishedAt": "2026-10-25T07:15:00.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "stl-st-louis-pauses-police-chief-robert-tracy-s-pay-increase-0",
+      "id": "stl-family-friends-honor-18-year-old-killed-in-i-70-crash-with-memor-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis pauses Police Chief Robert Tracy's pay increase",
-      "url": "https://fox2now.com/news/missouri/st-louis-pauses-police-chief-robert-tracys-pay-increase/",
-      "publishedAt": "2026-10-23T21:13:42.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
+      "title": "Family, friends honor 18-year-old killed in I-70 crash with memorial car ride",
+      "url": "https://fox2now.com/news/missouri/family-friends-honor-18-year-old-killed-in-i-70-crash-with-memorial-car-ride/",
+      "publishedAt": "2026-10-25T04:25:20.000Z",
+      "lastChecked": "2026-10-25T09:49:56.420Z"
     },
     {
-      "id": "stl-st-louis-dog-park-k9-garden-to-close-less-than-a-year-after-open-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis dog park K9 Garden to close, less than a year after opening",
-      "url": "https://fox2now.com/news/missouri/st-louis-dog-park-k9-garden-to-close-less-than-a-year-after-opening/",
-      "publishedAt": "2026-10-23T20:53:52.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
-    },
-    {
-      "id": "usa-the-pentagon-s-guidelines-for-responsible-ai-aren-t-always-follo-4",
+      "id": "usa-drought-fire-and-high-diesel-prices-addin-up-tough-for-oregon-ra-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "The Pentagon's guidelines for \"responsible AI\" aren't always followed, report shows",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6012296/ai-department-of-defense-war",
-      "publishedAt": "2026-10-23T19:31:15.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "Drought, fire and high diesel prices 'addin' up tough' for Oregon ranchers",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-5992998/drought-fire-and-high-diesel-prices-addin-up-tough-for-oregon-ranchers",
+      "publishedAt": "2026-10-25T04:01:00.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "usa-ohio-could-decide-control-of-the-senate-its-rural-voters-might-d-5",
+      "id": "stl-4-killed-in-jefferson-county-crash-near-missouri-route-30-and-gr-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "4 killed in Jefferson County crash near Missouri Route 30 and Gravois Road",
+      "url": "https://fox2now.com/news/missouri/4-killed-in-jefferson-county-crash-near-missouri-route-30-and-gravois-road/",
+      "publishedAt": "2026-10-25T03:55:55.000Z",
+      "lastChecked": "2026-10-25T09:49:56.420Z"
+    },
+    {
+      "id": "stl-jefferson-barracks-celebrates-200-years-of-military-history-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Jefferson Barracks celebrates 200 years of military history",
+      "url": "https://fox2now.com/news/missouri/jefferson-barracks-celebrates-200-years-of-military-history/",
+      "publishedAt": "2026-10-25T02:13:39.000Z",
+      "lastChecked": "2026-10-25T09:49:56.421Z"
+    },
+    {
+      "id": "stl-gov-mike-kehoe-speaks-after-request-to-investigate-st-louis-poli-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Gov. Mike Kehoe speaks after request to investigate St. Louis police board",
+      "url": "https://fox2now.com/news/missouri/gov-mike-kehoe-speaks-after-request-to-investigate-st-louis-police-board/",
+      "publishedAt": "2026-10-24T22:52:23.000Z",
+      "lastChecked": "2026-10-25T09:49:56.421Z"
+    },
+    {
+      "id": "usa-archdiocese-of-new-york-agrees-to-800-million-settlement-over-se-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Ohio could decide control of the Senate. Its rural voters might decide the winner",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6012809/ohio-senate-governor-election-rural-voters",
-      "publishedAt": "2026-10-23T18:30:00.000Z",
-      "lastChecked": "2026-10-24T09:33:19.531Z"
+      "title": "Archdiocese of New York agrees to $800 million settlement over sexual abuse claims",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6015522/new-york-archdiocese-settlement-agreement",
+      "publishedAt": "2026-10-24T22:47:58.000Z",
+      "lastChecked": "2026-10-25T09:49:55.920Z"
     },
     {
-      "id": "stl-missouri-ag-to-investigate-st-louis-police-board-after-request-f-1",
+      "id": "stl-how-much-have-home-prices-increased-in-missouri-illinois-over-5--5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri AG to investigate St. Louis Police Board after request from Gov. Mike Kehoe",
-      "url": "https://fox2now.com/news/missouri/missouri-ag-to-investigate-st-louis-police-board-after-request-from-gov-mike-kehoe/",
-      "publishedAt": "2026-10-23T17:20:23.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
+      "title": "How much have home prices increased in Missouri, Illinois over 5 years?",
+      "url": "https://fox2now.com/news/missouri/how-much-have-home-prices-increased-in-missouri-illinois-over-5-years/",
+      "publishedAt": "2026-10-24T21:23:33.000Z",
+      "lastChecked": "2026-10-25T09:49:56.421Z"
     },
     {
-      "id": "stl-beloved-saint-louis-zoo-elephant-raja-saying-goodbye-this-weeken-3",
+      "id": "stl-50-missouri-judges-up-for-retention-on-november-2026-ballots-who-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Beloved Saint Louis Zoo elephant Raja saying goodbye this weekend",
-      "url": "https://fox2now.com/news/missouri/st-louis-zoo-raja-leaving/",
-      "publishedAt": "2026-10-23T14:15:04.000Z",
-      "lastChecked": "2026-10-24T09:33:19.809Z"
+      "title": "50 Missouri judges up for retention on November 2026 ballots - Who are they?",
+      "url": "https://fox2now.com/news/missouri/50-missouri-judges-up-for-retention-on-november-2026-ballots-who-are-they/",
+      "publishedAt": "2026-10-24T19:44:05.000Z",
+      "lastChecked": "2026-10-25T09:49:56.421Z"
     }
   ]
 }

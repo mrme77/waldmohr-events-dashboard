@@ -1,26 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:33:19.275Z",
+  "generatedAt": "2026-10-25T09:49:55.804Z",
   "source": "https://www.waldmohr-aktuell.de/",
-  "events": [
-    {
-      "id": "pilzexkursion-mit-dem-nabu",
-      "title": "Pilzexkursion mit dem NABU",
-      "originalTitle": "Pilzexkursion mit dem NABU",
-      "summary": "Pilzexkursion mit dem NABU is a public Waldmohr Aktuell source item. It may be relevant for outdoors, clubs planning. The event date was inferred from explicit source text. Open the source link for the full German details.",
-      "date": "2026-10-24",
-      "time": "30:00",
-      "venue": "Waldmohr",
-      "tags": [
-        "community",
-        "outdoors",
-        "clubs"
-      ],
-      "familyRelevance": "Potential orientation to local nature areas, walks, or outdoor clubs.",
-      "sourceUrl": "https://www.waldmohr-aktuell.de/pilzexkursion-mit-dem-nabu/",
-      "postDate": "2026-10-21",
-      "lastChecked": "2026-10-24",
-      "status": "upcoming",
-      "dateConfidence": "inferred"
-    }
-  ]
+  "events": []
 }
