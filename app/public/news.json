@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T11:08:21.464Z",
+  "generatedAt": "2026-10-27T10:36:05.482Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-trump-escalates-anti-muslim-attacks-against-el-sayed-in-michigan-0",
+      "id": "usa-how-aldi-is-pushing-down-grocery-prices-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump escalates anti-Muslim attacks against El-Sayed in Michigan",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6016816/trump-escalates-anti-muslim-attacks",
-      "publishedAt": "2026-10-26T09:22:36.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "How Aldi is pushing down grocery prices",
+      "url": "https://www.npr.org/sections/planet-money/2026/10/27/g-s1-149358/how-aldi-is-pushing-down-grocery-prices",
+      "publishedAt": "2026-10-27T10:30:00.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "usa-loggers-say-roadless-rule-repeal-won-t-solve-their-biggest-chall-1",
+      "id": "stl-quiet-and-dry-weather-into-friday-weekend-brings-a-change-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Quiet and dry weather into Friday, weekend brings a change",
+      "url": "https://fox2now.com/news/weather/quiet-and-dry-weather-into-friday-weekend-brings-a-change/",
+      "publishedAt": "2026-10-27T10:20:12.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
+    },
+    {
+      "id": "usa-polymarket-has-investigated-dozens-of-election-related-cases-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Loggers say Roadless Rule repeal won't solve their biggest challenges",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6009247/loggers-say-roadless-rule-repeal-wont-solve-their-biggest-challenges",
-      "publishedAt": "2026-10-26T09:00:00.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "Polymarket has investigated 'dozens' of election-related cases",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6012304/polymarket-election-betting-surveillance",
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "usa-special-ed-diaries-teachers-tell-npr-about-their-most-joyous-mos-2",
+      "id": "usa-can-black-voting-power-and-trump-fatigue-break-mississippi-s-red-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Special ed diaries: Teachers tell NPR about their most joyous, most difficult moments",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6000653/special-education-teacher-shortage",
-      "publishedAt": "2026-10-26T09:00:00.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "Can Black voting power and Trump fatigue break Mississippi's red wall?",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6018592/mississippi-senate-trump-colom-black-voter-turnout",
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "usa-how-ai-is-transforming-hurricane-forecasts-3",
+      "id": "usa-democrats-still-poised-to-make-gains-but-poll-shows-warning-sign-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How AI is transforming hurricane forecasts",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6012820/ai-hurricane-forecast-google-deepmind-isaias",
-      "publishedAt": "2026-10-26T09:00:00.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "Democrats still poised to make gains, but poll shows warning signs for just how many",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6017479/2026-midterms-npr-poll-democrats-trump-approval",
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "usa-republicans-are-spending-millions-and-still-may-not-win-district-4",
+      "id": "usa-morning-news-brief-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Republicans are spending millions and still may not win districts drawn to favor them",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6008167/republican-redistricting-midterms-competitive-map",
-      "publishedAt": "2026-10-26T09:00:00.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "Morning news brief",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6012225/morning-news-brief",
+      "publishedAt": "2026-10-27T08:48:45.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "usa-court-ruling-fails-to-end-wait-for-thousands-of-immigrants-stuck-5",
+      "id": "usa-harry-kane-becomes-first-englishman-in-25-years-to-win-ballon-d--5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Court ruling fails to end wait for thousands of immigrants stuck abroad without visas",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-5991896/court-ruling-fails-to-end-wait-for-thousands-of-immigrants-stuck-abroad-without-visas",
-      "publishedAt": "2026-10-26T09:00:00.000Z",
-      "lastChecked": "2026-10-26T11:08:20.827Z"
+      "title": "Harry Kane becomes first Englishman in 25 years to win Ballon d'Or",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6019097/harry-kane-alexia-putellas-ballon-dor",
+      "publishedAt": "2026-10-27T06:30:54.000Z",
+      "lastChecked": "2026-10-27T10:36:05.474Z"
     },
     {
-      "id": "stl-son-arrested-after-missing-father-found-dead-in-lincoln-county-1",
+      "id": "stl-parents-of-teen-killed-on-highway-30-speak-out-after-nearby-four-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Son arrested after missing father found dead in Lincoln County",
-      "url": "https://fox2now.com/news/missouri/son-arrested-after-missing-father-found-dead-in-lincoln-county/",
-      "publishedAt": "2026-10-26T01:02:53.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
+      "title": "Parents of teen killed on Highway 30 speak out after nearby four-fatality crash",
+      "url": "https://fox2now.com/news/missouri/parents-of-teen-killed-on-highway-30-speak-out-after-nearby-four-fatality-crash/",
+      "publishedAt": "2026-10-27T02:34:19.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
     },
     {
-      "id": "stl-sabbatini-has-a-blazing-finish-to-win-stifel-classic-for-first-c-2",
+      "id": "stl-missouri-ag-at-odds-with-sculpture-to-be-installed-at-rung-for-w-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Sabbatini has a blazing finish to win Stifel Classic for first Champions Tour title",
-      "url": "https://fox2now.com/sports/sabbatini-has-a-blazing-finish-to-win-stifel-classic-for-first-champions-tour-title/",
-      "publishedAt": "2026-10-25T23:43:51.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
+      "title": "Missouri AG at odds with sculpture to be installed at Rung for Women",
+      "url": "https://fox2now.com/news/missouri/missouri-ag-at-odds-with-sculpture-to-be-installed-at-rung-for-women/",
+      "publishedAt": "2026-10-27T01:03:36.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
     },
     {
-      "id": "stl-st-louis-police-board-attorney-resigns-amid-police-chief-pay-rai-0",
+      "id": "stl-former-lindbergh-teacher-faces-new-charge-in-sex-crime-case-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis Police Board attorney resigns amid police chief pay raise controversy",
-      "url": "https://fox2now.com/news/missouri/st-louis-police-board-attorney-resigns-amid-police-chief-pay-raise-controversy/",
-      "publishedAt": "2026-10-25T22:49:04.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
+      "title": "Former Lindbergh teacher faces new charge in sex crime case",
+      "url": "https://fox2now.com/news/missouri/former-lindbergh-teacher-faces-new-charge-in-sex-crime-case/",
+      "publishedAt": "2026-10-27T00:23:51.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
     },
     {
-      "id": "stl-charges-filed-in-midtown-road-rage-shooting-3",
+      "id": "stl-st-louis-launches-trauma-support-program-for-jurors-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Charges filed in Midtown road rage shooting",
-      "url": "https://fox2now.com/news/missouri/charges-filed-in-midtown-road-rage-shooting/",
-      "publishedAt": "2026-10-25T22:15:43.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
+      "title": "St. Louis launches trauma support program for jurors",
+      "url": "https://fox2now.com/news/missouri/st-louis-launches-trauma-support-program-for-jurors/",
+      "publishedAt": "2026-10-26T22:50:49.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
     },
     {
-      "id": "stl-missing-man-found-safe-after-two-weeks-police-say-4",
+      "id": "stl-man-read-father-last-rites-before-killing-him-records-say-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missing man found safe after two weeks, police say",
-      "url": "https://fox2now.com/news/missouri/missing-man-found-safe-after-two-weeks-police-say/",
-      "publishedAt": "2026-10-25T21:14:53.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
-    },
-    {
-      "id": "stl-ellisville-man-charged-in-hate-crime-attack-in-bluebird-park-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Ellisville man charged in hate crime attack in Bluebird Park",
-      "url": "https://fox2now.com/news/missouri/ellisville-man-charged-in-hate-crime-attack-in-bluebird-park/",
-      "publishedAt": "2026-10-25T21:08:03.000Z",
-      "lastChecked": "2026-10-26T11:08:21.454Z"
+      "title": "Man read father last rites before killing him, records say",
+      "url": "https://fox2now.com/news/missouri/man-read-father-last-rites-before-killing-him-records-say/",
+      "publishedAt": "2026-10-26T21:09:26.000Z",
+      "lastChecked": "2026-10-27T10:36:05.461Z"
     }
   ]
 }
