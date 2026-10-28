@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:36:05.482Z",
+  "generatedAt": "2026-10-28T11:21:46.650Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-how-aldi-is-pushing-down-grocery-prices-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How Aldi is pushing down grocery prices",
-      "url": "https://www.npr.org/sections/planet-money/2026/10/27/g-s1-149358/how-aldi-is-pushing-down-grocery-prices",
-      "publishedAt": "2026-10-27T10:30:00.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "stl-quiet-and-dry-weather-into-friday-weekend-brings-a-change-2",
+      "id": "stl-interstate-64-reopened-after-overnight-fire-in-chesterfield-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Quiet and dry weather into Friday, weekend brings a change",
-      "url": "https://fox2now.com/news/weather/quiet-and-dry-weather-into-friday-weekend-brings-a-change/",
-      "publishedAt": "2026-10-27T10:20:12.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Interstate 64 reopened after overnight fire in Chesterfield",
+      "url": "https://fox2now.com/news/missouri/interstate-64-reopened-after-overnight-fire-in-chesterfield/",
+      "publishedAt": "2026-10-28T10:40:59.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     },
     {
-      "id": "usa-polymarket-has-investigated-dozens-of-election-related-cases-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Polymarket has investigated 'dozens' of election-related cases",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6012304/polymarket-election-betting-surveillance",
-      "publishedAt": "2026-10-27T09:00:00.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "usa-can-black-voting-power-and-trump-fatigue-break-mississippi-s-red-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Can Black voting power and Trump fatigue break Mississippi's red wall?",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6018592/mississippi-senate-trump-colom-black-voter-turnout",
-      "publishedAt": "2026-10-27T09:00:00.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "usa-democrats-still-poised-to-make-gains-but-poll-shows-warning-sign-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Democrats still poised to make gains, but poll shows warning signs for just how many",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6017479/2026-midterms-npr-poll-democrats-trump-approval",
-      "publishedAt": "2026-10-27T09:00:00.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "usa-morning-news-brief-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6012225/morning-news-brief",
-      "publishedAt": "2026-10-27T08:48:45.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "usa-harry-kane-becomes-first-englishman-in-25-years-to-win-ballon-d--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Harry Kane becomes first Englishman in 25 years to win Ballon d'Or",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6019097/harry-kane-alexia-putellas-ballon-dor",
-      "publishedAt": "2026-10-27T06:30:54.000Z",
-      "lastChecked": "2026-10-27T10:36:05.474Z"
-    },
-    {
-      "id": "stl-parents-of-teen-killed-on-highway-30-speak-out-after-nearby-four-1",
+      "id": "stl-getting-even-warmer-the-next-few-days-rain-ramps-up-this-weekend-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Parents of teen killed on Highway 30 speak out after nearby four-fatality crash",
-      "url": "https://fox2now.com/news/missouri/parents-of-teen-killed-on-highway-30-speak-out-after-nearby-four-fatality-crash/",
-      "publishedAt": "2026-10-27T02:34:19.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Getting even warmer the next few days, rain ramps up this weekend",
+      "url": "https://fox2now.com/news/weather/getting-even-warmer-the-next-few-days-rain-ramps-up-this-weekend/",
+      "publishedAt": "2026-10-28T10:26:44.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     },
     {
-      "id": "stl-missouri-ag-at-odds-with-sculpture-to-be-installed-at-rung-for-w-0",
+      "id": "usa-at-least-30-dead-in-crash-between-two-trains-in-central-spain-me-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "At least 30 dead in crash between two trains in central Spain, media say",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
+      "publishedAt": "2026-10-28T10:09:46.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "usa-how-a-lifelong-republican-came-to-lead-the-data-center-battle-in-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How a lifelong Republican came to lead the data center battle in Ohio",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6019276/data-centers-ai-midterms-ohio",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "usa-why-many-student-voters-have-a-right-to-choose-where-to-register-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Why many student voters have a right to choose where to register to vote",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-5793936/college-student-voting",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "usa-partnerships-between-ice-and-local-police-surge-report-finds-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Partnerships between ICE and local police surge, report finds",
+      "url": "https://www.npr.org/2026/10/28/g-s1-150296/287g-local-police-immigration-ice",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "usa-here-s-how-democrats-in-congress-are-preparing-for-election-frau-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Here's how Democrats in Congress are preparing for election fraud claims",
+      "url": "https://www.npr.org/2026/10/28/g-s1-150095/democrats-prepare-election-fraud-claims",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "usa-senate-candidates-built-up-massive-campaign-war-chests-with-out--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Senate candidates built up massive campaign war chests with out-of-state donations",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-5940017/senate-campaign-fundraising-actblue-winred-ossoff",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "lastChecked": "2026-10-28T11:21:46.255Z"
+    },
+    {
+      "id": "stl-data-center-opponents-voice-concerns-in-alton-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri AG at odds with sculpture to be installed at Rung for Women",
-      "url": "https://fox2now.com/news/missouri/missouri-ag-at-odds-with-sculpture-to-be-installed-at-rung-for-women/",
-      "publishedAt": "2026-10-27T01:03:36.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Data center opponents voice concerns in Alton",
+      "url": "https://fox2now.com/news/illinois/data-center-opponents-voice-concerns-in-alton/",
+      "publishedAt": "2026-10-28T02:20:14.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     },
     {
-      "id": "stl-former-lindbergh-teacher-faces-new-charge-in-sex-crime-case-5",
+      "id": "stl-man-jailed-after-shooting-at-ramming-vehicle-on-south-grand-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Former Lindbergh teacher faces new charge in sex crime case",
-      "url": "https://fox2now.com/news/missouri/former-lindbergh-teacher-faces-new-charge-in-sex-crime-case/",
-      "publishedAt": "2026-10-27T00:23:51.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Man jailed after shooting at, ramming vehicle on South Grand",
+      "url": "https://fox2now.com/news/missouri/man-jailed-after-shooting-at-ramming-vehicle-on-south-grand/",
+      "publishedAt": "2026-10-28T00:54:17.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     },
     {
-      "id": "stl-st-louis-launches-trauma-support-program-for-jurors-3",
+      "id": "stl-firefighters-must-still-avoid-belleville-area-bridge-despite-rep-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis launches trauma support program for jurors",
-      "url": "https://fox2now.com/news/missouri/st-louis-launches-trauma-support-program-for-jurors/",
-      "publishedAt": "2026-10-26T22:50:49.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Firefighters must still avoid Belleville area bridge despite repair",
+      "url": "https://fox2now.com/news/fox-files/firefighters-must-still-avoid-belleville-area-bridge-despite-repair/",
+      "publishedAt": "2026-10-27T22:35:38.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     },
     {
-      "id": "stl-man-read-father-last-rites-before-killing-him-records-say-4",
+      "id": "stl-overland-police-issue-endangered-alert-for-missing-7-year-old-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Man read father last rites before killing him, records say",
-      "url": "https://fox2now.com/news/missouri/man-read-father-last-rites-before-killing-him-records-say/",
-      "publishedAt": "2026-10-26T21:09:26.000Z",
-      "lastChecked": "2026-10-27T10:36:05.461Z"
+      "title": "Overland Police issue endangered alert for missing 7-year-old",
+      "url": "https://fox2now.com/news/missouri/overland-police-issue-endangered-alert-for-missing-7-year-old/",
+      "publishedAt": "2026-10-27T21:15:02.000Z",
+      "lastChecked": "2026-10-28T11:21:46.645Z"
     }
   ]
 }
