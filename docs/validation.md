@@ -1,36 +1,90 @@
 # Validation
 
-How to verify the dashboard works.
+Current development checks and historical verification records. Reviewed on 2026-10-29.
 
-## v2 Checklist
-- From `app/`, run `npm run build`.
-- From `app/`, run `npm run dev` and open the Vite URL.
-- Confirm the page shows the news-marquee slot, calendar, right-rail weather, dual clocks with updated date, spotlight, and detail popover.
-- Confirm the news marquee shows USA and St. Louis headlines from `app/public/news.json`, scrolls slowly, and does not stretch the page horizontally.
-- Confirm `app/public/events.json` is loaded via `/events.json`.
-- Confirm month cells render category-colored event markers.
-- Confirm selecting a day/event opens details with source link, original German title, post date, last checked date, and date confidence.
-- Confirm past events do not appear in "Next Up".
-- Confirm trash (squares), holiday (triangle), flea-market (hollow ring), family (star), and
-  leave (star) events render on the calendar with the correct category colors and shapes.
-- Confirm official Homburg events from `app/public/homburg-events.json` render on the calendar,
-  retain German originals in details, and link to official city pages.
-- Confirm the right rail shows the next three translated official Homburg listings.
-- Confirm flea-market events from `app/public/fleamarkets.json` render as hollow ring markers
-  with amber color.
-- Run `node scripts/validate-events.mjs`.
-- Run `node scripts/validate-news.mjs`.
-- Run `node scripts/validate-trash.mjs`.
-- Run `node scripts/validate-holidays.mjs`.
-- Run `node scripts/validate-fleamarkets.mjs`.
-- Run `node scripts/validate-family.mjs` (skips cleanly if `family.json` is absent, i.e.
-  `GCAL_ICS_URL` not set).
-- Or run all of the above at once: `npm run validate` (from `app/`).
-- Optional: run `node scripts/refresh-events.mjs`, then validate again and confirm `app/public/events.json` changed.
-- Optional: run `node scripts/refresh-news.mjs`, then validate again and confirm `app/public/news.json` changed.
-- Optional: run `node scripts/refresh-homburg-events.mjs`, then validate again and confirm
-  `app/public/homburg-events.json` changed. With `OPENROUTER_API_KEY`, confirm titles and
-  summaries are translated while original German titles remain available in details.
+## Latest Recorded Local Verification — 2026-10-29
+
+The translation-cache work (merged as PR #48) was checked locally before merge, including after
+rebasing onto then-current main:
+
+- `cd app && npm test`: all 32 tests passed.
+- `cd app && npm run validate`: cached datasets validated; the optional private family
+  dataset also validated on that local installation. Its contents are not part of this record.
+- `cd app && npm run build`: TypeScript and Vite production build passed.
+- Final branch diff passed `git diff --check` after removing a trailing blank line.
+
+Translation regression tests use mocked requests and temporary files. They cover persistence
+across runs, zero API requests for unchanged recurrences, translating only new/edited text,
+cache reuse without a key, German fallbacks, failed-request retry, invalid results, missing or
+legacy caches, corruption/read errors, and model changes. No live paid translation requests
+were made for these checks. This documentation update does not claim a new test run.
+
+## Current Development Checklist
+
+From `app/`, run `npm test`, `npm run validate`, and `npm run build`. To inspect the UI,
+run `npm run dev` and open its local URL.
+
+- Confirm the month calendar, right-rail weather/Homburg highlights, Napoli and St. Louis
+  clocks, last-updated metadata, Next Up spotlight, and day details are present.
+- Confirm news uses NPR/FOX 2 headlines from `public/news.json`, displays one complete
+  wrapping headline, and changes every 30 seconds without continuous scrolling.
+- Confirm clocks update at minute boundaries and the brand indicator has no pulse animation.
+- Confirm calendar markers distinguish events, trash, holidays, flea markets, family and leave.
+  Past events stay out of Next Up and Homburg highlights.
+- Confirm day details keep the close control accessible, show public source QR codes instead
+  of opening kiosk browser tabs, and place personal entries before public events.
+- Confirm Homburg data preserves original German titles and official source URLs; the right
+  rail shows up to three upcoming/current listings, using available English translations or
+  source text when no translation exists.
+- Confirm touching weather opens the screen-level seven-day forecast and closes through ×,
+  outside tap, or Escape. Check at 375px, 768px, and 1024px without horizontal overflow.
+- Confirm event/news JSON loads on mount; a reload is needed to read published changes.
+  Weather independently refreshes every 15 minutes.
+
+`npm run validate` includes Homburg and optional family validation. From the repository root,
+individual validators can also be run as `node scripts/validate-<source>.mjs` for events, news,
+trash, holidays, fleamarkets, homburg-events, or family. Family skips if its file is absent.
+
+## Refresh and Translation Checks
+
+The existing GitHub workflow is configured to refresh public data daily at 05:17 UTC, and can
+be dispatched manually. Source failures are warned about while successful datasets proceed to
+validation/publication. Repository configuration does not prove a scheduled run completed.
+
+For an intentional live refresh, run `npm run refresh` from `app/`; this contacts external
+sources and can incur translation usage when `OPENROUTER_API_KEY` is set. Keep secrets out of
+commands and output. For Homburg-specific refresh, run `node scripts/refresh-homburg-events.mjs`
+from the repository root, then `node scripts/validate-homburg-events.mjs`.
+
+Inspect `homburg-events.json` and the refresh log:
+
+- First successful translation refresh from a legacy payload populates `translationCache`.
+- An unchanged source pair reuses its result; a new or changed title/summary is translated.
+- `translatedListings` counts all available translations for distinct current listings;
+  `reusedListings` and `newlyTranslatedListings` report reuse and new successes separately.
+- Missing keys preserve cached English and retain source text for cache misses. Failed API
+  translations are not cached and remain eligible for retry.
+- A model change starts fresh; unreadable or corrupt saved caches fail visibly rather than
+  silently triggering replacement paid requests.
+
+Live cache population and actual usage savings have not been verified in this review.
+
+## Pi Verification Still Required
+
+The existing hourly deployment timer and forecast modal were confirmed in the 2026-10-19
+handoff. The optimized replacement at `app/ops/deploy.sh` is locally tested and merged, but
+installation into the Pi operations directory remains unverified. See `../app/README.md` for
+installation commands and the earlier failed SSH attempt. Once installed, verify:
+
+- A changed commit validates, builds, publishes, and attempts a Chromium refresh.
+- A second unchanged run reports `No build needed`.
+- Changed dependency inputs reinstall packages; unchanged inputs reuse them.
+- Failed builds/publishes retry without advancing the published commit marker.
+- Private `family.json` remains preserved at the destination.
+
+The replacement's live Chromium refresh, temperature impact, and current timer health have
+not been measured here. Local family-cache refresh before deployment and state-preserving
+in-page event/news refresh remain pending.
 
 ## v1 Historical Checklist (retired 2026-06-09)
 The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for history only.
@@ -39,7 +93,7 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
 - Confirm month cells render event markers.
 - Confirm clicking an event opens details with source link and original German title.
 
-## Last Run
+## Historical Verification
 - 2026-10-19: production build passed after adding a touch-openable seven-day Waldmohr forecast
   panel. The panel shows condition, daily high/low, and precipitation probability; visual
   verification on the 7-inch Pi display remains after deployment.
@@ -77,6 +131,5 @@ The v1 static app (`index.html`, `src/`) was removed; its checklist is kept for 
   `2026-06-25T19:14:42.604Z`.
 - 2026-06-25: `npm run build` and `npm test` passed after the Trip Ideas panel was added with
   10-second paging.
-- Remaining automation: refresh the private family cache locally before deployment and reload
-  event/news JSON in an already-open Chromium page. Pi deployment and forecast modal were verified
-  on 2026-10-19.
+- At the 2026-10-19 handoff, family-cache refresh and open-page JSON refresh remained pending.
+  That dated Pi/forecast confirmation does not verify later deployment-script installation.

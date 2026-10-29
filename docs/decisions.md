@@ -1,6 +1,10 @@
 # Decision Log
 
-All architectural and design decisions.
+Architectural and design decisions, including historical choices. Later entries supersede
+earlier behavior where noted. Current development behavior is summarized in `spec.md`;
+Pi operation and installation evidence belong in `../app/README.md`.
+
+Reviewed against merged development code on 2026-10-29 (translation cache: PR #48).
 
 ## [2026-06-08] Start With A Static Local App
 **Context**: The first need is a usable local calendar, not deployment or multi-user auth.
@@ -171,14 +175,15 @@ the client, and every displayed idea links back to the originating Issuu page.
 previous non-empty cache where possible. It retries malformed model JSON once with a stricter
 prompt and then skips only the failed chunk so one bad model response does not lose the whole
 issue.
-**Status**: Accepted. This does not reverse the 2026-06-10 voice decision: OpenRouter is used only
-for offline ingestion, not for a live voice assistant or backend.
+**Status**: Superseded by the 2026-10-17 Homburg replacement. The original decision used
+OpenRouter only for offline ingestion, not for a live voice assistant or backend.
 
 ## [2026-10-17] Replace KMC Content With Official Homburg Highlights
 **Context**: The official Homburg calendar is closer and more reliable for the household than KMC magazine content.
 **Decision**: Remove KMC event/trip ingestion, caches, and UI. Translate distinct Homburg titles and teasers at refresh time through OpenRouter when configured; retain German originals and city source links; show the next three in the right rail.
 **Reason**: Concentrates the dashboard on an official nearby source. Missing or failed translation falls back to German so an OpenRouter outage cannot block refresh.
-**Status**: Accepted. Supersedes the KMC-source decisions above.
+**Status**: Accepted. Supersedes the KMC-source decisions above. Translation reuse is extended
+by the 2026-10-29 cache decision below.
 
 ## [2026-10-20] Use MiniMax Free for Homburg Event Translation
 **Context**: OpenRouter retired `google/gemini-2.5-flash` on October 20, 2026, so Homburg
@@ -196,7 +201,7 @@ change, so inspect the translation counts after a scheduled run.
 ## [2026-10-23] Use paid MiniMax base route after free launch ended
 **Context**: OpenRouter retired `minimax/minimax-m3.1-flash:free` at 2026-10-22 12:00 UTC. The next scheduled refresh received `404 Not Found` for every translation batch and published German fallback text.
 **Decision**: Use `minimax/minimax-m3.1-flash`, without the `:free` suffix.
-**Reason**: OpenRouter lists the base route at $0.15 per million input tokens and $0.60 per million output tokens (cached input: $0.015 per million). The refresh translates up to 42 distinct listings in three batches, keeping expected daily usage small while avoiding the retired launch route.
+**Reason**: At the time of this decision, the recorded rates were $0.15 per million input tokens and $0.60 per million output tokens (cached input: $0.015 per million). The observed feed had 42 distinct listings in three batches. These are historical observations, not current pricing or listing-count guarantees. The base route avoided the retired launch route.
 **Operational note**: API usage is billable. Keep `OPENROUTER_API_KEY` in GitHub Actions repository secrets; the Pi only deploys the generated JSON. If a batch fails, the adapter retains German originals and reports a warning.
 **Status**: Accepted.
 
@@ -209,3 +214,43 @@ GitHub Actions, convert a partial refresh exit into a warning and continue valid
 **Reason**: A failed source should retain its previous valid cache without blocking fresh datasets
 from unrelated sources. The refresh summary and warning remain visible in the workflow log.
 **Status**: Accepted.
+
+## [2026-10-25] Reduce Continuous Pi Rendering and Skip Unchanged Deployments
+**Context**: Continuous headline movement, frequent clock updates, and repeated installation/builds
+created avoidable work for the always-on dashboard.
+**Decision**: Display one wrapping headline at a time, rotating every 30 seconds without scrolling
+or transitions; remove the brand pulse; update Napoli and St. Louis clocks at minute boundaries.
+Version the replacement deployment script at `app/ops/deploy.sh`. It records the last successful
+publish, skips unchanged deployments when published output exists, and reuses dependencies when
+installation inputs match. Successful publishes attempt a Chromium refresh and warn on failure.
+**Reason**: Reduce repeated rendering and deployment work while retaining retries after failed
+builds or publishes and preserving the private family calendar at the destination.
+**Operational note**: PR #47 merged this code. Installation of the replacement script into the
+Pi operations directory remains unverified; merging the repository copy does not install it
+there. Temperature improvement and live Chromium refresh behavior have not been verified for
+this replacement. See `app/README.md` for installation and verification steps.
+**Status**: Implemented and locally tested; Pi installation verification remains open.
+
+## [2026-10-29] Reuse Successful Homburg Translations Across Refreshes
+**Context**: Each refresh previously translated every distinct Homburg title and summary again,
+even when the source text had not changed. In-memory de-duplication only avoided repeated
+occurrences within one run.
+**Decision**: Persist a model-scoped `translationCache` in `app/public/homburg-events.json`.
+Key entries by the original title and summary; translate only missing pairs in batches of up to
+20 listings. Reuse successful translations across refreshes and recurrences, including when
+`OPENROUTER_API_KEY` is absent. Preserve entries for listings temporarily absent from the feed.
+New or edited text without a saved translation retains its source text if translation fails
+or no key is configured; failed results are not cached and can be retried later.
+**Reason**: Avoid repeat API usage for unchanged content while preserving the existing static
+frontend and daily JSON publication workflow. Page loads do not perform translations.
+**Operational note**: Missing or legacy payloads start with an empty cache, so the first
+successful translation refresh populates it. Changing the configured model resets reuse.
+Unreadable or malformed saved caches fail the adapter visibly, retaining its prior payload
+through the partial-refresh workflow instead of silently making replacement paid requests.
+`translatedListings` counts all translated distinct listings in the current feed;
+`reusedListings` and `newlyTranslatedListings` separate reused and newly obtained results.
+The daily workflow is configured for 05:17 UTC; actual run timing and live cache population
+have not been verified in this documentation review. The Pi only deploys generated JSON and
+does not require the OpenRouter key.
+**Status**: Implemented in PR #48 and merged. Local tests, build, and data validation passed;
+see `docs/validation.md`. Live paid translation requests were not used for those checks.
