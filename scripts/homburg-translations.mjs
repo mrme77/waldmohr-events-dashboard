@@ -90,4 +90,3 @@ export async function translateEvents(events, apiKey, fetchImpl = fetch, cachedT
     translationCache: { model: OPENROUTER_MODEL, items: Object.fromEntries(translations) },
   };
 }
-
