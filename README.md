@@ -7,7 +7,7 @@ A touch-friendly, English-language dashboard for local events and useful updates
 ## Features
 
 - Waldmohr events and nearby Homburg events, with dates and links to their original sources.
-- US and St. Louis news headlines.
+- US and St. Louis news headlines, displayed one at a time and changing every 30 seconds.
 - Trash collection dates, Rheinland-Pfalz public holidays, and Homburg flea-market dates.
 - Current Waldmohr weather and a seven-day forecast.
 - Napoli and St. Louis clocks.
@@ -47,19 +47,21 @@ npm run refresh
 npm run validate
 ```
 
-The scheduled GitHub Actions workflow refreshes the public datasets daily at 05:00 UTC. The dashboard reads the JSON datasets when it loads, so a running display needs to reload to show newly published data. Individual data sources can be temporarily unavailable; check the refresh workflow logs for adapter results.
+The GitHub Actions workflow is scheduled to refresh public datasets daily at 05:17 UTC and also supports manual runs. The dashboard reads JSON datasets when it loads, so a running display needs to reload to show newly published data. Individual data sources can be temporarily unavailable; check the refresh workflow logs for adapter results. After a partial refresh, the workflow validates and publishes successful dataset updates while retaining failed adapters' previous files.
+
+Run the regression tests with `npm test` from `app/`. The internal deployment handoff is in [app/README.md](./app/README.md); project decisions and verification records are in [docs/](./docs/).
 
 ## Optional configuration
 
 The dashboard can include a private Google Calendar feed for a personal installation. Copy the root `.env.example` to `.env` and set `GCAL_ICS_URL` to the calendar's secret iCal URL. Treat that URL as a password: anyone who has it can read the calendar. The generated family cache is gitignored and must not be committed or served from a public deployment.
 
-Homburg event translations use OpenRouter when `OPENROUTER_API_KEY` is available to the data-refresh workflow. Add it as a GitHub Actions repository secret to enable translations. Without the key, event titles and descriptions remain in German. Never commit `.env` files, secret URLs, or API keys.
+Homburg event translations use OpenRouter `minimax/minimax-m3.1-flash` when `OPENROUTER_API_KEY` is available to the data-refresh workflow. Add it as a GitHub Actions repository secret to enable new translations. Successful translations are saved in the Homburg JSON payload and reused whenever the original German title and summary are unchanged. Only new or edited text requires another translation request. Without the key, cached English remains available and uncached text stays in German. Failed translations are retried on later refreshes; changing the configured model starts a fresh cache. The first refresh after the cache fix populates it because older payloads did not retain original summaries. Never commit `.env` files, secret URLs, or API keys.
 
 ## Data sources
 
 - Local events: [Waldmohr Aktuell](https://www.waldmohr-aktuell.de/)
 - Homburg events and flea-market dates: [City of Homburg](https://www.homburg.de/)
-- News: NPR News and KSDK St. Louis RSS feeds
+- News: NPR News and FOX 2 News St. Louis RSS feeds
 - Trash collection: Landkreis Kusel calendar
 - Public holidays: [Nager.Date](https://date.nager.at/)
 - Weather: [Open-Meteo](https://open-meteo.com/)

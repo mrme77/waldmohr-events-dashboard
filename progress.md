@@ -1,67 +1,78 @@
 # Progress
 
-## Current dashboard
+## Current development — reviewed 2026-10-29
+
+- Current sources are Waldmohr events, official Homburg events, Homburg flea markets, NPR USA
+  and FOX 2 St. Louis news, Open-Meteo weather, trash, holidays, and an optional private family
+  calendar. KMC magazine-event and trip-summary adapters, caches, and UI have been removed.
+- The current clocks show Napoli and St. Louis. Headlines wrap and change every 30 seconds
+  without continuous animation; clock updates align to minute boundaries and the brand
+  indicator is static.
+- PR #47 merged these lower-load UI changes and the optimized script at `app/ops/deploy.sh`.
+  The script skips unchanged published commits, reuses dependencies when their inputs match,
+  validates/builds changed commits, preserves private family JSON, and attempts a Chromium
+  refresh after publication. **Installation of that replacement script on the Pi is unverified.**
+- PR #48 merged persistent Homburg translations. Successful English results are stored in
+  `homburg-events.json` by original German title and summary. Refreshes reuse unchanged text
+  and request only new or edited text; cached translations also work without an API key.
+  Failed translations remain eligible for retry, and logs distinguish reused translations,
+  new translations, and German fallbacks. The first refresh populates the cache; a model
+  change starts a fresh cache.
+- Public data refreshes in GitHub Actions daily at 05:17 UTC. Partial adapter failures produce
+  warnings while successful datasets continue through validation and publication.
+- During the translation-cache implementation, all 32 tests, cached-data validation, and the
+  production build passed. This is the prior implementation result, not a fresh test run for
+  this documentation update. No live paid translation request was made in that validation.
+
+## Deployment evidence and remaining work
+
+- The operator previously confirmed an hourly Pi deployment timer. The full-width weather
+  forecast modal was confirmed working on the Pi on 2026-10-19 after PR #41.
+- No new Pi inspection was performed for this documentation update. Repository code does not
+  establish which operations-script version the service currently runs, whether Chromium
+  accepted its refresh keystroke, or whether temperatures improved.
+- Verify installation of the optimized script and unchanged-run skip behavior on the Pi;
+  consult the internal [handoff](app/README.md) for installation and journal checks.
+- Refresh the private family cache locally before deployment; never commit `family.json`.
+- Add event/news JSON refresh that preserves the current month and selected day. The browser
+  currently loads those datasets on mount; a successful full reload reads fresh data but
+  resets the view. Weather already refreshes every 15 minutes.
+- Confirm the first post-#48 refresh populates the translation cache and a later unchanged
+  refresh reports reuse; live workflow behavior was not checked in this docs review.
+
+## Historical milestones
+
+These records describe earlier implementation stages; the current state above supersedes
+their original feed names, UI behavior, paths, and deployment assumptions.
+
 ### 2026-10-19 — Pi operation and weather forecast
-- Pi operator confirmed `myai` runs an hourly `waldmohr-deploy.timer`; the service
-  fast-forwards `main`, validates/builds, and publishes `app/dist` to Nginx.
-- `GCAL_ICS_URL` is configured on the Pi and its private family cache exists, but
-  deployment does not refresh it. The open Chromium page also does not reload event/news
-  JSON after deployment; these remain the full-automation gaps.
-- Added a touch-friendly seven-day Waldmohr forecast panel to the weather card
-  (PR #40); its first version was clipped by the Pi sidebar. PR #41 moved it to
-  a screen-level modal. User confirmed the full-width modal works on the Pi
-  touchscreen after pulling and deploying the update.
-- Recent merged kiosk fixes: source QR codes (#37), family entries before public
-  QR cards and 50-second marquee (#38), responsive clocks for the 7-inch panel (#39).
-- PR #41 is merged and verified on the Pi. Deploy manually with
-  `sudo systemctl start waldmohr-deploy.service` after pulling `main`; confirm
-  `Deployment completed` in its journal, then reload Chromium.
 
-### Completed
-- Current sources are Waldmohr events, official Homburg events, flea markets, weather, news,
-  trash, holidays, and the private family calendar. The KMC event/trip surfaces below are
-  historical and were removed in October 2026 when the dashboard focused on Homburg.
-- Confirmed the three target city sites have no usable APIs (Waldmohr→IONOS, KL→TYPO3, Ramstein→JS);
-  every new event source is a bespoke scrape. Documented in `plan.md`.
-- Confirmed Landkreis Kusel publishes a Waldmohr trash iCal export (params TBD at build time).
-- Wrote v2 plan, decision log, and GDPR/scraping posture (`docs/compliance.md`).
-- Phase 1: scaffolded `app/` (Vite + React + TS), "Civic Departure Board" theme, layout shell with
-  top news marquee, dual clocks (NAP/STL), Last Updated KPI, calendar + rotating spotlight +
-  tap-to-detail popover. Renders Waldmohr seed events. Type-checks clean; previews via `npm run dev`.
-- Phase 2: live Waldmohr refresh now writes both shared data and `app/public/events.json`;
-  validation covers both payloads; event detail shows source metadata. The refresh only displays
-  events within 180 days of today with explicit source dates.
-- Phase 3: added a single Waldmohr current-weather widget using Open-Meteo directly from the
-  frontend. The right rail now stacks weather, clocks, then Next Up; weather shows temperature,
-  spelled-out condition, wind, humidity, and loading/error states. The clock widget includes the
-  event-data updated date.
-- Phase 4: added keyless RSS refresh for NPR USA and KSDK St. Louis headlines. The refresh writes
-  cached news JSON to `app/public/news.json`; the top marquee now loads the cached payload with
-  a fallback error/loading state. The marquee is constrained so long RSS
-  headlines cannot stretch the app layout, and it scrolls at 80 seconds per loop.
-- MVP browser QA/demo pass in a normal browser: layout, theme, marquee, clocks, calendar, weather,
-  and family layer all render correctly. QA found that the event-date filter was incorrectly
-  excluding upcoming events posted far in advance. Fixed by removing the `maxPostLeadDays` check
-  from `isDisplayableEventDate` in `scripts/refresh-events.mjs`; now only `daysFromToday <= 180`
-  is applied.
-- Phase 5 (rescoped): Kaiserslautern/Ramstein scrapes dropped (2026-06-10, see
-  `docs/decisions.md`). Added a Homburg Flohmarkt adapter (`scripts/refresh-fleamarkets.mjs`)
-  using a maintained table of official yearly dates from homburg.de, since the first-Saturday
-  rule has holiday exceptions.
-- Phase 6a: added the Kusel trash iCal adapter (`scripts/refresh-trash.mjs`) and a German public
-  holidays adapter (`scripts/refresh-holidays.mjs`, date.nager.at, RLP), both wired into the
-  calendar with their own category colors.
-- Phase 6b: added the family layer — a Google Calendar private iCal adapter
-  (`scripts/refresh-family.mjs`) with a dependency-free ICS parser supporting recurrence. The
-  secret URL lives in `.env` as `GCAL_ICS_URL`; generated `family.json` is gitignored so the
-  family schedule never reaches this public repo. Leave/vacation/Urlaub/PTO events get their own
-  calendar marker.
+- Operator confirmed the hourly deployment timer and an existing private family cache. That
+  deployment did not refresh the family adapter; no state-preserving in-page data refresh
+  existed.
+- PR #40 added the seven-day weather panel. PR #41 moved it into a screen-level modal to
+  avoid sidebar clipping, and the user confirmed it worked on the Pi touchscreen.
+- Earlier kiosk changes shipped source QR codes (#37), family entries before public QR
+  cards (#38), and responsive clocks for the small display (#39).
 
-### Remaining
-- Refresh the Pi's private family cache locally before deployment; never commit `family.json`.
-- Make the open dashboard re-fetch event/news JSON while preserving the current month and
-  selected day. Weather already refreshes every 15 minutes.
+### Earlier v2 development
 
-## v1 — Static Dashboard (done, retained until v2 parity)
-- Built a static local calendar dashboard with seeded English event data, refresh + validation
-  scripts. Browser-tested desktop, search, details, and 375px mobile. Validated event data.
+- Scaffolded the Vite, React, and TypeScript kiosk, calendar, clocks, spotlight, and details.
+- Replaced seeded Waldmohr records with the public WordPress REST API and confirmed dates.
+  An early dual-write data layout was later retired; `app/public/` is the current cache tree.
+- Added Open-Meteo weather and RSS news. The original St. Louis feed was KSDK and headlines
+  originally scrolled; both were subsequently replaced by the current source and presentation.
+- Completed browser QA at desktop and mobile sizes and fixed the event-date filter so
+  upcoming events posted far in advance were not excluded.
+- Dropped proposed Kaiserslautern/Ramstein scrapes and added maintained official Homburg
+  flea-market dates, accounting for holiday exceptions.
+- Added Kusel trash iCal, German public holidays, and private Google Calendar recurrence
+  support. Secrets stayed in `.env`; generated family data was excluded from Git.
+- Shipped KMC magazine events and trip summaries, then replaced them with official Homburg
+  events and highlights in October 2026.
+- Dropped voice on 2026-06-10; the dashboard remains touch-only with no backend server.
+
+### v1 — retired
+
+- Built and browser-tested a static local calendar with seed data and refresh/validation
+  scripts. Retired the v1 UI in June 2026 after the Vite replacement reached parity.

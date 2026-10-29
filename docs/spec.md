@@ -1,42 +1,68 @@
 # Project Specification: Waldmohr Events Dashboard
 
+Reviewed against merged development code on 2026-10-29 (translation cache: PR #48).
+
 ## Intent
-Build a local English-first kiosk dashboard that helps an American family moving to the Kaiserslautern Military Community see current public events, understand why they matter, and verify every item against its original source.
+Build a local English-first touchscreen dashboard that helps a household in Waldmohr find
+current public events, understand why they matter, and verify them against original sources.
+The application is a static Vite + React + TypeScript site under `app/`, served on a Pi.
 
-## v2 MVP Acceptance Criteria
-- [x] The app runs as a Vite + React + TypeScript kiosk shell under `app/`.
-- [x] The home screen shows a month calendar, top news-marquee slot, dual clocks, last-updated metadata, rotating "Next Up" spotlight, and tap-to-detail popover.
-- [x] The Waldmohr refresh pipeline writes live normalized events to `app/public/events.json`.
-- [x] The app loads events from `/events.json` and does not depend on hardcoded seed data.
-- [x] The calendar uses category color dots and tap/click selection, not filter checkboxes.
-- [x] Each detail popover displays English title, plain-English summary, date, time when available, venue, source URL, original German title, post date, last checked date, and date confidence.
-- [x] Past events are excluded from "Next Up" and visually distinct from upcoming/current events where shown.
-- [x] A validation script checks the event payload shape before the app uses refreshed data.
-- [x] The v2 app builds with `npm run build`.
+## Current Acceptance Criteria
 
-All MVP criteria shipped. Later phases (weather, news, family/trash/holidays, flea markets, KMC
-events, and KMC trip summaries) added on top — see `plan.md`.
+- [x] Show a month calendar, news slot, Napoli and St. Louis clocks, last-updated metadata,
+  rotating Next Up spotlight, and touch-friendly day details.
+- [x] Load normalized JSON from `app/public/` for Waldmohr events, official Homburg events,
+  flea markets, trash, holidays, news, and an optional private family calendar.
+- [x] Use category markers and day selection rather than filter checkboxes; exclude past
+  events from Next Up and Homburg highlights.
+- [x] Keep public events source-linked; show original German titles and date confidence in
+  details. Source websites are accessed through locally generated QR codes for a phone.
+- [x] Display up to three upcoming/current Homburg listings in the right rail. The former
+  KMC magazine events and Trip Ideas surfaces have been removed.
+- [x] Read English NPR and FOX 2 News headlines without translation. Show one wrapping
+  headline at a time and rotate every 30 seconds, without continuous scrolling.
+- [x] Fetch Waldmohr weather directly from Open-Meteo every 15 minutes and open a seven-day
+  forecast in a screen-level modal.
+- [x] Translate missing Homburg title/summary pairs at refresh time when configured; reuse
+  saved successful translations across refreshes and recurrences, including without a key.
+  Untranslated text retains its source text when no key is available or a batch fails.
+- [x] Validate cached data and pass the TypeScript/production build.
 
-## Constraints
-- **Source-linked**: no event is displayed without a source URL.
-- **Freshness-visible**: the app must show last refreshed time.
-- **No client secrets**: secrets stay in `.env`, used only by refresh scripts (e.g. `GCAL_ICS_URL`
-  for the family calendar feed and the OpenRouter key for KMC trip summaries), never shipped to
-  the client.
-- **Date caution**: inferred event dates must be marked with `dateConfidence`.
-- **Local-first**: v2 is built for a local Raspberry Pi kiosk and local cached JSON.
-- **Public Waldmohr first**: the MVP shipped with only Waldmohr Aktuell before KMC-wide sources
-  (news, weather, family, trash, holidays, flea markets, Kaiserslautern American `UNTERWEGS`,
-  and KMC trip summaries) were added in later phases — done, see `plan.md`.
+## Architecture and Constraints
+
+- **Static frontend**: no application backend. Event/news JSON loads on mount; page reloads
+  read generated files and never invoke translation. State-preserving in-page JSON refresh
+  remains pending.
+- **Separate ingestion**: Node.js adapters normalize public sources. GitHub Actions is
+  configured to refresh and publish public JSON daily at 05:17 UTC, with manual dispatch.
+- **Translation persistence**: `homburg-events.json` contains a model-scoped cache keyed by
+  original title and summary. New or changed pairs are translated in batches of up to 20;
+  failures are retried on later refreshes. A corrupt saved cache fails visibly. Changing
+  models starts a fresh cache; legacy payloads require an initial population run.
+- **Source-linked and freshness-visible**: public events retain source URLs and refresh
+  metadata. Inferred dates must use `dateConfidence` rather than appearing confirmed.
+- **No client secrets**: `OPENROUTER_API_KEY` is a GitHub Actions repository secret for
+  scheduled Homburg refreshes, or a local environment/`.env` value for manual refreshes.
+  `GCAL_ICS_URL` stays local for the private family adapter. Neither reaches the client.
+- **Private family data**: generated `family.json` is gitignored and preserved at the Pi
+  publish destination. Refreshing it locally before deployment remains pending.
+- **Deployment evidence**: hourly Pi deployment was reported operational. The optimized
+  replacement script is implemented and tested locally, but its installation and Chromium
+  refresh behavior on the Pi remain unverified. See `../app/README.md`.
 
 ## Non-Goals
-- Full clone of Waldmohr Aktuell.
-- Backend CMS or admin workflow.
-- Automated machine translation paid API integration.
+
+- Full clone of Waldmohr Aktuell or full-article republication.
+- Backend CMS, manual event entry on the kiosk, or a live translation backend.
 - Scraping private or authenticated pages.
-- Manual event-entry UI on the kiosk.
-- Voice interaction — dropped 2026-06-10 (touch dashboard is sufficient; see `docs/decisions.md`).
-- Pi 5 deployment is out of scope for this spec; tracked as Phase 8 in `plan.md`.
+- Voice interaction (dropped 2026-06-10).
+- KMC magazine ingestion and Trip Ideas (replaced by Homburg in October 2026).
+
+The original MVP excluded paid machine translation and Pi deployment; those historical
+boundaries were superseded by the implemented Homburg refresh integration and Pi work.
+See `decisions.md` for the history and `../plan.md` for remaining work.
 
 ## v1 Status
-The original static HTML/CSS/JS dashboard is complete and retained until v2 reaches parity. Its historical criteria are tracked in `TASKS.md` and `progress.md`.
+
+The original static HTML/CSS/JS app was retired on 2026-06-09. The Vite app under `app/`
+is the only UI; earlier implementation and acceptance records remain historical.
