@@ -92,11 +92,18 @@ current view or selected date.
 The GitHub Actions `Refresh Dashboard Data` workflow translates distinct Homburg
 listings with OpenRouter `minimax/minimax-m3.1-flash`. The former `:free` launch
 route was retired on 2026-10-22 and returned 404s. The base model is paid at
-OpenRouter's listed rates, so daily translations incur a small usage charge.
+OpenRouter's listed rates. Successful translations are saved in the Homburg JSON
+payload and reused across refreshes, including when the API key is unavailable.
+Only new or changed German title/summary pairs are sent for translation; changing
+the configured model starts a fresh cache. The first refresh after this fix
+populates the cache because older payloads did not preserve the original summaries.
 It requires the repository Actions secret `OPENROUTER_API_KEY`; the Pi does not
 need this key because it deploys the generated JSON. Each Homburg cache records `model`,
-`translatedListings`, and `totalListings`; the workflow log reports the same
-translation count. German text remains as a safe fallback when a batch fails.
+`translatedListings` (all available translations), `totalListings`, `reusedListings`,
+and `newlyTranslatedListings`. The workflow log separates reused translations,
+new translations, and German fallbacks. Failed translations are not cached and
+can be retried on the next refresh. An unreadable or corrupt saved translation
+cache fails the adapter visibly rather than silently repeating paid requests.
 Transient source failures are retried (including three attempts for the trash
 calendar). If an adapter still fails, the workflow emits a warning but continues
 to validate and commit datasets refreshed successfully; the failed adapter's

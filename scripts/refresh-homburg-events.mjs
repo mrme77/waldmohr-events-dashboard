@@ -1,4 +1,7 @@
 import { URL } from "node:url";
+import { OPENROUTER_MODEL, readTranslationCache, translateEvents } from "./homburg-translations.mjs";
+
+export { translateEvents } from "./homburg-translations.mjs";
 import { config as loadDotenv } from "dotenv";
 import { fetchTextWithRetry } from "./fetch-text.mjs";
 import { runMain, writeJson } from "./lib.mjs";
@@ -6,9 +9,6 @@ import { runMain, writeJson } from "./lib.mjs";
 export const SOURCE_URL = "https://www.homburg.de/veranstaltungen/";
 export const API_URL = "https://www.homburg.de/umbraco/api/veranstaltungen/getall?katId=&search=&ort=&showall=";
 const output = new URL("../app/public/homburg-events.json", import.meta.url);
-const OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions";
-const OPENROUTER_MODEL = "minimax/minimax-m3.1-flash";
-const TRANSLATION_BATCH_SIZE = 20;
 
 loadDotenv({ path: new URL("../.env", import.meta.url).pathname, quiet: true });
 
@@ -108,52 +108,6 @@ export function normalizeEvents(payload, todayKey) {
   return uniqueEvents.sort((left, right) => left.date.localeCompare(right.date) || (left.time ?? "").localeCompare(right.time ?? ""));
 }
 
-/** Returns a stable key for one translatable official listing. */
-function translationKey(event) {
-  return `${event.originalTitle}\n${event.summary}`;
-}
-
-/** Translates distinct official listings in bounded batches, retaining German on failure. */
-export async function translateEvents(events, apiKey, fetchImpl = fetch) {
-  const distinct = [...new Map(events.map((event) => [translationKey(event), event])).values()];
-  if (!apiKey) return { events, translatedListings: 0, totalListings: distinct.length };
-  const translations = new Map();
-  for (let offset = 0; offset < distinct.length; offset += TRANSLATION_BATCH_SIZE) {
-    const batch = distinct.slice(offset, offset + TRANSLATION_BATCH_SIZE);
-    try {
-      const response = await fetchImpl(OPENROUTER_CHAT_URL, {
-        method: "POST",
-        headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json", "HTTP-Referer": "https://github.com/mrme77/waldmohr-events-dashboard", "X-Title": "waldmohr-events-dashboard" },
-        body: JSON.stringify({
-          model: OPENROUTER_MODEL,
-          temperature: 0,
-          response_format: { type: "json_object" },
-          messages: [
-            { role: "system", content: "Translate German municipal event listings into concise US English. Preserve names, dates, times, and factual meaning. Return JSON only." },
-            { role: "user", content: JSON.stringify({ items: batch.map((event, index) => ({ index, title: event.originalTitle, summary: event.summary })), response: { items: [{ index: 0, title: "English title", summary: "English summary" }] } }) },
-          ],
-        }),
-      });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-      const content = (await response.json())?.choices?.[0]?.message?.content;
-      const results = typeof content === "string" ? JSON.parse(content).items : null;
-      if (!Array.isArray(results)) throw new Error("response did not contain translation items");
-      for (const result of results) {
-        if (!Number.isInteger(result?.index) || typeof result.title !== "string" || typeof result.summary !== "string") continue;
-        const source = batch[result.index];
-        if (source && result.title.trim() && result.summary.trim()) translations.set(translationKey(source), { title: result.title.trim(), summary: result.summary.trim() });
-      }
-    } catch (error) {
-      console.warn(`Homburg translation batch ${offset / TRANSLATION_BATCH_SIZE + 1} skipped: ${error instanceof Error ? error.message : String(error)}`);
-    }
-  }
-  const translatedEvents = events.map((event) => {
-    const translated = translations.get(translationKey(event));
-    return translated ? { ...event, title: translated.title, summary: translated.summary } : event;
-  });
-  return { events: translatedEvents, translatedListings: translations.size, totalListings: distinct.length };
-}
-
 /** Fetches all public Homburg calendar categories and writes their normalized cache. */
 async function main() {
   const body = await fetchTextWithRetry(API_URL, {
@@ -162,18 +116,22 @@ async function main() {
   });
   const todayKey = new Date().toISOString().slice(0, 10);
   const normalizedEvents = normalizeEvents(JSON.parse(body), todayKey);
-  const translation = await translateEvents(normalizedEvents, process.env.OPENROUTER_API_KEY);
+  if (normalizedEvents.length === 0) throw new Error(`No usable events returned by ${API_URL}`);
+  const cachedTranslations = await readTranslationCache(output);
+  const translation = await translateEvents(normalizedEvents, process.env.OPENROUTER_API_KEY, fetch, cachedTranslations);
   const { events } = translation;
-  if (events.length === 0) throw new Error(`No usable events returned by ${API_URL}`);
 
   const model = translation.translatedListings > 0 ? OPENROUTER_MODEL : "original German fallback";
-  console.log(`Translated ${translation.translatedListings} of ${translation.totalListings} distinct Homburg listings.`);
+  console.log(`Homburg translations: ${translation.reusedListings} reused, ${translation.newlyTranslatedListings} newly translated, ${translation.totalListings - translation.translatedListings} German fallbacks.`);
   await writeJson(output, {
     generatedAt: new Date().toISOString(),
     source: SOURCE_URL,
     model,
     translatedListings: translation.translatedListings,
     totalListings: translation.totalListings,
+    reusedListings: translation.reusedListings,
+    newlyTranslatedListings: translation.newlyTranslatedListings,
+    translationCache: translation.translationCache,
     events,
   });
   console.log(`Refreshed ${events.length} Homburg event occurrences.`);
