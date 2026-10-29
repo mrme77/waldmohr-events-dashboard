@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:21:46.650Z",
+  "generatedAt": "2026-10-29T11:32:14.374Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-interstate-64-reopened-after-overnight-fire-in-chesterfield-3",
+      "id": "stl-woman-struck-killed-wednesday-evening-in-farmington-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Interstate 64 reopened after overnight fire in Chesterfield",
-      "url": "https://fox2now.com/news/missouri/interstate-64-reopened-after-overnight-fire-in-chesterfield/",
-      "publishedAt": "2026-10-28T10:40:59.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "Woman struck, killed Wednesday evening in Farmington",
+      "url": "https://fox2now.com/news/missouri/woman-struck-killed-wednesday-evening-in-farmington/",
+      "publishedAt": "2026-10-29T11:09:40.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     },
     {
-      "id": "stl-getting-even-warmer-the-next-few-days-rain-ramps-up-this-weekend-2",
+      "id": "usa-how-ai-drones-are-influencing-the-course-of-the-ukraine-war-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How AI drones are influencing the course of the Ukraine war",
+      "url": "https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia",
+      "publishedAt": "2026-10-29T09:02:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "usa-tariffs-diesel-and-computer-chips-are-driving-up-costs-for-autom-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Tariffs, diesel and computer chips are driving up costs for automakers",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6008066/automakers-inflation-tariffs-chips-diesel-earnings",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "usa-these-are-the-house-races-to-watch-in-the-2026-midterm-election--2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "These are the House races to watch in the 2026 midterm election on Nov. 3",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6020921/2026-house-map-democrats-flip-republicans-tossup-triage",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "usa-state-ballots-let-voters-decide-on-abortion-taxes-transgender-re-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "State ballots let voters decide on abortion, taxes, transgender restrictions",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6019363/state-ballot-referendum-abortion-taxes",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "usa-business-as-a-liberal-art-some-high-schools-say-yes-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Business as a liberal art? Some high schools say yes",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6017795/ap-business-personal-finance-course-high-school",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "usa-ahead-of-midterms-missourians-defend-transgender-healthcare-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Ahead of midterms, Missourians defend transgender healthcare",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6017986/election-midterm-healthcare-transgender",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "lastChecked": "2026-10-29T11:32:13.892Z"
+    },
+    {
+      "id": "stl-lawyers-promise-repairs-for-northern-village-apartments-at-count-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Getting even warmer the next few days, rain ramps up this weekend",
-      "url": "https://fox2now.com/news/weather/getting-even-warmer-the-next-few-days-rain-ramps-up-this-weekend/",
-      "publishedAt": "2026-10-28T10:26:44.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "Lawyers promise repairs for Northern Village Apartments at County Council meeting",
+      "url": "https://fox2now.com/news/missouri/lawyers-promise-repairs-for-northern-village-apartments-at-county-council-meeting/",
+      "publishedAt": "2026-10-29T02:54:07.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     },
     {
-      "id": "usa-at-least-30-dead-in-crash-between-two-trains-in-central-spain-me-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "At least 30 dead in crash between two trains in central Spain, media say",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
-      "publishedAt": "2026-10-28T10:09:46.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "usa-how-a-lifelong-republican-came-to-lead-the-data-center-battle-in-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How a lifelong Republican came to lead the data center battle in Ohio",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6019276/data-centers-ai-midterms-ohio",
-      "publishedAt": "2026-10-28T09:00:00.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "usa-why-many-student-voters-have-a-right-to-choose-where-to-register-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Why many student voters have a right to choose where to register to vote",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-5793936/college-student-voting",
-      "publishedAt": "2026-10-28T09:00:00.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "usa-partnerships-between-ice-and-local-police-surge-report-finds-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Partnerships between ICE and local police surge, report finds",
-      "url": "https://www.npr.org/2026/10/28/g-s1-150296/287g-local-police-immigration-ice",
-      "publishedAt": "2026-10-28T09:00:00.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "usa-here-s-how-democrats-in-congress-are-preparing-for-election-frau-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Here's how Democrats in Congress are preparing for election fraud claims",
-      "url": "https://www.npr.org/2026/10/28/g-s1-150095/democrats-prepare-election-fraud-claims",
-      "publishedAt": "2026-10-28T09:00:00.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "usa-senate-candidates-built-up-massive-campaign-war-chests-with-out--5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Senate candidates built up massive campaign war chests with out-of-state donations",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-5940017/senate-campaign-fundraising-actblue-winred-ossoff",
-      "publishedAt": "2026-10-28T09:00:00.000Z",
-      "lastChecked": "2026-10-28T11:21:46.255Z"
-    },
-    {
-      "id": "stl-data-center-opponents-voice-concerns-in-alton-5",
+      "id": "stl-st-louis-mayor-calls-on-police-board-to-cooperate-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Data center opponents voice concerns in Alton",
-      "url": "https://fox2now.com/news/illinois/data-center-opponents-voice-concerns-in-alton/",
-      "publishedAt": "2026-10-28T02:20:14.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "St. Louis Mayor calls on Police Board to cooperate",
+      "url": "https://fox2now.com/news/missouri/st-louis-mayor-calls-on-police-board-to-cooperate/",
+      "publishedAt": "2026-10-29T02:24:55.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     },
     {
-      "id": "stl-man-jailed-after-shooting-at-ramming-vehicle-on-south-grand-0",
+      "id": "stl-man-admits-stealing-electric-truck-from-hotel-valet-police-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Man jailed after shooting at, ramming vehicle on South Grand",
-      "url": "https://fox2now.com/news/missouri/man-jailed-after-shooting-at-ramming-vehicle-on-south-grand/",
-      "publishedAt": "2026-10-28T00:54:17.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "Man admits stealing electric truck from hotel valet: Police",
+      "url": "https://fox2now.com/news/missouri/man-admits-stealing-electric-truck-from-hotel-valet-police/",
+      "publishedAt": "2026-10-29T02:21:34.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     },
     {
-      "id": "stl-firefighters-must-still-avoid-belleville-area-bridge-despite-rep-4",
+      "id": "stl-guilty-verdict-for-st-louis-county-man-who-paid-to-watch-child-s-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Firefighters must still avoid Belleville area bridge despite repair",
-      "url": "https://fox2now.com/news/fox-files/firefighters-must-still-avoid-belleville-area-bridge-despite-repair/",
-      "publishedAt": "2026-10-27T22:35:38.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "Guilty verdict for St. Louis County man who paid to watch child sex abuse",
+      "url": "https://fox2now.com/news/missouri/guilty-verdict-for-st-louis-county-man-who-paid-to-watch-child-sex-abuse/",
+      "publishedAt": "2026-10-28T23:19:30.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     },
     {
-      "id": "stl-overland-police-issue-endangered-alert-for-missing-7-year-old-1",
+      "id": "stl-old-north-st-louis-redevelopment-delayed-by-reported-squatters-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Overland Police issue endangered alert for missing 7-year-old",
-      "url": "https://fox2now.com/news/missouri/overland-police-issue-endangered-alert-for-missing-7-year-old/",
-      "publishedAt": "2026-10-27T21:15:02.000Z",
-      "lastChecked": "2026-10-28T11:21:46.645Z"
+      "title": "Old North St. Louis redevelopment delayed by reported squatters",
+      "url": "https://fox2now.com/news/fox-files/old-north-st-louis-redevelopment-delayed-by-reported-squatters/",
+      "publishedAt": "2026-10-28T21:18:27.000Z",
+      "lastChecked": "2026-10-29T11:32:14.366Z"
     }
   ]
 }
