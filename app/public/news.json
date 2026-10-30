@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:32:14.374Z",
+  "generatedAt": "2026-10-30T11:25:11.207Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-woman-struck-killed-wednesday-evening-in-farmington-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Woman struck, killed Wednesday evening in Farmington",
-      "url": "https://fox2now.com/news/missouri/woman-struck-killed-wednesday-evening-in-farmington/",
-      "publishedAt": "2026-10-29T11:09:40.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
-    },
-    {
-      "id": "usa-how-ai-drones-are-influencing-the-course-of-the-ukraine-war-0",
+      "id": "usa-alaska-s-senate-race-faces-claims-of-spoiler-candidate-and-hegse-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How AI drones are influencing the course of the Ukraine war",
-      "url": "https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia",
-      "publishedAt": "2026-10-29T09:02:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general",
+      "url": "https://www.npr.org/2026/10/30/g-s1-150889/up-first-newsletter-midterm-elections-iran-war-veteran-affairs-loans",
+      "publishedAt": "2026-10-30T11:20:26.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "usa-tariffs-diesel-and-computer-chips-are-driving-up-costs-for-autom-1",
+      "id": "usa-the-two-most-interesting-risks-to-anthropic-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Tariffs, diesel and computer chips are driving up costs for automakers",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6008066/automakers-inflation-tariffs-chips-diesel-earnings",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "The two most interesting risks to Anthropic",
+      "url": "https://www.npr.org/sections/planet-money/2026/10/30/nx-s1-6022515/the-two-most-interesting-risks-to-anthropic",
+      "publishedAt": "2026-10-30T11:00:00.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "usa-these-are-the-house-races-to-watch-in-the-2026-midterm-election--2",
+      "id": "stl-police-investigating-two-separate-overnight-homicides-in-st-loui-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Police investigating two separate overnight homicides in St. Louis City",
+      "url": "https://fox2now.com/news/missouri/police-investigating-two-separate-overnight-homicides-in-st-louis-city/",
+      "publishedAt": "2026-10-30T10:47:25.000Z",
+      "lastChecked": "2026-10-30T11:25:11.160Z"
+    },
+    {
+      "id": "usa-candy-prices-got-you-scared-stiff-what-to-know-about-the-cost-of-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "These are the House races to watch in the 2026 midterm election on Nov. 3",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6020921/2026-house-map-democrats-flip-republicans-tossup-triage",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "Candy prices got you scared stiff? What to know about the cost of Halloween this year",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6018566/halloween-candy-prices-chocolate",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "usa-state-ballots-let-voters-decide-on-abortion-taxes-transgender-re-3",
+      "id": "usa-here-are-the-senate-races-to-watch-ahead-of-election-day-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "State ballots let voters decide on abortion, taxes, transgender restrictions",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6019363/state-ballot-referendum-abortion-taxes",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "Here are the Senate races to watch ahead of Election Day",
+      "url": "https://www.npr.org/2026/10/30/g-s1-149975/2026-midterms-senate-map",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "usa-business-as-a-liberal-art-some-high-schools-say-yes-4",
+      "id": "usa-democrats-seek-to-weaken-the-republican-lead-in-state-legislatur-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Business as a liberal art? Some high schools say yes",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6017795/ap-business-personal-finance-course-high-school",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "Democrats seek to weaken the Republican lead in state legislatures",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6022353/midterms-state-legislatures-pennsylvania",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "usa-ahead-of-midterms-missourians-defend-transgender-healthcare-5",
+      "id": "usa-on-what-anatomical-feature-was-trump-fixated-this-week-the-quiz--5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Ahead of midterms, Missourians defend transgender healthcare",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6017986/election-midterm-healthcare-transgender",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "lastChecked": "2026-10-29T11:32:13.892Z"
+      "title": "On what anatomical feature was Trump fixated this week? The quiz knows — do you?",
+      "url": "https://www.npr.org/2026/10/30/g-s1-150445/trump-midterms-ai-china-star-trek-dhs-news-quiz",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "lastChecked": "2026-10-30T11:25:11.199Z"
     },
     {
-      "id": "stl-lawyers-promise-repairs-for-northern-village-apartments-at-count-1",
+      "id": "stl-thomas-broberg-lead-blues-to-4-1-win-over-bruins-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Lawyers promise repairs for Northern Village Apartments at County Council meeting",
-      "url": "https://fox2now.com/news/missouri/lawyers-promise-repairs-for-northern-village-apartments-at-county-council-meeting/",
-      "publishedAt": "2026-10-29T02:54:07.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
+      "title": "Thomas, Broberg lead Blues to 4-1 win over Bruins",
+      "url": "https://fox2now.com/sports/st-louis-blues/thomas-broberg-lead-blues-to-4-1-win-over-bruins/",
+      "publishedAt": "2026-10-30T03:13:50.000Z",
+      "lastChecked": "2026-10-30T11:25:11.159Z"
     },
     {
-      "id": "stl-st-louis-mayor-calls-on-police-board-to-cooperate-0",
+      "id": "stl-park-hills-community-rallies-after-brutal-attack-on-longtime-bus-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis Mayor calls on Police Board to cooperate",
-      "url": "https://fox2now.com/news/missouri/st-louis-mayor-calls-on-police-board-to-cooperate/",
-      "publishedAt": "2026-10-29T02:24:55.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
+      "title": "Park Hills community rallies after brutal attack on longtime business owner",
+      "url": "https://fox2now.com/news/missouri/park-hills-community-rallies-after-brutal-attack-on-longtime-business-owner/",
+      "publishedAt": "2026-10-30T02:53:09.000Z",
+      "lastChecked": "2026-10-30T11:25:11.159Z"
     },
     {
-      "id": "stl-man-admits-stealing-electric-truck-from-hotel-valet-police-2",
+      "id": "stl-nearly-40-inmates-vote-at-st-louis-county-jail-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Man admits stealing electric truck from hotel valet: Police",
-      "url": "https://fox2now.com/news/missouri/man-admits-stealing-electric-truck-from-hotel-valet-police/",
-      "publishedAt": "2026-10-29T02:21:34.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
+      "title": "Nearly 40 inmates vote at St. Louis County Jail",
+      "url": "https://fox2now.com/news/missouri/nearly-40-inmates-vote-at-st-louis-county-jail/",
+      "publishedAt": "2026-10-30T02:43:50.000Z",
+      "lastChecked": "2026-10-30T11:25:11.159Z"
     },
     {
-      "id": "stl-guilty-verdict-for-st-louis-county-man-who-paid-to-watch-child-s-3",
+      "id": "stl-new-charges-for-woman-accused-in-teen-s-i-170-shooting-death-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Guilty verdict for St. Louis County man who paid to watch child sex abuse",
-      "url": "https://fox2now.com/news/missouri/guilty-verdict-for-st-louis-county-man-who-paid-to-watch-child-sex-abuse/",
-      "publishedAt": "2026-10-28T23:19:30.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
+      "title": "New charges for woman accused in teen's I-170 shooting death",
+      "url": "https://fox2now.com/news/missouri/new-charges-for-woman-accused-in-teens-i-170-shooting-death/",
+      "publishedAt": "2026-10-29T21:43:56.000Z",
+      "lastChecked": "2026-10-30T11:25:11.160Z"
     },
     {
-      "id": "stl-old-north-st-louis-redevelopment-delayed-by-reported-squatters-5",
+      "id": "stl-lawyers-target-modot-over-fatal-highway-30-accident-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Old North St. Louis redevelopment delayed by reported squatters",
-      "url": "https://fox2now.com/news/fox-files/old-north-st-louis-redevelopment-delayed-by-reported-squatters/",
-      "publishedAt": "2026-10-28T21:18:27.000Z",
-      "lastChecked": "2026-10-29T11:32:14.366Z"
+      "title": "Lawyers target MoDOT over fatal Highway 30 accident",
+      "url": "https://fox2now.com/news/fox-files/lawyers-target-modot-over-fatal-highway-30-accident/",
+      "publishedAt": "2026-10-29T21:16:21.000Z",
+      "lastChecked": "2026-10-30T11:25:11.160Z"
     }
   ]
 }
