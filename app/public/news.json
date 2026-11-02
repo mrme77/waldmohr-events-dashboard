@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:51:04.744Z",
+  "generatedAt": "2026-11-02T13:30:49.114Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-how-gen-z-republicans-running-for-congress-are-thinking-about-th-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How Gen Z Republicans running for Congress are thinking about the future of the party",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-5946869/midterm-elections-gen-z-republicans",
-      "publishedAt": "2026-11-01T11:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "usa-here-s-how-to-watch-election-night-as-the-polls-close-hour-by-ho-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Here's how to watch election night as the polls close, hour-by-hour",
-      "url": "https://www.npr.org/2026/11/01/g-s1-149978/midterms-election-night",
-      "publishedAt": "2026-11-01T09:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "usa-what-s-it-like-to-run-for-congress-when-the-odds-are-stacked-hea-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "What's it like to run for Congress when the odds are stacked heavily against you?",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-5995461/midterm-elections-noncompetitive-districts",
-      "publishedAt": "2026-11-01T09:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "usa-supreme-court-hears-religious-freedom-case-centered-on-universal-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Supreme Court hears religious freedom case centered on universal pre-K program",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6000367/supreme-court-colorado-catholic-preschool-religious-freedom-lgbtq",
-      "publishedAt": "2026-11-01T09:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "usa-how-one-family-gave-a-critical-boost-to-gene-therapy-research-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "How one family gave a critical boost to gene therapy research",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6014739/sanfilippo-gene-therapy-fayuvi",
-      "publishedAt": "2026-11-01T09:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "usa-trump-thanks-supporters-for-the-memories-in-final-campaign-stops-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump thanks supporters for the memories in final campaign stops for 2026 midterms",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6022128/trump-rally-2026-midterms-republicans",
-      "publishedAt": "2026-11-01T09:00:00.000Z",
-      "lastChecked": "2026-11-01T11:51:04.521Z"
-    },
-    {
-      "id": "stl-man-shot-killed-saturday-in-jennings-1",
+      "id": "stl-st-louis-police-drones-may-respond-to-911-calls-by-friday-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Man shot, killed Saturday in Jennings",
-      "url": "https://fox2now.com/news/missouri/man-shot-killed-saturday-in-jennings/",
-      "publishedAt": "2026-11-01T06:48:11.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "St. Louis police drones may respond to 911 calls by Friday",
+      "url": "https://fox2now.com/news/missouri/st-louis-police-drones-may-respond-to-911-calls-by-friday/",
+      "publishedAt": "2026-11-02T12:21:40.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     },
     {
-      "id": "stl-woman-shot-killed-saturday-evening-in-st-louis-visitation-park-n-0",
+      "id": "usa-haley-stevens-backs-mike-rogers-and-gulf-states-brace-for-potent-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
+      "url": "https://www.npr.org/2026/11/02/g-s1-151215/up-first-newsletter-michigan-senate-iran-war-supreme-court-colorado-catholic-church",
+      "publishedAt": "2026-11-02T12:19:54.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "stl-lawsuit-targets-six-flags-enchanted-parks-over-dining-plans-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Woman shot, killed Saturday evening in St. Louis' Visitation Park neighborhood",
-      "url": "https://fox2now.com/news/missouri/woman-shot-killed-saturday-evening-in-st-louis-visitation-park-neighborhood/",
-      "publishedAt": "2026-11-01T06:29:15.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "Lawsuit targets Six Flags, Enchanted Parks over dining plans",
+      "url": "https://fox2now.com/news/missouri/lawsuit-targets-six-flags-enchanted-parks-over-dining-plans/",
+      "publishedAt": "2026-11-02T12:09:33.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     },
     {
-      "id": "stl-maplewood-woman-catches-potential-record-setting-sturgeon-in-can-2",
+      "id": "stl-police-investigating-shooting-at-madison-senior-high-school-clas-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Maplewood woman catches potential record-setting sturgeon in Canada",
-      "url": "https://fox2now.com/news/missouri/maplewood-woman-catches-potential-record-setting-sturgeon-in-canada/",
-      "publishedAt": "2026-10-31T19:02:14.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "Police investigating shooting at Madison Senior High School; classes canceled Monday",
+      "url": "https://fox2now.com/news/illinois/police-investigating-shooting-at-madison-senior-high-school-classes-canceled-monday/",
+      "publishedAt": "2026-11-02T11:34:59.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     },
     {
-      "id": "stl-duo-sentenced-in-prostitution-scheme-at-southern-illinois-massag-5",
+      "id": "usa-two-economists-studied-california-s-billionaire-tax-they-reached-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Two economists studied California's billionaire tax. They reached wildly different conclusions",
+      "url": "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
+      "publishedAt": "2026-11-02T11:30:00.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "stl-cloudy-breezy-with-a-wet-day-on-tuesday-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Duo sentenced in prostitution scheme at southern Illinois massage parlors",
-      "url": "https://fox2now.com/news/illinois/duo-sentenced-in-prostitution-scheme-at-southern-illinois-massage-parlors/",
-      "publishedAt": "2026-10-31T17:15:19.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "Cloudy, breezy, with a wet day on Tuesday",
+      "url": "https://fox2now.com/news/weather/cloudy-breezy-with-a-wet-day-on-tuesday/",
+      "publishedAt": "2026-11-02T11:28:17.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     },
     {
-      "id": "stl-st-charles-man-killed-three-others-hurt-in-four-vehicle-missouri-4",
+      "id": "usa-6-things-to-watch-for-on-election-night-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "6 things to watch for on election night",
+      "url": "https://www.npr.org/2026/11/02/nx-s1-6025451/midterms-what-to-watch-election-night",
+      "publishedAt": "2026-11-02T10:00:00.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "usa-when-it-comes-to-election-pressure-this-year-s-georgia-or-michig-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "When it comes to election pressure, this year's Georgia or Michigan could be anywhere",
+      "url": "https://www.npr.org/2026/11/02/nx-s1-5989648/midterm-voting-election-pressure",
+      "publishedAt": "2026-11-02T10:00:00.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "usa-with-students-scarce-college-admissions-offices-get-friendlier-l-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "With students scarce, college admissions offices get friendlier, less intimidating",
+      "url": "https://www.npr.org/2026/11/02/nx-s1-6007855/college-admissions-change-fewer-students",
+      "publishedAt": "2026-11-02T10:00:00.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "usa-how-does-this-fluoride-free-toothpaste-compare-when-it-comes-to--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How does this fluoride-free toothpaste compare when it comes to oral health?",
+      "url": "https://www.npr.org/2026/11/02/nx-s1-5955806/fluoride-toothpaste-hydroxyapatite-dental-oral-health",
+      "publishedAt": "2026-11-02T10:00:00.000Z",
+      "lastChecked": "2026-11-02T13:30:49.107Z"
+    },
+    {
+      "id": "stl-st-louis-man-in-custody-after-fatal-crash-during-police-chase-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Charles man killed, three others hurt in four-vehicle Missouri crash",
-      "url": "https://fox2now.com/news/missouri/st-charles-man-killed-three-others-hurt-in-four-vehicle-missouri-crash/",
-      "publishedAt": "2026-10-31T16:44:19.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "St. Louis man in custody after fatal crash during police chase",
+      "url": "https://fox2now.com/news/missouri/st-louis-man-in-custody-after-fatal-crash-during-police-chase/",
+      "publishedAt": "2026-11-01T22:20:50.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     },
     {
-      "id": "stl-two-teens-arrested-after-attempted-car-break-ins-in-dogtown-3",
+      "id": "stl-two-shot-during-party-at-short-term-rental-in-central-west-end-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Two teens arrested after attempted car break-ins in Dogtown",
-      "url": "https://fox2now.com/news/missouri/two-teens-arrested-after-attempted-car-break-ins-in-dogtown/",
-      "publishedAt": "2026-10-31T16:17:17.000Z",
-      "lastChecked": "2026-11-01T11:51:04.733Z"
+      "title": "Two shot during party at short-term rental in Central West End",
+      "url": "https://fox2now.com/news/missouri/two-shot-during-party-at-short-term-rental-in-central-west-end/",
+      "publishedAt": "2026-11-01T21:18:06.000Z",
+      "lastChecked": "2026-11-02T13:30:48.886Z"
     }
   ]
 }
