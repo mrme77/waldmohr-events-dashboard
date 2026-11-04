@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:48:19.123Z",
+  "generatedAt": "2026-11-04T13:00:01.955Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-control-of-congress-is-at-stake-today-and-judge-to-consider-moti-0",
+      "id": "usa-world-reacts-to-democrats-midterm-elections-victory-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Control of Congress is at stake today. And, judge to consider motion in Clancy case",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151445/up-first-newsletter-midterms-election-day-iran-war-lindsay-clancy",
-      "publishedAt": "2026-11-03T11:43:49.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
+      "title": "World reacts to Democrats' midterm elections victory",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6028664/world-reacts-midterm-elections",
+      "publishedAt": "2026-11-04T12:34:35.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
     },
     {
-      "id": "stl-showers-and-thunderstorms-take-over-tuesday-with-gusty-winds-3",
+      "id": "usa-democrats-seize-full-control-of-congress-and-which-candidates-ma-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Democrats seize full control of Congress. And, which candidates made history last night",
+      "url": "https://www.npr.org/2026/11/04/g-s1-151745/up-first-newsletter-midterms-democrats-congress-control",
+      "publishedAt": "2026-11-04T12:18:39.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
+    },
+    {
+      "id": "usa-6-takeaways-from-democrats-big-wave-on-election-night-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "6 takeaways from Democrats' big wave on election night",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6022216/midterms-democrats-trump-republicans-analysis",
+      "publishedAt": "2026-11-04T12:02:38.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
+    },
+    {
+      "id": "stl-rain-is-done-quiet-and-cooler-stretch-ahead-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Showers and thunderstorms take over Tuesday with gusty winds",
-      "url": "https://fox2now.com/news/weather/showers-and-thunderstorms-take-over-tuesday-with-gusty-winds/",
-      "publishedAt": "2026-11-03T11:29:07.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "Rain is done, quiet and cooler stretch ahead",
+      "url": "https://fox2now.com/news/weather/rain-is-done-quiet-and-cooler-stretch-ahead/",
+      "publishedAt": "2026-11-04T11:25:38.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     },
     {
-      "id": "usa-death-toll-hits-29-after-russian-strike-on-ukrainian-aid-site-wi-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
-      "publishedAt": "2026-11-03T11:01:14.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
-    },
-    {
-      "id": "usa-review-the-legend-of-zelda-ocarina-of-time-remake-is-superb-stre-2",
+      "id": "usa-review-the-legend-of-zelda-ocarina-of-time-remake-is-superb-stre-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Review: The Legend of Zelda: Ocarina of Time remake is superb, streamlined and safe",
-      "url": "https://www.npr.org/2026/11/03/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
-      "publishedAt": "2026-11-03T11:00:00.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
+      "publishedAt": "2026-11-04T11:00:00.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
     },
     {
-      "id": "usa-four-types-of-house-races-to-watch-on-election-night-to-know-how-3",
+      "id": "usa-hakeem-jeffries-is-poised-to-become-the-first-black-speaker-of-t-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Four types of House races to watch on election night to know how it might go",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151305/2026-midterms-house-races-to-watch",
-      "publishedAt": "2026-11-03T11:00:00.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
+      "title": "Hakeem Jeffries is poised to become the first Black speaker of the House",
+      "url": "https://www.npr.org/2026/11/04/g-s1-150030/hakeem-jeffries-speaker-of-the-house-midterms",
+      "publishedAt": "2026-11-04T10:00:00.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
     },
     {
-      "id": "usa-how-npr-makes-race-calls-in-the-2026-election-4",
+      "id": "usa-these-9-candidates-for-governor-just-made-history-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How NPR makes race calls in the 2026 election",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151311/how-npr-calls-races-2026",
-      "publishedAt": "2026-11-03T10:00:00.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
+      "title": "These 9 candidates for governor just made history",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6028546/governor-candidates-history-election-2026",
+      "publishedAt": "2026-11-04T10:00:00.000Z",
+      "lastChecked": "2026-11-04T13:00:01.384Z"
     },
     {
-      "id": "usa-it-s-election-day-control-of-congress-is-on-the-line-and-what-el-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "It's Election Day. Control of Congress is on the line, and what else you need to know",
-      "url": "https://www.npr.org/2026/11/03/nx-s1-5992757/election-day-live-updates-key-races",
-      "publishedAt": "2026-11-03T10:00:00.000Z",
-      "lastChecked": "2026-11-03T12:48:18.956Z"
-    },
-    {
-      "id": "stl-st-louis-county-proposes-5m-howdershell-road-project-2",
+      "id": "stl-amendment-3-fails-as-missourians-back-abortion-rights-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis County proposes $5M Howdershell Road project",
-      "url": "https://fox2now.com/news/missouri/st-louis-county-proposes-5m-howdershell-road-project/",
-      "publishedAt": "2026-11-03T03:21:09.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "Amendment 3 fails as Missourians back abortion rights",
+      "url": "https://fox2now.com/news/missouri/amendment-3-fails-as-missourians-back-abortion-rights/",
+      "publishedAt": "2026-11-04T04:25:50.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     },
     {
-      "id": "stl-tens-of-thousands-of-early-votes-already-cast-in-st-louis-county-5",
+      "id": "stl-map-who-will-control-congress-after-2026-midterms-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Tens of thousands of early votes already cast in St. Louis County",
-      "url": "https://fox2now.com/news/missouri/tens-of-thousands-of-early-votes-already-cast-in-st-louis-county/",
-      "publishedAt": "2026-11-03T03:06:16.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "MAP: Who will control Congress after 2026 midterms?",
+      "url": "https://fox2now.com/news/national/map-who-will-control-congress-after-2026-midterms/",
+      "publishedAt": "2026-11-04T01:12:44.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     },
     {
-      "id": "stl-alton-man-faces-charges-after-city-council-threats-4",
+      "id": "stl-st-louis-area-election-results-2026-missouri-illinois-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Alton man faces charges after city council threats",
-      "url": "https://fox2now.com/news/illinois/alton-man-faces-charges-after-city-council-threats/",
-      "publishedAt": "2026-11-03T00:49:30.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "St. Louis area election results 2026: Missouri, Illinois",
+      "url": "https://fox2now.com/news/missouri/st-louis-area-election-results-2026-missouri-illinois/",
+      "publishedAt": "2026-11-04T01:00:00.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     },
     {
-      "id": "stl-voter-s-guide-what-to-know-for-missouri-s-nov-3-2026-general-ele-0",
+      "id": "stl-missouri-038-illinois-midterm-election-updates-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Voter’s Guide: What to know for Missouri’s Nov. 3, 2026 general election",
-      "url": "https://fox2now.com/news/missouri/voters-guide-what-to-know-for-missouris-nov-3-2026-general-election/",
-      "publishedAt": "2026-10-19T17:54:25.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "Missouri &#038; Illinois Midterm Election Updates",
+      "url": "https://fox2now.com/news/missouri-illinois-election-results/",
+      "publishedAt": "2026-11-04T00:50:00.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     },
     {
-      "id": "stl-voter-s-guide-what-to-know-for-illinois-nov-3-2026-general-elect-1",
+      "id": "stl-midterm-election-results-live-updates-as-2026-races-are-called-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Voter’s Guide: What to know for Illinois' Nov. 3, 2026 general election",
-      "url": "https://fox2now.com/news/illinois/voters-guide-what-to-know-for-illinois-nov-3-2026-general-election/",
-      "publishedAt": "2026-10-19T17:51:54.000Z",
-      "lastChecked": "2026-11-03T12:48:19.115Z"
+      "title": "Midterm election results: Live updates as 2026 races are called",
+      "url": "https://fox2now.com/news/national/midterm-elections-2026-live-updates-as-voters-cast-their-ballots/",
+      "publishedAt": "2026-11-03T17:16:07.000Z",
+      "lastChecked": "2026-11-04T13:00:01.945Z"
     }
   ]
 }
