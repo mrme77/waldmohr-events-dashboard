@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:57:52.687Z",
+  "generatedAt": "2026-11-07T11:44:42.301Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-arnold-man-dies-after-ejection-from-boat-on-lake-of-the-ozarks-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Arnold man dies after ejection from boat on Lake of the Ozarks",
-      "url": "https://fox2now.com/news/missouri/arnold-man-dies-after-ejection-from-boat-on-lake-of-the-ozarks/",
-      "publishedAt": "2026-11-06T12:38:55.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
-    },
-    {
-      "id": "usa-judge-halts-construction-of-trump-s-arch-and-labor-department-to-0",
+      "id": "usa-an-unexpected-activist-emerged-to-help-block-a-5-billion-data-ce-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Judge halts construction of Trump's arch. And, Labor Department to release jobs report",
-      "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon",
-      "publishedAt": "2026-11-06T12:24:52.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
+      "title": "An unexpected activist emerged to help block a $5 billion data center in Maryland",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6007770/data-centers-activist-moratorium",
+      "publishedAt": "2026-11-07T10:00:00.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
     },
     {
-      "id": "stl-st-louis-mayor-cara-spencer-unveils-plan-to-replace-trees-lost-i-5",
+      "id": "stl-mercy-s-ecmo-treatment-saves-man-s-life-after-heart-surgery-comp-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis Mayor Cara Spencer unveils plan to replace trees lost in May 2025 tornado",
-      "url": "https://fox2now.com/news/missouri/st-louis-mayor-cara-spencer-unveils-plan-to-replace-trees-lost-in-may-2025-tornado/",
-      "publishedAt": "2026-11-06T12:12:49.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
+      "title": "Mercy's ECMO treatment saves man's life after heart surgery complications",
+      "url": "https://fox2now.com/news/missouri/mercys-ecmo-treatment-saves-mans-life-after-heart-surgery-complications/",
+      "publishedAt": "2026-11-07T05:17:06.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
     },
     {
-      "id": "usa-why-gold-prices-are-surprisingly-low-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Why gold prices are surprisingly low",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/06/nx-s1-6030995/why-gold-prices-are-surprisingly-low",
-      "publishedAt": "2026-11-06T12:00:00.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
-    },
-    {
-      "id": "usa-past-white-house-adviser-raj-panjabi-has-written-a-playbook-for--2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Past White House adviser Raj Panjabi has written a playbook for 'living room' crises",
-      "url": "https://www.npr.org/2026/11/06/nx-s1-6021013/white-house-adviser-raj-panjabi-safer-playbook",
-      "publishedAt": "2026-11-06T11:57:32.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
-    },
-    {
-      "id": "stl-chilly-weekend-ahead-freeze-warning-in-effect-3",
+      "id": "stl-st-louis-aldermen-debate-using-marijuana-tax-for-winter-homeless-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Chilly weekend ahead, Freeze Warning in effect",
-      "url": "https://fox2now.com/news/weather/chilly-weekend-ahead-freeze-warning-in-effect/",
-      "publishedAt": "2026-11-06T11:22:19.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
+      "title": "St. Louis aldermen debate using marijuana tax for winter homeless services",
+      "url": "https://fox2now.com/news/missouri/st-louis-aldermen-debate-using-marijuana-tax-for-winter-homeless-services/",
+      "publishedAt": "2026-11-07T04:01:19.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
     },
     {
-      "id": "usa-low-birth-rates-were-emptying-public-schools-ice-deportations-ar-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Low birth rates were emptying public schools. ICE deportations are now making it worse",
-      "url": "https://www.npr.org/2026/11/06/nx-s1-5971283/public-school-enrollment-ice-deportation-birthrate",
-      "publishedAt": "2026-11-06T10:00:00.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
-    },
-    {
-      "id": "usa-fill-in-the-blank-in-the-quiz-vance-says-they-lost-the-midterms--4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Fill in the blank in the quiz: Vance says they lost the midterms because of ____",
-      "url": "https://www.npr.org/2026/11/06/g-s1-152045/news-quiz-midterms-vance-pope-kennedy-center",
-      "publishedAt": "2026-11-06T10:00:00.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
-    },
-    {
-      "id": "usa-morning-news-brief-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Morning news brief",
-      "url": "https://www.npr.org/2026/11/06/nx-s1-6023117/morning-news-brief",
-      "publishedAt": "2026-11-06T09:47:37.000Z",
-      "lastChecked": "2026-11-06T12:57:52.341Z"
-    },
-    {
-      "id": "stl-festus-man-charged-with-killing-wife-1",
+      "id": "stl-man-killed-in-high-ridge-double-shooting-suspect-charged-had-egg-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Festus man charged with killing wife",
-      "url": "https://fox2now.com/news/missouri/death-investigation-in-jefferson-county/",
-      "publishedAt": "2026-11-06T01:21:50.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
+      "title": "Man killed in High Ridge double-shooting; Suspect charged, had eggs thrown at his car",
+      "url": "https://fox2now.com/news/missouri/man-killed-in-high-ridge-double-shooting-suspect-charged-had-eggs-thrown-at-his-car/",
+      "publishedAt": "2026-11-07T03:10:18.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
     },
     {
-      "id": "stl-police-shoot-kill-man-barricaded-in-piece-of-heavy-machinery-2",
+      "id": "stl-slu-tops-mizzou-90-84-in-show-me-showdown-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Police shoot, kill man barricaded in piece of heavy machinery",
-      "url": "https://fox2now.com/news/missouri/shooting-involving-police-officer-in-wellston/",
-      "publishedAt": "2026-11-05T23:49:21.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
+      "title": "SLU tops Mizzou, 90-84, in Show Me Showdown",
+      "url": "https://fox2now.com/sports/college/slu-tops-mizzou-90-84-in-show-me-showdown/",
+      "publishedAt": "2026-11-07T02:27:02.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
     },
     {
-      "id": "stl-person-of-interest-sought-in-madison-senior-high-shooting-0",
+      "id": "stl-woman-missing-for-two-months-ferguson-police-ask-for-public-s-he-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Person of interest sought in Madison Senior High shooting",
-      "url": "https://fox2now.com/news/illinois/person-of-interest-sought-in-madison-senior-high-shooting/",
-      "publishedAt": "2026-11-05T23:38:26.000Z",
-      "lastChecked": "2026-11-06T12:57:52.681Z"
+      "title": "Woman missing for two months; Ferguson police ask for public's help",
+      "url": "https://fox2now.com/news/missouri/woman-missing-for-two-months-ferguson-police-ask-for-publics-help/",
+      "publishedAt": "2026-11-07T01:52:02.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
+    },
+    {
+      "id": "stl-robbie-avila-cannot-play-friday-college-sports-commission-says-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Robbie Avila cannot play Friday, College Sports Commission says",
+      "url": "https://fox2now.com/sports/college/robbie-avila-cannot-play-friday-college-sports-commission-says/",
+      "publishedAt": "2026-11-06T23:19:38.000Z",
+      "lastChecked": "2026-11-07T11:44:42.273Z"
+    },
+    {
+      "id": "usa-the-economy-propelled-democrats-to-victory-what-can-they-actuall-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The economy propelled Democrats to victory. What can they actually do about it?",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6026662/the-economy-propelled-democrats-to-victory-what-can-they-actually-do-about-it",
+      "publishedAt": "2026-11-06T21:53:10.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
+    },
+    {
+      "id": "usa-israel-s-arab-led-parties-in-spotlight-after-inconclusive-electi-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Israel's Arab-led parties in spotlight after inconclusive election",
+      "url": "https://www.npr.org/2026/11/06/g-s1-152138/israel-election-palestinian-arab-parties",
+      "publishedAt": "2026-11-06T20:42:51.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
+    },
+    {
+      "id": "usa-the-incoming-class-of-u-s-senators-is-full-of-historic-firsts-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "The incoming class of U.S. senators is full of historic firsts",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032814/senate-history-election-pappas-andrews-el-sayed",
+      "publishedAt": "2026-11-06T20:21:13.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
+    },
+    {
+      "id": "usa-trump-s-global-health-strategy-is-emerging-what-will-the-democra-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump's global health strategy is emerging. What will the Democratic Congress say?",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6028828/global-health-usaid-trump-democrats-congress",
+      "publishedAt": "2026-11-06T20:09:58.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
+    },
+    {
+      "id": "usa-no-one-knows-how-many-ballots-are-outstanding-in-mississippi-s-s-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "No one knows how many ballots are outstanding in Mississippi's Senate race",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6030645/mississippi-senate-results-provisional-ballots",
+      "publishedAt": "2026-11-06T19:50:14.000Z",
+      "lastChecked": "2026-11-07T11:44:42.295Z"
     }
   ]
 }
