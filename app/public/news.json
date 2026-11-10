@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T13:55:27.336Z",
+  "generatedAt": "2026-11-10T13:29:18.443Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-warmer-temps-to-start-rain-and-a-cool-down-midweek-2",
+      "id": "stl-st-clair-county-to-unveil-new-drone-program-for-first-responders-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Warmer temps to start, rain and a cool down midweek",
-      "url": "https://fox2now.com/news/weather/warmer-temps-to-start-rain-and-a-cool-down-midweek/",
-      "publishedAt": "2026-11-09T13:37:14.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "St. Clair County to unveil new drone program for first responders",
+      "url": "https://fox2now.com/news/illinois/st-clair-county-to-unveil-new-drone-program-for-first-responders/",
+      "publishedAt": "2026-11-10T13:15:26.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     },
     {
-      "id": "usa-congress-is-back-after-gop-s-midterm-defeat-and-trump-appoints-n-0",
+      "id": "usa-seven-days-of-chaos-in-the-er-how-this-country-s-healthcare-syst-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Congress is back after GOP's midterm defeat. And, Trump appoints new chief of staff",
-      "url": "https://www.npr.org/2026/11/09/g-s1-152627/up-first-newsletter-stephen-miller-trump-congress-nvidia-cop31",
-      "publishedAt": "2026-11-09T12:45:14.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
+      "title": "Seven days of chaos in the ER: How this country's healthcare system is unraveling",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152693/healthcare-ethiopia-conflict-emergency-room",
+      "publishedAt": "2026-11-10T12:48:48.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
     },
     {
-      "id": "stl-1-dead-1-injured-after-single-vehicle-crash-in-st-francois-count-5",
+      "id": "stl-st-louis-public-schools-board-to-vote-on-plan-to-close-several-s-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "1 dead, 1 injured after single-vehicle crash in St. Francois County",
-      "url": "https://fox2now.com/news/missouri/1-dead-1-injured-after-single-vehicle-crash-in-st-francois-county/",
-      "publishedAt": "2026-11-09T12:05:23.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "St. Louis Public Schools board to vote on plan to close several schools",
+      "url": "https://fox2now.com/news/missouri/st-louis-public-schools-board-to-vote-on-plan-to-close-several-schools/",
+      "publishedAt": "2026-11-10T12:31:48.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     },
     {
-      "id": "usa-why-a-south-korean-city-is-turning-to-a-u-s-college-to-outsmart--1",
+      "id": "usa-get-in-loser-broadway-s-newest-mean-girls-are-ready-to-insult-an-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Why a South Korean city is turning to a U.S. college to outsmart AI?",
-      "url": "https://www.npr.org/2026/11/09/g-s1-151519/why-a-south-korean-city-is-turning-to-a-u-s-college-to-outsmart-ai",
-      "publishedAt": "2026-11-09T10:47:00.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
+      "title": "Get in, loser: Broadway's newest 'Mean Girls' are ready to insult (and enlighten) you",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152641/get-in-loser-broadways-newest-mean-girls-are-ready-to-insult-and-enlighten-you",
+      "publishedAt": "2026-11-10T12:28:36.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
     },
     {
-      "id": "usa-democrats-won-big-on-issues-like-immigration-but-ice-still-has-t-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Democrats won big on issues like immigration. But ICE still has the money",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-6032870/immigration-enforcement-ice-democrats-election",
-      "publishedAt": "2026-11-09T10:00:00.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
-    },
-    {
-      "id": "usa-nebraska-rushed-medicaid-work-rules-then-a-cancer-patient-was-to-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Nebraska rushed Medicaid work rules. Then a cancer patient was told he'd lost coverage",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-6032732/trump-medicaid-health-nebraska-work-insurance",
-      "publishedAt": "2026-11-09T10:00:00.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
-    },
-    {
-      "id": "usa-democrats-won-big-can-they-lower-your-grocery-bill-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Democrats won big. Can they lower your grocery bill?",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability",
-      "publishedAt": "2026-11-09T10:00:00.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
-    },
-    {
-      "id": "usa-on-wild-cumberland-island-a-land-swap-proposal-stirs-controversy-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "On wild Cumberland Island, a land swap proposal stirs controversy",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-5981341/cumberland-island-national-park-service-proposal",
-      "publishedAt": "2026-11-09T10:00:00.000Z",
-      "lastChecked": "2026-11-09T13:55:27.131Z"
-    },
-    {
-      "id": "stl-juvenile-in-custody-for-shooting-in-jefferson-county-4",
+      "id": "stl-mild-tuesday-gusty-winds-and-a-big-cool-down-arrive-wednesday-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Juvenile in custody for shooting in Jefferson County",
-      "url": "https://fox2now.com/news/missouri/juvenile-in-custody-for-shooting-in-jefferson-county/",
-      "publishedAt": "2026-11-09T04:20:45.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "Mild Tuesday, gusty winds and a big cool down arrive Wednesday",
+      "url": "https://fox2now.com/news/weather/tuesdayweatherforecast/",
+      "publishedAt": "2026-11-10T12:06:01.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     },
     {
-      "id": "stl-manchester-police-investigate-vehicle-break-ins-at-two-apartment-0",
+      "id": "usa-house-set-to-vote-to-impeach-hegseth-and-scotus-allows-border-wa-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "House set to vote to impeach Hegseth. And, SCOTUS allows border wall work to proceed",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152777/up-first-newsletter-pete-hegseth-impeachment-trump-iran-nvidia-border-wall-texas",
+      "publishedAt": "2026-11-10T12:01:04.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
+    },
+    {
+      "id": "usa-why-did-california-s-billionaire-tax-fail-to-surf-the-blue-wave-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Why did California's billionaire tax fail to surf the blue wave?",
+      "url": "https://www.npr.org/sections/planet-money/2026/11/10/g-s1-152755/why-did-californias-billionaire-tax-fail-to-surf-the-blue-wave",
+      "publishedAt": "2026-11-10T11:30:00.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
+    },
+    {
+      "id": "usa-u-s-mediated-talks-on-ending-russia-ukraine-war-begin-in-abu-dha-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+      "publishedAt": "2026-11-10T10:58:18.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
+    },
+    {
+      "id": "usa-house-republicans-to-elect-a-new-leader-as-they-look-to-rebuild--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "House Republicans to elect a new leader as they look to rebuild from midterm defeat",
+      "url": "https://www.npr.org/2026/11/10/nx-s1-6030988/gop-leadership-election-steve-scalise-jim-jordan",
+      "publishedAt": "2026-11-10T10:01:00.000Z",
+      "lastChecked": "2026-11-10T13:29:18.436Z"
+    },
+    {
+      "id": "stl-3-year-old-boy-shot-in-jeff-vander-lou-taken-to-hospital-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Manchester police investigate vehicle break-ins at two apartment complexes",
-      "url": "https://fox2now.com/news/missouri/manchester-police-investigate-vehicle-break-ins-at-two-apartment-complexes/",
-      "publishedAt": "2026-11-09T03:30:57.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "3-year-old boy shot in Jeff-Vander-Lou, taken to hospital",
+      "url": "https://fox2now.com/news/missouri/3-year-old-boy-shot-jeff-vander-lou-taken-to-hospital/",
+      "publishedAt": "2026-11-10T04:04:37.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     },
     {
-      "id": "stl-1-dead-in-downtown-st-louis-shooting-3",
+      "id": "stl-19-year-old-charged-with-destruction-of-flock-cameras-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "1 dead in downtown St. Louis shooting",
-      "url": "https://fox2now.com/news/missouri/man-critically-injured-in-downtown-st-louis-shooting/",
-      "publishedAt": "2026-11-09T02:26:17.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "19-year-old charged with destruction of Flock cameras",
+      "url": "https://fox2now.com/news/missouri/19-year-old-charged-with-destruction-of-flock-cameras/",
+      "publishedAt": "2026-11-10T03:41:54.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     },
     {
-      "id": "stl-man-arrested-for-stealing-ac-from-berkeley-church-1",
+      "id": "stl-missing-grease-cited-in-crash-that-killed-rft-founder-ray-hartma-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Man arrested for stealing AC from Berkeley church",
-      "url": "https://fox2now.com/news/missouri/man-arrested-for-stealing-ac-from-berkeley-church/",
-      "publishedAt": "2026-11-09T01:39:12.000Z",
-      "lastChecked": "2026-11-09T13:55:27.329Z"
+      "title": "Missing grease cited in crash that killed RFT founder Ray Hartmann",
+      "url": "https://fox2now.com/news/fox-files/missing-grease-cited-in-crash-that-killed-rft-founder-ray-hartmann/",
+      "publishedAt": "2026-11-09T22:24:13.000Z",
+      "lastChecked": "2026-11-10T13:29:18.338Z"
     }
   ]
 }
