@@ -1,6 +1,6 @@
 # Plan
 
-Reviewed against the connection-indicator and Desktop-button branch on 2026-11-11, including earlier PRs #47 and #48.
+Reviewed after PR #50 merge and Pi activation on 2026-11-11, including earlier PRs #47 and #48.
 This file describes current development; historical phases are listed separately below.
 
 ## Current dashboard
@@ -58,20 +58,24 @@ unchanged, reuses dependencies when their inputs are unchanged, validates/builds
 commits, and publishes `app/dist` while preserving the private family JSON. After a successful
 publish it attempts a Chromium refresh and warns if the keystroke fails.
 
-**Installation of this optimized script on the Pi is unverified.** Its source file is versioned
+**The installed script was confirmed identical to the repository copy by SHA-256 on 2026-11-11.** Its source file is versioned
 separately from the operations copy used by the Pi service. Pulling `main` alone does not prove
 the service uses the optimized script. See the internal [Pi handoff](app/README.md) for installation
-and verification steps. No new live Pi check was performed for this documentation review.
+and remaining runtime verification steps. Timer execution and unchanged-run skipping were
+not exercised during the extension activation.
 
 ## Desktop controls and Pi input
 
 The optional extension in `app/ops/desktop-extension` keeps desktop access outside
 the static app: no server, shell control, or new npm dependency. It accepts only
-HTTP loopback pages and minimizes only the sending tab's window. Load it once
-in the kiosk's Chromium profile after merge/deployment; restore the dashboard
+HTTP loopback pages and minimizes only the sending tab's window. The installed
+kiosk loads it through its startup command; restore the dashboard
 through the taskbar. See [setup](app/README.md#desktop-button-and-returning-to-the-dashboard).
-The operator identified labwc and tentatively `localhost:8080`; native behavior,
-touchscreen model, display scaling, and keyboard size still need Pi verification.
+Direct inspection confirmed labwc, the dedicated kiosk profile, and
+`http://127.0.0.1:8080`. The extension is loaded through autostart; native
+minimization and programmatic fullscreen restoration were verified and the
+operator confirmed Desktop works. Temporary diagnostics were removed. Normal
+taskbar return, touchscreen model, display scaling, and keyboard size remain checks.
 
 ## Secrets and privacy
 
@@ -82,12 +86,12 @@ touchscreen model, display scaling, and keyboard size still need Pi verification
 
 ## Remaining work
 
-1. Verify installation of the optimized deployment script on the Pi; confirm unchanged runs
+1. With the installed deployment script now hash-verified, confirm unchanged runs
    report `No build needed` and changed runs publish and refresh Chromium successfully.
 2. Refresh the Pi's private family cache locally before deployment, retaining it outside Git.
 3. Refresh event/news JSON in the open page without losing the current month or selected day.
-4. After review/merge, deploy the header controls and load the local Chromium extension;
-   verify Desktop/taskbar/fullscreen behavior and network-status changes on the Pi.
+4. Observe normal taskbar/fullscreen return preserving calendar state and network-status
+   transitions. Header deployment, extension activation, and native minimization are complete.
 5. Verify touchscreen input and adjust desktop keyboard/display scaling on the Pi.
    The original first translation-cache population run remains unobserved; operator
    logs confirm reuse in a subsequent run.
@@ -106,7 +110,7 @@ These phases explain earlier work and are not a list of current adapters or plan
   caches, and UI in October 2026 in favor of official Homburg events and highlights.
 - **Pi deployment:** the hourly timer was operator-confirmed on 2026-10-19; PRs #40–#41 shipped
   the forecast modal, which the user confirmed on the Pi. PR #47 added lower-load UI and the
-  optimized deployment script; that script's Pi installation remains unverified.
+  optimized deployment script; its installed copy was subsequently hash-verified on 2026-11-11.
 - **PR #48:** merged persistent Homburg translation reuse, with 32 local tests, data validation,
   and production build passing during implementation.
 

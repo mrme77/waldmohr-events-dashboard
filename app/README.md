@@ -1,6 +1,6 @@
 # Dashboard: application and Raspberry Pi handoff
 
-Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11, including earlier translation-cache PR #48 (`3f5039a`). Local implementation and tests are separate from Pi installation and observed behavior.
+Reviewed after PR #50 was merged and the Desktop extension was activated on the Pi on 2026-11-11. Local tests, direct Pi observations, and remaining manual checks are distinguished below.
 
 The repository-root [README](../README.md) is the public overview and setup guide. This file holds the internal deployment handoff. [docs/validation.md](../docs/validation.md) records checks, and [progress.md](../progress.md) tracks completed work and remaining gaps.
 
@@ -16,7 +16,7 @@ Personal entries appear before public events in day details, showing their descr
 
 The weather card opens a seven-day forecast with daily conditions, highs/lows, and precipitation probability. The screen-level modal avoids sidebar clipping, expands up to 700px, and fits the screen width. Close it with ×, an outside tap, or Escape.
 
-## Internet indicator (development branch)
+## Internet indicator
 
 The header replaces the decorative green dot with a Wi-Fi-shaped internet status
 button. It checks external HTTPS access through the existing Open-Meteo provider
@@ -36,13 +36,13 @@ Local verification: all 44 automated tests and the production build passed.
 Browser checks with simulated successful and failed responses covered internet
 verification, offline/reconnect events, manual retry, and 375px, 768px, 1024px,
 and 1280px widths without horizontal overflow. The status button has a 44px touch
-target. These changes are prepared for PR review and have not been deployed or checked on the Pi. Cached-data validation also passed; it does not establish source freshness.
+target. PR #50 is merged and deployed on the Pi. Its live indicator reported Internet connected. Tapping it rechecks access; if access remains available, the green label stays unchanged. The hover tooltip shows the last verified time. The button does not open Wi-Fi settings. Cached-data validation also passed; it does not establish source freshness.
 
 ### Pi touchscreen and on-screen keyboard
 
 Earlier notes identify a 7-inch HDMI touchscreen, but do not identify its model.
-The operator identified labwc and tentatively reported `http://localhost:8080`
-as the dashboard address; its launch settings have not been inspected directly.
+Direct inspection confirmed labwc, Chromium 156, the kiosk profile
+`/home/pasquale/.config/waldmohr-kiosk`, and `http://127.0.0.1:8080`.
 Touchscreen detection, display scale, and the desktop keyboard need to be checked
 on the physical Pi. Browser zoom does not set the desktop keyboard's size.
 Read-only diagnostic commands for an existing Pi terminal session:
@@ -54,8 +54,9 @@ pgrep -a -f 'squeekboard|onboard|labwc|wayfire'
 ```
 
 `wlr-randr` may be unavailable or may require the graphical session's Wayland
-environment. Report that error rather than assuming the display's scale. No Pi
-configuration changes or package installations have been made for this feature.
+environment. Report that error rather than assuming the display's scale. The
+kiosk startup was updated for the extension; display and keyboard settings were
+not changed during this activation. No packages were installed.
 
 ### Desktop button and returning to the dashboard
 
@@ -72,8 +73,25 @@ The extension can minimize only the window containing the requesting tab; it
 has no shell-command feature and requests no browser-wide permissions. Without
 the extension, the Desktop button is disabled and explains that setup is needed.
 
-After the branch is reviewed, merged, and pulled onto the Pi, perform this
-one-time setup in the same Chromium profile that runs the dashboard:
+### Verified Pi activation — 2026-11-11
+
+The Pi now loads the extension automatically using
+`--load-extension=/home/pasquale/Desktop/waldmohr-events-dashboard/app/ops/desktop-extension`
+in the active command in `/home/pasquale/.config/labwc/autostart`. The previous
+file is preserved as
+`/home/pasquale/.config/labwc/autostart.before-desktop-extension-20261111-105012`.
+An operational record is saved at
+`/home/pasquale/dashboard-ops/desktop-extension-setup.txt`.
+
+Direct checks confirmed the extension worker loaded, Desktop was enabled, the
+button triggered native minimization, and the same page was restored fullscreen.
+The operator confirmed the button works. Chromium was then restarted normally
+with the extension enabled; temporary loopback browser diagnostics were removed
+and their endpoint was confirmed closed. The startup flag persists across logins
+and reboots. No application code or additional packages were installed by SSH.
+
+For another Chromium profile without the startup flag, this is the alternative
+one-time GUI setup:
 
 1. Open `chrome://extensions` (leave kiosk mode or close the dashboard window
    temporarily if necessary).
@@ -87,7 +105,8 @@ one-time setup in the same Chromium profile that runs the dashboard:
 
 The extension files are read from the repository checkout rather than the static
 `dist/` publish directory. Reload the extension in `chrome://extensions` after
-future updates to these files. No extension has been installed on the Pi yet.
+future updates to these files. The myai kiosk is already enabled through its
+startup flag; it does not need the alternative GUI setup again.
 
 Verification: tests cover loopback address restrictions, matching requests and
 responses, minimizing only the sending window, timeouts, cancellation, and
@@ -96,8 +115,10 @@ verify the disabled/enabled states, preserved page, visible failure message,
 retry, and 44px buttons at 375px, 768px, 1024px, and 1280px without horizontal
 overflow. The extension-enabled browser test could not launch because that
 Playwright browser executable is not installed; no browser was downloaded.
-Native minimization, fullscreen restoration, and taskbar access on labwc still
-need the manual Pi check above.
+Subsequent direct Pi verification confirmed native minimization and programmatic
+fullscreen restoration. Observe normal taskbar restoration and preservation of
+the selected month/day during use; touchscreen calibration and keyboard/display
+scaling remain unverified.
 
 ## Public data refresh and translation cache
 
@@ -115,9 +136,10 @@ Each Homburg payload records `model`, `translatedListings` (available translatio
 
 During the November session, the operator confirmed SSH access as `pasquale` to
 `myai` at `192.168.1.46` after restoring its network connection, and identified
-labwc from process output. The automated SSH check from this workspace was
-rejected because it had no accepted authentication. Display scaling, touchscreen
-model, deployment-script installation, and extension operation remain unverified.
+labwc from process output. An earlier automated SSH check was rejected, but authorizing the Mac's SSH key
+enabled the direct inspection and extension activation recorded above. Display
+scaling and the touchscreen model remain unverified. The installed deployment
+script was compared with the repository copy and their SHA-256 hashes match.
 
 On 2026-10-19, the Pi was reported running successfully with an HDMI touchscreen and Chromium. Its hostname is `myai`. The inspected `waldmohr-deploy.timer` runs five minutes after boot and one hour after each deployment finishes. Its service runs `/home/pasquale/dashboard-ops/deploy.sh` as `pasquale`. That service script fast-forwards the checkout from `origin/main`, validates/builds, and publishes `app/dist/` into `/var/www/waldmohr/`, preserving the private deployed `family.json`.
 
@@ -125,7 +147,7 @@ At that inspection, `GCAL_ICS_URL` was configured and a local `app/public/family
 
 The full-width forecast modal (PR #41, following PR #40) was merged, deployed, and confirmed working by the user on the Pi touchscreen on 2026-10-19. Source QR codes, personal entries before public QR cards, and responsive clock layout were implemented in PRs #37–#39.
 
-The optimized deployment script described below is committed in the repository, but its installation at the service path remains unverified. The last recorded installation attempt on 2026-10-25 could not reach `192.168.1.46` (`No route to host`). Neither current timer health nor the deployed commit has been checked since. A merge alone does not prove that this service script was replaced or that Chromium reloaded.
+On 2026-11-11, direct inspection confirmed that `~/dashboard-ops/deploy.sh` matches the versioned `app/ops/deploy.sh` by SHA-256. The earlier 2026-10-25 attempt had failed with `No route to host`; that installation uncertainty is now resolved. Current timer execution, unchanged-run skipping, Chromium refresh after a deployment, and temperature impact were not tested in this activation.
 
 ## Versioned deployment script and installation
 
@@ -142,13 +164,13 @@ sudo systemctl start waldmohr-deploy.service
 journalctl -u waldmohr-deploy.service -n 50 --no-pager
 ```
 
-Confirm publication and check the screen for updated data. Run the service again after completion and confirm `No build needed`. Installation and those live checks remain outstanding; no Pi temperature improvement has been measured. The display schedule and Chromium launch command have not been checked.
+The installed script now matches the versioned copy. Check publication and unchanged-run `No build needed` behavior separately; no temperature improvement has been measured. Chromium launch settings were inspected for extension activation. The display schedule was not changed.
 
 ## Remaining automation work
 
 - Refresh the private family calendar locally before deployment while keeping `family.json` outside Git and preserving its deployed private copy.
 - Re-fetch event/news JSON within an already open dashboard while preserving the selected month and day. The current frontend loads those datasets on mount; weather alone polls periodically. A full Chromium reload can load fresh JSON but resets application state.
-- Verify which deployment script is installed, timer health, the published commit, and Chromium refresh on the Pi. The recorded hourly timer should pull merged code if it is still healthy; this has not been checked live.
+- The installed deployment script matches the repository copy. Verify timer health, the published commit, unchanged-run skipping, and deployment-triggered Chromium refresh separately.
 
 ## Local operation and verification
 
@@ -170,7 +192,7 @@ Earlier local browser checks for the lower-load UI at 375px, 768px, and 1024px f
 - `9dd58ba` added the official Homburg calendar adapter, cache, validator, and calendar layer.
 - `2fa3616` replaced KMC magazine event/trip ingestion and the Trip Ideas card with three official Homburg highlights. KMC features described in older planning entries are historical.
 - `484dd0b` refreshed committed public JSON caches without UI changes.
-- PR #47 merged the lower-load UI and versioned optimized deployment script. Repository implementation is complete; service-copy installation on the Pi remains unverified.
+- PR #47 merged the lower-load UI and versioned optimized deployment script. Repository implementation is complete; the service copy was subsequently confirmed identical by SHA-256 on 2026-11-11.
 - PR #48 merged persistent Homburg translation caching. The next successful configured refresh can populate the cache; it requires no Pi-side API key or translation process.
 
 For recovery from an old external source tab in kiosk mode, a keyboard can use **Ctrl+Shift+Tab** to return to the previous tab or **Ctrl+W** to close the source tab. Avoid closing the dashboard tab itself. Current QR-based source navigation prevents that tab-switching problem. Embedding arbitrary source websites is unreliable because sites may prohibit iframes.

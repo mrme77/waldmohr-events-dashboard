@@ -4,7 +4,7 @@ Current development checks and historical verification records. Reviewed on 2026
 
 ## Latest Recorded Local Verification — 2026-11-11
 
-Connection-indicator and Desktop-button feature branch:
+Local validation for the connection-indicator and Desktop-button changes merged as PR #50:
 
 - `npm test`: all 44 tests passed, including network transitions, timeouts, cleanup,
   valid external responses, extension address/window restrictions, and bridge failures.
@@ -18,8 +18,24 @@ Connection-indicator and Desktop-button feature branch:
   desktop requests preserving the page, visible failures, and retry after failure.
 - An external internet check returned HTTP 200. No paid translation requests ran.
 - Native extension testing could not launch because the additional Playwright browser
-  executable was missing; no browser was downloaded. Pi installation, actual window
-  minimization/fullscreen restoration, touchscreen input, and keyboard scaling remain open.
+  executable was missing; no browser was downloaded. Direct Pi activation was
+  subsequently checked as recorded below; touchscreen and keyboard scaling remain open.
+
+## Direct Pi Activation — 2026-11-11
+
+- SSH key authorization enabled inspection of myai at 192.168.1.46.
+- Confirmed labwc, Chromium 156, profile `~/.config/waldmohr-kiosk`, and
+  dashboard `http://127.0.0.1:8080`.
+- Backed up `~/.config/labwc/autostart` and added the repository extension path
+  with `--load-extension`. Restarted only the kiosk browser.
+- Verified the extension worker, enabled Desktop control, and Internet connected.
+- Verified the browser reached native minimized state and restored the same page
+  fullscreen through browser diagnostics. The operator confirmed Desktop works.
+- Restarted Chromium with its normal extension-enabled command; confirmed the
+  temporary debugging endpoint was closed and no debug-port flag remained.
+- Saved operational handoff at `~/dashboard-ops/desktop-extension-setup.txt`.
+- Installed `~/dashboard-ops/deploy.sh` matches the versioned script by SHA-256.
+- Touchscreen calibration/model and keyboard/display scaling were not changed.
 
 ## Previous Local Verification — 2026-10-29
 
@@ -95,17 +111,16 @@ the first population run and current workflow health were not inspected directly
 
 ## Pi Verification Still Required
 
-- Load the desktop extension into the dashboard's Chromium profile and reload the
-  local dashboard. Verify Desktop minimizes it, the taskbar remains accessible, and
-  restoring Chromium preserves fullscreen and the selected month/day.
+- Observe normal taskbar restoration preserving fullscreen and the selected month/day.
+  Extension activation and native minimization have already been verified.
 - Verify connection status by disconnecting/reconnecting the Pi network.
 - Check touch input, screen model, resolution/scale, and on-screen keyboard sizing.
-  The operator identified labwc; model/scaling and browser launch options are unverified.
+  Direct inspection confirmed labwc and browser launch options; model/scaling remain unverified.
 
 The existing hourly deployment timer and forecast modal were confirmed in the 2026-10-19
 handoff. The optimized replacement at `app/ops/deploy.sh` is locally tested and merged, but
-installation into the Pi operations directory remains unverified. See `../app/README.md` for
-installation commands and the earlier failed SSH attempt. Once installed, verify:
+the installed Pi operations copy was confirmed identical by SHA-256 on 2026-11-11.
+See `../app/README.md` for the current handoff. Remaining live deployment checks:
 
 - A changed commit validates, builds, publishes, and attempts a Chromium refresh.
 - A second unchanged run reports `No build needed`.

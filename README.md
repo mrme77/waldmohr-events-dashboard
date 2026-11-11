@@ -62,14 +62,22 @@ Homburg event translations use OpenRouter `minimax/minimax-m3.1-flash` when `OPE
 ## Pi desktop access
 
 The Desktop button uses an optional local Chromium extension; no application
-backend is needed. After deploying the reviewed changes, load
-`app/ops/desktop-extension` through `chrome://extensions` with Developer mode
-enabled, in the same browser profile that runs the dashboard. Reload the
-dashboard at an HTTP loopback address such as `http://localhost:8080`.
-The button stays disabled until the extension is available. Tap **Desktop** to
-minimize Chromium and click its taskbar entry to return. Native fullscreen
-restoration still needs verification on the Pi. Detailed setup and verification
-limits are in the [Pi handoff](app/README.md#desktop-button-and-returning-to-the-dashboard).
+backend is needed. The installed Pi kiosk now loads it automatically through its
+startup command. Tap **Desktop** to minimize Chromium and click its taskbar entry
+to return. Native minimization and programmatic fullscreen restoration were
+verified on 2026-11-11, and the operator confirmed the Desktop button works.
+Observe normal taskbar return with the selected calendar state preserved during use.
+
+For a new installation, load `app/ops/desktop-extension` through
+`chrome://extensions` with Developer mode enabled in the dashboard's browser
+profile, then reload an HTTP loopback address such as `http://localhost:8080`.
+The button stays disabled until the extension is available. Detailed setup,
+startup configuration, backup paths, and verification limits are in the
+[Pi handoff](app/README.md#desktop-button-and-returning-to-the-dashboard).
+
+The internet-status button separately rechecks access on tap and updates its
+hover timestamp. It does not open Wi-Fi settings; a successful recheck can leave
+the green label unchanged.
 
 ## Data sources
 

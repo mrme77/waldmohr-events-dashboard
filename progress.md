@@ -7,17 +7,19 @@
   calendar. KMC magazine-event and trip-summary adapters, caches, and UI have been removed.
 - The current clocks show Napoli and St. Louis. Headlines wrap and change every 30 seconds
   without continuous animation; clock updates align to minute boundaries and the brand
-  indicator has been replaced on the feature branch by verified internet status.
-- The feature branch adds startup/30-second visible-page connectivity checks and
+  indicator was replaced in merged PR #50 by verified internet status.
+- PR #50 adds startup/30-second visible-page connectivity checks and
   tap-to-retry, plus a Desktop button backed by an optional loopback-only Chromium
-  extension. No backend or npm dependency was added. One-time Pi setup remains open.
+  extension. No backend or npm dependency was added. The Pi startup now loads the
+  extension automatically; its previous autostart file is backed up.
 - All 44 local tests, cached-data validation, and the production build pass for the
-  feature branch. Simulated browser checks pass from 375px through 1280px; native
-  extension minimization/fullscreen restoration has not been verified on the Pi.
+  changes merged in PR #50. Simulated browser checks pass from 375px through 1280px; native
+  minimization and programmatic fullscreen restoration were subsequently verified
+  on the Pi. The operator confirmed Desktop works.
 - PR #47 merged the earlier lower-load UI changes and the optimized script at `app/ops/deploy.sh`.
   The script skips unchanged published commits, reuses dependencies when their inputs match,
   validates/builds changed commits, preserves private family JSON, and attempts a Chromium
-  refresh after publication. **Installation of that replacement script on the Pi is unverified.**
+  refresh after publication. **The installed script was confirmed identical by SHA-256 on 2026-11-11.**
 - PR #48 merged persistent Homburg translations. Successful English results are stored in
   `homburg-events.json` by original German title and summary. Refreshes reuse unchanged text
   and request only new or edited text; cached translations also work without an API key.
@@ -34,11 +36,11 @@
 
 - The operator previously confirmed an hourly Pi deployment timer. The full-width weather
   forecast modal was confirmed working on the Pi on 2026-10-19 after PR #41.
-- The operator identified labwc and tentatively `localhost:8080`; automated SSH from
-  this workspace lacked accepted authentication. No new direct Pi inspection occurred.
-  Repository code does not establish which operations-script version the service currently runs, whether Chromium
-  accepted its refresh keystroke, or whether temperatures improved.
-- Verify installation of the optimized script and unchanged-run skip behavior on the Pi;
+- After SSH key authorization, direct inspection confirmed labwc and
+  `http://127.0.0.1:8080` in the dedicated Chromium kiosk profile.
+  The installed deployment script is now hash-verified. Its live refresh keystroke,
+  unchanged-run skipping, and temperature impact still need operational checks.
+- The optimized script's installed copy is verified; check unchanged-run skip behavior;
   consult the internal [handoff](app/README.md) for installation and journal checks.
 - Refresh the private family cache locally before deployment; never commit `family.json`.
 - Add event/news JSON refresh that preserves the current month and selected day. The browser
@@ -47,9 +49,11 @@
 - Operator-supplied refresh output confirms 31 reused translations, 0 newly translated,
   0 German fallbacks, and 450 occurrences for that run. First cache population and
   current scheduled-run health were not directly inspected.
-- After PR review/merge, deploy the header controls and install the extension in the
-  kiosk profile. Verify desktop/taskbar/fullscreen behavior, network status, touch
-  input, and usable keyboard/display scaling; no Pi settings were changed here.
+- Header controls are deployed and the kiosk autostart now enables the extension.
+  Temporary browser diagnostics were removed after native minimization/fullscreen
+  checks; the normal kiosk remains running. The operational handoff is saved on Pi.
+- Observe taskbar return with calendar state preserved, network disconnect/reconnect,
+  touch input, and usable keyboard/display scaling; those input settings were not changed.
 
 ## Historical milestones
 
