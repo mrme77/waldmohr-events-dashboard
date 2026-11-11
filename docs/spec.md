@@ -1,6 +1,6 @@
 # Project Specification: Waldmohr Events Dashboard
 
-Reviewed against merged development code on 2026-10-29 (translation cache: PR #48).
+Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11; these controls are not yet deployed to the Pi.
 
 ## Intent
 Build a local English-first touchscreen dashboard that helps a household in Waldmohr find
@@ -27,12 +27,23 @@ The application is a static Vite + React + TypeScript site under `app/`, served 
   saved successful translations across refreshes and recurrences, including without a key.
   Untranslated text retains its source text when no key is available or a batch fails.
 - [x] Validate cached data and pass the TypeScript/production build.
+- [x] Show internet reachability in the header; check on startup, every 30 seconds while
+  visible, on visibility/reconnection events, and on tap, with an eight-second timeout.
+  A provider failure shows an unverified connection rather than asserting internet loss.
+- [x] Provide a Desktop button using an optional Manifest V3 Chromium extension restricted
+  to HTTP localhost/127.0.0.1 pages and the sending tab's own window.
+- [ ] Verify extension installation, native minimization/fullscreen restoration, touch input,
+  and usable on-screen keyboard/display scaling on the physical Pi.
 
 ## Architecture and Constraints
 
 - **Static frontend**: no application backend. Event/news JSON loads on mount; page reloads
   read generated files and never invoke translation. State-preserving in-page JSON refresh
   remains pending.
+- **Optional desktop integration**: `app/ops/desktop-extension` minimizes the dashboard
+  without a backend, shell access, or browser-wide permissions. Load it in the kiosk's
+  Chromium profile; the button is disabled when the helper is unavailable. Return by
+  clicking Chromium's taskbar entry. Pi installation and fullscreen restoration are open.
 - **Separate ingestion**: Node.js adapters normalize public sources. GitHub Actions is
   configured to refresh and publish public JSON daily at 05:17 UTC, with manual dispatch.
 - **Translation persistence**: `homburg-events.json` contains a model-scoped cache keyed by

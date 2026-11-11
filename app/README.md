@@ -1,6 +1,6 @@
 # Dashboard: application and Raspberry Pi handoff
 
-Reviewed against current development on 2026-10-29, including merged translation-cache PR #48 (`3f5039a`). This review checks repository behavior. The latest recorded Pi observations are listed separately below; the Pi was not contacted during this review.
+Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11, including earlier translation-cache PR #48 (`3f5039a`). Local implementation and tests are separate from Pi installation and observed behavior.
 
 The repository-root [README](../README.md) is the public overview and setup guide. This file holds the internal deployment handoff. [docs/validation.md](../docs/validation.md) records checks, and [progress.md](../progress.md) tracks completed work and remaining gaps.
 
@@ -8,13 +8,96 @@ The repository-root [README](../README.md) is the public overview and setup guid
 
 The application is a static Vite + React + TypeScript dashboard with no application backend. It reads normalized JSON files from `public/`; weather is fetched directly from Open-Meteo every 15 minutes.
 
-The calendar combines Waldmohr events, trash collections, public holidays, Homburg flea markets, official Homburg events, and an optional private family calendar. Only the Waldmohr feed is required. Family data remains gitignored. The right rail contains weather, Napoli/St. Louis clocks, Homburg highlights, and upcoming events. NPR and FOX 2 St. Louis headlines appear one at a time, changing every 30 seconds without scrolling or transition animations. The brand indicator is static; clocks update at minute boundaries.
+The calendar combines Waldmohr events, trash collections, public holidays, Homburg flea markets, official Homburg events, and an optional private family calendar. Only the Waldmohr feed is required. Family data remains gitignored. The right rail contains weather, Napoli/St. Louis clocks, Homburg highlights, and upcoming events. NPR and FOX 2 St. Louis headlines appear one at a time, changing every 30 seconds without scrolling or transition animations. The header shows internet status and a Desktop control; clocks update at minute boundaries.
 
 Source websites appear as locally generated SVG QR codes in event details, with instructions to scan using a phone camera. No external QR service receives the source URL. Invalid or unsupported URLs show an unavailable message. Homburg cards open day details instead of another browser tab. Close details with the × button or by tapping outside them.
 
 Personal entries appear before public events in day details, showing their description and location without a QR code. The close control stays visible while scrolling. Napoli and St. Louis clocks stack when the sidebar is narrow, and city/time rows and refresh metadata can wrap.
 
 The weather card opens a seven-day forecast with daily conditions, highs/lows, and precipitation probability. The screen-level modal avoids sidebar clipping, expands up to 700px, and fits the screen width. Close it with ×, an outside tap, or Escape.
+
+## Internet indicator (development branch)
+
+The header replaces the decorative green dot with a Wi-Fi-shaped internet status
+button. It checks external HTTPS access through the existing Open-Meteo provider
+on startup, every 30 seconds while the page is visible, when the page becomes
+visible again, and when the browser reports reconnection. Tapping it retries the
+check. Each request bypasses the HTTP cache and times out after eight seconds.
+These checks do not refresh news/events or call the translation service.
+
+Green `Internet connected` means the external check succeeded. Red `No network`
+means the browser reports no network connection. Amber `Check connection` means
+internet access could not be verified; an Open-Meteo outage can also cause this
+state. The initial label is `Checking internet`. The button's tooltip includes the
+check result and, for a successful check, its timestamp. The browser cannot report
+the Pi's Wi-Fi signal strength or distinguish its Wi-Fi adapter from Ethernet.
+
+Local verification: all 44 automated tests and the production build passed.
+Browser checks with simulated successful and failed responses covered internet
+verification, offline/reconnect events, manual retry, and 375px, 768px, 1024px,
+and 1280px widths without horizontal overflow. The status button has a 44px touch
+target. These changes are prepared for PR review and have not been deployed or checked on the Pi. Cached-data validation also passed; it does not establish source freshness.
+
+### Pi touchscreen and on-screen keyboard
+
+Earlier notes identify a 7-inch HDMI touchscreen, but do not identify its model.
+The operator identified labwc and tentatively reported `http://localhost:8080`
+as the dashboard address; its launch settings have not been inspected directly.
+Touchscreen detection, display scale, and the desktop keyboard need to be checked
+on the physical Pi. Browser zoom does not set the desktop keyboard's size.
+Read-only diagnostic commands for an existing Pi terminal session:
+
+```sh
+cat /etc/os-release
+wlr-randr
+pgrep -a -f 'squeekboard|onboard|labwc|wayfire'
+```
+
+`wlr-randr` may be unavailable or may require the graphical session's Wayland
+environment. Report that error rather than assuming the display's scale. No Pi
+configuration changes or package installations have been made for this feature.
+
+### Desktop button and returning to the dashboard
+
+The `Desktop` button beside the connection indicator requests that Chromium
+minimize the dashboard window, keeping its calendar selection and page open.
+Click Chromium's taskbar entry to restore the dashboard. This is separate from
+the web Fullscreen API, which cannot minimize Chromium's kiosk window.
+
+This feature uses the Manifest V3 extension in `ops/desktop-extension/`; no
+application server or additional npm package is required. It accepts only HTTP
+pages on `localhost` and `127.0.0.1`, including `http://localhost:8080`. Other
+machines opening the dashboard through a LAN IP do not get desktop controls.
+The extension can minimize only the window containing the requesting tab; it
+has no shell-command feature and requests no browser-wide permissions. Without
+the extension, the Desktop button is disabled and explains that setup is needed.
+
+After the branch is reviewed, merged, and pulled onto the Pi, perform this
+one-time setup in the same Chromium profile that runs the dashboard:
+
+1. Open `chrome://extensions` (leave kiosk mode or close the dashboard window
+   temporarily if necessary).
+2. Enable **Developer mode**, then choose **Load unpacked**.
+3. Select `/home/pasquale/Desktop/waldmohr-events-dashboard/app/ops/desktop-extension`.
+4. Reopen or reload the dashboard at its local address. If Chromium runs the
+   dashboard in incognito mode, also enable **Allow in incognito** for this
+   extension in its details.
+5. Tap **Desktop**, confirm the Pi desktop appears, then click Chromium on the
+   taskbar. Check that the dashboard returns fullscreen with its selection intact.
+
+The extension files are read from the repository checkout rather than the static
+`dist/` publish directory. Reload the extension in `chrome://extensions` after
+future updates to these files. No extension has been installed on the Pi yet.
+
+Verification: tests cover loopback address restrictions, matching requests and
+responses, minimizing only the sending window, timeouts, cancellation, and
+explicit browser API failures. Browser UI checks used a simulated helper to
+verify the disabled/enabled states, preserved page, visible failure message,
+retry, and 44px buttons at 375px, 768px, 1024px, and 1280px without horizontal
+overflow. The extension-enabled browser test could not launch because that
+Playwright browser executable is not installed; no browser was downloaded.
+Native minimization, fullscreen restoration, and taskbar access on labwc still
+need the manual Pi check above.
 
 ## Public data refresh and translation cache
 
@@ -24,11 +107,17 @@ Homburg translations use OpenRouter `minimax/minimax-m3.1-flash`, a paid route. 
 
 PR #48 saves successful translations in `homburg-events.json` under `translationCache`, keyed by the original German title and summary and scoped to the configured model. Unchanged listings and recurring occurrences reuse those translations across runs. Only new or edited text is sent for translation. Cached English is also reused without an API key; uncached or failed text stays in German and is eligible for retry later. Successful entries survive temporarily absent listings. Changing the model starts a fresh cache.
 
-The first refresh after this fix populates the cache because older payloads did not preserve original summaries. Cache population and savings have not been verified against a live post-merge refresh. An unreadable or corrupt saved cache fails the adapter visibly rather than silently repeating paid requests.
+The first refresh after this fix populates the cache because older payloads did not preserve original summaries. An operator-supplied refresh log reports 31 reused translations, 0 newly translated, 0 German fallbacks, and 450 occurrences. This confirms reuse for that run and explains the absence of new OpenRouter activity; the first population run and current scheduled-run health were not independently inspected. An unreadable or corrupt saved cache fails the adapter visibly rather than silently repeating paid requests.
 
 Each Homburg payload records `model`, `translatedListings` (available translations among current distinct listings), `totalListings`, `reusedListings`, and `newlyTranslatedListings`. The workflow log separates reused translations, new translations, and German fallbacks. German originals and official source links remain available.
 
 ## Latest recorded Pi observations
+
+During the November session, the operator confirmed SSH access as `pasquale` to
+`myai` at `192.168.1.46` after restoring its network connection, and identified
+labwc from process output. The automated SSH check from this workspace was
+rejected because it had no accepted authentication. Display scaling, touchscreen
+model, deployment-script installation, and extension operation remain unverified.
 
 On 2026-10-19, the Pi was reported running successfully with an HDMI touchscreen and Chromium. Its hostname is `myai`. The inspected `waldmohr-deploy.timer` runs five minutes after boot and one hour after each deployment finishes. Its service runs `/home/pasquale/dashboard-ops/deploy.sh` as `pasquale`. That service script fast-forwards the checkout from `origin/main`, validates/builds, and publishes `app/dist/` into `/var/www/waldmohr/`, preserving the private deployed `family.json`.
 

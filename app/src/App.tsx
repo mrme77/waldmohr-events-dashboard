@@ -6,6 +6,8 @@ import { Spotlight } from "./components/Spotlight";
 import { EventDetail } from "./components/EventDetail";
 import { WeatherWidget } from "./components/WeatherWidget";
 import { HomburgHighlights } from "./components/HomburgHighlights";
+import { ConnectionStatus } from "./components/ConnectionStatus";
+import { DesktopButton } from "./components/DesktopButton";
 import { fetchJson } from "./data/fetchJson";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
@@ -115,8 +117,11 @@ export function App() {
 
       <header className="topbar">
         <div className="topbar__brand">
-          <span className="topbar__indicator" aria-hidden="true" />
           <h1>Waldmohr Events</h1>
+        </div>
+        <div className="topbar__actions">
+          <ConnectionStatus />
+          <DesktopButton />
         </div>
       </header>
 

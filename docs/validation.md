@@ -1,8 +1,27 @@
 # Validation
 
-Current development checks and historical verification records. Reviewed on 2026-10-29.
+Current development checks and historical verification records. Reviewed on 2026-11-11.
 
-## Latest Recorded Local Verification — 2026-10-29
+## Latest Recorded Local Verification — 2026-11-11
+
+Connection-indicator and Desktop-button feature branch:
+
+- `npm test`: all 44 tests passed, including network transitions, timeouts, cleanup,
+  valid external responses, extension address/window restrictions, and bridge failures.
+- `npm run build`: TypeScript and production build passed.
+- `npm run validate`: cached public datasets and the local private family cache passed;
+  cache validity does not establish current source freshness. No private data was staged.
+- `git diff --check`: passed.
+- Browser checks at 375px, 768px, 1024px, and 1280px found no horizontal overflow;
+  both header controls retain 44px touch targets. Simulated checks cover offline and
+  reconnect, manual retry, disabled desktop controls without a helper, successful
+  desktop requests preserving the page, visible failures, and retry after failure.
+- An external internet check returned HTTP 200. No paid translation requests ran.
+- Native extension testing could not launch because the additional Playwright browser
+  executable was missing; no browser was downloaded. Pi installation, actual window
+  minimization/fullscreen restoration, touchscreen input, and keyboard scaling remain open.
+
+## Previous Local Verification — 2026-10-29
 
 The translation-cache work (merged as PR #48) was checked locally before merge, including after
 rebasing onto then-current main:
@@ -17,7 +36,7 @@ Translation regression tests use mocked requests and temporary files. They cover
 across runs, zero API requests for unchanged recurrences, translating only new/edited text,
 cache reuse without a key, German fallbacks, failed-request retry, invalid results, missing or
 legacy caches, corruption/read errors, and model changes. No live paid translation requests
-were made for these checks. This documentation update does not claim a new test run.
+were made for those earlier checks; the current feature-branch results are recorded above.
 
 ## Current Development Checklist
 
@@ -28,7 +47,10 @@ run `npm run dev` and open its local URL.
   clocks, last-updated metadata, Next Up spotlight, and day details are present.
 - Confirm news uses NPR/FOX 2 headlines from `public/news.json`, displays one complete
   wrapping headline, and changes every 30 seconds without continuous scrolling.
-- Confirm clocks update at minute boundaries and the brand indicator has no pulse animation.
+- Confirm clocks update at minute boundaries. Check the header's internet indicator
+  and tap-to-retry; a failed provider check should show `Check connection`.
+- Confirm Desktop stays disabled without its extension and works after the one-time
+  setup in `app/README.md`; return through Chromium's taskbar entry.
 - Confirm calendar markers distinguish events, trash, holidays, flea markets, family and leave.
   Past events stay out of Next Up and Homburg highlights.
 - Confirm day details keep the close control accessible, show public source QR codes instead
@@ -67,9 +89,18 @@ Inspect `homburg-events.json` and the refresh log:
 - A model change starts fresh; unreadable or corrupt saved caches fail visibly rather than
   silently triggering replacement paid requests.
 
-Live cache population and actual usage savings have not been verified in this review.
+An operator-supplied refresh log reports 31 reused translations, 0 newly translated,
+0 German fallbacks, and 450 occurrences. This demonstrates reuse for the supplied run;
+the first population run and current workflow health were not inspected directly.
 
 ## Pi Verification Still Required
+
+- Load the desktop extension into the dashboard's Chromium profile and reload the
+  local dashboard. Verify Desktop minimizes it, the taskbar remains accessible, and
+  restoring Chromium preserves fullscreen and the selected month/day.
+- Verify connection status by disconnecting/reconnecting the Pi network.
+- Check touch input, screen model, resolution/scale, and on-screen keyboard sizing.
+  The operator identified labwc; model/scaling and browser launch options are unverified.
 
 The existing hourly deployment timer and forecast modal were confirmed in the 2026-10-19
 handoff. The optimized replacement at `app/ops/deploy.sh` is locally tested and merged, but

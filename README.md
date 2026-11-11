@@ -11,6 +11,8 @@ A touch-friendly, English-language dashboard for local events and useful updates
 - Trash collection dates, Rheinland-Pfalz public holidays, and Homburg flea-market dates.
 - Current Waldmohr weather and a seven-day forecast.
 - Napoli and St. Louis clocks.
+- Visible internet status with periodic checks and tap-to-retry.
+- A Desktop button to minimize the dashboard when its local Chromium helper is enabled.
 - Touch-friendly event details and QR codes for opening source links on a phone.
 - Optional family-calendar entries for a private installation.
 
@@ -56,6 +58,18 @@ Run the regression tests with `npm test` from `app/`. The internal deployment ha
 The dashboard can include a private Google Calendar feed for a personal installation. Copy the root `.env.example` to `.env` and set `GCAL_ICS_URL` to the calendar's secret iCal URL. Treat that URL as a password: anyone who has it can read the calendar. The generated family cache is gitignored and must not be committed or served from a public deployment.
 
 Homburg event translations use OpenRouter `minimax/minimax-m3.1-flash` when `OPENROUTER_API_KEY` is available to the data-refresh workflow. Add it as a GitHub Actions repository secret to enable new translations. Successful translations are saved in the Homburg JSON payload and reused whenever the original German title and summary are unchanged. Only new or edited text requires another translation request. Without the key, cached English remains available and uncached text stays in German. Failed translations are retried on later refreshes; changing the configured model starts a fresh cache. The first refresh after the cache fix populates it because older payloads did not retain original summaries. Never commit `.env` files, secret URLs, or API keys.
+
+## Pi desktop access
+
+The Desktop button uses an optional local Chromium extension; no application
+backend is needed. After deploying the reviewed changes, load
+`app/ops/desktop-extension` through `chrome://extensions` with Developer mode
+enabled, in the same browser profile that runs the dashboard. Reload the
+dashboard at an HTTP loopback address such as `http://localhost:8080`.
+The button stays disabled until the extension is available. Tap **Desktop** to
+minimize Chromium and click its taskbar entry to return. Native fullscreen
+restoration still needs verification on the Pi. Detailed setup and verification
+limits are in the [Pi handoff](app/README.md#desktop-button-and-returning-to-the-dashboard).
 
 ## Data sources
 

@@ -1,6 +1,6 @@
 # Tasks
 
-Reviewed against repository source on 2026-10-29. See [plan.md](plan.md) for the current
+Reviewed against the connection-indicator and Desktop-button branch on 2026-11-11. See [plan.md](plan.md) for the current
 architecture and [app/README.md](app/README.md) for the internal Pi handoff.
 
 ## Current implementation — completed
@@ -14,7 +14,12 @@ architecture and [app/README.md](app/README.md) for the internal Pi handoff.
       gitignored and preserved during deployment.
 - [x] NPR USA and FOX 2 St. Louis RSS headlines, displayed one at a time every 30 seconds
       without continuous scrolling or transition animations.
-- [x] Napoli and St. Louis clocks with updates at minute boundaries; static brand indicator.
+- [x] Napoli and St. Louis clocks with updates at minute boundaries.
+- [x] Replace the static brand dot with verified internet status, periodic checks, and retry.
+- [x] Add Desktop control with an optional Chromium extension restricted to loopback pages
+      and the sending window; document one-time setup and taskbar return.
+- [x] Feature-branch validation: 44 tests, cached-data validation, production build, and
+      simulated browser UI checks at 375px, 768px, 1024px, and 1280px passed.
 - [x] Open-Meteo current weather and a seven-day forecast in a screen-level modal.
 - [x] Source QR codes for public events; family entries first in day details, without QR codes.
 - [x] Daily public-data refresh workflow scheduled at 05:17 UTC, including adapter failure
@@ -40,9 +45,12 @@ architecture and [app/README.md](app/README.md) for the internal Pi handoff.
       `family.json` or the secret calendar URL.
 - [ ] Refresh event/news JSON in the open page without losing its month or selected day.
       A full browser reload loads new data but does not satisfy this requirement.
-- [ ] Confirm the first post-#48 public refresh populates the translation cache and a later
-      unchanged refresh reuses it. Mocked local tests cover this behavior; live verification
-      remains outstanding in this documentation review.
+- [x] Operator-supplied refresh output confirms reuse: 31 reused, 0 newly translated,
+      0 German fallbacks across 450 occurrences. This evidence applies to the supplied run.
+- [ ] After review/merge, deploy the header controls and load the unpacked desktop extension
+      in the kiosk profile; verify minimization and taskbar/fullscreen restoration.
+- [ ] Verify Pi network-status transitions, touchscreen input, screen model, display scaling,
+      and usable on-screen keyboard size. labwc is operator-reported; settings remain open.
 
 ## Optional backlog — not scheduled
 

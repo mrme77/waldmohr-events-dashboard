@@ -1,14 +1,20 @@
 # Progress
 
-## Current development — reviewed 2026-10-29
+## Current development — reviewed 2026-11-11
 
 - Current sources are Waldmohr events, official Homburg events, Homburg flea markets, NPR USA
   and FOX 2 St. Louis news, Open-Meteo weather, trash, holidays, and an optional private family
   calendar. KMC magazine-event and trip-summary adapters, caches, and UI have been removed.
 - The current clocks show Napoli and St. Louis. Headlines wrap and change every 30 seconds
   without continuous animation; clock updates align to minute boundaries and the brand
-  indicator is static.
-- PR #47 merged these lower-load UI changes and the optimized script at `app/ops/deploy.sh`.
+  indicator has been replaced on the feature branch by verified internet status.
+- The feature branch adds startup/30-second visible-page connectivity checks and
+  tap-to-retry, plus a Desktop button backed by an optional loopback-only Chromium
+  extension. No backend or npm dependency was added. One-time Pi setup remains open.
+- All 44 local tests, cached-data validation, and the production build pass for the
+  feature branch. Simulated browser checks pass from 375px through 1280px; native
+  extension minimization/fullscreen restoration has not been verified on the Pi.
+- PR #47 merged the earlier lower-load UI changes and the optimized script at `app/ops/deploy.sh`.
   The script skips unchanged published commits, reuses dependencies when their inputs match,
   validates/builds changed commits, preserves private family JSON, and attempts a Chromium
   refresh after publication. **Installation of that replacement script on the Pi is unverified.**
@@ -28,8 +34,9 @@
 
 - The operator previously confirmed an hourly Pi deployment timer. The full-width weather
   forecast modal was confirmed working on the Pi on 2026-10-19 after PR #41.
-- No new Pi inspection was performed for this documentation update. Repository code does not
-  establish which operations-script version the service currently runs, whether Chromium
+- The operator identified labwc and tentatively `localhost:8080`; automated SSH from
+  this workspace lacked accepted authentication. No new direct Pi inspection occurred.
+  Repository code does not establish which operations-script version the service currently runs, whether Chromium
   accepted its refresh keystroke, or whether temperatures improved.
 - Verify installation of the optimized script and unchanged-run skip behavior on the Pi;
   consult the internal [handoff](app/README.md) for installation and journal checks.
@@ -37,8 +44,12 @@
 - Add event/news JSON refresh that preserves the current month and selected day. The browser
   currently loads those datasets on mount; a successful full reload reads fresh data but
   resets the view. Weather already refreshes every 15 minutes.
-- Confirm the first post-#48 refresh populates the translation cache and a later unchanged
-  refresh reports reuse; live workflow behavior was not checked in this docs review.
+- Operator-supplied refresh output confirms 31 reused translations, 0 newly translated,
+  0 German fallbacks, and 450 occurrences for that run. First cache population and
+  current scheduled-run health were not directly inspected.
+- After PR review/merge, deploy the header controls and install the extension in the
+  kiosk profile. Verify desktop/taskbar/fullscreen behavior, network status, touch
+  input, and usable keyboard/display scaling; no Pi settings were changed here.
 
 ## Historical milestones
 

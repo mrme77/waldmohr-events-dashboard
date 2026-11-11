@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Waldmohr Desktop Button",
+  "version": "1.0.0",
+  "description": "Allows the local Waldmohr dashboard to minimize its own Chromium window.",
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["http://localhost/*", "http://127.0.0.1/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}
