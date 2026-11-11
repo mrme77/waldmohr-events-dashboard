@@ -17,7 +17,7 @@ Departure Board" view. Calendar is the primary surface; everything else is a gla
   (circle), Family (star), Leave (star), Holiday (triangle), Trash (square, color-coded by
   bin type), Flea Markets (hollow ring), and Civic events. Theme tokens in
   `app/src/theme.css` define the current palette and marker styling.
-- Layered glow and grain background, with a static brand indicator. News shows one wrapping
+- Layered glow and grain background, with a Wi-Fi-shaped internet indicator and Desktop button. News shows one wrapping
   headline at a time, rotating every 30 seconds without continuous scrolling. Clocks for Napoli
   and St. Louis update at minute boundaries to reduce kiosk rendering work.
 - Calendar dots are colored by category; tap a day/dot opens a detail popover (no filter
@@ -31,10 +31,14 @@ Departure Board" view. Calendar is the primary surface; everything else is a gla
 - The weather card opens a full-width seven-day forecast modal.
 - Source links and freshness metadata ("Last Updated") always visible.
 - One color dimension (category) for glanceability; tap for detail, not filters.
-- Touchscreen-first, sized for the Pi 5 kiosk display.
+- Touchscreen-first, sized for the Pi 5 kiosk display. Header controls have 44px touch targets.
+- Internet status distinguishes verified access, no network, and an unverified connection;
+  it does not claim to report Wi-Fi signal strength. Tap the indicator to retry.
+- Desktop access minimizes Chromium through an optional local extension; the taskbar
+  returns to the existing dashboard. The control stays disabled until setup is complete.
 
 ## Development and Deployment Evidence
 
-Reviewed against current development on 2026-10-29. Runtime and deployment verification are
+Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11. Runtime and deployment verification are
 recorded separately in `app/README.md` and `docs/validation.md`; a merged feature does not
 by itself confirm installation or behavior on the Pi.

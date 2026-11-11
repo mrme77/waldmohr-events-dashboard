@@ -1,6 +1,6 @@
 # Plan
 
-Reviewed against repository source on 2026-10-29, including merged PRs #47 and #48.
+Reviewed against the connection-indicator and Desktop-button branch on 2026-11-11, including earlier PRs #47 and #48.
 This file describes current development; historical phases are listed separately below.
 
 ## Current dashboard
@@ -14,6 +14,8 @@ It focuses on Waldmohr and nearby Homburg for an American family in the KMC area
   every 30 seconds; it does not scroll continuously.
 - Clocks: Napoli (`Europe/Rome`) and St. Louis (`America/Chicago`), updated at minute boundaries.
 - Right rail: weather, clocks, the next three Homburg listings, and upcoming events.
+- Header: verified internet status with 30-second visible-page checks/tap-to-retry,
+  and a Desktop button enabled by the optional loopback-only Chromium extension.
 - Event details show source QR codes for opening official pages on a phone. Family entries
   appear before public entries and do not receive source QR codes.
 - Weather: live Open-Meteo conditions and a seven-day forecast in a screen-level modal;
@@ -46,7 +48,9 @@ available. PR #48 saves successful translations in `homburg-events.json`, keyed 
 German title and summary. Unchanged text reuses the cache, including without an API key; only
 new or edited text is sent for translation. Failed or missing translations retain German and
 can be retried. The first refresh populates the cache; changing the model starts a fresh cache.
-The Pi deploys the generated JSON and does not need the OpenRouter key.
+The Pi deploys the generated JSON and does not need the OpenRouter key. An operator-
+supplied run reports 31 reused translations and no new translations or German fallbacks;
+this confirms that run's reuse without establishing current scheduled-run health.
 
 The Pi's hourly deployment timer was previously operator-confirmed. The current repository
 deployment script, `app/ops/deploy.sh`, pulls `main`, skips work when the published commit is
@@ -58,6 +62,16 @@ publish it attempts a Chromium refresh and warns if the keystroke fails.
 separately from the operations copy used by the Pi service. Pulling `main` alone does not prove
 the service uses the optimized script. See the internal [Pi handoff](app/README.md) for installation
 and verification steps. No new live Pi check was performed for this documentation review.
+
+## Desktop controls and Pi input
+
+The optional extension in `app/ops/desktop-extension` keeps desktop access outside
+the static app: no server, shell control, or new npm dependency. It accepts only
+HTTP loopback pages and minimizes only the sending tab's window. Load it once
+in the kiosk's Chromium profile after merge/deployment; restore the dashboard
+through the taskbar. See [setup](app/README.md#desktop-button-and-returning-to-the-dashboard).
+The operator identified labwc and tentatively `localhost:8080`; native behavior,
+touchscreen model, display scaling, and keyboard size still need Pi verification.
 
 ## Secrets and privacy
 
@@ -72,9 +86,11 @@ and verification steps. No new live Pi check was performed for this documentatio
    report `No build needed` and changed runs publish and refresh Chromium successfully.
 2. Refresh the Pi's private family cache locally before deployment, retaining it outside Git.
 3. Refresh event/news JSON in the open page without losing the current month or selected day.
-4. Verify the first post-#48 refresh populates the translation cache and a later unchanged
-   refresh reports reuse. Local mocked tests passed previously; live cache behavior has not
-   been confirmed in this documentation review.
+4. After review/merge, deploy the header controls and load the local Chromium extension;
+   verify Desktop/taskbar/fullscreen behavior and network-status changes on the Pi.
+5. Verify touchscreen input and adjust desktop keyboard/display scaling on the Pi.
+   The original first translation-cache population run remains unobserved; operator
+   logs confirm reuse in a subsequent run.
 
 ## Historical phases
 

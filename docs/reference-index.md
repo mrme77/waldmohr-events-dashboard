@@ -1,7 +1,7 @@
 # Reference Index
 
-Current source and code references, reviewed against development on 2026-10-29.
-External sites and terms were not revalidated during this documentation update.
+Source and code references, updated for the header controls on 2026-11-11.
+Public data-source sites and terms were not revalidated during this feature update.
 
 ## Current Public Sources
 
@@ -52,6 +52,20 @@ installation are separate from these source-code settings.
 - `../app/ops/deploy.sh`: optimized replacement deployment script; Pi installation unverified.
 - `../app/README.md`: internal Pi handoff and verification limits.
 - `validation.md`: local checks, historical results, and open live verification.
+
+## Header Controls and Pi Desktop References
+
+- `../app/src/data/checkInternet.ts`: small uncached check through the existing weather API.
+- `../app/src/hooks/useInternetStatus.ts`: network events, polling, visibility, and timeout.
+- `../app/src/lib/piDesktop.ts`: matching and cancellation for desktop requests.
+- `../app/ops/desktop-extension/`: optional Manifest V3 content bridge and window control.
+- Browser connectivity limitations: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine
+- Chromium window API: https://developer.chrome.com/docs/extensions/reference/api/windows
+- Loading unpacked extensions: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
+- Pi on-screen keyboard: https://www.raspberrypi.com/documentation/accessories/display.html#on-screen-keyboard
+
+These implementation references were added on 2026-11-11; Pi setup and verification
+limits are recorded in `../app/README.md`.
 
 ## Historical or Deferred Sources
 

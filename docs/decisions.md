@@ -4,7 +4,8 @@ Architectural and design decisions, including historical choices. Later entries 
 earlier behavior where noted. Current development behavior is summarized in `spec.md`;
 Pi operation and installation evidence belong in `../app/README.md`.
 
-Reviewed against merged development code on 2026-10-29 (translation cache: PR #48).
+Earlier decisions cover merged code through translation-cache PR #48. The 2026-11-11
+header-control entries describe the locally verified feature branch, pending Pi rollout.
 
 ## [2026-06-08] Start With A Static Local App
 **Context**: The first need is a usable local calendar, not deployment or multi-user auth.
@@ -254,3 +255,30 @@ have not been verified in this documentation review. The Pi only deploys generat
 does not require the OpenRouter key.
 **Status**: Implemented in PR #48 and merged. Local tests, build, and data validation passed;
 see `docs/validation.md`. Live paid translation requests were not used for those checks.
+
+## [2026-11-11] Verify Internet Access in the Header
+
+**Context**: The decorative green dot stayed green while the Pi was disconnected.
+**Decision**: Replace it with a Wi-Fi-shaped button checking a small, uncached HTTPS
+response from the existing Open-Meteo provider. Check on startup, every 30 seconds
+while visible, on visibility/reconnect events, and on tap; time out after eight seconds.
+**Reason**: Browser network presence alone cannot establish internet access. A failed
+external check remains unverified because a provider outage can cause the same result.
+These requests do not refresh events/news or invoke translation.
+**Status**: Implemented and locally tested on the feature branch; Pi rollout pending.
+
+## [2026-11-11] Minimize the Dashboard Through a Local Chromium Extension
+
+**Context**: The operator wants a touch button to reach the Pi desktop and return to
+the existing dashboard. The web Fullscreen API cannot minimize a kiosk window.
+**Decision**: Add a Desktop button backed by an optional Manifest V3 extension,
+restricted to HTTP localhost/127.0.0.1 pages. It minimizes only the sending tab's
+window using Chromium's window API. No backend, shell execution, browser-wide
+permissions, or npm dependency is introduced. The control is disabled without setup.
+**Reason**: Keeps the static app architecture and leaves the page/calendar state open;
+the operator returns by selecting Chromium on the taskbar.
+**Operational note**: Load the unpacked extension in the kiosk profile after merge
+and deployment. Its files live in the repository checkout, outside `dist/`. See
+`../app/README.md` for setup, incognito handling, and manual verification.
+**Status**: Local automated and simulated UI checks pass. Native minimization and
+fullscreen restoration on labwc remain unverified; no extension was installed on the Pi.
