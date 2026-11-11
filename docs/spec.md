@@ -1,6 +1,6 @@
 # Project Specification: Waldmohr Events Dashboard
 
-Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11; these controls are not yet deployed to the Pi.
+Reviewed after PR #50 merge and Pi activation on 2026-11-11. The header controls are deployed and the Desktop extension is enabled.
 
 ## Intent
 Build a local English-first touchscreen dashboard that helps a household in Waldmohr find
@@ -32,8 +32,10 @@ The application is a static Vite + React + TypeScript site under `app/`, served 
   A provider failure shows an unverified connection rather than asserting internet loss.
 - [x] Provide a Desktop button using an optional Manifest V3 Chromium extension restricted
   to HTTP localhost/127.0.0.1 pages and the sending tab's own window.
-- [ ] Verify extension installation, native minimization/fullscreen restoration, touch input,
-  and usable on-screen keyboard/display scaling on the physical Pi.
+- [x] Enable the extension in the Pi kiosk startup; verify native minimization and
+  programmatic fullscreen restoration. The operator confirmed Desktop works.
+- [ ] Observe normal taskbar restoration with the selected month/day preserved and
+  verify touch input and usable keyboard/display scaling on the physical Pi.
 
 ## Architecture and Constraints
 
@@ -43,7 +45,9 @@ The application is a static Vite + React + TypeScript site under `app/`, served 
 - **Optional desktop integration**: `app/ops/desktop-extension` minimizes the dashboard
   without a backend, shell access, or browser-wide permissions. Load it in the kiosk's
   Chromium profile; the button is disabled when the helper is unavailable. Return by
-  clicking Chromium's taskbar entry. Pi installation and fullscreen restoration are open.
+  clicking Chromium's taskbar entry. Pi activation, native minimization, and
+  programmatic fullscreen restoration are verified; normal taskbar return remains
+  an operational check.
 - **Separate ingestion**: Node.js adapters normalize public sources. GitHub Actions is
   configured to refresh and publish public JSON daily at 05:17 UTC, with manual dispatch.
 - **Translation persistence**: `homburg-events.json` contains a model-scoped cache keyed by
@@ -58,8 +62,9 @@ The application is a static Vite + React + TypeScript site under `app/`, served 
 - **Private family data**: generated `family.json` is gitignored and preserved at the Pi
   publish destination. Refreshing it locally before deployment remains pending.
 - **Deployment evidence**: hourly Pi deployment was reported operational. The optimized
-  replacement script is implemented and tested locally, but its installation and Chromium
-  refresh behavior on the Pi remain unverified. See `../app/README.md`.
+  replacement script is implemented and tested locally; the installed Pi copy was
+  confirmed identical by SHA-256 on 2026-11-11. Timer execution, unchanged-run skips,
+  and deployment-triggered Chromium refresh still require operational checks. See `../app/README.md`.
 
 ## Non-Goals
 

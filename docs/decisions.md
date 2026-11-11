@@ -5,7 +5,7 @@ earlier behavior where noted. Current development behavior is summarized in `spe
 Pi operation and installation evidence belong in `../app/README.md`.
 
 Earlier decisions cover merged code through translation-cache PR #48. The 2026-11-11
-header-control entries describe the locally verified feature branch, pending Pi rollout.
+header-control entries include PR #50 merge and the direct Pi activation on 2026-11-11.
 
 ## [2026-06-08] Start With A Static Local App
 **Context**: The first need is a usable local calendar, not deployment or multi-user auth.
@@ -227,10 +227,11 @@ installation inputs match. Successful publishes attempt a Chromium refresh and w
 **Reason**: Reduce repeated rendering and deployment work while retaining retries after failed
 builds or publishes and preserving the private family calendar at the destination.
 **Operational note**: PR #47 merged this code. Installation of the replacement script into the
-Pi operations directory remains unverified; merging the repository copy does not install it
-there. Temperature improvement and live Chromium refresh behavior have not been verified for
+Pi operations directory was initially unverified; on 2026-11-11 the installed copy
+was confirmed identical by SHA-256. Temperature improvement and live Chromium refresh behavior have not been verified for
 this replacement. See `app/README.md` for installation and verification steps.
-**Status**: Implemented and locally tested; Pi installation verification remains open.
+**Status**: Implemented and locally tested; Pi installation hash-verified on 2026-11-11.
+Live unchanged-run skipping, deployment refresh, and temperature checks remain open.
 
 ## [2026-10-29] Reuse Successful Homburg Translations Across Refreshes
 **Context**: Each refresh previously translated every distinct Homburg title and summary again,
@@ -265,7 +266,8 @@ while visible, on visibility/reconnect events, and on tap; time out after eight 
 **Reason**: Browser network presence alone cannot establish internet access. A failed
 external check remains unverified because a provider outage can cause the same result.
 These requests do not refresh events/news or invoke translation.
-**Status**: Implemented and locally tested on the feature branch; Pi rollout pending.
+**Status**: Merged in PR #50 and deployed. The Pi reported Internet connected during
+direct inspection on 2026-11-11; disconnect/reconnect behavior remains a manual check.
 
 ## [2026-11-11] Minimize the Dashboard Through a Local Chromium Extension
 
@@ -280,5 +282,8 @@ the operator returns by selecting Chromium on the taskbar.
 **Operational note**: Load the unpacked extension in the kiosk profile after merge
 and deployment. Its files live in the repository checkout, outside `dist/`. See
 `../app/README.md` for setup, incognito handling, and manual verification.
-**Status**: Local automated and simulated UI checks pass. Native minimization and
-fullscreen restoration on labwc remain unverified; no extension was installed on the Pi.
+**Status**: Merged in PR #50. On 2026-11-11, SSH inspection enabled persistent
+`--load-extension` activation in labwc autostart, verified native minimization and
+programmatic fullscreen restoration, and confirmed the normal browser restart
+without temporary diagnostics. The operator confirmed Desktop works. Normal
+taskbar return preserving calendar state remains an operational check.

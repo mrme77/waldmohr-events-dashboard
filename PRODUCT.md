@@ -39,6 +39,7 @@ Departure Board" view. Calendar is the primary surface; everything else is a gla
 
 ## Development and Deployment Evidence
 
-Reviewed against the connection-indicator and Desktop-button development branch on 2026-11-11. Runtime and deployment verification are
-recorded separately in `app/README.md` and `docs/validation.md`; a merged feature does not
-by itself confirm installation or behavior on the Pi.
+Reviewed after PR #50 merge and Pi activation on 2026-11-11. Runtime and deployment verification are
+recorded separately in `app/README.md` and `docs/validation.md`. Direct Pi checks
+confirmed extension activation and native minimization; the operator confirmed
+the button works. Touchscreen and keyboard/display scaling checks remain open.

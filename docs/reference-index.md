@@ -49,7 +49,7 @@ installation are separate from these source-code settings.
 - `../scripts/homburg-translations.mjs`: model, cache loading, reuse, translation requests.
 - `../scripts/refresh-homburg-events.mjs`: normalization and persisted payload.
 - `../scripts/refresh-news.mjs`: authoritative current news feed URLs.
-- `../app/ops/deploy.sh`: optimized replacement deployment script; Pi installation unverified.
+- `../app/ops/deploy.sh`: optimized deployment script; installed Pi copy hash-verified on 2026-11-11.
 - `../app/README.md`: internal Pi handoff and verification limits.
 - `validation.md`: local checks, historical results, and open live verification.
 
@@ -64,8 +64,10 @@ installation are separate from these source-code settings.
 - Loading unpacked extensions: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
 - Pi on-screen keyboard: https://www.raspberrypi.com/documentation/accessories/display.html#on-screen-keyboard
 
-These implementation references were added on 2026-11-11; Pi setup and verification
-limits are recorded in `../app/README.md`.
+These implementation references were added on 2026-11-11. The myai kiosk now
+loads the extension through `~/.config/labwc/autostart`; its operational handoff
+is `~/dashboard-ops/desktop-extension-setup.txt`. Current setup, backup path,
+verified behavior, and remaining checks are recorded in `../app/README.md`.
 
 ## Historical or Deferred Sources
 

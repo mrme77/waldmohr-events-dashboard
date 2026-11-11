@@ -1,6 +1,6 @@
 # Tasks
 
-Reviewed against the connection-indicator and Desktop-button branch on 2026-11-11. See [plan.md](plan.md) for the current
+Reviewed after PR #50 merge and Pi activation on 2026-11-11. See [plan.md](plan.md) for the current
 architecture and [app/README.md](app/README.md) for the internal Pi handoff.
 
 ## Current implementation — completed
@@ -36,9 +36,8 @@ architecture and [app/README.md](app/README.md) for the internal Pi handoff.
 
 ## Deployment verification and automation — remaining
 
-- [ ] Verify installation of `app/ops/deploy.sh` as the Pi service's operations script. The
-      hourly timer was previously operator-confirmed; installation of the optimized replacement
-      and its live behavior have not been verified.
+- [x] Confirm the installed Pi operations deployment script matches the repository
+      version by SHA-256 (2026-11-11). Live execution/skip behavior remains separate.
 - [ ] On the Pi, confirm unchanged runs report `No build needed`; confirm a changed commit
       publishes and Chromium accepts the refresh keystroke.
 - [ ] Refresh the Pi's private family cache from local `.env` before deployment; never commit
@@ -47,10 +46,12 @@ architecture and [app/README.md](app/README.md) for the internal Pi handoff.
       A full browser reload loads new data but does not satisfy this requirement.
 - [x] Operator-supplied refresh output confirms reuse: 31 reused, 0 newly translated,
       0 German fallbacks across 450 occurrences. This evidence applies to the supplied run.
-- [ ] After review/merge, deploy the header controls and load the unpacked desktop extension
-      in the kiosk profile; verify minimization and taskbar/fullscreen restoration.
+- [x] Deploy PR #50 header controls and enable the extension through the kiosk startup
+      command. Verify native minimization and programmatic fullscreen restoration;
+      the operator confirmed Desktop works. Remove temporary debugging afterward.
+- [ ] Observe normal taskbar return preserving fullscreen and the selected month/day.
 - [ ] Verify Pi network-status transitions, touchscreen input, screen model, display scaling,
-      and usable on-screen keyboard size. labwc is operator-reported; settings remain open.
+      and usable on-screen keyboard size. labwc is directly confirmed; input settings remain open.
 
 ## Optional backlog — not scheduled
 
