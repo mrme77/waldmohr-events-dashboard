@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T13:47:28.532Z",
+  "generatedAt": "2026-11-13T13:08:11.546Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-st-louis-city-police-investigating-march-assault-after-death-rul-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis city police investigating March assault after death ruled homicide",
-      "url": "https://fox2now.com/news/missouri/st-louis-city-police-investigating-march-assault-after-death-ruled-homicide/",
-      "publishedAt": "2026-11-12T12:57:45.000Z",
-      "lastChecked": "2026-11-12T13:47:28.527Z"
-    },
-    {
-      "id": "usa-colom-wins-mississippi-senate-race-and-white-house-warns-dems-ov-0",
+      "id": "usa-nvidia-ceo-steps-down-and-sen-chris-van-hollen-to-run-for-majori-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-      "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
-      "publishedAt": "2026-11-12T12:15:48.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
+      "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+      "publishedAt": "2026-11-13T12:07:12.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
     },
     {
-      "id": "stl-much-colder-through-the-weekend-spot-sprinkles-thursday-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Much colder through the weekend, spot sprinkles Thursday",
-      "url": "https://fox2now.com/news/weather/much-colder-through-the-weekend-spot-sprinkles-thursday/",
-      "publishedAt": "2026-11-12T11:43:25.000Z",
-      "lastChecked": "2026-11-12T13:47:28.526Z"
-    },
-    {
-      "id": "usa-how-scott-colom-defied-the-odds-to-go-from-district-attorney-to--1",
+      "id": "usa-happy-world-kindness-day-check-out-our-kind-photos-of-kindness-t-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How Scott Colom defied the odds to go from district attorney to Mississippi's Democratic US Senator",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6037438/scott-colom-defied-the-odds-mississippi-democratic-senator",
-      "publishedAt": "2026-11-12T10:00:00.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
+      "title": "Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153274/world-kindness-day-altruism-generosity",
+      "publishedAt": "2026-11-13T12:06:28.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
     },
     {
-      "id": "usa-at-least-23-states-considered-laws-governing-ice-and-schools-thi-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "At least 23 states considered laws governing ICE and schools this year",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-5718547/ice-schools-state-laws-federal-immigration",
-      "publishedAt": "2026-11-12T10:00:00.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
-    },
-    {
-      "id": "usa-a-blue-wave-helped-offset-for-now-a-falling-tally-of-black-membe-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A blue wave helped offset for now a falling tally of Black members in the U.S. House",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6029640/black-voter-turnout-congress-redistricting",
-      "publishedAt": "2026-11-12T10:00:00.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
-    },
-    {
-      "id": "usa-senators-don-t-always-share-bill-text-online-before-votes-they-s-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Senators don't always share bill text online before votes. They should, advocates say",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6037381/senate-legislation-public-review",
-      "publishedAt": "2026-11-12T10:00:00.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
-    },
-    {
-      "id": "usa-trump-proposed-a-secret-weapon-to-police-colleges-it-will-soon-b-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump proposed a 'secret weapon' to police colleges. It will soon become reality",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6027967/accreditation-trump-higher-education",
-      "publishedAt": "2026-11-12T10:00:00.000Z",
-      "lastChecked": "2026-11-12T13:47:27.961Z"
-    },
-    {
-      "id": "stl-person-of-interest-in-custody-for-spanish-lake-murder-5",
+      "id": "stl-cold-weekend-ahead-hard-freeze-saturday-morning-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Person of interest in custody for Spanish Lake murder",
-      "url": "https://fox2now.com/news/missouri/person-of-interest-in-custody-for-spanish-lake-murder/",
-      "publishedAt": "2026-11-12T02:51:07.000Z",
-      "lastChecked": "2026-11-12T13:47:28.527Z"
+      "title": "Cold weekend ahead, hard freeze Saturday morning",
+      "url": "https://fox2now.com/news/weather/cold-weekend-ahead-hard-freeze-saturday-morning/",
+      "publishedAt": "2026-11-13T11:38:43.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
     },
     {
-      "id": "stl-nurse-pushes-for-ride-booking-safety-after-lyft-lawsuit-settleme-2",
+      "id": "usa-kratom-and-7-oh-can-feel-like-a-miracle-they-can-also-be-addicti-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Kratom and 7-OH can feel like 'a miracle.' They can also be addictive",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6039203/kratom-7-oh-dea-addiction-opioid",
+      "publishedAt": "2026-11-13T11:00:00.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
+    },
+    {
+      "id": "usa-hegseth-awards-medal-to-soldier-who-chastised-him-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Hegseth awards medal to soldier who chastised him",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
+      "publishedAt": "2026-11-13T10:27:08.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
+    },
+    {
+      "id": "usa-rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Rivers in the sky are raining down on the Pacific Northwest. What are they?",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6032777/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
+      "publishedAt": "2026-11-13T10:01:00.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
+    },
+    {
+      "id": "usa-spacex-s-giant-rocket-may-leave-nasa-in-the-dust-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "SpaceX's giant rocket may leave NASA in the dust",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6039312/spacex-nasa-starship-iss-dragon-falcon-musk",
+      "publishedAt": "2026-11-13T10:00:00.000Z",
+      "lastChecked": "2026-11-13T13:08:11.533Z"
+    },
+    {
+      "id": "stl-families-demand-accountability-over-deaths-inside-st-louis-city--1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Nurse pushes for ride-booking safety after Lyft lawsuit settlement",
-      "url": "https://fox2now.com/news/missouri/rideshare-rape-survivor-pushes-for-safety/",
-      "publishedAt": "2026-11-12T02:05:33.000Z",
-      "lastChecked": "2026-11-12T13:47:28.526Z"
+      "title": "Families demand accountability over deaths inside St. Louis City Justice Center",
+      "url": "https://fox2now.com/news/missouri/families-demand-accountability-over-deaths-inside-st-louis-city-justice-center/",
+      "publishedAt": "2026-11-13T04:22:07.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
     },
     {
-      "id": "stl-carondelet-home-had-no-electricity-months-before-fatal-fire-3",
+      "id": "stl-motel-guests-break-up-attempted-rape-police-say-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Carondelet home had no electricity months before fatal fire",
-      "url": "https://fox2now.com/news/missouri/carondelet-home-had-no-electricity-months-before-fatal-fire/",
-      "publishedAt": "2026-11-11T23:09:45.000Z",
-      "lastChecked": "2026-11-12T13:47:28.526Z"
+      "title": "Motel guests break up attempted rape, police say",
+      "url": "https://fox2now.com/news/missouri/motel-guests-break-up-attempted-rape-police-say/",
+      "publishedAt": "2026-11-13T02:35:06.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
     },
     {
-      "id": "stl-this-st-louis-suburb-named-a-top-5-small-city-report-says-0",
+      "id": "stl-relative-questions-football-game-security-after-fatal-shooting-i-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "This St. Louis suburb named a Top 5 'small city,' report says",
-      "url": "https://fox2now.com/news/missouri/this-st-louis-suburb-named-a-top-5-small-city-report-says/",
-      "publishedAt": "2026-11-11T20:28:28.000Z",
-      "lastChecked": "2026-11-12T13:47:28.526Z"
+      "title": "Relative questions football game security after fatal shooting in Illinois",
+      "url": "https://fox2now.com/news/illinois/relative-questions-football-game-security-after-fatal-shooting-in-illinois/",
+      "publishedAt": "2026-11-12T23:09:36.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
+    },
+    {
+      "id": "stl-fake-cash-found-circulating-in-swansea-police-investigating-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Fake cash found circulating in Swansea; police investigating",
+      "url": "https://fox2now.com/news/fake-cash-found-circulating-in-swansea-police-investigating/",
+      "publishedAt": "2026-11-12T22:18:19.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
+    },
+    {
+      "id": "stl-i-just-hear-running-in-the-halls-student-describes-school-stabbi-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "'I just hear running in the halls': Student describes school stabbing scene",
+      "url": "https://fox2now.com/news/missouri/i-just-hear-running-in-the-halls-student-describes-school-stabbing-scene/",
+      "publishedAt": "2026-11-12T22:06:42.000Z",
+      "lastChecked": "2026-11-13T13:08:11.522Z"
     }
   ]
 }
