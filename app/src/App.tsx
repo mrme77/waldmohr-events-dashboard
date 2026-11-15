@@ -8,6 +8,7 @@ import { WeatherWidget } from "./components/WeatherWidget";
 import { HomburgHighlights } from "./components/HomburgHighlights";
 import { ConnectionStatus } from "./components/ConnectionStatus";
 import { DesktopButton } from "./components/DesktopButton";
+import { DoorbellButton } from "./components/DoorbellButton";
 import { fetchJson } from "./data/fetchJson";
 import { loadNews, type NewsPayload } from "./data/loadNews";
 import { computeStatus, dateKey, shiftMonthKey } from "./lib/dates";
@@ -121,6 +122,7 @@ export function App() {
         </div>
         <div className="topbar__actions">
           <ConnectionStatus />
+          <DoorbellButton />
           <DesktopButton />
         </div>
       </header>
