@@ -14,6 +14,7 @@
   font-size: 0.85rem;
   cursor: pointer;
   touch-action: manipulation;
+  text-decoration: none;
 }
 .desktop-control__button svg { width: 24px; height: 24px; flex: none; }
 .desktop-control__button:disabled { color: var(--muted); cursor: default; }
