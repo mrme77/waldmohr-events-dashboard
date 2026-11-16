@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:45:28.159Z",
+  "generatedAt": "2026-11-16T13:40:14.558Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-new-mexico-wanted-free-childcare-for-all-this-is-what-s-worked-a-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
-      "publishedAt": "2026-11-15T10:00:00.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
-    },
-    {
-      "id": "usa-midterm-voters-ended-the-long-running-gop-dominance-in-state-leg-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
-      "publishedAt": "2026-11-15T10:00:00.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
-    },
-    {
-      "id": "usa-a-new-generation-of-disability-rights-activists-carry-on-judy-he-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "A new generation of disability rights activists carry on Judy Heumann's legacy",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
-      "publishedAt": "2026-11-15T10:00:00.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
-    },
-    {
-      "id": "usa-judge-temporarily-blocks-trump-from-moving-ahead-on-washington-p-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
-      "publishedAt": "2026-11-15T04:28:45.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
-    },
-    {
-      "id": "usa-faa-ground-stop-disrupts-college-football-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "FAA ground stop disrupts college football",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
-      "publishedAt": "2026-11-15T01:13:59.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
-    },
-    {
-      "id": "stl-suspect-shot-killed-in-south-st-louis-officer-involved-shooting-0",
+      "id": "stl-new-st-charles-park-to-honor-nobel-prize-winning-chemist-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Suspect shot, killed in south St. Louis officer-involved shooting",
-      "url": "https://fox2now.com/news/missouri/suspect-shot-in-south-st-louis-officer-involved-developing/",
-      "publishedAt": "2026-11-15T01:02:46.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
+      "title": "New St. Charles park to honor Nobel Prize-winning chemist",
+      "url": "https://fox2now.com/news/missouri/new-st-charles-park-to-honor-nobel-prize-winning-chemist/",
+      "publishedAt": "2026-11-16T12:47:34.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
     },
     {
-      "id": "stl-shots-fired-in-central-west-end-suspect-in-custody-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Shots fired in Central West End, suspect in custody",
-      "url": "https://fox2now.com/news/missouri/officer-involved-shooting-in-central-west-end-suspect-in-custody/",
-      "publishedAt": "2026-11-15T00:15:46.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
-    },
-    {
-      "id": "stl-woman-arrested-after-dog-abuse-video-circulates-on-social-media-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Woman arrested after dog abuse video circulates on social media",
-      "url": "https://fox2now.com/news/missouri/woman-arrested-after-dog-abuse-video-circulates-on-social-media/",
-      "publishedAt": "2026-11-15T00:08:22.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
-    },
-    {
-      "id": "usa-florida-city-cancels-st-patrick-s-day-parade-citing-new-anti-dei-5",
+      "id": "usa-faa-ground-stop-still-affecting-thousands-of-flights-and-trump-m-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Florida city cancels St. Patrick's Day parade, citing new anti-DEI law",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
-      "publishedAt": "2026-11-15T00:03:52.000Z",
-      "lastChecked": "2026-11-15T12:45:27.700Z"
+      "title": "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
+      "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip",
+      "publishedAt": "2026-11-16T12:08:14.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
     },
     {
-      "id": "stl-nelly-shares-taylor-swift-story-a-flight-from-st-louis-and-50k-i-4",
+      "id": "usa-as-millions-lose-food-aid-nationwide-this-snap-office-is-doublin-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "As millions lose food aid nationwide, this SNAP office is doubling up as a food pantry",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6034048/snap-san-diego-food-assistance",
+      "publishedAt": "2026-11-16T10:00:00.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
+    },
+    {
+      "id": "usa-trump-heads-to-asia-to-meet-with-xi-and-putin-amid-nvidia-fallou-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+      "publishedAt": "2026-11-16T10:00:00.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
+    },
+    {
+      "id": "usa-these-birds-fly-17-000-miles-every-year-climate-change-could-mak-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "These birds fly 17,000 miles every year. Climate change could make it harder",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
+      "publishedAt": "2026-11-16T10:00:00.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
+    },
+    {
+      "id": "usa-npr-s-student-podcast-challenge-is-back-for-2027-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "NPR's Student Podcast Challenge is back for 2027",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6028826/student-podcast-challenge-2027-information-deadline",
+      "publishedAt": "2026-11-16T10:00:00.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
+    },
+    {
+      "id": "usa-why-sleep-matters-when-it-comes-to-weight-gain-and-loss-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Why sleep matters when it comes to weight gain and loss",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6037761/sleep-weight-gain-loss",
+      "publishedAt": "2026-11-16T10:00:00.000Z",
+      "lastChecked": "2026-11-16T13:40:14.551Z"
+    },
+    {
+      "id": "stl-community-gathers-to-remember-2-year-old-girl-killed-in-house-fi-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Nelly shares Taylor Swift story: A flight from St. Louis and $50K in a McDonald's bag",
-      "url": "https://fox2now.com/news/missouri/nelly-shares-taylor-swift-story-a-flight-from-st-louis-and-50k-in-a-mcdonalds-bag/",
-      "publishedAt": "2026-11-14T23:05:27.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
+      "title": "Community gathers to remember 2-year-old girl killed in house fire",
+      "url": "https://fox2now.com/news/missouri/community-gathers-to-remember-2-year-old-girl-killed-in-house-fire/",
+      "publishedAt": "2026-11-16T04:20:40.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
     },
     {
-      "id": "stl-crestwood-police-warn-of-cash-collecting-scam-after-13k-stolen-5",
+      "id": "stl-woman-with-dementia-reported-missing-in-greater-ville-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Crestwood police warn of cash-collecting scam after $13K stolen",
-      "url": "https://fox2now.com/news/missouri/crestwood-police-warn-of-cash-collecting-scam-after-13k-stolen/",
-      "publishedAt": "2026-11-14T19:36:18.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
+      "title": "Woman with dementia reported missing in Greater Ville",
+      "url": "https://fox2now.com/news/missouri/woman-with-dementia-reported-missing-in-greater-ville/",
+      "publishedAt": "2026-11-16T04:16:42.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
     },
     {
-      "id": "stl-warrenton-police-say-earlier-gun-report-remains-unconfirmed-afte-3",
+      "id": "stl-price-swapping-scam-cost-pawn-shop-15-000-police-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Warrenton police say earlier gun report remains unconfirmed after school stabbing",
-      "url": "https://fox2now.com/news/missouri/warrenton-police-say-earlier-gun-report-remains-unconfirmed-after-school-stabbing/",
-      "publishedAt": "2026-11-14T17:18:05.000Z",
-      "lastChecked": "2026-11-15T12:45:28.154Z"
+      "title": "Price-swapping scam cost pawn shop $15,000: Police",
+      "url": "https://fox2now.com/news/missouri/price-swapping-scam-cost-pawn-shop-15000-police/",
+      "publishedAt": "2026-11-16T02:09:32.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
+    },
+    {
+      "id": "stl-missing-8-year-old-drowns-in-st-francois-county-lake-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Missing 8-year-old drowns in St. Francois County lake",
+      "url": "https://fox2now.com/news/missouri/missing-8-year-old-drowns-in-st-francois-county-lake/",
+      "publishedAt": "2026-11-16T01:15:01.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
+    },
+    {
+      "id": "stl-st-louis-attempts-to-push-the-gateway-arch-inspired-by-chicago-s-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "St. Louis attempts to push the Gateway Arch, inspired by Chicago's 'Bean' stunt",
+      "url": "https://fox2now.com/news/missouri/st-louis-attempts-to-push-the-gateway-arch-inspired-by-chicagos-bean-stunt/",
+      "publishedAt": "2026-11-15T19:49:17.000Z",
+      "lastChecked": "2026-11-16T13:40:14.552Z"
     }
   ]
 }
