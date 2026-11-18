@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:26:18.432Z",
+  "generatedAt": "2026-11-18T13:59:50.362Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-va-plans-new-digital-record-system-for-st-louis-hospitals-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "VA plans new digital record system for St. Louis hospitals",
-      "url": "https://fox2now.com/news/missouri/va-plans-new-digital-record-system-for-st-louis-hospitals/",
-      "publishedAt": "2026-11-17T14:13:11.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
-    },
-    {
-      "id": "usa-trump-is-in-asia-ahead-of-xi-putin-summit-and-tech-leaders-want--0",
+      "id": "usa-the-off-and-on-switch-for-u-s-aid-leads-to-a-cliffhanger-for-zam-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
-      "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
-      "publishedAt": "2026-11-17T12:20:57.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
+      "title": "The off-and-on switch for U.S. aid leads to a cliffhanger for Zambia and Zimbabwe",
+      "url": "https://www.npr.org/2026/11/18/g-s1-153872/u-s-foreign-aid-memorandum-understanding-zambia-zimbabwe",
+      "publishedAt": "2026-11-18T13:03:38.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
     },
     {
-      "id": "stl-warming-up-morning-and-night-through-week-s-end-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Warming up, morning and night, through week’s end",
-      "url": "https://fox2now.com/news/weather/warming-up-morning-and-night-through-weeks-end/",
-      "publishedAt": "2026-11-17T12:13:38.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
-    },
-    {
-      "id": "usa-can-google-win-the-ai-race-without-killing-its-cash-cow-1",
+      "id": "usa-mary-peltola-flips-alaska-s-senate-seat-and-nvidia-won-t-reinsta-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Can Google win the AI race without killing its cash cow?",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/17/g-s1-153933/can-google-win-the-ai-race-without-killing-its-cash-cow",
-      "publishedAt": "2026-11-17T11:30:00.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
+      "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
+      "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai",
+      "publishedAt": "2026-11-18T12:14:28.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
     },
     {
-      "id": "usa-i-m-a-human-doctor-with-human-intelligence-but-i-sure-do-like-my-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "I'm a human doctor with human intelligence. But I sure do like my AI notetaker",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6037556/medicine-ai-doctor-notetaker-scribe",
-      "publishedAt": "2026-11-17T11:00:00.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
-    },
-    {
-      "id": "usa-trump-arrives-in-philippines-to-kick-off-asia-trip-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump arrives in Philippines to kick off Asia trip",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6043702/trump-arrives-philippines",
-      "publishedAt": "2026-11-17T10:43:55.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
-    },
-    {
-      "id": "usa-more-people-are-getting-the-flu-should-you-get-a-flu-shot-before-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "More people are getting the flu. Should you get a flu shot before you travel?",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
-      "publishedAt": "2026-11-17T10:00:00.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
-    },
-    {
-      "id": "usa-she-went-to-college-to-become-a-social-worker-now-she-s-joined-t-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "She went to college to become a social worker. Now she's joined the skilled trades",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
-      "publishedAt": "2026-11-17T10:00:00.000Z",
-      "lastChecked": "2026-11-17T14:26:17.947Z"
-    },
-    {
-      "id": "stl-shots-fired-at-delivery-drivers-outside-cardinal-glennon-police-3",
+      "id": "stl-warm-up-rolls-on-weekend-showers-to-bring-cool-down-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Shots fired at delivery drivers outside Cardinal Glennon: Police",
-      "url": "https://fox2now.com/news/missouri/shots-fired-at-delivery-drivers-outside-cardinal-glennon-police/",
-      "publishedAt": "2026-11-17T03:50:00.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
+      "title": "Warm up rolls on, weekend showers to bring cool down",
+      "url": "https://fox2now.com/news/weather/warm-up-rolls-on-weekend-showers-to-bring-cool-down/",
+      "publishedAt": "2026-11-18T11:29:52.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
     },
     {
-      "id": "stl-st-louis-restaurant-owner-fights-liquor-license-denial-as-noise--2",
+      "id": "usa-grand-theft-auto-vi-is-a-grounded-love-story-a-gonzo-crime-thril-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
+      "publishedAt": "2026-11-18T11:00:00.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
+    },
+    {
+      "id": "usa-greetings-from-a-berlin-square-where-an-artist-s-statue-watches--3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Greetings from a Berlin square, where an artist's statue watches over children at play",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6043021/berlin-kollwitzplatz-statue",
+      "publishedAt": "2026-11-18T11:00:00.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
+    },
+    {
+      "id": "usa-trump-lands-in-china-with-key-meetings-with-xi-and-putin-on-the--4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump lands in China with key meetings with Xi and Putin on the agenda",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6045518/trump-china-xi-putin",
+      "publishedAt": "2026-11-18T10:32:03.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
+    },
+    {
+      "id": "usa-how-the-east-potomac-golf-course-became-a-d-c-landmark-and-what--5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How the East Potomac golf course became a D.C. landmark — and what could happen to it",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6042889/east-potomac-golf-history-future",
+      "publishedAt": "2026-11-18T10:02:00.000Z",
+      "lastChecked": "2026-11-18T13:59:50.335Z"
+    },
+    {
+      "id": "stl-rising-costs-push-more-st-louis-area-families-to-seek-food-pantr-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis restaurant owner fights liquor license denial as noise complaints raise new concerns",
-      "url": "https://fox2now.com/news/missouri/st-louis-restaurant-owner-fights-liquor-license-denial-as-noise-complaints-raise-new-concerns/",
-      "publishedAt": "2026-11-17T03:30:40.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
+      "title": "Rising costs push more St. Louis-area families to seek food pantry assistance",
+      "url": "https://fox2now.com/news/missouri/rising-costs-push-more-st-louis-area-families-to-seek-food-pantry-assistance/",
+      "publishedAt": "2026-11-18T03:38:07.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
     },
     {
-      "id": "stl-year-round-pools-with-beach-part-of-development-plan-in-st-charl-0",
+      "id": "stl-flamingo-bowl-to-reopen-under-new-ownership-as-downtown-st-louis-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Year-round pools with beach part of development plan in St. Charles",
-      "url": "https://fox2now.com/news/missouri/year-round-pools-with-beach-part-of-development-plan-in-st-charles/",
-      "publishedAt": "2026-11-17T02:24:53.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
+      "title": "Flamingo Bowl to reopen under new ownership as downtown St. Louis investment continues",
+      "url": "https://fox2now.com/news/missouri/flamingo-bowl-to-reopen-under-new-ownership-as-downtown-st-louis-investment-continues/",
+      "publishedAt": "2026-11-18T02:24:49.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
     },
     {
-      "id": "stl-st-charles-buffet-defendant-forfeits-103k-after-guilty-plea-1",
+      "id": "stl-small-liquor-bottle-ban-considered-in-madison-county-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Charles buffet defendant forfeits $103K after guilty plea",
-      "url": "https://fox2now.com/news/fox-files/st-charles-buffet-defendant-forfeits-103k-after-guilty-plea/",
-      "publishedAt": "2026-11-16T23:09:12.000Z",
-      "lastChecked": "2026-11-17T14:26:18.426Z"
+      "title": "Small liquor bottle ban considered in Madison County",
+      "url": "https://fox2now.com/news/illinois/small-liquor-bottle-ban-considered-in-madison-county/",
+      "publishedAt": "2026-11-18T00:51:38.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
+    },
+    {
+      "id": "stl-missouri-settles-illegal-gambling-probe-with-torch-electronics-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Missouri settles illegal gambling probe with Torch Electronics",
+      "url": "https://fox2now.com/news/missouri/missouri-settles-illegal-gambling-probe-with-torch-electronics/",
+      "publishedAt": "2026-11-17T23:19:42.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
+    },
+    {
+      "id": "stl-mandy-murphey-to-retire-from-fox-2-after-35-years-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Mandy Murphey to retire from FOX 2 after 35 years",
+      "url": "https://fox2now.com/news/mandy-murphey-announces-retirement-from-fox-2-after-35-years/",
+      "publishedAt": "2026-11-17T17:01:17.000Z",
+      "lastChecked": "2026-11-18T13:59:50.355Z"
     }
   ]
 }
