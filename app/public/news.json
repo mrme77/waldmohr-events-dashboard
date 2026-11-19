@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:59:50.362Z",
+  "generatedAt": "2026-11-19T14:27:06.388Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-the-off-and-on-switch-for-u-s-aid-leads-to-a-cliffhanger-for-zam-0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "The off-and-on switch for U.S. aid leads to a cliffhanger for Zambia and Zimbabwe",
-      "url": "https://www.npr.org/2026/11/18/g-s1-153872/u-s-foreign-aid-memorandum-understanding-zambia-zimbabwe",
-      "publishedAt": "2026-11-18T13:03:38.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
-    },
-    {
-      "id": "usa-mary-peltola-flips-alaska-s-senate-seat-and-nvidia-won-t-reinsta-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
-      "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai",
-      "publishedAt": "2026-11-18T12:14:28.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
-    },
-    {
-      "id": "stl-warm-up-rolls-on-weekend-showers-to-bring-cool-down-3",
+      "id": "stl-warmer-into-the-weekend-rain-late-saturday-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Warm up rolls on, weekend showers to bring cool down",
-      "url": "https://fox2now.com/news/weather/warm-up-rolls-on-weekend-showers-to-bring-cool-down/",
-      "publishedAt": "2026-11-18T11:29:52.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "Warmer into the weekend, Rain late Saturday",
+      "url": "https://fox2now.com/news/weather/warmer-into-the-weekend-rain-late-saturday/",
+      "publishedAt": "2026-11-19T12:31:04.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     },
     {
-      "id": "usa-grand-theft-auto-vi-is-a-grounded-love-story-a-gonzo-crime-thril-2",
+      "id": "usa-top-u-n-court-rules-myanmar-committed-genocide-against-the-rohin-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
-      "publishedAt": "2026-11-18T11:00:00.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
+      "title": "Top U.N. court rules Myanmar committed genocide against the Rohingya",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya",
+      "publishedAt": "2026-11-19T12:29:41.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
     },
     {
-      "id": "usa-greetings-from-a-berlin-square-where-an-artist-s-statue-watches--3",
+      "id": "usa-yahoo-for-the-loo-an-ode-to-the-commode-dotty-for-the-potty-it-s-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Greetings from a Berlin square, where an artist's statue watches over children at play",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6043021/berlin-kollwitzplatz-statue",
-      "publishedAt": "2026-11-18T11:00:00.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
+      "title": "Yahoo for the loo! An ode to the commode! Dotty for the potty! It's World Toilet Day!",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154159/world-toilet-day-gender-equality-menstruation",
+      "publishedAt": "2026-11-19T12:26:31.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
     },
     {
-      "id": "usa-trump-lands-in-china-with-key-meetings-with-xi-and-putin-on-the--4",
+      "id": "usa-anthropic-raises-more-than-100b-in-ipo-and-dems-nominate-jeffrie-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump lands in China with key meetings with Xi and Putin on the agenda",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6045518/trump-china-xi-putin",
-      "publishedAt": "2026-11-18T10:32:03.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
+      "title": "Anthropic raises more than $100B in IPO. And, Dems nominate Jeffries for House speaker",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic",
+      "publishedAt": "2026-11-19T12:26:01.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
     },
     {
-      "id": "usa-how-the-east-potomac-golf-course-became-a-d-c-landmark-and-what--5",
+      "id": "usa-incoming-house-majority-leader-katherine-clark-stresses-democrat-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How the East Potomac golf course became a D.C. landmark — and what could happen to it",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6042889/east-potomac-golf-history-future",
-      "publishedAt": "2026-11-18T10:02:00.000Z",
-      "lastChecked": "2026-11-18T13:59:50.335Z"
+      "title": "Incoming House majority leader Katherine Clark stresses Democratic unity",
+      "url": "https://www.npr.org/2026/11/19/nx-s1-6045750/katherine-clark-hakeem-jeffries-house-democrats",
+      "publishedAt": "2026-11-19T11:20:42.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
     },
     {
-      "id": "stl-rising-costs-push-more-st-louis-area-families-to-seek-food-pantr-2",
+      "id": "usa-ai-giant-anthropic-raises-more-than-100-billion-in-record-settin-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "AI giant Anthropic raises more than $100 billion in record-setting IPO",
+      "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
+      "publishedAt": "2026-11-19T10:00:00.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
+    },
+    {
+      "id": "usa-muslims-will-outnumber-christians-worldwide-by-2035-report-says-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Muslims will outnumber Christians worldwide by 2035, report says",
+      "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2070-report-says",
+      "publishedAt": "2026-11-19T10:00:00.000Z",
+      "lastChecked": "2026-11-19T14:27:06.319Z"
+    },
+    {
+      "id": "stl-no-bed-no-safe-place-no-stability-the-growing-crisis-facing-st-l-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Rising costs push more St. Louis-area families to seek food pantry assistance",
-      "url": "https://fox2now.com/news/missouri/rising-costs-push-more-st-louis-area-families-to-seek-food-pantry-assistance/",
-      "publishedAt": "2026-11-18T03:38:07.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "No bed, no safe place; no stability: The growing crisis facing St. Louis youth",
+      "url": "https://fox2now.com/news/missouri/no-bed-no-safe-place-no-stability-the-growing-crisis-facing-st-louis-youth/",
+      "publishedAt": "2026-11-19T03:38:35.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     },
     {
-      "id": "stl-flamingo-bowl-to-reopen-under-new-ownership-as-downtown-st-louis-1",
+      "id": "stl-fire-captain-s-daughter-returns-home-after-car-crash-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Flamingo Bowl to reopen under new ownership as downtown St. Louis investment continues",
-      "url": "https://fox2now.com/news/missouri/flamingo-bowl-to-reopen-under-new-ownership-as-downtown-st-louis-investment-continues/",
-      "publishedAt": "2026-11-18T02:24:49.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "Fire captain's daughter returns home after car crash",
+      "url": "https://fox2now.com/news/missouri/fire-captains-daughter-returns-home-after-car-crash/",
+      "publishedAt": "2026-11-18T23:31:00.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     },
     {
-      "id": "stl-small-liquor-bottle-ban-considered-in-madison-county-4",
+      "id": "stl-missouri-gas-prices-drop-50-cents-per-gallon-in-a-month-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Small liquor bottle ban considered in Madison County",
-      "url": "https://fox2now.com/news/illinois/small-liquor-bottle-ban-considered-in-madison-county/",
-      "publishedAt": "2026-11-18T00:51:38.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "Missouri gas prices drop 50 cents per gallon in a month",
+      "url": "https://fox2now.com/news/missouri/missouri-gas-prices-drop-50-cents-per-gallon-in-a-month/",
+      "publishedAt": "2026-11-18T23:15:43.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     },
     {
-      "id": "stl-missouri-settles-illegal-gambling-probe-with-torch-electronics-5",
+      "id": "stl-ex-employee-accomplice-charged-in-10k-tool-theft-heist-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri settles illegal gambling probe with Torch Electronics",
-      "url": "https://fox2now.com/news/missouri/missouri-settles-illegal-gambling-probe-with-torch-electronics/",
-      "publishedAt": "2026-11-17T23:19:42.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "Ex-employee, accomplice charged in $10K tool theft heist",
+      "url": "https://fox2now.com/news/missouri/ex-employee-accomplice-charged-in-10k-tool-theft-heist/",
+      "publishedAt": "2026-11-18T22:19:37.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     },
     {
-      "id": "stl-mandy-murphey-to-retire-from-fox-2-after-35-years-0",
+      "id": "stl-st-louis-police-board-shortens-chief-tracy-s-contract-keeps-295k-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Mandy Murphey to retire from FOX 2 after 35 years",
-      "url": "https://fox2now.com/news/mandy-murphey-announces-retirement-from-fox-2-after-35-years/",
-      "publishedAt": "2026-11-17T17:01:17.000Z",
-      "lastChecked": "2026-11-18T13:59:50.355Z"
+      "title": "St. Louis Police Board shortens Chief Tracy's contract, keeps $295K base salary",
+      "url": "https://fox2now.com/news/missouri/robert-tracy-st-louis-police-board-agree-to-revised-contract/",
+      "publishedAt": "2026-11-18T21:10:14.000Z",
+      "lastChecked": "2026-11-19T14:27:06.383Z"
     }
   ]
 }
