@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T14:27:06.388Z",
+  "generatedAt": "2026-11-20T14:01:58.079Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-warmer-into-the-weekend-rain-late-saturday-2",
+      "id": "stl-a-few-more-warm-days-before-cold-front-brings-showers-and-cooler-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Warmer into the weekend, Rain late Saturday",
-      "url": "https://fox2now.com/news/weather/warmer-into-the-weekend-rain-late-saturday/",
-      "publishedAt": "2026-11-19T12:31:04.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "A few more warm days before cold front brings showers and cooler temperatures",
+      "url": "https://fox2now.com/news/weather/a-few-more-warm-days-before-cold-front-brings-showers-and-cooler-temperatures/",
+      "publishedAt": "2026-11-20T12:29:14.000Z",
+      "lastChecked": "2026-11-20T14:01:58.043Z"
     },
     {
-      "id": "usa-top-u-n-court-rules-myanmar-committed-genocide-against-the-rohin-0",
+      "id": "usa-texas-execution-took-over-an-hour-as-staff-struggled-to-find-vei-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Top U.N. court rules Myanmar committed genocide against the Rohingya",
-      "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya",
-      "publishedAt": "2026-11-19T12:29:41.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
+      "title": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain",
+      "publishedAt": "2026-11-20T12:24:40.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
     },
     {
-      "id": "usa-yahoo-for-the-loo-an-ode-to-the-commode-dotty-for-the-potty-it-s-1",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Yahoo for the loo! An ode to the commode! Dotty for the potty! It's World Toilet Day!",
-      "url": "https://www.npr.org/2026/11/19/g-s1-154159/world-toilet-day-gender-equality-menstruation",
-      "publishedAt": "2026-11-19T12:26:31.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
-    },
-    {
-      "id": "usa-anthropic-raises-more-than-100b-in-ipo-and-dems-nominate-jeffrie-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Anthropic raises more than $100B in IPO. And, Dems nominate Jeffries for House speaker",
-      "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic",
-      "publishedAt": "2026-11-19T12:26:01.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
-    },
-    {
-      "id": "usa-incoming-house-majority-leader-katherine-clark-stresses-democrat-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Incoming House majority leader Katherine Clark stresses Democratic unity",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6045750/katherine-clark-hakeem-jeffries-house-democrats",
-      "publishedAt": "2026-11-19T11:20:42.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
-    },
-    {
-      "id": "usa-ai-giant-anthropic-raises-more-than-100-billion-in-record-settin-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "AI giant Anthropic raises more than $100 billion in record-setting IPO",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
-      "publishedAt": "2026-11-19T10:00:00.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
-    },
-    {
-      "id": "usa-muslims-will-outnumber-christians-worldwide-by-2035-report-says-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Muslims will outnumber Christians worldwide by 2035, report says",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2070-report-says",
-      "publishedAt": "2026-11-19T10:00:00.000Z",
-      "lastChecked": "2026-11-19T14:27:06.319Z"
-    },
-    {
-      "id": "stl-no-bed-no-safe-place-no-stability-the-growing-crisis-facing-st-l-3",
+      "id": "stl-sentencing-set-for-man-who-injured-ferguson-police-officer-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "No bed, no safe place; no stability: The growing crisis facing St. Louis youth",
-      "url": "https://fox2now.com/news/missouri/no-bed-no-safe-place-no-stability-the-growing-crisis-facing-st-louis-youth/",
-      "publishedAt": "2026-11-19T03:38:35.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "Sentencing set for man who injured Ferguson police officer",
+      "url": "https://fox2now.com/news/missouri/sentencing-set-for-man-who-injured-ferguson-police-officer/",
+      "publishedAt": "2026-11-20T12:08:20.000Z",
+      "lastChecked": "2026-11-20T14:01:58.043Z"
     },
     {
-      "id": "stl-fire-captain-s-daughter-returns-home-after-car-crash-4",
+      "id": "usa-dems-aim-to-block-iran-war-funding-and-army-delays-lead-azide-de-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
+      "url": "https://www.npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
+      "publishedAt": "2026-11-20T12:04:57.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
+    },
+    {
+      "id": "usa-just-how-vulnerable-are-we-to-cyberattacks-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Just how vulnerable are we to cyberattacks?",
+      "url": "https://www.npr.org/sections/planet-money/2026/11/20/nx-s1-6047750/just-how-vulnerable-are-we-to-cyberattacks",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
+    },
+    {
+      "id": "stl-st-louis-officer-hospitalized-after-multi-vehicle-crash-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Fire captain's daughter returns home after car crash",
-      "url": "https://fox2now.com/news/missouri/fire-captains-daughter-returns-home-after-car-crash/",
-      "publishedAt": "2026-11-18T23:31:00.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "St. Louis officer hospitalized after multi-vehicle crash",
+      "url": "https://fox2now.com/news/missouri/st-louis-officer-hospitalized-after-multi-vehicle-crash/",
+      "publishedAt": "2026-11-20T11:49:57.000Z",
+      "lastChecked": "2026-11-20T14:01:58.043Z"
     },
     {
-      "id": "stl-missouri-gas-prices-drop-50-cents-per-gallon-in-a-month-1",
+      "id": "usa-senate-passes-bipartisan-energy-bill-amid-environmental-concerns-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Senate passes bipartisan energy bill amid environmental concerns",
+      "url": "https://www.npr.org/2026/11/20/g-s1-154579/senate-bipartisan-energy-bill",
+      "publishedAt": "2026-11-20T11:00:28.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
+    },
+    {
+      "id": "usa-new-york-city-unveils-a-bold-plan-to-move-its-jails-off-rikers-i-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "New York City unveils a bold plan to move its jails off Rikers Island",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-5981356/new-york-city-rikers-jail-plans-germany-prison-model",
+      "publishedAt": "2026-11-20T10:00:00.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
+    },
+    {
+      "id": "usa-how-exactly-did-trump-get-so-rich-on-crypto-we-explain-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "How exactly did Trump get so rich on crypto? We explain",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6038969/trump-crypto-profits-corruption-meme-coin-world-liberty-explainer",
+      "publishedAt": "2026-11-20T10:00:00.000Z",
+      "lastChecked": "2026-11-20T14:01:58.072Z"
+    },
+    {
+      "id": "stl-glenn-zimmerman-s-2026-winter-forecast-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri gas prices drop 50 cents per gallon in a month",
-      "url": "https://fox2now.com/news/missouri/missouri-gas-prices-drop-50-cents-per-gallon-in-a-month/",
-      "publishedAt": "2026-11-18T23:15:43.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "Glenn Zimmerman's 2026 Winter Forecast",
+      "url": "https://fox2now.com/news/missouri/glenn-zimmermanns-2026-winter-forecast/",
+      "publishedAt": "2026-11-20T04:07:03.000Z",
+      "lastChecked": "2026-11-20T14:01:58.042Z"
     },
     {
-      "id": "stl-ex-employee-accomplice-charged-in-10k-tool-theft-heist-5",
+      "id": "stl-judge-dismisses-perjury-case-that-ties-back-to-pam-hupp-betsy-fa-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Ex-employee, accomplice charged in $10K tool theft heist",
-      "url": "https://fox2now.com/news/missouri/ex-employee-accomplice-charged-in-10k-tool-theft-heist/",
-      "publishedAt": "2026-11-18T22:19:37.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "Judge dismisses perjury case that ties back to Pam Hupp, Betsy Faria investigations",
+      "url": "https://fox2now.com/news/pam-hupp/judge-dismisses-perjury-case-that-ties-back-to-pam-hupp-betsy-faria-investigations/",
+      "publishedAt": "2026-11-20T03:23:45.000Z",
+      "lastChecked": "2026-11-20T14:01:58.043Z"
     },
     {
-      "id": "stl-st-louis-police-board-shortens-chief-tracy-s-contract-keeps-295k-0",
+      "id": "stl-video-shows-burglary-suspect-inside-homes-as-owners-slept-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis Police Board shortens Chief Tracy's contract, keeps $295K base salary",
-      "url": "https://fox2now.com/news/missouri/robert-tracy-st-louis-police-board-agree-to-revised-contract/",
-      "publishedAt": "2026-11-18T21:10:14.000Z",
-      "lastChecked": "2026-11-19T14:27:06.383Z"
+      "title": "Video shows burglary suspect inside homes as owners slept",
+      "url": "https://fox2now.com/news/missouri/video-shows-burglary-suspect-inside-homes-as-owners-slept/",
+      "publishedAt": "2026-11-19T22:11:43.000Z",
+      "lastChecked": "2026-11-20T14:01:58.043Z"
     }
   ]
 }
