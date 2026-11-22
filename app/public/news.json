@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:29:00.242Z",
+  "generatedAt": "2026-11-22T13:22:13.444Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-perspective-defining-human-0",
+      "id": "usa-it-s-medicare-open-enrollment-time-here-s-what-you-need-to-know-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Perspective: Defining 'human'",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6041585/perspective-defining-human",
-      "publishedAt": "2026-11-21T13:00:00.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "It's Medicare open enrollment time. Here's what you need to know",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
+      "publishedAt": "2026-11-22T13:11:04.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "usa-senate-permitting-bill-speeds-up-renewables-divides-greens-over--1",
+      "id": "usa-he-expected-a-small-business-loan-it-turned-out-to-be-a-trap-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Senate permitting bill speeds up renewables, divides greens over oil and gas",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6046482/senate-permitting-bill-speeds-up-renewables-divides-greens-over-oil-and-gas",
-      "publishedAt": "2026-11-21T12:40:17.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "He expected a small-business loan. It turned out to be a trap",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
+      "publishedAt": "2026-11-22T10:00:00.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "usa-anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-prob-2",
+      "id": "usa-npr-s-senior-podcast-challenge-early-entries-we-love-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
-      "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
-      "publishedAt": "2026-11-21T12:30:16.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "NPR's Senior Podcast Challenge: Early entries we love",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
+      "publishedAt": "2026-11-22T10:00:00.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "usa-5-ways-to-turn-off-your-work-brain-after-the-day-ends-3",
+      "id": "stl-austin-simmons-throws-4-td-passes-leading-missouri-past-no-17-ke-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Austin Simmons throws 4 TD passes, leading Missouri past No. 17 Kentucky 28-14",
+      "url": "https://fox2now.com/sports/college/austin-simmons-throws-4-td-passes-leading-missouri-past-no-17-kentucky-28-14/",
+      "publishedAt": "2026-11-22T07:07:25.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
+    },
+    {
+      "id": "stl-neighbours-has-5-assists-and-blues-chase-hellebuyck-early-in-9-6-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Neighbours has 5 assists and Blues chase Hellebuyck early in 9-6 victory over Devils",
+      "url": "https://fox2now.com/sports/st-louis-blues/neighbours-has-5-assists-and-blues-chase-hellebuyck-early-in-9-6-victory-over-devils/",
+      "publishedAt": "2026-11-22T07:05:01.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
+    },
+    {
+      "id": "stl-two-deaths-near-park-hills-under-investigation-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Two deaths near Park Hills under investigation",
+      "url": "https://fox2now.com/news/sheriffs-department-investigating-two-deaths-near-park-hills/",
+      "publishedAt": "2026-11-22T03:05:51.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
+    },
+    {
+      "id": "stl-lawsuit-accuses-build-a-bear-of-misleading-investors-over-walmar-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Lawsuit accuses Build-A-Bear of misleading investors over Walmart deal",
+      "url": "https://fox2now.com/news/missouri/lawsuit-accuses-build-a-bear-of-misleading-investors-over-walmart-deal/",
+      "publishedAt": "2026-11-22T00:06:19.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
+    },
+    {
+      "id": "stl-st-louis-woman-charged-after-threats-to-burn-business-shoot-peop-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "St. Louis woman charged after threats to burn business, shoot people",
+      "url": "https://fox2now.com/news/missouri/st-louis-woman-charged-after-threats-to-burn-business-shoot-people/",
+      "publishedAt": "2026-11-21T22:41:52.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
+    },
+    {
+      "id": "usa-trump-orders-federal-contractors-to-check-with-white-house-befor-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "5 ways to turn off your 'work brain' after the day ends",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6043793/stop-thinking-about-work",
-      "publishedAt": "2026-11-21T10:01:00.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "Trump orders federal contractors to check with White House before responding to Congress",
+      "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
+      "publishedAt": "2026-11-21T22:40:36.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "usa-anthropic-says-it-will-put-humanity-first-will-its-ipo-change-th-4",
+      "id": "usa-google-employees-protest-ai-in-schools-policy-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Anthropic says it will put humanity first. Will its IPO change that?",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6048678/anthropic-ipo-mission-ai-safety",
-      "publishedAt": "2026-11-21T10:00:00.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "Google employees protest AI in schools policy",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
+      "publishedAt": "2026-11-21T22:01:40.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "usa-an-effort-to-circumvent-the-electoral-college-may-be-within-reac-5",
+      "id": "usa-highlights-and-challenges-from-covering-an-historic-month-in-sou-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6044237/electoral-college-national-popular-vote-interstate-compact",
-      "publishedAt": "2026-11-21T10:00:00.000Z",
-      "lastChecked": "2026-11-21T13:28:59.818Z"
+      "title": "Highlights and challenges from covering an historic month in South America",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
+      "publishedAt": "2026-11-21T22:01:35.000Z",
+      "lastChecked": "2026-11-22T13:22:13.092Z"
     },
     {
-      "id": "stl-mother-dies-in-front-of-her-kids-during-fatal-road-rage-encounte-0",
+      "id": "stl-missouri-illinois-preparing-for-planned-detonation-in-iowa-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Mother dies in front of her kids during fatal road rage encounter",
-      "url": "https://fox2now.com/news/missouri/mother-dies-in-front-of-her-kids-during-fatal-road-rage-encounter/",
-      "publishedAt": "2026-11-20T22:53:22.000Z",
-      "lastChecked": "2026-11-21T13:29:00.231Z"
-    },
-    {
-      "id": "stl-st-louis-cardinals-part-ways-with-nolan-gorman-after-struggles-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis Cardinals part ways with Nolan Gorman after struggles",
-      "url": "https://fox2now.com/sports/st-louis-cardinals/st-louis-cardinals-part-ways-with-nolan-gorman-after-struggles/",
-      "publishedAt": "2026-11-20T22:39:42.000Z",
-      "lastChecked": "2026-11-21T13:29:00.231Z"
-    },
-    {
-      "id": "stl-missouri-judge-approves-7-25-billion-roundup-settlement-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Missouri judge approves $7.25 billion Roundup settlement",
-      "url": "https://fox2now.com/news/missouri/missouri-judge-approves-7-25-billion-roundup-settlement/",
-      "publishedAt": "2026-11-20T21:43:20.000Z",
-      "lastChecked": "2026-11-21T13:29:00.231Z"
-    },
-    {
-      "id": "stl-st-louis-based-rawlings-gets-new-majority-owner-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis-based Rawlings gets new majority owner",
-      "url": "https://fox2now.com/news/missouri/st-louis-based-rawlings-gets-new-majority-owner/",
-      "publishedAt": "2026-11-20T19:57:04.000Z",
-      "lastChecked": "2026-11-21T13:29:00.231Z"
-    },
-    {
-      "id": "stl-gateway-arch-could-soon-host-more-weddings-private-events-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Gateway Arch could soon host more weddings, private events",
-      "url": "https://fox2now.com/news/missouri/gateway-arch-could-soon-host-more-weddings-private-events/",
-      "publishedAt": "2026-11-20T19:02:32.000Z",
-      "lastChecked": "2026-11-21T13:29:00.232Z"
-    },
-    {
-      "id": "stl-man-sentenced-19-years-for-injuring-ferguson-officer-during-prot-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Man sentenced 19 years for injuring Ferguson officer during protest",
-      "url": "https://fox2now.com/news/missouri/man-sentenced-19-years-for-injuring-ferguson-officer-during-protest/",
-      "publishedAt": "2026-11-20T17:23:31.000Z",
-      "lastChecked": "2026-11-21T13:29:00.231Z"
+      "title": "Missouri, Illinois preparing for planned detonation in Iowa",
+      "url": "https://fox2now.com/news/missouri/missouri-illinois-preparing-for-planned-detonation-in-iowa/",
+      "publishedAt": "2026-11-21T19:40:11.000Z",
+      "lastChecked": "2026-11-22T13:22:13.437Z"
     }
   ]
 }
