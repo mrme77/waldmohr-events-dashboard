@@ -16,23 +16,6 @@ Personal entries appear before public events in day details, showing their descr
 
 The weather card opens a seven-day forecast with daily conditions, highs/lows, and precipitation probability. The screen-level modal avoids sidebar clipping, expands up to 700px, and fits the screen width. Close it with ×, an outside tap, or Escape.
 
-## Doorbell button
-
-The header's Doorbell button requests a separate browser window for Ring's official
-account dashboard. Select the doorbell and Live View there; this is a website
-shortcut, not an embedded camera stream. The dashboard never receives Ring
-credentials, verification codes, tokens, or video. No go2rtc service is required.
-
-Sign in directly with Ring using the same Chromium profile as the kiosk. Ring may
-retain that session, but can require authentication again when it expires or
-cookies are cleared. A normal-browser session on the Pi was confirmed to retain
-login on 2026-11-15; sharing that login with the kiosk profile remains unverified.
-Chromium controls popup behavior; the button falls back to a normal new-tab link
-if the popup request is blocked. Close Live View and the Ring window when finished to conserve the
-battery. Closing Ring returns to the unchanged dashboard page.
-
-The button has not yet been deployed or verified on the physical Pi.
-
 ## Internet indicator
 
 The header replaces the decorative green dot with a Wi-Fi-shaped internet status
