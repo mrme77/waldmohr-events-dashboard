@@ -57,7 +57,17 @@ Run the regression tests with `npm test` from `app/`. The internal deployment ha
 
 The dashboard can include a private Google Calendar feed for a personal installation. Copy the root `.env.example` to `.env` and set `GCAL_ICS_URL` to the calendar's secret iCal URL. Treat that URL as a password: anyone who has it can read the calendar. The generated family cache is gitignored and must not be committed or served from a public deployment.
 
-Homburg event translations use OpenRouter `minimax/minimax-m3.1-flash` when `OPENROUTER_API_KEY` is available to the data-refresh workflow. Add it as a GitHub Actions repository secret to enable new translations. Successful translations are saved in the Homburg JSON payload and reused whenever the original German title and summary are unchanged. Only new or edited text requires another translation request. Without the key, cached English remains available and uncached text stays in German. Failed translations are retried on later refreshes; changing the configured model starts a fresh cache. The first refresh after the cache fix populates it because older payloads did not retain original summaries. Never commit `.env` files, secret URLs, or API keys.
+Homburg event translations use OpenRouter `minimax/minimax-m3.1-flash` during the GitHub
+Actions refresh. Add `OPENROUTER_API_KEY` as a repository Actions secret to enable new
+translations; a manual local refresh can instead read it from the root `.env`. The Pi
+displays the generated JSON and needs no translation key or model installation.
+
+Successful translations are saved in the Homburg JSON payload and reused whenever the
+original German title and summary are unchanged. Only new or edited text requires another
+translation request. Without the key, cached English remains available and uncached text
+stays in German. Failed translations are retried on later refreshes; changing the configured
+model starts a fresh cache. Legacy payloads without saved original summaries require initial
+cache population. Never commit `.env` files, secret URLs, or API keys.
 
 ## Pi desktop access
 

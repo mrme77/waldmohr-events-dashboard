@@ -1,6 +1,8 @@
 # Dashboard: application and Raspberry Pi handoff
 
-Reviewed after PR #50 was merged and the Desktop extension was activated on the Pi on 2026-11-11. Local tests, direct Pi observations, and remaining manual checks are distinguished below.
+Reviewed on 2026-11-22 after PR #53 removed the Ring Doorbell shortcut. The removal's
+deployment on the Pi has not been verified. Desktop extension activation evidence remains
+dated 2026-11-11; local checks and direct Pi observations are distinguished below.
 
 The repository-root [README](../README.md) is the public overview and setup guide. This file holds the internal deployment handoff. [docs/validation.md](../docs/validation.md) records checks, and [progress.md](../progress.md) tracks completed work and remaining gaps.
 
@@ -130,6 +132,10 @@ PR #48 saves successful translations in `homburg-events.json` under `translation
 
 The first refresh after this fix populates the cache because older payloads did not preserve original summaries. An operator-supplied refresh log reports 31 reused translations, 0 newly translated, 0 German fallbacks, and 450 occurrences. This confirms reuse for that run and explains the absence of new OpenRouter activity; the first population run and current scheduled-run health were not independently inspected. An unreadable or corrupt saved cache fails the adapter visibly rather than silently repeating paid requests.
 
+OpenRouter was retained after a local 20-listing Argos comparison on 2026-11-22 showed
+poorer wording and name handling. Argos was not merged or deployed; neither Python nor
+an Argos model is required by the current workflow or the Pi. See `../docs/decisions.md`.
+
 Each Homburg payload records `model`, `translatedListings` (available translations among current distinct listings), `totalListings`, `reusedListings`, and `newlyTranslatedListings`. The workflow log separates reused translations, new translations, and German fallbacks. German originals and official source links remain available.
 
 ## Latest recorded Pi observations
@@ -155,7 +161,10 @@ On 2026-11-11, direct inspection confirmed that `~/dashboard-ops/deploy.sh` matc
 
 Dependency installation runs on the first deployment or after changes to app manifests, lockfile, npm configuration, Node/npm versions, install environment, or missing installation markers/tools. Other changed commits reuse installed dependencies. Successful publication preserves private `family.json` and attempts a Chromium hard refresh through `wtype`. A failed refresh command emits a warning; command success is not a visual confirmation that Chromium reloaded. When an unchanged deployment is skipped, no refresh keystroke is attempted.
 
-The existing service and timer can keep their configuration, but the service uses its copy in `~/dashboard-ops/`, not the repository file directly. After the current code is pulled onto the Pi, install the replacement there:
+The service uses its copy in `~/dashboard-ops/`, not the repository file directly. That copy
+was hash-verified on 2026-11-11. For a new installation or after changing the versioned
+deployment script, pull the code and install the operations copy there; the existing
+service and timer can keep their configuration:
 
 ```sh
 cp "$HOME/dashboard-ops/deploy.sh" "$HOME/dashboard-ops/deploy.sh.backup-$(date +%Y%m%d-%H%M%S)"

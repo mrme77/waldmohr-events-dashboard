@@ -1,10 +1,14 @@
 # Tasks
 
-Reviewed after PR #50 merge and Pi activation on 2026-11-11. See [plan.md](plan.md) for the current
+Reviewed on 2026-11-22 after PR #53. Pi activation evidence is dated 2026-11-11. See [plan.md](plan.md) for the current
 architecture and [app/README.md](app/README.md) for the internal Pi handoff.
 
 ## Current implementation — completed
 
+- [x] PR #53: remove the Ring Doorbell shortcut, its component/tests, and setup docs;
+      all 44 remaining tests and the production build passed.
+- [x] Compare offline Argos translations on 20 saved listings; retain OpenRouter because
+      of poorer sample quality. Keep the experiment on its separate local branch.
 - [x] Static Vite, React, and TypeScript kiosk dashboard with month calendar, upcoming events,
       touch-openable event details, and visible refresh metadata.
 - [x] Waldmohr events from the WordPress REST API.
@@ -36,6 +40,7 @@ architecture and [app/README.md](app/README.md) for the internal Pi handoff.
 
 ## Deployment verification and automation — remaining
 
+- [ ] Verify the Pi has deployed PR #53 and no longer shows the Ring Doorbell button.
 - [x] Confirm the installed Pi operations deployment script matches the repository
       version by SHA-256 (2026-11-11). Live execution/skip behavior remains separate.
 - [ ] On the Pi, confirm unchanged runs report `No build needed`; confirm a changed commit

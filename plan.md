@@ -1,6 +1,6 @@
 # Plan
 
-Reviewed after PR #50 merge and Pi activation on 2026-11-11, including earlier PRs #47 and #48.
+Reviewed on 2026-11-22 after PR #53. Pi activation evidence remains dated 2026-11-11.
 This file describes current development; historical phases are listed separately below.
 
 ## Current dashboard
@@ -16,6 +16,8 @@ It focuses on Waldmohr and nearby Homburg for an American family in the KMC area
 - Right rail: weather, clocks, the next three Homburg listings, and upcoming events.
 - Header: verified internet status with 30-second visible-page checks/tap-to-retry,
   and a Desktop button enabled by the optional loopback-only Chromium extension.
+- The Ring Doorbell shortcut was removed in PR #53 because repeated authentication
+  made it impractical. Deployment of the removal on the Pi has not been verified.
 - Event details show source QR codes for opening official pages on a phone. Family entries
   appear before public entries and do not receive source QR codes.
 - Weather: live Open-Meteo conditions and a seven-day forecast in a screen-level modal;
@@ -52,7 +54,12 @@ The Pi deploys the generated JSON and does not need the OpenRouter key. An opera
 supplied run reports 31 reused translations and no new translations or German fallbacks;
 this confirms that run's reuse without establishing current scheduled-run health.
 
-The Pi's hourly deployment timer was previously operator-confirmed. The current repository
+OpenRouter was retained after comparing 20 saved listings with offline Argos translations
+on 2026-11-22. The unmerged Argos experiment is saved locally at `4597792` on
+`feat/argos-translations`; it is not part of the deployed setup.
+
+Operator-supplied timer output on 2026-11-22 lists the hourly Pi deployment timer.
+That does not establish successful publication. The current repository
 deployment script, `app/ops/deploy.sh`, pulls `main`, skips work when the published commit is
 unchanged, reuses dependencies when their inputs are unchanged, validates/builds changed
 commits, and publishes `app/dist` while preserving the private family JSON. After a successful
@@ -88,6 +95,7 @@ taskbar return, touchscreen model, display scaling, and keyboard size remain che
 
 1. With the installed deployment script now hash-verified, confirm unchanged runs
    report `No build needed` and changed runs publish and refresh Chromium successfully.
+   Verify the deployed revision includes PR #53 and the Ring button is absent.
 2. Refresh the Pi's private family cache locally before deployment, retaining it outside Git.
 3. Refresh event/news JSON in the open page without losing the current month or selected day.
 4. Observe normal taskbar/fullscreen return preserving calendar state and network-status

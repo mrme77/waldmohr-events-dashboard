@@ -1,6 +1,8 @@
 # Project Specification: Waldmohr Events Dashboard
 
-Reviewed after PR #50 merge and Pi activation on 2026-11-11. The header controls are deployed and the Desktop extension is enabled.
+Reviewed on 2026-11-22 after PR #53 removed the Ring shortcut. Internet/Desktop controls
+and extension activation were verified on Pi on 2026-11-11; deployment of PR #53 has
+not been verified.
 
 ## Intent
 Build a local English-first touchscreen dashboard that helps a household in Waldmohr find

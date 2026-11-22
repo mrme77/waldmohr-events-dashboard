@@ -1,8 +1,37 @@
 # Validation
 
-Current development checks and historical verification records. Reviewed on 2026-11-11.
+Current development checks and historical verification records. Reviewed on 2026-11-22.
 
-## Latest Recorded Local Verification — 2026-11-11
+## Latest Recorded Local Verification — 2026-11-22
+
+The Ring removal merged in PR #53 as `95a8212`. Before merge:
+
+- `cd app && npm test`: all 44 remaining tests passed.
+- `cd app && npm run build`: TypeScript and Vite production build passed.
+- `git diff --check`: passed.
+- Source/documentation search found no active Doorbell or `ring.com` references.
+  This record and the decision log retain historical references to the removal.
+- Public datasets were not regenerated, and no live translation requests ran.
+- Pi deployment and physical-screen behavior were not verified. Local `main` was
+  fast-forwarded to the verified merge with a clean working tree.
+
+These are code-change results, not a new test/build run for this documentation-only update.
+
+## Argos Evaluation — 2026-11-22 (not adopted)
+
+Argos Translate 1.11.0 with German → English model 1.3 translated 20 saved public listings
+in about 3.6 seconds with Python socket connections blocked after resource setup.
+The Node/Python bridge also translated a real listing, reused its cache without starting
+Python again, and reported missing Python visibly. Final focused checks passed 11 Node
+tests and 14 pytest tests on the experiment branch.
+
+The comparison exposed poorer translations: the band name Urknall became Big Bang,
+and a St. Martin's procession became moving. A separately tested 1.10.0 model performed
+worse and was not selected. The operator kept the existing OpenRouter setup.
+The experiment is preserved locally at `4597792` on `feat/argos-translations`; it was
+not pushed, merged, or deployed. Its dependencies and model setup are not required by `main`.
+
+## Previous Local Verification — 2026-11-11
 
 Local validation for the connection-indicator and Desktop-button changes merged as PR #50:
 
@@ -118,10 +147,11 @@ the first population run and current workflow health were not inspected directly
   Direct inspection confirmed labwc and browser launch options; model/scaling remain unverified.
 
 The existing hourly deployment timer and forecast modal were confirmed in the 2026-10-19
-handoff. The optimized replacement at `app/ops/deploy.sh` is locally tested and merged, but
+handoff. The optimized replacement at `app/ops/deploy.sh` is locally tested and merged, and
 the installed Pi operations copy was confirmed identical by SHA-256 on 2026-11-11.
 See `../app/README.md` for the current handoff. Remaining live deployment checks:
 
+- Confirm the deployed revision includes PR #53 and the Ring shortcut is absent.
 - A changed commit validates, builds, publishes, and attempts a Chromium refresh.
 - A second unchanged run reports `No build needed`.
 - Changed dependency inputs reinstall packages; unchanged inputs reuse them.

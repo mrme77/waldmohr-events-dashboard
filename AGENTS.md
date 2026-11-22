@@ -45,7 +45,7 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `scripts/refresh-*.mjs` - refresh adapters (events, news, trash, holidays, flea markets, Homburg, family).
 - `scripts/validate-*.mjs` - payload validators, one per adapter.
 - `scripts/homburg-translations.mjs` - model-scoped translation cache loading and cache-miss translation.
-- `app/ops/deploy.sh` - versioned Pi deploy script; installation on the Pi remains unverified.
+- `app/ops/deploy.sh` - versioned Pi deploy script; installed Pi copy hash-verified on 2026-11-11. Current deployment execution still needs verification.
 - `scripts/lib.mjs` - shared script helpers: `writeJson`, `runMain`, and the `runValidation` harness.
 - `docs/` - durable project truth.
 
@@ -59,11 +59,18 @@ See `PRODUCT.md` for UI intent and `docs/spec.md` for the contract.
 - `learnings.md` - fragile commands and toolchain notes.
 - `app/README.md` - internal Pi handoff, installation steps, and verification limits.
 
-## Current Automation (reviewed 2026-10-29)
+## Current State and Automation (reviewed 2026-11-22)
+- PR #53 removed the Ring Doorbell shortcut, its component/tests, and setup instructions.
+  The merge is verified; deployment of that removal on the Pi has not been checked.
+- OpenRouter remains the translation provider. The Argos experiment was not selected
+  because sample translation quality was worse; it is preserved locally on
+  `feat/argos-translations` at `4597792`, not merged or deployed.
 - Public data refresh is scheduled in GitHub Actions daily at 05:17 UTC, with manual dispatch available.
-- The Pi timer was confirmed hourly on 2026-10-19. The versioned optimized deploy script pulls
+- Operator-supplied Pi timer output on 2026-11-22 lists the hourly deployment timer.
+  The versioned optimized deploy script pulls
   `main`, skips already published commits, reuses unchanged dependencies, and attempts a Chromium
-  refresh after publishing. Its installation and current execution on the Pi have not been verified.
+  refresh after publishing. Its installed copy was hash-verified on 2026-11-11;
+  successful execution, unchanged-run skipping, and Chromium refresh remain operational checks.
 - Private family-cache refresh before deployment and in-page event/news refresh that preserves
   calendar selection remain pending. Keep code support separate from observed Pi behavior in handoffs.
 

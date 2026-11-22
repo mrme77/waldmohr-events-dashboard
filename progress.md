@@ -1,6 +1,13 @@
 # Progress
 
-## Current development — reviewed 2026-11-11
+## Current development — reviewed 2026-11-22
+
+- PR #53 removed the Ring Doorbell button, supporting component/tests, and setup
+  documentation. The merge is verified as `95a8212`; Pi deployment remains unverified.
+  All 44 remaining tests, the production build, and diff checks passed before merge.
+- OpenRouter and translation caching remain in use. A 20-listing offline Argos comparison
+  showed poorer wording and name handling. The experiment is preserved locally on
+  `feat/argos-translations` at `4597792`; it was not pushed, merged, or deployed.
 
 - Current sources are Waldmohr events, official Homburg events, Homburg flea markets, NPR USA
   and FOX 2 St. Louis news, Open-Meteo weather, trash, holidays, and an optional private family
@@ -36,6 +43,8 @@
 
 - The operator previously confirmed an hourly Pi deployment timer. The full-width weather
   forecast modal was confirmed working on the Pi on 2026-10-19 after PR #41.
+- Operator-supplied output on 2026-11-22 lists the hourly timer, but successful deployment
+  of PR #53 and current Chromium refresh behavior have not been inspected.
 - After SSH key authorization, direct inspection confirmed labwc and
   `http://127.0.0.1:8080` in the dedicated Chromium kiosk profile.
   The installed deployment script is now hash-verified. Its live refresh keystroke,
@@ -51,7 +60,8 @@
   current scheduled-run health were not directly inspected.
 - Header controls are deployed and the kiosk autostart now enables the extension.
   Temporary browser diagnostics were removed after native minimization/fullscreen
-  checks; the normal kiosk remains running. The operational handoff is saved on Pi.
+  checks on 2026-11-11; the normal kiosk was running at that inspection. The operational
+  handoff was saved on Pi. This does not establish its current deployed revision.
 - Observe taskbar return with calendar state preserved, network disconnect/reconnect,
   touch input, and usable keyboard/display scaling; those input settings were not changed.
 
