@@ -39,7 +39,8 @@ Departure Board" view. Calendar is the primary surface; everything else is a gla
 
 ## Development and Deployment Evidence
 
-Reviewed after PR #50 merge and Pi activation on 2026-11-11. Runtime and deployment verification are
+Reviewed on 2026-11-22 after PR #53 removed the Ring shortcut. Deployment of that removal
+on the Pi remains unverified. Pi activation evidence is dated 2026-11-11. Runtime checks are
 recorded separately in `app/README.md` and `docs/validation.md`. Direct Pi checks
 confirmed extension activation and native minimization; the operator confirmed
 the button works. Touchscreen and keyboard/display scaling checks remain open.

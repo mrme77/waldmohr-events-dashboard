@@ -6,6 +6,8 @@ Pi operation and installation evidence belong in `../app/README.md`.
 
 Earlier decisions cover merged code through translation-cache PR #48. The 2026-11-11
 header-control entries include PR #50 merge and the direct Pi activation on 2026-11-11.
+The 2026-11-22 entries record retaining OpenRouter after an Argos evaluation and removing
+the Ring shortcut in PR #53; deployment of that removal remains unverified.
 
 ## [2026-06-08] Start With A Static Local App
 **Context**: The first need is a usable local calendar, not deployment or multi-user auth.
@@ -287,3 +289,30 @@ and deployment. Its files live in the repository checkout, outside `dist/`. See
 programmatic fullscreen restoration, and confirmed the normal browser restart
 without temporary diagnostics. The operator confirmed Desktop works. Normal
 taskbar return preserving calendar state remains an operational check.
+
+## [2026-11-22] Keep Cached OpenRouter Translations After Argos Evaluation
+
+**Context**: The operator considered replacing OpenRouter with a local Python translation
+library to remove reliance on an inference API. Argos Translate 1.11.0 and its German →
+English model 1.3 translated 20 saved public listings offline after resource setup.
+**Decision**: Keep the existing OpenRouter `minimax/minimax-m3.1-flash` workflow and
+model-scoped translation cache. Only new or edited German title/summary pairs need calls;
+the Pi displays the generated JSON and does not make those workflow requests.
+**Reason**: The Argos sample produced poorer wording and changed a band name. A separately
+tested 1.10.0 model performed worse. Removing the API dependency did not justify the
+observed loss of translation quality.
+**Operational note**: The experiment is preserved locally on `feat/argos-translations`
+at `4597792`. It was not pushed, merged, or deployed. No Argos/Python installation is
+required by the production refresh workflow or the Pi display.
+**Status**: Accepted by the operator; existing OpenRouter implementation retained.
+
+## [2026-11-22] Remove the Ring Doorbell Shortcut
+
+**Context**: Repeated Ring username/password prompts made the kiosk shortcut impractical.
+**Decision**: Remove the header's Doorbell button, its component and tests, and the setup
+instructions. Keep the internet-status and Desktop controls.
+**Reason**: The shortcut did not provide convenient camera access for this installation.
+**Operational note**: All 44 remaining tests, the TypeScript/Vite production build, and
+diff checks passed before merge. Removal from the running Pi has not been verified.
+**Status**: Merged in [PR #53](https://github.com/mrme77/waldmohr-events-dashboard/pull/53)
+as `95a8212`; local `main` was synchronized afterward.
