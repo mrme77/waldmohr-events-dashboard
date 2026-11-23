@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:22:13.444Z",
+  "generatedAt": "2026-11-23T15:59:29.575Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-it-s-medicare-open-enrollment-time-here-s-what-you-need-to-know-0",
+      "id": "usa-nvidia-s-board-of-directors-brings-jensen-huang-back-as-ceo-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "It's Medicare open enrollment time. Here's what you need to know",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
-      "publishedAt": "2026-11-22T13:11:04.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Nvidia's board of directors brings Jensen Huang back as CEO",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
+      "publishedAt": "2026-11-23T14:53:41.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "usa-he-expected-a-small-business-loan-it-turned-out-to-be-a-trap-1",
+      "id": "stl-city-sc-owner-talks-mls-cup-hopes-ahead-of-playoffs-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "CITY SC owner talks MLS Cup hopes ahead of playoffs",
+      "url": "https://fox2now.com/news/city-sc-owner-talks-mls-cup-hopes-ahead-of-playoffs/",
+      "publishedAt": "2026-11-23T13:37:02.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
+    },
+    {
+      "id": "usa-democrats-win-house-by-largest-margin-in-50-years-and-cop31-ends-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "He expected a small-business loan. It turned out to be a trap",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
-      "publishedAt": "2026-11-22T10:00:00.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+      "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
+      "publishedAt": "2026-11-23T12:42:03.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "usa-npr-s-senior-podcast-challenge-early-entries-we-love-2",
+      "id": "stl-colder-thanksgiving-week-rain-and-snow-possible-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Colder Thanksgiving week, rain and snow possible",
+      "url": "https://fox2now.com/news/weather/colder-thanksgiving-week-rain-and-snow-possible/",
+      "publishedAt": "2026-11-23T11:57:43.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
+    },
+    {
+      "id": "stl-14-year-old-boy-killed-two-injured-in-shooting-in-midtown-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "14-year-old boy killed, two injured in shooting in Midtown",
+      "url": "https://fox2now.com/news/missouri/14-year-old-boy-killed-two-injured-in-shooting-in-midtown/",
+      "publishedAt": "2026-11-23T11:43:24.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
+    },
+    {
+      "id": "usa-ukrainian-drones-hit-a-russian-warship-at-a-naval-base-in-libya--2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "NPR's Senior Podcast Challenge: Early entries we love",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
-      "publishedAt": "2026-11-22T10:00:00.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+      "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+      "publishedAt": "2026-11-23T10:16:33.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "stl-austin-simmons-throws-4-td-passes-leading-missouri-past-no-17-ke-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Austin Simmons throws 4 TD passes, leading Missouri past No. 17 Kentucky 28-14",
-      "url": "https://fox2now.com/sports/college/austin-simmons-throws-4-td-passes-leading-missouri-past-no-17-kentucky-28-14/",
-      "publishedAt": "2026-11-22T07:07:25.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
-    },
-    {
-      "id": "stl-neighbours-has-5-assists-and-blues-chase-hellebuyck-early-in-9-6-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Neighbours has 5 assists and Blues chase Hellebuyck early in 9-6 victory over Devils",
-      "url": "https://fox2now.com/sports/st-louis-blues/neighbours-has-5-assists-and-blues-chase-hellebuyck-early-in-9-6-victory-over-devils/",
-      "publishedAt": "2026-11-22T07:05:01.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
-    },
-    {
-      "id": "stl-two-deaths-near-park-hills-under-investigation-0",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Two deaths near Park Hills under investigation",
-      "url": "https://fox2now.com/news/sheriffs-department-investigating-two-deaths-near-park-hills/",
-      "publishedAt": "2026-11-22T03:05:51.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
-    },
-    {
-      "id": "stl-lawsuit-accuses-build-a-bear-of-misleading-investors-over-walmar-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Lawsuit accuses Build-A-Bear of misleading investors over Walmart deal",
-      "url": "https://fox2now.com/news/missouri/lawsuit-accuses-build-a-bear-of-misleading-investors-over-walmart-deal/",
-      "publishedAt": "2026-11-22T00:06:19.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
-    },
-    {
-      "id": "stl-st-louis-woman-charged-after-threats-to-burn-business-shoot-peop-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis woman charged after threats to burn business, shoot people",
-      "url": "https://fox2now.com/news/missouri/st-louis-woman-charged-after-threats-to-burn-business-shoot-people/",
-      "publishedAt": "2026-11-21T22:41:52.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
-    },
-    {
-      "id": "usa-trump-orders-federal-contractors-to-check-with-white-house-befor-3",
+      "id": "usa-seniors-embrace-tesla-automated-driving-technology-despite-quest-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Trump orders federal contractors to check with White House before responding to Congress",
-      "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-      "publishedAt": "2026-11-21T22:40:36.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
+      "publishedAt": "2026-11-23T10:00:00.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "usa-google-employees-protest-ai-in-schools-policy-4",
+      "id": "usa-let-s-talk-turkey-here-s-how-thanksgiving-meal-costs-have-change-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Google employees protest AI in schools policy",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
-      "publishedAt": "2026-11-21T22:01:40.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs",
+      "publishedAt": "2026-11-23T10:00:00.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "usa-highlights-and-challenges-from-covering-an-historic-month-in-sou-5",
+      "id": "usa-mushroom-supplements-promise-health-benefits-what-does-the-scien-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Highlights and challenges from covering an historic month in South America",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
-      "publishedAt": "2026-11-21T22:01:35.000Z",
-      "lastChecked": "2026-11-22T13:22:13.092Z"
+      "title": "Mushroom supplements promise health benefits. What does the science say?",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6047791/mushroom-supplements-health-research",
+      "publishedAt": "2026-11-23T10:00:00.000Z",
+      "lastChecked": "2026-11-23T15:59:29.200Z"
     },
     {
-      "id": "stl-missouri-illinois-preparing-for-planned-detonation-in-iowa-2",
+      "id": "stl-flight-delays-raise-concerns-ahead-of-thanksgiving-travel-rush-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri, Illinois preparing for planned detonation in Iowa",
-      "url": "https://fox2now.com/news/missouri/missouri-illinois-preparing-for-planned-detonation-in-iowa/",
-      "publishedAt": "2026-11-21T19:40:11.000Z",
-      "lastChecked": "2026-11-22T13:22:13.437Z"
+      "title": "Flight delays raise concerns ahead of Thanksgiving travel rush",
+      "url": "https://fox2now.com/news/flight-delays-raise-concerns-ahead-of-thanksgiving-travel-rush/",
+      "publishedAt": "2026-11-23T03:16:06.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
+    },
+    {
+      "id": "stl-federal-prison-for-sex-offender-caught-in-missouri-state-park-wi-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Federal prison for sex offender caught in Missouri state park with children",
+      "url": "https://fox2now.com/news/missouri/federal-prison-for-sex-offender-caught-in-missouri-state-park-with-children/",
+      "publishedAt": "2026-11-22T21:55:15.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
+    },
+    {
+      "id": "stl-missouri-couple-accused-of-nonprofit-theft-arrested-in-north-dak-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Missouri couple accused of nonprofit theft arrested in North Dakota",
+      "url": "https://fox2now.com/news/missouri/missouri-couple-accused-of-nonprofit-theft-arrested-in-north-dakota/",
+      "publishedAt": "2026-11-22T20:52:44.000Z",
+      "lastChecked": "2026-11-23T15:59:29.571Z"
     }
   ]
 }
