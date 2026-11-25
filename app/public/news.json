@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:54:11.052Z",
+  "generatedAt": "2026-11-25T15:37:34.869Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "usa-who-really-owns-the-land-in-albania-that-jared-kushner-wants-to--0",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
-      "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
-      "publishedAt": "2026-11-24T14:24:04.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
-    },
-    {
-      "id": "stl-missouri-prepares-for-planned-iowa-detonation-0",
+      "id": "stl-army-blows-up-bomb-chemicals-in-iowa-despite-fears-a-toxic-plume-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Missouri prepares for planned Iowa detonation",
-      "url": "https://fox2now.com/news/missouri/missouri-prepares-for-planned-iowa-detonation/",
-      "publishedAt": "2026-11-24T13:46:01.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
+      "title": "Army blows up bomb chemicals in Iowa despite fears a toxic plume could endanger residents",
+      "url": "https://fox2now.com/news/national/ap-us-news/ap-us-stockpile-of-unstable-and-dangerous-lead-azide-scheduled-for-detonation-in-iowa/",
+      "publishedAt": "2026-11-25T15:34:06.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
     },
     {
-      "id": "stl-rain-and-snow-to-slow-down-thanksgiving-drivers-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Rain and snow to slow down Thanksgiving drivers",
-      "url": "https://fox2now.com/news/weather/rain-and-snow-to-slow-down-thanksgiving-drivers/",
-      "publishedAt": "2026-11-24T12:43:47.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
-    },
-    {
-      "id": "usa-jensen-huang-returns-to-nvidia-and-rep-gomez-resigns-amid-allege-1",
+      "id": "usa-how-american-thanksgiving-took-root-and-evolved-in-liberia-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
-      "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
-      "publishedAt": "2026-11-24T12:12:25.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
+      "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
+      "publishedAt": "2026-11-25T14:14:34.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
     },
     {
-      "id": "stl-daniel-edelman-jeon-sang-bin-spark-st-louis-city-to-3-2-victory--5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Daniel Edelman, Jeon Sang-bin spark St. Louis City to 3-2 victory over LAFC to take first-round lead",
-      "url": "https://fox2now.com/sports/ap-sports/daniel-edelman-jeon-sang-bin-spark-st-louis-city-to-3-2-victory-over-lafc-to-take-first-round-lead-2/",
-      "publishedAt": "2026-11-24T12:01:57.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
-    },
-    {
-      "id": "stl-st-louis-seeks-to-host-2031-fifa-women-s-world-cup-matches-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "St. Louis seeks to host 2031 FIFA Women’s World Cup matches",
-      "url": "https://fox2now.com/news/missouri/st-louis-seeks-to-host-2031-fifa-womens-world-cup-matches/",
-      "publishedAt": "2026-11-24T11:36:18.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
-    },
-    {
-      "id": "usa-what-should-it-cost-to-insure-a-home-in-wildfire-country-2",
+      "id": "usa-what-to-know-before-using-ai-agents-for-black-friday-shopping-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "What should it cost to insure a home in wildfire country?",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country",
-      "publishedAt": "2026-11-24T11:30:00.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
+      "title": "What to know before using AI agents for Black Friday shopping",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6048524/what-to-know-before-using-ai-agents-for-black-friday-shopping",
+      "publishedAt": "2026-11-25T13:51:56.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
     },
     {
-      "id": "usa-doctors-struggle-to-save-babies-after-parents-refuse-vitamin-k-3",
+      "id": "usa-army-to-detonate-tons-of-lead-azide-after-delays-and-abrego-garc-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Doctors struggle to save babies after parents refuse vitamin K",
-      "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding",
-      "publishedAt": "2026-11-24T10:00:00.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
+      "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
+      "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
+      "publishedAt": "2026-11-25T12:18:09.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
     },
     {
-      "id": "usa-they-attended-trump-s-meme-coin-dinner-it-didn-t-go-well-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "They attended Trump's meme coin dinner. It didn't go well",
-      "url": "https://www.npr.org/2026/11/24/nx-s1-6051604/trump-crypto-corruption-meme-coin-dinner",
-      "publishedAt": "2026-11-24T10:00:00.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
-    },
-    {
-      "id": "usa-black-travelers-on-route-66-weren-t-welcome-at-most-gas-stations-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Black travelers on Route 66 weren't welcome at most gas stations — except this one",
-      "url": "https://www.npr.org/2026/11/24/nx-s1-5928337/threatt-filling-station-oklahoma-route-66",
-      "publishedAt": "2026-11-24T10:00:00.000Z",
-      "lastChecked": "2026-11-24T15:54:10.626Z"
-    },
-    {
-      "id": "stl-st-louis-fire-chief-shares-thanksgiving-safety-tips-2",
+      "id": "stl-snow-shifts-west-sloppy-conditions-for-thanksgiving-1",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "St. Louis fire chief shares Thanksgiving safety tips",
-      "url": "https://fox2now.com/news/missouri/st-louis-fire-chief-shares-thanksgiving-safety-tips/",
-      "publishedAt": "2026-11-24T00:37:10.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
+      "title": "Snow shifts west, sloppy conditions for Thanksgiving",
+      "url": "https://fox2now.com/news/weather/snow-shifts-west-sloppy-conditions-for-thanksgiving/",
+      "publishedAt": "2026-11-25T11:58:02.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
     },
     {
-      "id": "stl-new-bigfoot-files-revive-mystery-as-missouri-and-illinois-sighti-4",
+      "id": "usa-greetings-from-mount-kilimanjaro-africa-s-highest-point-in-all-i-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania",
+      "publishedAt": "2026-11-25T11:00:00.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
+    },
+    {
+      "id": "usa-buying-new-things-feels-wonderful-but-it-can-also-be-a-trap-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Buying new things feels wonderful. But it can also be a trap",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6052361/buying-new-things-feels-wonderful-can-be-trap-break-the-cycle",
+      "publishedAt": "2026-11-25T10:02:00.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
+    },
+    {
+      "id": "usa-a-quintessential-route-66-diner-has-been-serving-up-americana-fo-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "A quintessential Route 66 diner has been serving up Americana for nearly 100 years",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-5983717/ariston-cafe-route-66-diner-litchfield-illinois",
+      "publishedAt": "2026-11-25T10:00:00.000Z",
+      "lastChecked": "2026-11-25T15:37:34.863Z"
+    },
+    {
+      "id": "stl-more-money-more-time-nowhere-to-go-64-families-face-displacement-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "New Bigfoot files revive mystery as Missouri and Illinois sightings continue",
-      "url": "https://fox2now.com/news/missouri/new-bigfoot-files-revive-mystery-as-missouri-and-illinois-sightings-continue/",
-      "publishedAt": "2026-11-23T23:52:24.000Z",
-      "lastChecked": "2026-11-24T15:54:11.042Z"
+      "title": "More money, more time, nowhere to go: 64 families face displacement from Wentzville mobile home park",
+      "url": "https://fox2now.com/news/missouri/more-money-more-time-nowhere-to-go-64-families-face-displacement-from-wentzville-mobile-home-park/",
+      "publishedAt": "2026-11-25T03:14:17.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
+    },
+    {
+      "id": "stl-will-the-iowa-detonations-affect-st-louis-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Will the Iowa detonations affect St. Louis?",
+      "url": "https://fox2now.com/news/missouri/will-the-iowa-detonations-affect-st-louis/",
+      "publishedAt": "2026-11-24T23:51:59.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
+    },
+    {
+      "id": "stl-winter-storm-watch-how-much-snow-could-we-get-in-missouri-illino-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Winter storm watch: How much snow could we get in Missouri, Illinois?",
+      "url": "https://fox2now.com/news/missouri/winter-storm-watch-issued-for-missouri-and-illinois-areas/",
+      "publishedAt": "2026-11-24T20:32:50.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
+    },
+    {
+      "id": "stl-marilyn-monroe-s-unique-stuffing-recipe-resurfaces-decades-later-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Marilyn Monroe's unique stuffing recipe resurfaces decades later",
+      "url": "https://fox2now.com/news/trending/marilyn-monroes-unique-stuffing-recipe-resurfaces-decades-later/",
+      "publishedAt": "2026-11-24T01:00:26.000Z",
+      "lastChecked": "2026-11-25T15:37:34.864Z"
     }
   ]
 }
