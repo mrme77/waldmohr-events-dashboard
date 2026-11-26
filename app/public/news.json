@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:37:34.869Z",
+  "generatedAt": "2026-11-26T15:19:10.122Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-army-blows-up-bomb-chemicals-in-iowa-despite-fears-a-toxic-plume-0",
+      "id": "stl-webster-groves-kirkwood-cancel-annual-turkey-day-football-game-4",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Army blows up bomb chemicals in Iowa despite fears a toxic plume could endanger residents",
-      "url": "https://fox2now.com/news/national/ap-us-news/ap-us-stockpile-of-unstable-and-dangerous-lead-azide-scheduled-for-detonation-in-iowa/",
-      "publishedAt": "2026-11-25T15:34:06.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
+      "title": "Webster Groves, Kirkwood cancel annual Turkey Day football game",
+      "url": "https://fox2now.com/news/missouri/webster-groves-kirkwood-cancel-annual-turkey-day-football-game/",
+      "publishedAt": "2026-11-26T14:24:24.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
     },
     {
-      "id": "usa-how-american-thanksgiving-took-root-and-evolved-in-liberia-0",
+      "id": "usa-congo-ebola-outbreak-reaches-12-000-cases-as-some-responders-eva-0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
-      "publishedAt": "2026-11-25T14:14:34.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
+      "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
+      "publishedAt": "2026-11-26T13:47:09.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
     },
     {
-      "id": "usa-what-to-know-before-using-ai-agents-for-black-friday-shopping-1",
+      "id": "usa-north-korea-s-kim-vows-to-build-more-nuclear-weapons-after-ignor-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "What to know before using AI agents for Black Friday shopping",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6048524/what-to-know-before-using-ai-agents-for-black-friday-shopping",
-      "publishedAt": "2026-11-25T13:51:56.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+      "publishedAt": "2026-11-26T13:31:28.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
     },
     {
-      "id": "usa-army-to-detonate-tons-of-lead-azide-after-delays-and-abrego-garc-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
-      "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
-      "publishedAt": "2026-11-25T12:18:09.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
-    },
-    {
-      "id": "stl-snow-shifts-west-sloppy-conditions-for-thanksgiving-1",
+      "id": "stl-modot-making-progress-on-roadways-amid-thanksgiving-snow-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Snow shifts west, sloppy conditions for Thanksgiving",
-      "url": "https://fox2now.com/news/weather/snow-shifts-west-sloppy-conditions-for-thanksgiving/",
-      "publishedAt": "2026-11-25T11:58:02.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
+      "title": "MoDOT making progress on roadways amid Thanksgiving snow",
+      "url": "https://fox2now.com/news/missouri/modot-making-progress-on-roadways-amid-thanksgiving-snow/",
+      "publishedAt": "2026-11-26T13:25:30.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
     },
     {
-      "id": "usa-greetings-from-mount-kilimanjaro-africa-s-highest-point-in-all-i-3",
+      "id": "stl-photos-snow-filled-thanksgiving-across-st-louis-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "PHOTOS: Snow-filled Thanksgiving across St. Louis",
+      "url": "https://fox2now.com/news/missouri/photos-snow-filled-thanksgiving-across-st-louis/",
+      "publishedAt": "2026-11-26T12:46:42.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
+    },
+    {
+      "id": "usa-storms-disrupt-thanksgiving-travel-and-fcc-violated-abc-s-free-s-2",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania",
-      "publishedAt": "2026-11-25T11:00:00.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
+      "title": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+      "publishedAt": "2026-11-26T12:24:29.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
     },
     {
-      "id": "usa-buying-new-things-feels-wonderful-but-it-can-also-be-a-trap-4",
+      "id": "stl-power-outages-reported-across-st-louis-region-this-thanksgiving-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Power outages reported across St. Louis region this Thanksgiving",
+      "url": "https://fox2now.com/news/missouri/power-outages-reported-across-st-louis-region-this-thanksgiving/",
+      "publishedAt": "2026-11-26T11:52:32.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
+    },
+    {
+      "id": "stl-thanksgiving-snow-impacting-the-st-louis-region-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Thanksgiving snow impacting the St. Louis region",
+      "url": "https://fox2now.com/news/missouri/thanksgiving-snow-impacting-the-st-louis-region/",
+      "publishedAt": "2026-11-26T11:39:01.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
+    },
+    {
+      "id": "usa-memories-of-a-good-meal-how-food-made-a-difference-during-wwii-3",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Buying new things feels wonderful. But it can also be a trap",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6052361/buying-new-things-feels-wonderful-can-be-trap-break-the-cycle",
-      "publishedAt": "2026-11-25T10:02:00.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
+      "title": "'Memories of a Good Meal': How food made a difference during WWII",
+      "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
+      "publishedAt": "2026-11-26T10:00:00.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
     },
     {
-      "id": "usa-a-quintessential-route-66-diner-has-been-serving-up-americana-fo-5",
+      "id": "usa-at-albuquerque-s-indian-pueblo-kitchen-native-american-dishes-ar-4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "A quintessential Route 66 diner has been serving up Americana for nearly 100 years",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-5983717/ariston-cafe-route-66-diner-litchfield-illinois",
-      "publishedAt": "2026-11-25T10:00:00.000Z",
-      "lastChecked": "2026-11-25T15:37:34.863Z"
+      "title": "At Albuquerque's Indian Pueblo Kitchen, Native American dishes are the main course",
+      "url": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque",
+      "publishedAt": "2026-11-26T10:00:00.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
     },
     {
-      "id": "stl-more-money-more-time-nowhere-to-go-64-families-face-displacement-2",
+      "id": "usa-court-lets-puerto-rico-governor-fire-firm-that-runs-the-island-s-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Court lets Puerto Rico governor fire firm that runs the island's troubled power grid",
+      "url": "https://www.npr.org/2026/11/26/nx-s1-6054139/court-rules-puerto-ricos-governor-can-fire-company-that-runs-troubled-power-grid",
+      "publishedAt": "2026-11-26T09:44:20.000Z",
+      "lastChecked": "2026-11-26T15:19:09.881Z"
+    },
+    {
+      "id": "stl-road-conditions-tracking-roads-as-snow-falls-in-st-louis-missour-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "More money, more time, nowhere to go: 64 families face displacement from Wentzville mobile home park",
-      "url": "https://fox2now.com/news/missouri/more-money-more-time-nowhere-to-go-64-families-face-displacement-from-wentzville-mobile-home-park/",
-      "publishedAt": "2026-11-25T03:14:17.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
-    },
-    {
-      "id": "stl-will-the-iowa-detonations-affect-st-louis-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Will the Iowa detonations affect St. Louis?",
-      "url": "https://fox2now.com/news/missouri/will-the-iowa-detonations-affect-st-louis/",
-      "publishedAt": "2026-11-24T23:51:59.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
-    },
-    {
-      "id": "stl-winter-storm-watch-how-much-snow-could-we-get-in-missouri-illino-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Winter storm watch: How much snow could we get in Missouri, Illinois?",
-      "url": "https://fox2now.com/news/missouri/winter-storm-watch-issued-for-missouri-and-illinois-areas/",
-      "publishedAt": "2026-11-24T20:32:50.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
-    },
-    {
-      "id": "stl-marilyn-monroe-s-unique-stuffing-recipe-resurfaces-decades-later-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Marilyn Monroe's unique stuffing recipe resurfaces decades later",
-      "url": "https://fox2now.com/news/trending/marilyn-monroes-unique-stuffing-recipe-resurfaces-decades-later/",
-      "publishedAt": "2026-11-24T01:00:26.000Z",
-      "lastChecked": "2026-11-25T15:37:34.864Z"
+      "title": "ROAD CONDITIONS: Tracking roads as snow falls in St. Louis, Missouri and Illinois",
+      "url": "https://fox2now.com/news/missouri/road-conditions-tracking-roads-as-snow-falls-in-st-louis-missouri-and-illinois/",
+      "publishedAt": "2026-11-25T22:27:02.000Z",
+      "lastChecked": "2026-11-26T15:19:10.117Z"
     }
   ]
 }

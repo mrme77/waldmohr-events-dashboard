@@ -1,28 +1,9 @@
 {
-  "generatedAt": "2026-11-25T15:37:35.504Z",
+  "generatedAt": "2026-11-26T15:19:11.560Z",
   "source": "https://abfallwirtschaft.landkreis-kusel.de/",
   "events": [
     {
-      "id": "trash-d39ce6b82adfde72f31f59020250553e",
-      "title": "Mobile Recycling (Umweltmobil)",
-      "originalTitle": "Umweltmobil ()",
-      "summary": "Mobile recycling unit (Umweltmobil) visiting Waldmohr.",
-      "date": "2026-11-25",
-      "time": null,
-      "venue": "Waldmohr",
-      "tags": [
-        "trash",
-        "umweltmobil"
-      ],
-      "familyRelevance": "Put bins out the night before.",
-      "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
-      "status": "upcoming",
-      "dateConfidence": "confirmed"
-    },
-    {
-      "id": "trash-d617831bc0f332a17a9f2bf72f7c12f7",
+      "id": "trash-c93c0f1148a3c96bc08e45cbf2cd4caf",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -35,13 +16,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-1944f7cd993c5ee02cbb8db94e1c2f18",
+      "id": "trash-ea3abfdc530d308c4cfb18a28406963f",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -54,13 +35,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-a86bc2c80459b217aec00169a93c2755",
+      "id": "trash-26e68bebe5deab2c60c6f85d060af50a",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -73,13 +54,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-83f321c301bb96a6d8624ed490b4b589",
+      "id": "trash-508f83e553736c1f0ea9735ffb5af83e",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -92,13 +73,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-482e3f9a4df494a0589e4aa3cd1e6a89",
+      "id": "trash-25e706886b77af74e6423b9d3e4e2119",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -111,13 +92,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-4c860c0b875e75cc5f2f3008caeb1033",
+      "id": "trash-b9ea33a5e8d5c1448454ba69ad24560d",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -130,13 +111,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-fc85b2a70211f4cf85a253ebcd09830e",
+      "id": "trash-a486ed8a7f8b4c54046ba727ff91fad1",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -149,13 +130,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-7f15cbbf00a27018de1c9801e30371f0",
+      "id": "trash-2c2a43be915ef47c84afd7ee99f49fe3",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -168,13 +149,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-80a50ed154fcd33ce8b26605d8acac86",
+      "id": "trash-14eca8d3e5040ea6ad5f3122f30ce63c",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -187,8 +168,8 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-25",
-      "lastChecked": "2026-11-25",
+      "postDate": "2026-11-26",
+      "lastChecked": "2026-11-26",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     }
