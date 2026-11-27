@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:19:10.122Z",
+  "generatedAt": "2026-11-27T15:07:01.920Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-webster-groves-kirkwood-cancel-annual-turkey-day-football-game-4",
+      "id": "stl-thousands-still-without-power-after-winter-storm-in-st-louis-0",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Webster Groves, Kirkwood cancel annual Turkey Day football game",
-      "url": "https://fox2now.com/news/missouri/webster-groves-kirkwood-cancel-annual-turkey-day-football-game/",
-      "publishedAt": "2026-11-26T14:24:24.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
+      "title": "Thousands still without power after winter storm in St. Louis",
+      "url": "https://fox2now.com/news/missouri/thousands-still-without-power-after-winter-storm-in-st-louis/",
+      "publishedAt": "2026-11-27T12:50:27.000Z",
+      "lastChecked": "2026-11-27T15:07:01.913Z"
     },
     {
-      "id": "usa-congo-ebola-outbreak-reaches-12-000-cases-as-some-responders-eva-0",
+      "id": "usa-thanksgiving-storm-batters-east-coast-and-black-friday-sales-to--0",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
-      "publishedAt": "2026-11-26T13:47:09.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
+      "title": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
+      "url": "https://www.npr.org/2026/11/27/g-s1-156004/up-first-newsletter-thanksgiving-storm-black-friday-shopping-asylum-supreme-court",
+      "publishedAt": "2026-11-27T11:59:02.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
     },
     {
-      "id": "usa-north-korea-s-kim-vows-to-build-more-nuclear-weapons-after-ignor-1",
+      "id": "usa-french-cinema-star-g-rard-depardieu-ordered-to-stand-trial-for-r-1",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
-      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
-      "publishedAt": "2026-11-26T13:31:28.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
+      "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
+      "publishedAt": "2026-11-27T11:49:50.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
     },
     {
-      "id": "stl-modot-making-progress-on-roadways-amid-thanksgiving-snow-3",
+      "id": "stl-thanksgiving-snowstorm-exits-dry-weather-through-sunday-2",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "MoDOT making progress on roadways amid Thanksgiving snow",
-      "url": "https://fox2now.com/news/missouri/modot-making-progress-on-roadways-amid-thanksgiving-snow/",
-      "publishedAt": "2026-11-26T13:25:30.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
+      "title": "Thanksgiving snowstorm exits, dry weather through Sunday",
+      "url": "https://fox2now.com/news/weather/thanksgiving-snowstorm-exits-dry-weather-through-sunday/",
+      "publishedAt": "2026-11-27T11:37:03.000Z",
+      "lastChecked": "2026-11-27T15:07:01.913Z"
     },
     {
-      "id": "stl-photos-snow-filled-thanksgiving-across-st-louis-2",
+      "id": "usa-from-thanksgiving-blackouts-to-black-friday-a-holiday-hit-by-wil-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+      "publishedAt": "2026-11-27T10:59:36.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
+    },
+    {
+      "id": "usa-can-luxury-save-macy-s-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Can luxury save Macy's?",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury",
+      "publishedAt": "2026-11-27T10:01:00.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
+    },
+    {
+      "id": "usa-screen-free-tweens-try-their-hand-at-dungeons-dragons-4",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Screen free tweens try their hand at Dungeons & Dragons",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
+    },
+    {
+      "id": "usa-trump-effectively-ended-asylum-advocates-look-to-the-supreme-cou-5",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "lastChecked": "2026-11-27T15:07:01.595Z"
+    },
+    {
+      "id": "stl-part-of-chesterfield-hotel-collapses-under-weight-of-snow-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Part of Chesterfield hotel collapses under weight of snow",
+      "url": "https://fox2now.com/news/missouri/part-of-chesterfield-hotel-collapses-under-weight-of-snow/",
+      "publishedAt": "2026-11-26T23:10:15.000Z",
+      "lastChecked": "2026-11-27T15:07:01.913Z"
+    },
+    {
+      "id": "stl-world-bird-sanctuary-suffers-catastrophic-damage-closes-after-sn-3",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "World Bird Sanctuary suffers 'catastrophic damage,' closes after snowstorm",
+      "url": "https://fox2now.com/news/missouri/world-bird-sanctuary-suffers-catastrophic-damage-closes-after-snowstorm/",
+      "publishedAt": "2026-11-26T21:43:52.000Z",
+      "lastChecked": "2026-11-27T15:07:01.913Z"
+    },
+    {
+      "id": "stl-this-thanksgiving-is-st-louis-second-snowiest-on-record-national-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "This Thanksgiving is St. Louis' second snowiest on record, National Weather Service says",
+      "url": "https://fox2now.com/news/missouri/this-thanksgiving-is-st-louis-second-snowiest-on-record-national-weather-service-says/",
+      "publishedAt": "2026-11-26T20:29:18.000Z",
+      "lastChecked": "2026-11-27T15:07:01.913Z"
+    },
+    {
+      "id": "stl-photos-snow-filled-thanksgiving-across-st-louis-5",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
       "title": "PHOTOS: Snow-filled Thanksgiving across St. Louis",
       "url": "https://fox2now.com/news/missouri/photos-snow-filled-thanksgiving-across-st-louis/",
       "publishedAt": "2026-11-26T12:46:42.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
-    },
-    {
-      "id": "usa-storms-disrupt-thanksgiving-travel-and-fcc-violated-abc-s-free-s-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
-      "publishedAt": "2026-11-26T12:24:29.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
-    },
-    {
-      "id": "stl-power-outages-reported-across-st-louis-region-this-thanksgiving-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Power outages reported across St. Louis region this Thanksgiving",
-      "url": "https://fox2now.com/news/missouri/power-outages-reported-across-st-louis-region-this-thanksgiving/",
-      "publishedAt": "2026-11-26T11:52:32.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
-    },
-    {
-      "id": "stl-thanksgiving-snow-impacting-the-st-louis-region-0",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Thanksgiving snow impacting the St. Louis region",
-      "url": "https://fox2now.com/news/missouri/thanksgiving-snow-impacting-the-st-louis-region/",
-      "publishedAt": "2026-11-26T11:39:01.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
-    },
-    {
-      "id": "usa-memories-of-a-good-meal-how-food-made-a-difference-during-wwii-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "'Memories of a Good Meal': How food made a difference during WWII",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
-      "publishedAt": "2026-11-26T10:00:00.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
-    },
-    {
-      "id": "usa-at-albuquerque-s-indian-pueblo-kitchen-native-american-dishes-ar-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "At Albuquerque's Indian Pueblo Kitchen, Native American dishes are the main course",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque",
-      "publishedAt": "2026-11-26T10:00:00.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
-    },
-    {
-      "id": "usa-court-lets-puerto-rico-governor-fire-firm-that-runs-the-island-s-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Court lets Puerto Rico governor fire firm that runs the island's troubled power grid",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-6054139/court-rules-puerto-ricos-governor-can-fire-company-that-runs-troubled-power-grid",
-      "publishedAt": "2026-11-26T09:44:20.000Z",
-      "lastChecked": "2026-11-26T15:19:09.881Z"
-    },
-    {
-      "id": "stl-road-conditions-tracking-roads-as-snow-falls-in-st-louis-missour-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "ROAD CONDITIONS: Tracking roads as snow falls in St. Louis, Missouri and Illinois",
-      "url": "https://fox2now.com/news/missouri/road-conditions-tracking-roads-as-snow-falls-in-st-louis-missouri-and-illinois/",
-      "publishedAt": "2026-11-25T22:27:02.000Z",
-      "lastChecked": "2026-11-26T15:19:10.117Z"
+      "lastChecked": "2026-11-27T15:07:01.913Z"
     }
   ]
 }
