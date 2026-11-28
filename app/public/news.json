@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:07:01.920Z",
+  "generatedAt": "2026-11-28T14:13:26.383Z",
   "sources": [
     {
       "id": "usa",
@@ -16,124 +16,124 @@
   ],
   "items": [
     {
-      "id": "stl-thousands-still-without-power-after-winter-storm-in-st-louis-0",
+      "id": "usa-perspective-a-hero-s-name-lives-on-0",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Perspective: A hero's name lives on",
+      "url": "https://www.npr.org/2026/11/28/nx-s1-6045586/perspective-a-heros-name-lives-on",
+      "publishedAt": "2026-11-28T13:00:00.000Z",
+      "lastChecked": "2026-11-28T14:13:25.854Z"
+    },
+    {
+      "id": "usa-explosion-at-a-school-in-eastern-afghanistan-kills-7-wounds-more-1",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Explosion at a school in eastern Afghanistan kills 7, wounds more than 90",
+      "url": "https://www.npr.org/2026/11/28/nx-s1-6056284/explosion-school-eastern-afghanistan",
+      "publishedAt": "2026-11-28T11:32:37.000Z",
+      "lastChecked": "2026-11-28T14:13:25.854Z"
+    },
+    {
+      "id": "usa-new-wave-of-democratic-attorneys-general-may-reshape-the-justice-2",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "New wave of Democratic attorneys general may reshape the justice system",
+      "url": "https://www.npr.org/2026/11/28/g-s1-155837/democratic-attorneys-general-justice-system-texas",
+      "publishedAt": "2026-11-28T10:00:00.000Z",
+      "lastChecked": "2026-11-28T14:13:25.854Z"
+    },
+    {
+      "id": "stl-cleanup-efforts-underway-after-wentzville-ice-arena-collapse-3",
       "sourceId": "stl",
       "sourceLabel": "St. Louis",
       "sourceName": "FOX 2 News",
-      "title": "Thousands still without power after winter storm in St. Louis",
-      "url": "https://fox2now.com/news/missouri/thousands-still-without-power-after-winter-storm-in-st-louis/",
-      "publishedAt": "2026-11-27T12:50:27.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
+      "title": "Cleanup efforts underway after Wentzville Ice Arena collapse",
+      "url": "https://fox2now.com/news/missouri/cleanup-efforts-underway-after-wentzville-ice-arena-collapse/",
+      "publishedAt": "2026-11-28T00:44:55.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
     },
     {
-      "id": "usa-thanksgiving-storm-batters-east-coast-and-black-friday-sales-to--0",
+      "id": "stl-world-bird-sanctuary-suffers-costly-snow-damage-4",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "World Bird Sanctuary suffers costly snow damage",
+      "url": "https://fox2now.com/news/missouri/world-bird-sanctuary-suffers-costly-snow-damage/",
+      "publishedAt": "2026-11-27T23:42:02.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
+    },
+    {
+      "id": "stl-ameren-makes-progress-on-restoring-power-in-st-louis-area-outage-0",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Ameren makes progress on restoring power in St. Louis area; Outages remain",
+      "url": "https://fox2now.com/news/missouri/ameren-makes-progress-on-restoring-power-in-st-louis-area-outages-remain/",
+      "publishedAt": "2026-11-27T23:17:08.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
+    },
+    {
+      "id": "usa-sudan-s-lost-generation-war-is-stealing-the-childhood-of-million-3",
+      "sourceId": "usa",
+      "sourceLabel": "USA",
+      "sourceName": "NPR News",
+      "title": "Sudan's lost generation: War is stealing the childhood of millions",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6053049/sudans-lost-generation-war-is-stealing-a-generation-of-childhood",
+      "publishedAt": "2026-11-27T22:54:53.000Z",
+      "lastChecked": "2026-11-28T14:13:25.854Z"
+    },
+    {
+      "id": "stl-major-traffic-delays-at-west-county-mall-drivers-stuck-for-hours-1",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Major traffic delays at West County Mall, drivers stuck for hours",
+      "url": "https://fox2now.com/news/missouri/major-traffic-delays-at-west-county-mall-drivers-stuck-for-hours/",
+      "publishedAt": "2026-11-27T22:16:10.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
+    },
+    {
+      "id": "stl-spoiled-food-from-a-st-louis-area-power-outage-you-could-seek-re-2",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Spoiled food from a St. Louis-area power outage? You could seek reimbursement",
+      "url": "https://fox2now.com/news/missouri/spoiled-food-from-a-st-louis-area-power-outage-you-could-seek-reimbursement/",
+      "publishedAt": "2026-11-27T19:02:12.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
+    },
+    {
+      "id": "stl-hackers-break-into-us-air-force-cloud-computing-platform-report-5",
+      "sourceId": "stl",
+      "sourceLabel": "St. Louis",
+      "sourceName": "FOX 2 News",
+      "title": "Hackers break into US Air Force cloud computing platform: Report",
+      "url": "https://fox2now.com/news/national/hackers-break-into-us-air-force-cloud-computing-platform-report/",
+      "publishedAt": "2026-11-27T17:24:13.000Z",
+      "lastChecked": "2026-11-28T14:13:26.377Z"
+    },
+    {
+      "id": "usa-thanksgiving-storm-batters-east-coast-and-black-friday-sales-to--4",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
       "url": "https://www.npr.org/2026/11/27/g-s1-156004/up-first-newsletter-thanksgiving-storm-black-friday-shopping-asylum-supreme-court",
       "publishedAt": "2026-11-27T11:59:02.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
+      "lastChecked": "2026-11-28T14:13:25.854Z"
     },
     {
-      "id": "usa-french-cinema-star-g-rard-depardieu-ordered-to-stand-trial-for-r-1",
+      "id": "usa-french-cinema-star-g-rard-depardieu-ordered-to-stand-trial-for-r-5",
       "sourceId": "usa",
       "sourceLabel": "USA",
       "sourceName": "NPR News",
       "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
       "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
       "publishedAt": "2026-11-27T11:49:50.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
-    },
-    {
-      "id": "stl-thanksgiving-snowstorm-exits-dry-weather-through-sunday-2",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Thanksgiving snowstorm exits, dry weather through Sunday",
-      "url": "https://fox2now.com/news/weather/thanksgiving-snowstorm-exits-dry-weather-through-sunday/",
-      "publishedAt": "2026-11-27T11:37:03.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
-    },
-    {
-      "id": "usa-from-thanksgiving-blackouts-to-black-friday-a-holiday-hit-by-wil-2",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
-      "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
-      "publishedAt": "2026-11-27T10:59:36.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
-    },
-    {
-      "id": "usa-can-luxury-save-macy-s-3",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Can luxury save Macy's?",
-      "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury",
-      "publishedAt": "2026-11-27T10:01:00.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
-    },
-    {
-      "id": "usa-screen-free-tweens-try-their-hand-at-dungeons-dragons-4",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Screen free tweens try their hand at Dungeons & Dragons",
-      "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
-      "publishedAt": "2026-11-27T10:00:00.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
-    },
-    {
-      "id": "usa-trump-effectively-ended-asylum-advocates-look-to-the-supreme-cou-5",
-      "sourceId": "usa",
-      "sourceLabel": "USA",
-      "sourceName": "NPR News",
-      "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-      "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-      "publishedAt": "2026-11-27T10:00:00.000Z",
-      "lastChecked": "2026-11-27T15:07:01.595Z"
-    },
-    {
-      "id": "stl-part-of-chesterfield-hotel-collapses-under-weight-of-snow-1",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "Part of Chesterfield hotel collapses under weight of snow",
-      "url": "https://fox2now.com/news/missouri/part-of-chesterfield-hotel-collapses-under-weight-of-snow/",
-      "publishedAt": "2026-11-26T23:10:15.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
-    },
-    {
-      "id": "stl-world-bird-sanctuary-suffers-catastrophic-damage-closes-after-sn-3",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "World Bird Sanctuary suffers 'catastrophic damage,' closes after snowstorm",
-      "url": "https://fox2now.com/news/missouri/world-bird-sanctuary-suffers-catastrophic-damage-closes-after-snowstorm/",
-      "publishedAt": "2026-11-26T21:43:52.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
-    },
-    {
-      "id": "stl-this-thanksgiving-is-st-louis-second-snowiest-on-record-national-4",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "This Thanksgiving is St. Louis' second snowiest on record, National Weather Service says",
-      "url": "https://fox2now.com/news/missouri/this-thanksgiving-is-st-louis-second-snowiest-on-record-national-weather-service-says/",
-      "publishedAt": "2026-11-26T20:29:18.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
-    },
-    {
-      "id": "stl-photos-snow-filled-thanksgiving-across-st-louis-5",
-      "sourceId": "stl",
-      "sourceLabel": "St. Louis",
-      "sourceName": "FOX 2 News",
-      "title": "PHOTOS: Snow-filled Thanksgiving across St. Louis",
-      "url": "https://fox2now.com/news/missouri/photos-snow-filled-thanksgiving-across-st-louis/",
-      "publishedAt": "2026-11-26T12:46:42.000Z",
-      "lastChecked": "2026-11-27T15:07:01.913Z"
+      "lastChecked": "2026-11-28T14:13:25.854Z"
     }
   ]
 }

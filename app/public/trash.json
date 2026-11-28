@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-27T15:07:02.880Z",
+  "generatedAt": "2026-11-28T14:13:27.338Z",
   "source": "https://abfallwirtschaft.landkreis-kusel.de/",
   "events": [
     {
-      "id": "trash-bef786b3ab2f0ae418b5c4fffa7bedc7",
+      "id": "trash-03741a9006eac95f986620bf7b569a44",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -16,13 +16,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-5daa6fe7d052491eced08852876da02e",
+      "id": "trash-a1f7b92f3a745a7a166d053ef181a810",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -35,13 +35,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-bf5c49d0bf24866954ee28f3c8005b4b",
+      "id": "trash-6a0be6ac277f31ebc5286b6fce8b3a65",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -54,13 +54,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-bff1eeaa6bd44f1a00c6190deeed1dbe",
+      "id": "trash-a4ca4306192a3997dd795717f1e12468",
       "title": "Paper Collection (Blaue Tonne)",
       "originalTitle": "Papier (Blaue Tonne) ()",
       "summary": "Paper and cardboard collection day (Blaue Tonne).",
@@ -73,13 +73,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-745d9f4b202842f711f734d5ac6b133e",
+      "id": "trash-9b7e6ede378c931ff92629f1ac8f12a5",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -92,13 +92,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-7b67a1068748b402790ffbded2c83421",
+      "id": "trash-734e00f50ca421e038fddec29509c0bf",
       "title": "Plastic & Packaging (Gelbe Säcke)",
       "originalTitle": "LVP-Abfälle (Gelbe Säcke) ()",
       "summary": "Yellow bag (Gelbe Säcke) collection day. Put yellow bags out the night before.",
@@ -111,13 +111,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-3d611892a40d6bc9eeb597d9c3e5e7cd",
+      "id": "trash-04732f238edbdb7e901f2bb27b74bdd7",
       "title": "Glass Collection (Weisse Säcke)",
       "originalTitle": "Glas (Weisse Säcke) ()",
       "summary": "Glass collection day (Weisse Säcke).",
@@ -130,13 +130,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-daf2f7530aa553b90bc03fc0a8cf42a2",
+      "id": "trash-ac507cb770c500595e5e2360fa5c8bb3",
       "title": "Organic Waste (Bioabfall)",
       "originalTitle": "Bioabfall ()",
       "summary": "Bioabfall collection day. Put your organic waste bin out the night before.",
@@ -149,13 +149,13 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     },
     {
-      "id": "trash-4715df44d0a844fdc2b7eab1a8d1e1bd",
+      "id": "trash-1b7bdae3c02bac89e9be2bfe453100e4",
       "title": "General Waste (Restmüll)",
       "originalTitle": "Restmüll ()",
       "summary": "Restmüll (general waste) collection day. Put the grey bin out the night before.",
@@ -168,8 +168,8 @@
       ],
       "familyRelevance": "Put bins out the night before.",
       "sourceUrl": "https://abfallwirtschaft.landkreis-kusel.de/",
-      "postDate": "2026-11-27",
-      "lastChecked": "2026-11-27",
+      "postDate": "2026-11-28",
+      "lastChecked": "2026-11-28",
       "status": "upcoming",
       "dateConfidence": "confirmed"
     }
